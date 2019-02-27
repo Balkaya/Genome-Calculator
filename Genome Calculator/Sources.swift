@@ -102,3 +102,7 @@ var secondBiggestForSkin = 0
 
 var biggestForHair = 0
 var secondBiggestHair = 0
+
+var greensPoints = 0
+var hazelsPoints = 0
+var bluesPoints = 0

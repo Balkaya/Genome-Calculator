@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 
 class EditVC: UIViewController {
-    
     var secondChosenGene = ""
     var trueOrFalse = true
     var thirdOneOrZero = 0 
