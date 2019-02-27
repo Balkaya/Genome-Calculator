@@ -268,6 +268,22 @@ class InputVC: UIViewController {
             whiteSkin += 0.25
         }
 
+        if twentyThirdText == "Black" {
+            blackEyes += 0.25
+        } else if twentyThirdText == "D. Brown" {
+            dBrownEyes += 0.25
+        } else if twentyThirdText == "Brown" {
+            brownEyes += 0.25
+        } else if twentyThirdText == "L. Brown" {
+            lBrownEyes += 0.25
+        } else if twentyThirdText == "Green" {
+            greenEyes += 0.25
+        } else if twentyThirdText == "Hazel" {
+            hazelEyes += 0.25
+        } else if twentyThirdText == "Blue" {
+            blueEyes += 0.25
+        }
+
         if twentyFourthText == "Black" {
             blackSkin += 0.25
         } else if twentyFourthText == "D. Brown" {
