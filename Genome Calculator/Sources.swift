@@ -36,6 +36,7 @@ let hairColors = [
     "Red"
 ]
 
+// Texts
 var firstEyesColorName = ""
 var secondEyesColorName = ""
 var thirdEyesColorName = ""
@@ -48,6 +49,7 @@ var firstHairColorName = ""
 var secondHairColorName = ""
 var thirdHairColorName = ""
 
+// Numbers
 var inputForEyes = 0
 
 var forBlackEyes = 2.0
