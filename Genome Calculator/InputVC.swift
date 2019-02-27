@@ -237,21 +237,21 @@ class InputVC: UIViewController {
             whiteSkin += 0.5
         }
 
-        if thirteenthText == "Black" || fifteenthText == "Black" || seventeenthText == "Black" || ninteenthText == "Black" || thirtyFirstText == "Black" {
+        if thirteenthText == "Black" || fifteenthText == "Black" || seventeenthText == "Black" || ninteenthText == "Black" || thirtyFirstText == "Black" || thirtyThirdText == "Black" {
             blackEyes += 0.25
-        } else if thirteenthText == "D. Brown" || fifteenthText == "D. Brown" || seventeenthText == "D. Brown" || ninteenthText == "D. Brown" || thirtyFirstText == "D. Brown" {
+        } else if thirteenthText == "D. Brown" || fifteenthText == "D. Brown" || seventeenthText == "D. Brown" || ninteenthText == "D. Brown" || thirtyFirstText == "D. Brown" || thirtyThirdText == "D. Brown" {
             dBrownEyes += 0.25
-        } else if thirteenthText == "Brown" || fifteenthText == "Brown" || seventeenthText == "Brown" || ninteenthText == "Brown" || thirtyFirstText == "Brown"{
+        } else if thirteenthText == "Brown" || fifteenthText == "Brown" || seventeenthText == "Brown" || ninteenthText == "Brown" || thirtyFirstText == "Brown" || thirtyThirdText == "Brown" {
             brownEyes += 0.25
-        } else if thirteenthText == "L. Brown" || fifteenthText == "L. Brown" || seventeenthText == "L. Brown" || ninteenthText == "L. Brown" || thirtyFirstText == "L. Brown" {
+        } else if thirteenthText == "L. Brown" || fifteenthText == "L. Brown" || seventeenthText == "L. Brown" || ninteenthText == "L. Brown" || thirtyFirstText == "L. Brown" || thirtyThirdText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if thirteenthText == "Green" || fifteenthText == "Green" || seventeenthText == "Green" || ninteenthText == "Green" || thirtyFirstText == "Green" {
+        } else if thirteenthText == "Green" || fifteenthText == "Green" || seventeenthText == "Green" || ninteenthText == "Green" || thirtyFirstText == "Green" || thirtyThirdText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if thirteenthText == "Hazel" || fifteenthText == "Hazel" || seventeenthText == "Hazel" || ninteenthText == "Hazel" || thirtyFirstText == "Hazel" {
+        } else if thirteenthText == "Hazel" || fifteenthText == "Hazel" || seventeenthText == "Hazel" || ninteenthText == "Hazel" || thirtyFirstText == "Hazel" || thirtyThirdText == "Hazel" {
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if thirteenthText == "Blue" || fifteenthText == "Blue" || seventeenthText == "Blue" || ninteenthText == "Blue" || thirtyFirstText == "Blue" {
+        } else if thirteenthText == "Blue" || fifteenthText == "Blue" || seventeenthText == "Blue" || ninteenthText == "Blue" || thirtyFirstText == "Blue" || thirtyThirdText == "Blue" {
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -266,22 +266,6 @@ class InputVC: UIViewController {
             lBrownSkin += 0.25
         } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" {
             whiteSkin += 0.25
-        }
-
-        if twentyThirdText == "Black" {
-            blackEyes += 0.25
-        } else if twentyThirdText == "D. Brown" {
-            dBrownEyes += 0.25
-        } else if twentyThirdText == "Brown" {
-            brownEyes += 0.25
-        } else if twentyThirdText == "L. Brown" {
-            lBrownEyes += 0.25
-        } else if twentyThirdText == "Green" {
-            greenEyes += 0.25
-        } else if twentyThirdText == "Hazel" {
-            hazelEyes += 0.25
-        } else if twentyThirdText == "Blue" {
-            blueEyes += 0.25
         }
 
         if twentyFourthText == "Black" {
