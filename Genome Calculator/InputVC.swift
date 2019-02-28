@@ -237,314 +237,91 @@ class InputVC: UIViewController {
             whiteSkin += 0.5
         }
 
-        if thirteenthText == "Black" || fifteenthText == "Black" || seventeenthText == "Black" || ninteenthText == "Black" || thirtyFirstText == "Black" || thirtyThirdText == "Black" {
+        if thirteenthText == "Black" || fifteenthText == "Black" || seventeenthText == "Black" || ninteenthText == "Black" || twentyFirstText == "Black" || twentyThirdText == "Black" || twentyFifthText == "Black" || twentySeventhText == "Black" {
             blackEyes += 0.25
-        } else if thirteenthText == "D. Brown" || fifteenthText == "D. Brown" || seventeenthText == "D. Brown" || ninteenthText == "D. Brown" || thirtyFirstText == "D. Brown" || thirtyThirdText == "D. Brown" {
+        } else if thirteenthText == "D. Brown" || fifteenthText == "D. Brown" || seventeenthText == "D. Brown" || ninteenthText == "D. Brown" || twentyFirstText == "D. Brown" || twentyThirdText == "D. Brown" || twentyFifthText == "D. Brown" || twentySeventhText == "D. Brown" {
             dBrownEyes += 0.25
-        } else if thirteenthText == "Brown" || fifteenthText == "Brown" || seventeenthText == "Brown" || ninteenthText == "Brown" || thirtyFirstText == "Brown" || thirtyThirdText == "Brown" {
+        } else if thirteenthText == "Brown" || fifteenthText == "Brown" || seventeenthText == "Brown" || ninteenthText == "Brown" || twentyFirstText == "Brown" || twentyThirdText == "Brown" || twentyFifthText == "Brown" || twentySeventhText == "Brown" {
             brownEyes += 0.25
-        } else if thirteenthText == "L. Brown" || fifteenthText == "L. Brown" || seventeenthText == "L. Brown" || ninteenthText == "L. Brown" || thirtyFirstText == "L. Brown" || thirtyThirdText == "L. Brown" {
+        } else if thirteenthText == "L. Brown" || fifteenthText == "L. Brown" || seventeenthText == "L. Brown" || ninteenthText == "L. Brown" || twentyFirstText == "L. Brown" || twentyThirdText == "L. Brown" || twentyFifthText == "L. Brown" || twentySeventhText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if thirteenthText == "Green" || fifteenthText == "Green" || seventeenthText == "Green" || ninteenthText == "Green" || thirtyFirstText == "Green" || thirtyThirdText == "Green" {
+        } else if thirteenthText == "Green" || fifteenthText == "Green" || seventeenthText == "Green" || ninteenthText == "Green" || twentyFirstText == "Green" || twentyThirdText == "Green" || twentyFifthText == "Green" || twentySeventhText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if thirteenthText == "Hazel" || fifteenthText == "Hazel" || seventeenthText == "Hazel" || ninteenthText == "Hazel" || thirtyFirstText == "Hazel" || thirtyThirdText == "Hazel" {
+        } else if thirteenthText == "Hazel" || fifteenthText == "Hazel" || seventeenthText == "Hazel" || ninteenthText == "Hazel" || twentyFirstText == "Hazel" || twentyThirdText == "Hazel" || twentyFifthText == "Hazel" || twentySeventhText == "Hazel" {
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if thirteenthText == "Blue" || fifteenthText == "Blue" || seventeenthText == "Blue" || ninteenthText == "Blue" || thirtyFirstText == "Blue" || thirtyThirdText == "Blue" {
+        } else if thirteenthText == "Blue" || fifteenthText == "Blue" || seventeenthText == "Blue" || ninteenthText == "Blue" || twentyFirstText == "Blue" || twentyThirdText == "Blue" || twentyFifthText == "Blue" || twentySeventhText == "Blue" {
             bluesPoints += 1
             blueEyes += 0.25
         }
 
-        if fourteenthText == "Black" || sixteenthText == "Black" || eighteenthText == "Black" || twentiethText == "Black" || twentySecondText == "Black" || twentyFourthText == "Black" {
+        if fourteenthText == "Black" || sixteenthText == "Black" || eighteenthText == "Black" || twentiethText == "Black" || twentySecondText == "Black" || twentyFourthText == "Black" || twentySixthText == "Black" || twentyEighthText == "Black"{
             blackSkin += 0.25
-        } else if fourteenthText == "D. Brown" || sixteenthText == "D. Brown" || eighteenthText == "D. Brown" || twentiethText == "D. Brown" || twentySecondText == "D. Brown" || twentyFourthText == "D. Brown" {
+        } else if fourteenthText == "D. Brown" || sixteenthText == "D. Brown" || eighteenthText == "D. Brown" || twentiethText == "D. Brown" || twentySecondText == "D. Brown" || twentyFourthText == "D. Brown" || twentySixthText == "D. Brown" || twentyEighthText == "D. Brown" {
             dBrownSkin += 0.25
-        } else if fourteenthText == "Brown" || sixteenthText == "Brown" || eighteenthText == "Brown" || twentiethText == "Brown" || twentySecondText == "Brown" || twentyFourthText == "Brown" {
+        } else if fourteenthText == "Brown" || sixteenthText == "Brown" || eighteenthText == "Brown" || twentiethText == "Brown" || twentySecondText == "Brown" || twentyFourthText == "Brown" || twentySixthText == "Brown" || twentyEighthText == "Brown" {
             brownSkin += 0.25
-        } else if fourteenthText == "L. Brown" || sixteenthText == "L. Brown" || eighteenthText == "L. Brown" || twentiethText == "L. Brown" || twentySecondText == "L. Brown" || twentyFourthText == "L. Brown" {
+        } else if fourteenthText == "L. Brown" || sixteenthText == "L. Brown" || eighteenthText == "L. Brown" || twentiethText == "L. Brown" || twentySecondText == "L. Brown" || twentyFourthText == "L. Brown" || twentySixthText == "L. Brown" || twentyEighthText == "L. Brown" {
             lBrownSkin += 0.25
-        } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" || twentyFourthText == "White" {
-            whiteSkin += 0.25
-        }
-
-        if twentyFifthText == "Black" {
-            blackEyes += 0.25
-        } else if twentyFifthText == "D. Brown" {
-            dBrownEyes += 0.25
-        } else if twentyFifthText == "Brown" {
-            brownEyes += 0.25
-        } else if twentyFifthText == "L. Brown" {
-            lBrownEyes += 0.25
-        } else if twentyFifthText == "Green" {
-            greenEyes += 0.25
-        } else if twentyFifthText == "Hazel" {
-            hazelEyes += 0.25
-        } else if twentyFifthText == "Blue" {
-            blueEyes += 0.25
-        }
-
-        if twentySixthText == "Black" {
-            blackSkin += 0.25
-        } else if twentySixthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentySixthText == "Brown" {
-            brownSkin += 0.25
-        } else if twentySixthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentySixthText == "White" {
-            whiteSkin += 0.25
-        }
-
-        if twentySeventhText == "Black" {
-            blackEyes += 0.25
-        } else if twentySeventhText == "D. Brown" {
-            dBrownEyes += 0.25
-        } else if twentySeventhText == "Brown" {
-            brownEyes += 0.25
-        } else if twentySeventhText == "L. Brown" {
-            lBrownEyes += 0.25
-        } else if twentySeventhText == "Green" {
-            greenEyes += 0.25
-        } else if twentySeventhText == "Hazel" {
-            hazelEyes += 0.25
-        } else if twentySeventhText == "Blue" {
-            blueEyes += 0.25
-        }
-
-        if twentyEighthText == "Black" {
-            blackSkin += 0.25
-        } else if twentyEighthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentyEighthText == "Brown" {
-            brownSkin += 0.25
-        } else if twentyEighthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentyEighthText == "White" {
+        } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" || twentyFourthText == "White" || twentySixthText == "White" || twentyEighthText == "White" {
             whiteSkin += 0.25
         }
         
-        if twentyNinthText == "Black" {
+        if twentyNinthText == "Black" || thirtiethText == "Black" {
             blackHair += 1
-        } else if twentyNinthText == "D. Brown" {
+        } else if twentyNinthText == "D. Brown" || thirtiethText == "D. Brown" {
             dBrownHair += 1
-        } else if twentyNinthText == "Brown" {
+        } else if twentyNinthText == "Brown" || thirtiethText == "Brown" {
             brownHair += 1
-        } else if twentyNinthText == "L. Brown" {
+        } else if twentyNinthText == "L. Brown" || thirtiethText == "L. Brown" {
             lBrownHair += 1
-        } else if twentyNinthText == "Auburn" {
+        } else if twentyNinthText == "Auburn" || thirtiethText == "Auburn" {
+            auburnsPoints += 1
             auburnHair += 1
-        } else if twentyNinthText == "Yellow" {
+        } else if twentyNinthText == "Yellow" || thirtiethText == "Yellow" {
+            yellowsPoints += 1
             yellowHair += 1
-        } else if twentyNinthText == "Red" {
+        } else if twentyNinthText == "Red" || thirtiethText == "Red" {
+            redsPoints += 1
             redHair += 1
         }
         
-        if thirtiethText == "Black" {
-            blackHair += 1
-        } else if thirtiethText == "D. Brown" {
-            dBrownHair += 1
-        } else if thirtiethText == "Brown" {
-            brownHair += 1
-        } else if thirtiethText == "L. Brown" {
-            lBrownHair += 1
-        } else if thirtiethText == "Auburn" {
-            auburnHair += 1
-        } else if thirtiethText == "Yellow" {
-            yellowHair += 1
-        } else if thirtiethText == "Red" {
-            redHair += 1
-        }
-        
-        if thirtyFirstText == "Black" {
+        if thirtyFirstText == "Black" || thirtySecondText == "Black" || thirtyThirdText == "Black" || thirtyFourthText == "Black" {
             blackHair += 0.5
-        } else if thirtyFirstText == "D. Brown" {
+        } else if thirtyFirstText == "D. Brown" || thirtySecondText == "D. Brown" || thirtyThirdText == "D. Brown" || thirtyFourthText == "D. Brown" {
             dBrownHair += 0.5
-        } else if thirtyFirstText == "Brown" {
+        } else if thirtyFirstText == "Brown" || thirtySecondText == "Brown" || thirtyThirdText == "Brown" {
             brownHair += 0.5
-        } else if thirtyFirstText == "L. Brown" {
+        } else if thirtyFirstText == "L. Brown" || thirtySecondText == "L. Brown" || thirtyThirdText == "L. Brown" || thirtyFourthText == "L. Brown" {
             lBrownHair += 0.5
-        } else if thirtyFirstText == "Auburn" {
+        } else if thirtyFirstText == "Auburn" || thirtySecondText == "Auburn" || thirtyThirdText == "Auburn" || thirtyFourthText == "Auburn" {
+            auburnsPoints += 1
             auburnHair += 0.5
-        } else if thirtyFirstText == "Yellow" {
+        } else if thirtyFirstText == "Yellow" || thirtySecondText == "Yellow" || thirtyThirdText == "Yellow" || thirtyFourthText == "Yellow" {
+            yellowsPoints += 1
             yellowHair += 0.5
-        } else if thirtyFirstText == "Red" {
+        } else if thirtyFirstText == "Red" || thirtySecondText == "Red" || thirtyThirdText == "Red" || thirtyFourthText == "Red" {
+            redsPoints += 1
             redHair += 0.5
         }
         
-        if thirtySecondText == "Black" {
-            blackHair += 0.5
-        } else if thirtySecondText == "D. Brown" {
-            dBrownHair += 0.5
-        } else if thirtySecondText == "Brown" {
-            brownHair += 0.5
-        } else if thirtySecondText == "L. Brown" {
-            lBrownHair += 0.5
-        } else if thirtySecondText == "Auburn" {
-            auburnHair += 0.5
-        } else if thirtySecondText == "Yellow" {
-            yellowHair += 0.5
-        } else if thirtySecondText == "Red" {
-            redHair += 0.5
-        }
-        
-        if thirtyThirdText == "Black" {
-            blackHair += 0.5
-        } else if thirtyThirdText == "D. Brown" {
-            dBrownHair += 0.5
-        } else if thirtyThirdText == "Brown" {
-            brownHair += 0.5
-        } else if thirtyThirdText == "L. Brown" {
-            lBrownHair += 0.5
-        } else if thirtyThirdText == "Auburn" {
-            auburnHair += 0.5
-        } else if thirtyThirdText == "Yellow" {
-            yellowHair += 0.5
-        } else if thirtyThirdText == "Red" {
-            redHair += 0.5
-        }
-        
-        if thirtyFourthText == "Black" {
-            blackHair += 0.5
-        } else if thirtyFourthText == "D. Brown" {
-            dBrownHair += 0.5
-        } else if thirtyFourthText == "Brown" {
-            brownHair += 0.5
-        } else if thirtyFourthText == "L. Brown" {
-            lBrownHair += 0.5
-        } else if thirtyFourthText == "Auburn" {
-            auburnHair += 0.5
-        } else if thirtyFourthText == "Yellow" {
-            yellowHair += 0.5
-        } else if thirtyFourthText == "Red" {
-            redHair += 0.5
-        }
-        
-        if thirtyFifthText == "Black" {
+        if thirtyFifthText == "Black" || thirtySixthText == "Black" || thirtySeventhText == "Black" || thirtyEightText == "Black" || thirtyNinthText == "Black" || fortiethText == "Black" || fourtyFirstText == "Black" || fourtySecondText == "Black" {
             blackHair += 0.25
-        } else if thirtyFifthText == "D. Brown" {
+        } else if thirtyFifthText == "D. Brown" || thirtySixthText == "D. Brown" || thirtySeventhText == "D. Brown" || thirtyEightText == "D. Brown" || thirtyNinthText == "D. Brown" || fortiethText == "D. Brown" || fourtyFirstText == "D. Brown" || fourtySecondText == "D. Brown" {
             dBrownHair += 0.25
-        } else if thirtyFifthText == "Brown" {
+        } else if thirtyFifthText == "Brown" || thirtySixthText == "Brown" || thirtySeventhText == "Brown" || thirtyEightText == "Brown" || thirtyNinthText == "Brown" || fortiethText == "Brown" || fourtyFirstText == "Brown" || fourtySecondText == "Brown" {
             brownHair += 0.25
-        } else if thirtyFifthText == "L. Brown" {
+        } else if thirtyFifthText == "L. Brown" || thirtySixthText == "L. Brown" || thirtySeventhText == "L. Brown" || thirtyEightText == "L. Brown" || thirtyNinthText == "L. Brown" || fortiethText == "L. Brown" || fourtyFirstText == "L. Brown" || fourtySecondText == "L. Brown" {
             lBrownHair += 0.25
-        } else if thirtyFifthText == "Auburn" {
+        } else if thirtyFifthText == "Auburn" || thirtySixthText == "Auburn" || thirtySeventhText == "Auburn" || thirtyEightText == "Auburn" || thirtyNinthText == "Auburn" || fortiethText == "Auburn" || fourtyFirstText == "Auburn" || fourtySecondText == "Auburn" {
+            auburnsPoints += 1
             auburnHair += 0.25
-        } else if thirtyFifthText == "Yellow" {
+        } else if thirtyFifthText == "Yellow" || thirtySixthText == "Yellow" || thirtySeventhText == "Yellow" || thirtyEightText == "Yellow" || thirtyNinthText == "Yellow" || fortiethText == "Yellow" || fourtyFirstText == "Yellow" || fourtySecondText == "Yellow" {
+            yellowsPoints += 1
             yellowHair += 0.25
-        } else if thirtyFifthText == "Red" {
-            redHair += 0.25
-        }
-        
-        if thirtySixthText == "Black" {
-            blackHair += 0.25
-        } else if thirtySixthText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if thirtySixthText == "Brown" {
-            brownHair += 0.25
-        } else if thirtySixthText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if thirtySixthText == "Auburn" {
-            auburnHair += 0.25
-        } else if thirtySixthText == "Yellow" {
-            yellowHair += 0.25
-        } else if thirtySixthText == "Red" {
-            redHair += 0.25
-        }
-        
-        if thirtySeventhText == "Black" {
-            blackHair += 0.25
-        } else if thirtySeventhText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if thirtySeventhText == "Brown" {
-            brownHair += 0.25
-        } else if thirtySeventhText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if thirtySeventhText == "Auburn" {
-            auburnHair += 0.25
-        } else if thirtySeventhText == "Yellow" {
-            yellowHair += 0.25
-        } else if thirtySeventhText == "Red" {
-            redHair += 0.25
-        }
-        
-        if thirtyEightText == "Black" {
-            blackHair += 0.25
-        } else if thirtyEightText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if thirtyEightText == "Brown" {
-            brownHair += 0.25
-        } else if thirtyEightText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if thirtyEightText == "Auburn" {
-            auburnHair += 0.25
-        } else if thirtyEightText == "Yellow" {
-            yellowHair += 0.25
-        } else if thirtyEightText == "Red" {
-            redHair += 0.25
-        }
-        
-        if thirtyNinthText == "Black" {
-            blackHair += 0.25
-        } else if thirtyNinthText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if thirtyNinthText == "Brown" {
-            brownHair += 0.25
-        } else if thirtyNinthText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if thirtyNinthText == "Auburn" {
-            auburnHair += 0.25
-        } else if thirtyNinthText == "Yellow" {
-            yellowHair += 0.25
-        } else if thirtyNinthText == "Red" {
-            redHair += 0.25
-        }
-        
-        if fortiethText == "Black" {
-            blackHair += 0.25
-        } else if fortiethText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if fortiethText == "Brown" {
-            brownHair += 0.25
-        } else if fortiethText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if fortiethText == "Auburn" {
-            auburnHair += 0.25
-        } else if fortiethText == "Yellow" {
-            yellowHair += 0.25
-        } else if fortiethText == "Red" {
-            redHair += 0.25
-        }
-        
-        if fourtyFirstText == "Black" {
-            blackHair += 0.25
-        } else if fourtyFirstText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if fourtyFirstText == "Brown" {
-            brownHair += 0.25
-        } else if fourtyFirstText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if fourtyFirstText == "Auburn" {
-            auburnHair += 0.25
-        } else if fourtyFirstText == "Yellow" {
-            yellowHair += 0.25
-        } else if fourtyFirstText == "Red" {
-            redHair += 0.25
-        }
-        
-        if fourtySecondText == "Black" {
-            blackHair += 0.25
-        } else if fourtySecondText == "D. Brown" {
-            dBrownHair += 0.25
-        } else if fourtySecondText == "Brown" {
-            brownHair += 0.25
-        } else if fourtySecondText == "L. Brown" {
-            lBrownHair += 0.25
-        } else if fourtySecondText == "Auburn" {
-            auburnHair += 0.25
-        } else if fourtySecondText == "Yellow" {
-            yellowHair += 0.25
-        } else if fourtySecondText == "Red" {
+        } else if thirtyFifthText == "Red" || thirtySixthText == "Red" || thirtySeventhText == "Red" || thirtyEightText == "Red" || thirtyNinthText == "Red" || fortiethText == "Red" || fourtyFirstText == "Red" || fourtySecondText == "Red" {
+            redsPoints += 1
             redHair += 0.25
         }
         

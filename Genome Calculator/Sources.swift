@@ -106,3 +106,7 @@ var secondBiggestHair = 0
 var greensPoints = 0
 var hazelsPoints = 0
 var bluesPoints = 0
+
+var auburnsPoints = 0
+var yellowsPoints = 0
+var redsPoints = 0
