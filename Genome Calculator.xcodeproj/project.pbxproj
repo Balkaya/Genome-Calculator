@@ -54,6 +54,7 @@
 			children = (
 				3AA3C3FD21CEBD430047C453 /* Genome Calculator */,
 				3AA3C3FC21CEBD430047C453 /* Products */,
+				3AC51DF5222824B1008C943E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +81,6 @@
 				3AA3C40821CEBD450047C453 /* Assets.xcassets */,
 				3AA3C40D21CEBD450047C453 /* Info.plist */,
 				3AA3C40521CEBD430047C453 /* Genome_Calculator.xcdatamodeld */,
-				3AC51DF5222824B1008C943E /* README.md */,
 			);
 			path = "Genome Calculator";
 			sourceTree = "<group>";
