@@ -256,27 +256,15 @@ class InputVC: UIViewController {
             blueEyes += 0.25
         }
 
-        if fourteenthText == "Black" || sixteenthText == "Black" || eighteenthText == "Black" || twentiethText == "Black" || twentySecondText == "Black" {
+        if fourteenthText == "Black" || sixteenthText == "Black" || eighteenthText == "Black" || twentiethText == "Black" || twentySecondText == "Black" || twentyFourthText == "Black" {
             blackSkin += 0.25
-        } else if fourteenthText == "D. Brown" || sixteenthText == "D. Brown" || eighteenthText == "D. Brown" || twentiethText == "D. Brown" || twentySecondText == "D. Brown" {
+        } else if fourteenthText == "D. Brown" || sixteenthText == "D. Brown" || eighteenthText == "D. Brown" || twentiethText == "D. Brown" || twentySecondText == "D. Brown" || twentyFourthText == "D. Brown" {
             dBrownSkin += 0.25
-        } else if fourteenthText == "Brown" || sixteenthText == "Brown" || eighteenthText == "Brown" || twentiethText == "Brown" || twentySecondText == "Brown" {
+        } else if fourteenthText == "Brown" || sixteenthText == "Brown" || eighteenthText == "Brown" || twentiethText == "Brown" || twentySecondText == "Brown" || twentyFourthText == "Brown" {
             brownSkin += 0.25
-        } else if fourteenthText == "L. Brown" || sixteenthText == "L. Brown" || eighteenthText == "L. Brown" || twentiethText == "L. Brown" || twentySecondText == "L. Brown" {
+        } else if fourteenthText == "L. Brown" || sixteenthText == "L. Brown" || eighteenthText == "L. Brown" || twentiethText == "L. Brown" || twentySecondText == "L. Brown" || twentyFourthText == "L. Brown" {
             lBrownSkin += 0.25
-        } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" {
-            whiteSkin += 0.25
-        }
-
-        if twentyFourthText == "Black" {
-            blackSkin += 0.25
-        } else if twentyFourthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentyFourthText == "Brown" {
-            brownSkin += 0.25
-        } else if twentyFourthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentyFourthText == "White" {
+        } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" || twentyFourthText == "White" {
             whiteSkin += 0.25
         }
 
