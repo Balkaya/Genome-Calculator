@@ -346,17 +346,25 @@ class InputVC: UIViewController {
                 firstCase = 1
             } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
                 biggestForEyes = (greensPoints * 100) / 14
-                secondBiggestForEyes = (hazelsPoints * 100) / 14
+                secondBiggestForEyes = biggestForEyes
+                firstEyesColorName = "Green"
+                secondEyesColorName = "Hazel"
                 firstCase = 2
             } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
                 biggestForEyes = (greensPoints * 100) / 14
-                secondBiggestForEyes = (bluesPoints * 100) / 14
+                secondBiggestForEyes = biggestForEyes
+                firstEyesColorName = "Green"
+                secondEyesColorName = "Blue"
                 firstCase = 2
             } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
                 biggestForEyes = (hazelsPoints * 100) / 14
-                secondBiggestForEyes = (bluesPoints * 100) / 14
+                secondBiggestForEyes = biggestForEyes
+                firstEyesColorName = "Hazel"
+                secondEyesColorName = "Blue"
                 firstCase = 2
             }
+        } else if eyesValue > 1 && 1.25 < eyesValue {
+            
         }
         
         if eyesValue == 1.0 {
