@@ -332,6 +332,34 @@ class InputVC: UIViewController {
         let hairValue = Double(((blackHair * forBlackHair) + (dBrownHair * forDBrownHair) + (brownHair * forBrownHair) + (lBrownHair * forLBrownHair) + (auburnHair * forAuburnHair) + (yellowHair * forYellowHair) + (redHair * forRedHair)) / (blackHair + dBrownHair + brownHair + lBrownHair + auburnHair + yellowHair + redHair))
         
         if eyesValue == 1.0 {
+            if greensPoints > hazelsPoints && greensPoints > bluesPoints {
+                biggestForEyes = (greensPoints * 100) / 14
+                firstEyesColorName = "Green"
+                firstCase = 1
+            } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
+                biggestForEyes = (hazelsPoints * 100) / 14
+                firstEyesColorName = "Hazel"
+                firstCase = 1
+            } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
+                biggestForEyes = (bluesPoints * 100) / 14
+                firstEyesColorName = "Blue"
+                firstCase = 1
+            } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
+                biggestForEyes = (greensPoints * 100) / 14
+                secondBiggestForEyes = (hazelsPoints * 100) / 14
+                firstCase = 2
+            } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
+                biggestForEyes = (greensPoints * 100) / 14
+                secondBiggestForEyes = (bluesPoints * 100) / 14
+                firstCase = 2
+            } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
+                biggestForEyes = (hazelsPoints * 100) / 14
+                secondBiggestForEyes = (bluesPoints * 100) / 14
+                firstCase = 2
+            }
+        }
+        
+        if eyesValue == 1.0 {
             if blueEyes == greenEyes {
                 biggestForEyes = 50
                 firstEyesColorName = "Blue"
