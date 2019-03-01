@@ -110,3 +110,5 @@ var bluesPoints = 0
 var auburnsPoints = 0
 var yellowsPoints = 0
 var redsPoints = 0
+
+var firstCase = 0
