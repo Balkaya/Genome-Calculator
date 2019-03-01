@@ -363,7 +363,21 @@ class InputVC: UIViewController {
                 secondEyesColorName = "Blue"
                 firstCase = 2
             }
-        } else if eyesValue > 1 && 1.25 < eyesValue {
+        } else if eyesValue > 1 && 1.25 > eyesValue {
+            
+        } else if eyesValue == 1.25 {
+            
+        } else if eyesValue > 1.25 && 1.5 > eyesValue {
+            
+        } else if eyesValue == 1.5 {
+            
+        } else if eyesValue > 1.5 && 1.75 > eyesValue {
+            
+        } else if eyesValue == 1.75 {
+            
+        } else if eyesValue > 1.75 && 2 > eyesValue {
+            
+        } else if eyesValue == 2 {
             
         }
         
