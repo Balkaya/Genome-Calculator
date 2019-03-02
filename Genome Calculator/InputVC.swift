@@ -364,21 +364,68 @@ class InputVC: UIViewController {
                 firstCase = 2
             }
         } else if eyesValue > 1 && 1.25 > eyesValue {
+            let resultForFirstEyesValue = eyesValue - 1.0
+            let resultForSecondEyesValue =  1.25 - eyesValue
             
+            if resultForFirstEyesValue > resultForSecondEyesValue {
+                firstEyesColorName = "L. Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+            } else if resultForFirstEyesValue < resultForSecondEyesValue {
+                if greensPoints > hazelsPoints && greensPoints > bluesPoints {
+                    firstEyesColorName = "Green"
+                    biggestForEyes = (greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
+                    firstEyesColorName = "Hazel"
+                    biggestForEyes = (hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
+                    firstEyesColorName = "Blue"
+                    biggestForEyes = (bluesPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
+                    firstSkinColorName = "Green"
+                    secondEyesColorName = "Hazel"
+                    biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    secondBiggestForEyes = biggestForEyes
+                } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
+                    firstSkinColorName = "Green"
+                    secondEyesColorName = "Blue"
+                    biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    secondBiggestForEyes = biggestForEyes
+                } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
+                    firstSkinColorName = "Hazel"
+                    secondEyesColorName = "Blue"
+                    biggestForEyes = ((hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    secondBiggestForEyes = biggestForEyes
+                }
+            } else if resultForFirstEyesValue == resultForSecondEyesValue {
+                if greensPoints > hazelsPoints && greensPoints > bluesPoints {
+                } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
+                } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
+                } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
+                } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
+                } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
+                }
+            }
         } else if eyesValue == 1.25 {
-            
+            firstEyesColorName = "L. Brown"
+            biggestForEyes = 100
         } else if eyesValue > 1.25 && 1.5 > eyesValue {
-            
+            let resultForFirstEyesValue = eyesValue - 1.25
+            let resultForSecondEyesValue =  1.5 - eyesValue
         } else if eyesValue == 1.5 {
-            
+            firstEyesColorName = "Brown"
+            biggestForEyes = 100
         } else if eyesValue > 1.5 && 1.75 > eyesValue {
-            
+            let resultForFirstEyesValue = eyesValue - 1.5
+            let resultForSecondEyesValue =  1.75 - eyesValue
         } else if eyesValue == 1.75 {
-            
+            firstEyesColorName = "D. Brown"
+            biggestForEyes = 100
         } else if eyesValue > 1.75 && 2 > eyesValue {
-            
+            let resultForFirstEyesValue = eyesValue - 1.75
+            let resultForSecondEyesValue =  2 - eyesValue
         } else if eyesValue == 2 {
-            
+            firstEyesColorName = "Black"
+            biggestForEyes = 100
         }
         
         if eyesValue == 1.0 {
