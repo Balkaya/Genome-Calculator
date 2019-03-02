@@ -346,19 +346,16 @@ class InputVC: UIViewController {
                 firstCase = 1
             } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
                 biggestForEyes = (greensPoints * 100) / 14
-                secondBiggestForEyes = biggestForEyes
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Hazel"
                 firstCase = 2
             } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
                 biggestForEyes = (greensPoints * 100) / 14
-                secondBiggestForEyes = biggestForEyes
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Blue"
                 firstCase = 2
             } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
                 biggestForEyes = (hazelsPoints * 100) / 14
-                secondBiggestForEyes = biggestForEyes
                 firstEyesColorName = "Hazel"
                 secondEyesColorName = "Blue"
                 firstCase = 2
@@ -370,39 +367,76 @@ class InputVC: UIViewController {
             if resultForFirstEyesValue > resultForSecondEyesValue {
                 firstEyesColorName = "L. Brown"
                 biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 if greensPoints > hazelsPoints && greensPoints > bluesPoints {
                     firstEyesColorName = "Green"
                     biggestForEyes = (greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    firstCase = 1
                 } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
                     firstEyesColorName = "Hazel"
                     biggestForEyes = (hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    firstCase = 1
                 } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
                     firstEyesColorName = "Blue"
                     biggestForEyes = (bluesPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    firstCase = 1
                 } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
                     firstSkinColorName = "Green"
                     secondEyesColorName = "Hazel"
                     biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
-                    secondBiggestForEyes = biggestForEyes
+                    firstCase = 2
                 } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
                     firstSkinColorName = "Green"
                     secondEyesColorName = "Blue"
                     biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
-                    secondBiggestForEyes = biggestForEyes
+                    firstCase = 2
                 } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
                     firstSkinColorName = "Hazel"
                     secondEyesColorName = "Blue"
                     biggestForEyes = ((hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
-                    secondBiggestForEyes = biggestForEyes
+                    firstCase = 2
                 }
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 if greensPoints > hazelsPoints && greensPoints > bluesPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Green"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (greensPoints * 50) / 14
+                    firstCase = 3
                 } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Hazel"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (hazelsPoints * 50) / 14
+                    firstCase = 3
                 } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Blue"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (bluesPoints * 50) / 14
+                    firstCase = 3
                 } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Green"
+                    thirdEyesColorName = "Hazel"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (greensPoints * 50) / 14
+                    firstCase = 4
                 } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Green"
+                    thirdEyesColorName = "Blue"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (greensPoints * 50) / 14
+                    firstCase = 4
                 } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
+                    firstEyesColorName = "L. Brown"
+                    secondEyesColorName = "Hazel"
+                    thirdEyesColorName = "Blue"
+                    biggestForEyes = 50
+                    secondBiggestForEyes = (hazelsPoints * 50) / 14
+                    firstCase = 4
                 }
             }
         } else if eyesValue == 1.25 {
