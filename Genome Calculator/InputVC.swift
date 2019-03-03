@@ -507,44 +507,236 @@ class InputVC: UIViewController {
             biggestForEyes = 100
         }
         
-        if skinValue == 1 {
+        if skinValue == 1 {
+            firstSkinColorName = "White"
+            biggestForSkin = 100
+            secondCase = 1
+        } else if skinValue > 1 && 1.25 > skinValue {
+            let resultForFirstSkinValue = skinValue - 1.0
+            let resultForSecondSkinValue =  1.25 - skinValue
             
-        } else if skinValue > 1 && 1.25 > skinValue {
-            
+            if resultForFirstSkinValue > resultForSecondSkinValue {
+                firstSkinColorName = "L. Brown"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue < resultForSecondSkinValue {
+                firstSkinColorName = "White"
+                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue == resultForSecondSkinValue {
+                firstSkinColorName = "L. Brown"
+                secondSkinColorName = "White"
+                biggestForSkin = 50
+                secondCase = 2
+            }
         } else if skinValue == 1.25 {
+            firstSkinColorName = "L. Brown"
+            biggestForSkin = 100
+            secondCase = 1
+        } else if skinValue > 1.25 && 1.5 > skinValue {
+            let resultForFirstSkinValue = skinValue - 1.25
+            let resultForSecondSkinValue =  1.5 - skinValue
             
-        } else if skinValue > 1.25 && 1.5 > skinValue {
-            
+            if resultForFirstSkinValue > resultForSecondSkinValue {
+                firstSkinColorName = "Brown"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue < resultForSecondSkinValue {
+                firstSkinColorName = "L. Brown"
+                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue == resultForSecondSkinValue {
+                firstSkinColorName = "Brown"
+                secondSkinColorName = "L. Brown"
+                biggestForSkin = 50
+                secondCase = 2
+            }
         } else if skinValue == 1.5 {
+            firstSkinColorName = "Brown"
+            biggestForSkin = 100
+            secondCase = 1
+        } else if skinValue > 1.5 && 1.75 > skinValue {
+            let resultForFirstSkinValue = skinValue - 1.5
+            let resultForSecondSkinValue =  1.75 - skinValue
             
-        } else if skinValue > 1.5 && 1.75 > skinValue {
-            
+            if resultForFirstSkinValue > resultForSecondSkinValue {
+                firstSkinColorName = "D. Brown"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue < resultForSecondSkinValue {
+                firstSkinColorName = "Brown"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue == resultForSecondSkinValue {
+                firstSkinColorName = "D. Brown"
+                secondSkinColorName = "Brown"
+                biggestForSkin = 50
+                secondCase = 2
+            }
         } else if skinValue == 1.75 {
+            firstSkinColorName = "D. Brown"
+            biggestForSkin = 100
+            secondCase = 1
+        } else if skinValue > 1.75 && 2 > skinValue {
+            let resultForFirstSkinValue = skinValue - 1.75
+            let resultForSecondSkinValue =  2 - skinValue
             
-        } else if skinValue > 1.75 && 2 > skinValue {
-            
+            if resultForFirstSkinValue > resultForSecondSkinValue {
+                firstSkinColorName = "Black"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue < resultForSecondSkinValue {
+                firstSkinColorName = "D. Brown"
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                secondCase = 1
+            } else if resultForFirstSkinValue == resultForSecondSkinValue {
+                firstSkinColorName = "Black"
+                secondSkinColorName = "D. Brown"
+                biggestForSkin = 50
+                secondCase = 2
+            }
         } else if skinValue == 2 {
-            
+            firstSkinColorName = "Black"
+            biggestForSkin = 100
+            secondCase = 1
         }
         
-        if hairValue == 1 {
+        if hairValue == 1 {
+            if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
+                biggestForEyes = (auburnsPoints * 100) / 14
+                firstEyesColorName = "Green"
+                firstCase = 1
+            } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
+                biggestForEyes = (yellowsPoints * 100) / 14
+                firstEyesColorName = "Hazel"
+                firstCase = 1
+            } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
+                biggestForEyes = (redsPoints * 100) / 14
+                firstEyesColorName = "Blue"
+                firstCase = 1
+            } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
+                biggestForEyes = (auburnsPoints * 100) / 14
+                firstEyesColorName = "Green"
+                secondEyesColorName = "Hazel"
+                firstCase = 2
+            } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
+                biggestForEyes = (auburnsPoints * 100) / 14
+                firstEyesColorName = "Green"
+                secondEyesColorName = "Blue"
+                firstCase = 2
+            } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
+                biggestForEyes = (yellowsPoints * 100) / 14
+                firstEyesColorName = "Hazel"
+                secondEyesColorName = "Blue"
+                firstCase = 2
+            }
+        } else if hairValue > 1 && 1.25 > hairValue {
+            let resultForFirstHairValue = hairValue - 1
+            let resultForSecondHairValue = 1.25 - hairValue
             
-        } else if hairValue > 1 && 1.25 > hairValue {
-            
+            if resultForFirstHairValue > resultForSecondHairValue {
+                firstEyesColorName = "L. Brown"
+                biggestForEyes = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
+            } else if resultForFirstHairValue < resultForSecondHairValue {
+                if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
+                    firstEyesColorName = "Auburn"
+                    biggestForEyes = (auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    thirdCase = 1
+                } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
+                    firstEyesColorName = "Yellow"
+                    biggestForEyes = (yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    thirdCase = 1
+                } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
+                    firstEyesColorName = "Red"
+                    biggestForEyes = (redsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    thirdCase = 1
+                } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
+                    firstSkinColorName = "Auburn"
+                    secondEyesColorName = "Yellow"
+                    biggestForEyes = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    thirdCase = 2
+                } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
+                    firstSkinColorName = "Auburn"
+                    secondEyesColorName = "Red"
+                    biggestForEyes = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    thirdCase = 2
+                } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
+                    firstSkinColorName = "Yellow"
+                    secondEyesColorName = "Red"
+                    biggestForEyes = ((yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    thirdCase = 2
+                }
+            } else if resultForFirstHairValue == resultForSecondHairValue {
+                
+            }
         } else if hairValue == 1.25 {
+            firstHairColorName = "L. Brown"
+            biggestForHair = 100
+            thirdCase = 1
+        } else if hairValue > 1.25 && 1.5 > hairValue {
+            let resultForFirstHairValue = hairValue - 1.25
+            let resultForSecondHairValue = 1.5 - hairValue
             
-        } else if hairValue > 1.25 && 1.5 > hairValue {
-            
+            if resultForFirstHairValue > resultForSecondHairValue {
+                firstHairColorName = "Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+            } else if resultForFirstHairValue < resultForSecondHairValue {
+                firstHairColorName = "L. Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+            } else if resultForFirstHairValue == resultForSecondHairValue {
+                firstHairColorName = "Brown"
+                secondSkinColorName = "L. Brown"
+                biggestForHair = 50
+            }
         } else if hairValue == 1.5 {
+            firstHairColorName = "Brown"
+            biggestForHair = 100
+            thirdCase = 1
+        } else if hairValue > 1.5 && 1.75 > hairValue {
+            let resultForFirstHairValue = hairValue - 1.5
+            let resultForSecondHairValue = 1.75 - hairValue
             
-        } else if hairValue > 1.5 && 1.75 > hairValue {
-            
+            if resultForFirstHairValue > resultForSecondHairValue {
+                firstHairColorName = "D. Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
+            } else if resultForFirstHairValue < resultForSecondHairValue {
+                firstHairColorName = "Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
+            } else if resultForFirstHairValue == resultForSecondHairValue {
+                firstHairColorName = "D. Brown"
+                secondSkinColorName = "Brown"
+                biggestForHair = 50
+                thirdCase = 2
+            }
         } else if hairValue == 1.75 {
+            firstHairColorName = "D. Brown"
+            biggestForHair = 100
+            thirdCase = 1
+        } else if hairValue > 1.75 && 2 > hairValue {
+            let resultForFirstHairValue = hairValue - 1.75
+            let resultForSecondHairValue = 2 - hairValue
             
-        } else if hairValue > 1.75 && 2 > hairValue {
-            
+            if resultForFirstHairValue > resultForSecondHairValue {
+                firstHairColorName = "Black"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
+            } else if resultForFirstHairValue < resultForSecondHairValue {
+                firstHairColorName = "D. Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
+            } else if resultForFirstHairValue == resultForSecondHairValue {
+                firstHairColorName = "Black"
+                secondSkinColorName = "D. Brown"
+                biggestForHair = 50
+                thirdCase = 2
+            }
         } else if hairValue == 2 {
-            
+            firstHairColorName = "Black"
+            biggestForHair = 100
+            thirdCase = 1
         }
         
         if eyesValue == 1.0 {
@@ -719,7 +911,6 @@ class InputVC: UIViewController {
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
 
                 secondSkinColorName = "White"
-                thirdSkinColorName = "Brown"
 
                 biggestForSkin = 50
 
@@ -744,7 +935,6 @@ class InputVC: UIViewController {
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
 
                 secondSkinColorName = "Brown"
-                thirdSkinColorName = "Black"
 
                 biggestForSkin = 50
 
