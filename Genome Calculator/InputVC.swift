@@ -445,21 +445,106 @@ class InputVC: UIViewController {
         } else if eyesValue > 1.25 && 1.5 > eyesValue {
             let resultForFirstEyesValue = eyesValue - 1.25
             let resultForSecondEyesValue =  1.5 - eyesValue
+            
+            if resultForFirstEyesValue > resultForSecondEyesValue {
+                firstEyesColorName = "Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue < resultForSecondEyesValue {
+                firstEyesColorName = "L. Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue == resultForSecondEyesValue {
+                firstEyesColorName = "Brown"
+                secondEyesColorName = "L. Brown"
+                biggestForEyes = 50
+                firstCase = 2
+            }
         } else if eyesValue == 1.5 {
             firstEyesColorName = "Brown"
             biggestForEyes = 100
         } else if eyesValue > 1.5 && 1.75 > eyesValue {
             let resultForFirstEyesValue = eyesValue - 1.5
             let resultForSecondEyesValue =  1.75 - eyesValue
+            
+            if resultForFirstEyesValue > resultForSecondEyesValue {
+                firstEyesColorName = "D. Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue < resultForSecondEyesValue {
+                firstEyesColorName = "Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue == resultForSecondEyesValue {
+                firstEyesColorName = "D. Brown"
+                secondEyesColorName = "Brown"
+                biggestForEyes = 50
+                firstCase = 2
+            }
         } else if eyesValue == 1.75 {
             firstEyesColorName = "D. Brown"
             biggestForEyes = 100
         } else if eyesValue > 1.75 && 2 > eyesValue {
             let resultForFirstEyesValue = eyesValue - 1.75
             let resultForSecondEyesValue =  2 - eyesValue
+            
+            if resultForFirstEyesValue > resultForSecondEyesValue {
+                firstEyesColorName = "Black"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue < resultForSecondEyesValue {
+                firstEyesColorName = "D. Brown"
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                firstCase = 1
+            } else if resultForFirstEyesValue == resultForSecondEyesValue {
+                firstEyesColorName = "Black"
+                secondEyesColorName = "D. Brown"
+                biggestForEyes = 50
+                firstCase = 2
+            }
         } else if eyesValue == 2 {
             firstEyesColorName = "Black"
             biggestForEyes = 100
+        }
+        
+        if skinValue == 1 {
+            
+        } else if skinValue > 1 && 1.25 > skinValue {
+            
+        } else if skinValue == 1.25 {
+            
+        } else if skinValue > 1.25 && 1.5 > skinValue {
+            
+        } else if skinValue == 1.5 {
+            
+        } else if skinValue > 1.5 && 1.75 > skinValue {
+            
+        } else if skinValue == 1.75 {
+            
+        } else if skinValue > 1.75 && 2 > skinValue {
+            
+        } else if skinValue == 2 {
+            
+        }
+        
+        if hairValue == 1 {
+            
+        } else if hairValue > 1 && 1.25 > hairValue {
+            
+        } else if hairValue == 1.25 {
+            
+        } else if hairValue > 1.25 && 1.5 > hairValue {
+            
+        } else if hairValue == 1.5 {
+            
+        } else if hairValue > 1.5 && 1.75 > hairValue {
+            
+        } else if hairValue == 1.75 {
+            
+        } else if hairValue > 1.75 && 2 > hairValue {
+            
+        } else if hairValue == 2 {
+            
         }
         
         if eyesValue == 1.0 {
