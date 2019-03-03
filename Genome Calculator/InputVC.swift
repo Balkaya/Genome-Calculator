@@ -668,7 +668,46 @@ class InputVC: UIViewController {
                     thirdCase = 2
                 }
             } else if resultForFirstHairValue == resultForSecondHairValue {
-                
+                if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Green"
+                    biggestForHair = 50
+                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    thirdCase = 3
+                } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Hazel"
+                    biggestForHair = 50
+                    secondBiggestForHair = (yellowsPoints * 50) / 14
+                    thirdCase = 3
+                } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Blue"
+                    biggestForHair = 50
+                    secondBiggestForHair = (redsPoints * 50) / 14
+                    thirdCase = 3
+                } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Green"
+                    thirdHairColorName = "Hazel"
+                    biggestForHair = 50
+                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    thirdCase = 4
+                } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Green"
+                    thirdHairColorName = "Blue"
+                    biggestForHair = 50
+                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    thirdCase = 4
+                } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
+                    firstHairColorName = "L. Brown"
+                    secondHairColorName = "Hazel"
+                    thirdHairColorName = "Blue"
+                    biggestForHair = 50
+                    secondBiggestForHair = (yellowsPoints * 50) / 14
+                    thirdCase = 4
+                }
             }
         } else if hairValue == 1.25 {
             firstHairColorName = "L. Brown"
