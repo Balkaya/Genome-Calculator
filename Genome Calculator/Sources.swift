@@ -47,6 +47,10 @@ var firstHairColorName = ""
 var secondHairColorName = ""
 var thirdHairColorName = ""
 
+var firstCaseResult = ""
+var secondCaseResult = ""
+var thirdCaseResult = ""
+
 var inputForEyes = 0
 
 var forBlackEyes = 2.0

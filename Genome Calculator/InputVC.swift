@@ -442,6 +442,7 @@ class InputVC: UIViewController {
         } else if eyesValue == 1.25 {
             firstEyesColorName = "L. Brown"
             biggestForEyes = 100
+            firstCase = 1
         } else if eyesValue > 1.25 && 1.5 > eyesValue {
             let resultForFirstEyesValue = eyesValue - 1.25
             let resultForSecondEyesValue =  1.5 - eyesValue
@@ -463,6 +464,7 @@ class InputVC: UIViewController {
         } else if eyesValue == 1.5 {
             firstEyesColorName = "Brown"
             biggestForEyes = 100
+            firstCase = 1
         } else if eyesValue > 1.5 && 1.75 > eyesValue {
             let resultForFirstEyesValue = eyesValue - 1.5
             let resultForSecondEyesValue =  1.75 - eyesValue
@@ -603,68 +605,68 @@ class InputVC: UIViewController {
         
         if hairValue == 1 {
             if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
-                biggestForEyes = (auburnsPoints * 100) / 14
-                firstEyesColorName = "Green"
-                firstCase = 1
+                biggestForHair = (auburnsPoints * 100) / 14
+                firstHairColorName = "Auburn"
+                thirdCase = 1
             } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
-                biggestForEyes = (yellowsPoints * 100) / 14
-                firstEyesColorName = "Hazel"
-                firstCase = 1
+                biggestForHair = (yellowsPoints * 100) / 14
+                firstHairColorName = "Yellow"
+                thirdCase = 1
             } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
-                biggestForEyes = (redsPoints * 100) / 14
-                firstEyesColorName = "Blue"
-                firstCase = 1
+                biggestForHair = (redsPoints * 100) / 14
+                firstHairColorName = "Red"
+                thirdCase = 1
             } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
-                biggestForEyes = (auburnsPoints * 100) / 14
-                firstEyesColorName = "Green"
-                secondEyesColorName = "Hazel"
-                firstCase = 2
+                biggestForHair = (auburnsPoints * 100) / 14
+                firstHairColorName = "Auburn"
+                secondHairColorName = "Yellow"
+                thirdCase = 2
             } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
-                biggestForEyes = (auburnsPoints * 100) / 14
-                firstEyesColorName = "Green"
-                secondEyesColorName = "Blue"
-                firstCase = 2
+                biggestForHair = (auburnsPoints * 100) / 14
+                firstHairColorName = "Auburn"
+                secondHairColorName = "Red"
+                thirdCase = 2
             } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
-                biggestForEyes = (yellowsPoints * 100) / 14
-                firstEyesColorName = "Hazel"
-                secondEyesColorName = "Blue"
-                firstCase = 2
+                biggestForHair = (yellowsPoints * 100) / 14
+                firstHairColorName = "Yellow"
+                secondHairColorName = "Red"
+                thirdCase = 2
             }
         } else if hairValue > 1 && 1.25 > hairValue {
             let resultForFirstHairValue = hairValue - 1
             let resultForSecondHairValue = 1.25 - hairValue
             
             if resultForFirstHairValue > resultForSecondHairValue {
-                firstEyesColorName = "L. Brown"
-                biggestForEyes = Int((100 * resultForSecondHairValue) / 0.25)
+                firstHairColorName = "L. Brown"
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
-                    firstEyesColorName = "Auburn"
-                    biggestForEyes = (auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    firstHairColorName = "Auburn"
+                    biggestForHair = (auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
                     thirdCase = 1
                 } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
-                    firstEyesColorName = "Yellow"
-                    biggestForEyes = (yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    firstHairColorName = "Yellow"
+                    biggestForHair = (yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
                     thirdCase = 1
                 } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
-                    firstEyesColorName = "Red"
-                    biggestForEyes = (redsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
+                    firstHairColorName = "Red"
+                    biggestForHair = (redsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14
                     thirdCase = 1
                 } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
-                    firstSkinColorName = "Auburn"
-                    secondEyesColorName = "Yellow"
-                    biggestForEyes = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    firstHairColorName = "Auburn"
+                    secondHairColorName = "Yellow"
+                    biggestForHair = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
                     thirdCase = 2
                 } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
-                    firstSkinColorName = "Auburn"
-                    secondEyesColorName = "Red"
-                    biggestForEyes = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    firstHairColorName = "Auburn"
+                    secondHairColorName = "Red"
+                    biggestForHair = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
                     thirdCase = 2
                 } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
-                    firstSkinColorName = "Yellow"
-                    secondEyesColorName = "Red"
-                    biggestForEyes = ((yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    firstHairColorName = "Yellow"
+                    secondHairColorName = "Red"
+                    biggestForHair = ((yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
                     thirdCase = 2
                 }
             } else if resultForFirstHairValue == resultForSecondHairValue {
@@ -720,13 +722,16 @@ class InputVC: UIViewController {
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "Brown"
                 biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
                 biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "Brown"
                 secondSkinColorName = "L. Brown"
                 biggestForHair = 50
+                thirdCase = 2
             }
         } else if hairValue == 1.5 {
             firstHairColorName = "Brown"
@@ -778,265 +783,39 @@ class InputVC: UIViewController {
             thirdCase = 1
         }
         
-        if eyesValue == 1.0 {
-            if blueEyes == greenEyes {
-                biggestForEyes = 50
-                firstEyesColorName = "Blue"
-                secondEyesColorName = "Green"
-            } else if blueEyes == 6 {
-                biggestForEyes = 100
-                secondEyesColorName = "Blue"
-            } else if greenEyes == 6 {
-                biggestForEyes = 100
-                secondEyesColorName = "Green"
-            } else if blueEyes > greenEyes {
-
-                biggestForEyes = Int((100 * blueEyes) / 6)
-
-                secondEyesColorName = "Blue"
-
-                inputForEyes = 2
-
-            } else if blueEyes < greenEyes {
-
-                biggestForEyes = Int((100 * greenEyes) / 6)
-
-                secondEyesColorName = "Green"
-
-                inputForEyes = 2
-
-            }
-        } else if eyesValue > 1.0 && 1.5 > eyesValue {
-            let resultForFirstEyesValue = eyesValue - 1.0
-            let resultForSecondEyesValue =  1.5 - eyesValue
-
-            if resultForFirstEyesValue > resultForSecondEyesValue {
-
-                secondEyesColorName = "Brown"
-
-                biggestForEyes = Int(resultForFirstEyesValue * 200)
-
-                inputForEyes = 2
-
-            } else if resultForFirstEyesValue < resultForSecondEyesValue {
-                if greenEyes == blueEyes && greenEyes == brownEyes {
-
-                    firstEyesColorName = "Blue"
-                    secondEyesColorName = "Green"
-
-                    biggestForEyes = Int((((greenEyes + blueEyes) * 100) / (greenEyes + blueEyes + brownEyes)) / 2)
-
-                    inputForEyes = 1
-                } else if blueEyes > greenEyes && greenEyes > brownEyes {
-
-                    secondEyesColorName = "Blue"
-
-                    biggestForEyes = Int((blueEyes * 100) / (greenEyes + blueEyes + brownEyes))
-
-                    inputForEyes = 2
-
-                } else if greenEyes > blueEyes && greenEyes > brownEyes {
-
-                    secondEyesColorName = "Green"
-
-                    biggestForEyes = Int((greenEyes * 100) / (greenEyes + blueEyes + brownEyes))
-
-                    inputForEyes = 2
-
-                }
-            } else if resultForFirstEyesValue == resultForSecondEyesValue {
-
-                if blueEyes == greenEyes {
-
-                    firstEyesColorName = "Blue"
-                    secondEyesColorName = "Green"
-                    thirdEyesColorName = "Brown"
-
-                    biggestForEyes = 25
-                    secondBiggestForEyes = 50
-
-                } else if blueEyes == 3 {
-
-                    firstEyesColorName = "Blue"
-                    secondEyesColorName = "Brown"
-
-                    biggestForEyes = 50
-
-                    inputForEyes = 4
-
-                } else if greenEyes == 3 {
-
-                    firstEyesColorName = "Green"
-                    secondEyesColorName = "Brown"
-
-                    biggestForEyes = 50
-
-                    inputForEyes = 4
-
-                } else if blueEyes > greenEyes {
-                    firstEyesColorName = "Brown"
-                    secondEyesColorName = "Blue"
-
-                    biggestForEyes = Int((50 * blueEyes) / 3)
-                    secondBiggestForEyes = 50
-
-                    inputForEyes = 5
-                } else if blueEyes < greenEyes {
-                    firstEyesColorName = "Brown"
-                    secondEyesColorName = "Green"
-
-                    biggestForEyes = Int((50 * greenEyes) / 3)
-                    secondBiggestForEyes = 50
-
-                    inputForEyes = 5
-                }
-            }
-        } else if eyesValue > 1.5 && 2.0 > eyesValue {
-            let resultForFirstEyesValue = eyesValue - 1.5
-            let resultForSecondEyesValue = 2.0 - eyesValue
-
-            if resultForFirstEyesValue > resultForSecondEyesValue {
-                secondEyesColorName = "Black"
-
-                biggestForEyes = Int(resultForFirstEyesValue * 200)
-
-                inputForEyes = 2
-            } else if resultForFirstEyesValue < resultForSecondEyesValue {
-
-                secondEyesColorName = "Brown"
-
-                biggestForEyes = Int(resultForSecondEyesValue * 200)
-
-                inputForEyes = 2
-
-            } else if resultForFirstEyesValue == resultForSecondEyesValue {
-
-                firstEyesColorName = "Brown"
-                secondEyesColorName = "Black"
-
-                biggestForEyes = 50
-
-            }
-        } else if eyesValue == 2.0 {
-
-            secondEyesColorName = "Black"
-
-            biggestForEyes = 100
-
-        } else if eyesValue == 1.5 {
-            secondEyesColorName = "Brown"
-            biggestForEyes = 100
+        if firstCase == 1 {
+            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)%"
+        } else if firstCase == 2 {
+            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)% and \(secondEyesColorName)-eyed \(biggestForEyes)%"
+        } else if firstCase == 3 {
+            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)% and \(secondEyesColorName)-eyed \(secondBiggestForEyes)%"
+        } else if firstCase == 4 {
+            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and \(thirdEyesColorName)-eyed \(secondBiggestForEyes)%"
         }
-
-        if skinValue == 1.0 {
-            firstSkinColorName = "White"
-            biggestForSkin = 100
-        } else if skinValue > 1.0 && 1.5 > skinValue {
-            let resultForFirstSkinValue = skinValue - 1.0
-            let resultForSecondSkinValue =  1.5 - skinValue
-
-            if resultForFirstSkinValue > resultForSecondSkinValue {
-
-                firstSkinColorName = "Brown"
-
-                biggestForSkin = Int(resultForFirstSkinValue * 200)
-
-            } else if resultForFirstSkinValue < resultForSecondSkinValue {
-
-                firstSkinColorName = "White"
-
-                biggestForSkin = Int(resultForSecondSkinValue * 200)
-
-            } else if resultForFirstSkinValue == resultForSecondSkinValue {
-
-                secondSkinColorName = "White"
-
-                biggestForSkin = 50
-
-            }
-        } else if skinValue > 1.5 && 2.0 > skinValue {
-
-            let resultForFirstSkinValue = skinValue - 1.5
-            let resultForSecondSkinValue =  2.0 - skinValue
-
-            if resultForFirstSkinValue > resultForSecondSkinValue {
-
-                firstSkinColorName = "Black"
-
-                biggestForSkin = Int(resultForFirstSkinValue * 200)
-
-            } else if resultForFirstSkinValue < resultForSecondSkinValue {
-
-                firstSkinColorName = "Brown"
-
-                biggestForSkin = Int(resultForSecondSkinValue * 200)
-
-            } else if resultForFirstSkinValue == resultForSecondSkinValue {
-
-                secondSkinColorName = "Brown"
-
-                biggestForSkin = 50
-
-            }
-        } else if skinValue == 2.0 {
-
-            firstSkinColorName = "Black"
-
-            biggestForSkin = 100
-
-        } else if skinValue == 1.5 {
-
-            firstSkinColorName = "Brown"
-
-            biggestForSkin = 100
-
+        
+        if secondCase == 1 {
+            secondCaseResult = "\(firstSkinColorName)-eyed \(biggestForSkin)%"
+        } else if secondCase == 2 {
+            secondCaseResult = "\(firstSkinColorName)-eyed \(biggestForSkin)% and \(secondSkinColorName)-eyed \(biggestForSkin)%"
         }
-
+        
+        if thirdCase == 1 {
+            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)%"
+        } else if thirdCase == 2 {
+            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)% and \(secondHairColorName)-eyed \(biggestForHair)%"
+        } else if thirdCase == 3 {
+            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)% and \(secondHairColorName)-eyed \(secondBiggestForHair)%"
+        } else if thirdCase == 4 {
+            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)%, \(secondHairColorName)-eyed \(secondBiggestForHair)% and \(thirdHairColorName)-eyed \(secondBiggestForHair)%"
+        }
+        
         inputTextView.isEditable = false
-
-        if biggestForEyes == 50 && biggestForSkin == 50 {
-            inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-        } else if biggestForEyes != 50 && biggestForSkin == 50 {
-            if biggestForEyes == secondBiggestForEyes {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes > 50 && inputForEyes == 2 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes > 50 && inputForEyes == 1 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes < 50 && inputForEyes == 3 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes == 100 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if thirdEyesColorName == "Brown" {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%,\(secondEyesColorName)-eyed \(biggestForEyes)%,\(thirdEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if inputForEyes == 4 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%,\(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            } else if inputForEyes == 5 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(secondSkinColorName)-skinned is \(biggestForSkin)%, \(secondEyesColorName)-skinned is \(biggestForSkin)%"
-            }
-        } else if biggestForEyes == 50 && biggestForSkin != 50 {
-            inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-        } else if biggestForEyes != 50 && biggestForSkin != 50 {
-            if biggestForEyes == secondBiggestForEyes {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes > 50 && inputForEyes == 2 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes > 50 && inputForEyes == 1 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes < 50 && inputForEyes == 3 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if biggestForEyes == 100 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if thirdEyesColorName == "Brown" {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%,\(secondEyesColorName)-eyed \(biggestForEyes)%,\(thirdEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if inputForEyes == 4 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            } else if inputForEyes == 5 {
-                inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-            }
-        } else if biggestForEyes == 50 && biggestForSkin != 50 {
-            inputTextView.text = "The probability of being born is the highest probability of the child being \(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(biggestForEyes)% and the probability of being \(firstSkinColorName)-skinned is \(biggestForSkin)%"
-        }
+        
+        inputTextView.text = """
+        The highest probability of child's eyes color: \(firstCaseResult).
+        The highest probability of child's skin color: \(secondCaseResult).
+        The highest probability of child's hair color: \(thirdCaseResult).
+        """
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
