@@ -605,15 +605,15 @@ class InputVC: UIViewController {
         
         if hairValue == 1 {
             if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
-                biggestForHair = (auburnsPoints * 100) / 14
+                biggestForHair = 100 - (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 thirdCase = 1
             } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
-                biggestForHair = (yellowsPoints * 100) / 14
+                biggestForHair = 100 - (yellowsPoints * 100) / 14
                 firstHairColorName = "Yellow"
                 thirdCase = 1
             } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
-                biggestForHair = (redsPoints * 100) / 14
+                biggestForHair = 100 - (redsPoints * 100) / 14
                 firstHairColorName = "Red"
                 thirdCase = 1
             } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
@@ -784,29 +784,29 @@ class InputVC: UIViewController {
         }
         
         if firstCase == 1 {
-            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)%"
+            firstCaseResult = "\(firstEyesColorName)-eyes \(biggestForEyes)%"
         } else if firstCase == 2 {
-            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)% and \(secondEyesColorName)-eyed \(biggestForEyes)%"
+            firstCaseResult = "\(firstEyesColorName)-eyes \(biggestForEyes)% and \(secondEyesColorName)-eyes \(biggestForEyes)%"
         } else if firstCase == 3 {
-            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)% and \(secondEyesColorName)-eyed \(secondBiggestForEyes)%"
+            firstCaseResult = "\(firstEyesColorName)-eyes \(biggestForEyes)% and \(secondEyesColorName)-eyes \(secondBiggestForEyes)%"
         } else if firstCase == 4 {
-            firstCaseResult = "\(firstEyesColorName)-eyed \(biggestForEyes)%, \(secondEyesColorName)-eyed \(secondBiggestForEyes)% and \(thirdEyesColorName)-eyed \(secondBiggestForEyes)%"
+            firstCaseResult = "\(firstEyesColorName)-eyes \(biggestForEyes)%, \(secondEyesColorName)-eyes \(secondBiggestForEyes)% and \(thirdEyesColorName)-eyes \(secondBiggestForEyes)%"
         }
         
         if secondCase == 1 {
-            secondCaseResult = "\(firstSkinColorName)-eyed \(biggestForSkin)%"
+            secondCaseResult = "\(firstSkinColorName)-skin \(biggestForSkin)%"
         } else if secondCase == 2 {
-            secondCaseResult = "\(firstSkinColorName)-eyed \(biggestForSkin)% and \(secondSkinColorName)-eyed \(biggestForSkin)%"
+            secondCaseResult = "\(firstSkinColorName)-skin \(biggestForSkin)% and \(secondSkinColorName)-skin \(biggestForSkin)%"
         }
         
         if thirdCase == 1 {
-            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)%"
+            thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)%"
         } else if thirdCase == 2 {
-            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)% and \(secondHairColorName)-eyed \(biggestForHair)%"
+            thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)% and \(secondHairColorName)-hair \(biggestForHair)%"
         } else if thirdCase == 3 {
-            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)% and \(secondHairColorName)-eyed \(secondBiggestForHair)%"
+            thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)% and \(secondHairColorName)-hair \(secondBiggestForHair)%"
         } else if thirdCase == 4 {
-            thirdCaseResult = "\(firstHairColorName)-eyed \(biggestForHair)%, \(secondHairColorName)-eyed \(secondBiggestForHair)% and \(thirdHairColorName)-eyed \(secondBiggestForHair)%"
+            thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)%, \(secondHairColorName)-hair \(secondBiggestForHair)% and \(thirdHairColorName)-hair \(secondBiggestForHair)%"
         }
         
         inputTextView.isEditable = false
