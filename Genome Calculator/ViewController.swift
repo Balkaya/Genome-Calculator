@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var nameArray = [String]()
     
     var selectedGene = ""
-    var oneOrZero = 0
     
     var searchTexts = [String]()
     var searching = false
@@ -128,22 +127,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "toEditVC" {
             let destinationVC = segue.destination as! EditVC
             destinationVC.secondChosenGene = selectedGene
-            destinationVC.thirdOneOrZero = oneOrZero
-        } // else if segue.identifier == "toAddVC" {
-            // let destinationVC = segue.destination as! AddVC
-            // destinationVC.secondOneOrZero = oneOrZero
-        // }
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedGene = nameArray[indexPath.row]
-        oneOrZero = 0
         performSegue(withIdentifier: "toEditVC", sender: nil)
     }
     
     @IBAction func addButton(_ sender: Any) {
         selectedGene = ""
-        oneOrZero = 1
         performSegue(withIdentifier: "toAddVC", sender: nil)
     }
     

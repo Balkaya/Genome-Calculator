@@ -11,8 +11,6 @@ import CoreData
 
 class EditVC: UIViewController {
     var secondChosenGene = ""
-    var trueOrFalse = true
-    var thirdOneOrZero = 0 
 
     @IBOutlet weak var nameLabelForEditVC: UILabel!
     @IBOutlet weak var textViewForEditVC: UITextView!
@@ -56,13 +54,11 @@ class EditVC: UIViewController {
         if segue.identifier == "toSecondAddVC" {
             let destinationVC = segue.destination as! AddVC
             destinationVC.chosenGene = secondChosenGene
-            destinationVC.secondOneOrZero = thirdOneOrZero
-        } 
+        }
     }
     
     @IBAction func editButton(_ sender: UIButton) {
         secondChosenGene = "a"
-        thirdOneOrZero = 0
         performSegue(withIdentifier: "toSecondAddVC", sender: nil)
     }
 }

@@ -11,7 +11,6 @@ import CoreData
 
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var chosenGene = ""
-    var secondOneOrZero = 0
     
     @IBOutlet weak var nameTextField: UITextField!
     
