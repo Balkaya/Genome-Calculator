@@ -15,7 +15,6 @@ class EditVC: UIViewController {
     var thirdOneOrZero = 0 
 
     @IBOutlet weak var nameLabelForEditVC: UILabel!
-    
     @IBOutlet weak var textViewForEditVC: UITextView!
     
     override func viewDidLoad() {
@@ -24,7 +23,6 @@ class EditVC: UIViewController {
         textViewForEditVC.isEditable = false
         
         if secondChosenGene != "" {
-            
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Genes")
