@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 
 class InputVC: UIViewController {
+    var thirdTF = false
+    
     var name = ""
     var firstText = ""
     var secondText = ""
@@ -818,11 +820,11 @@ class InputVC: UIViewController {
         """
     }
     
-    @IBAction func saveButton(_ sender: UIButton) {
+    func createData() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let newGene = NSEntityDescription.insertNewObject(forEntityName: "Genes", into: context)
-
+        
         newGene.setValue(nameLabel.text, forKey: "name")
         newGene.setValue(inputTextView.text, forKey: "textView")
         newGene.setValue(momFirstLabel.text, forKey: "momEyesC")
@@ -867,8 +869,83 @@ class InputVC: UIViewController {
         newGene.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
         newGene.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
         newGene.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
-
+        
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newGenes"), object: nil)
+    }
+    
+    func updateData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "Genes")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", "newGenes")
+        
+        do {
+            let test = try managedContext.fetch(fetchRequest)
+            
+            let objectUpdate = test[0] as! NSManagedObject
+            objectUpdate.setValue(nameLabel.text, forKey: "name")
+            objectUpdate.setValue(inputTextView.text, forKey: "textView")
+            objectUpdate.setValue(momFirstLabel.text, forKey: "momEyesC")
+            objectUpdate.setValue(momSecondLabel.text, forKey: "momSkinC")
+            objectUpdate.setValue(momThirdLabel.text, forKey: "momHairC")
+            objectUpdate.setValue(dadFirstLabel.text, forKey: "dadEyesC")
+            objectUpdate.setValue(dadSecondLabel.text, forKey: "dadSkinC")
+            objectUpdate.setValue(dadThirdLabel.text, forKey: "dadHairC")
+            objectUpdate.setValue(momsMomFirstLabel.text, forKey: "momsMomEyesC")
+            objectUpdate.setValue(momsMomSecondLabel.text, forKey: "momsMomSkinC")
+            objectUpdate.setValue(momsMomThirdLabel.text, forKey: "momsMomHairC")
+            objectUpdate.setValue(momsDadFirstLabel.text, forKey: "dadsMomEyesC")
+            objectUpdate.setValue(momsDadSecondLabel.text, forKey: "dadsMomSkinC")
+            objectUpdate.setValue(momsDadThirdLabel.text, forKey: "dadsMomHairC")
+            objectUpdate.setValue(dadsMomFirstLabel.text, forKey: "momsDadEyesC")
+            objectUpdate.setValue(dadsMomSecondLabel.text, forKey: "momsDadSkinC")
+            objectUpdate.setValue(dadsMomThirdLabel.text, forKey: "momsDadHairC")
+            objectUpdate.setValue(dadsDadFirstLabel.text, forKey: "dadsDadEyesC")
+            objectUpdate.setValue(dadsDadSecondLabel.text, forKey: "dadsDadSkinC")
+            objectUpdate.setValue(dadsDadThirdLabel.text, forKey: "dadsDadHairC")
+            objectUpdate.setValue(momsMomsMomFirstLabel.text, forKey: "momsMomsMomEyesC")
+            objectUpdate.setValue(momsMomsMomSecondLabel.text, forKey: "momsMomsMomSkinC")
+            objectUpdate.setValue(momsMomsMomThirdLabel.text, forKey: "momsMomsMomHairC")
+            objectUpdate.setValue(momsMomsDadFirstLabel.text, forKey: "momsMomsDadEyesC")
+            objectUpdate.setValue(momsMomsDadSecondLabel.text, forKey: "momsMomsDadSkinC")
+            objectUpdate.setValue(momsMomsDadThirdLabel.text, forKey: "momsMomsDadHairC")
+            objectUpdate.setValue(momsDadsMomFirstLabel.text, forKey: "momsDadsMomEyesC")
+            objectUpdate.setValue(momsDadsMomSecondLabel.text, forKey: "momsDadsMomSkinC")
+            objectUpdate.setValue(momsDadsMomThirdLabel.text, forKey: "momsDadsMomHairC")
+            objectUpdate.setValue(momsDadsDadFirstLabel.text, forKey: "momsDadsDadEyesC")
+            objectUpdate.setValue(momsDadsDadSecondLabel.text, forKey: "momsDadsDadSkinC")
+            objectUpdate.setValue(momsDadsDadThirdLabel.text, forKey: "momsDadsDadHairC")
+            objectUpdate.setValue(dadsMomsMomFirstLabel.text, forKey: "dadsMomsMomEyesC")
+            objectUpdate.setValue(dadsMomsMomSecondLabel.text, forKey: "dadsMomsMomSkinC")
+            objectUpdate.setValue(dadsMomsMomThirdLabel.text, forKey: "dadsMomsMomHairC")
+            objectUpdate.setValue(dadsMomsDadFirstLabel.text, forKey: "dadsMomsDadEyesC")
+            objectUpdate.setValue(dadsMomsDadSecondLabel.text, forKey: "dadsMomsDadSkinC")
+            objectUpdate.setValue(dadsMomsDadThirdLabel.text, forKey: "dadsMomsDadHairC")
+            objectUpdate.setValue(dadsDadsMomFirstLabel.text, forKey: "dadsDadsMomEyesC")
+            objectUpdate.setValue(dadsDadsMomSecondLabel.text, forKey: "dadsDadsMomSkinC")
+            objectUpdate.setValue(dadsDadsMomThirdLabel.text, forKey: "dadsDadsMomHairC")
+            objectUpdate.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
+            objectUpdate.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
+            objectUpdate.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
+            
+            do {
+                try managedContext.save()
+            } catch {
+                print(error)
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
+    @IBAction func saveButton(_ sender: UIButton) {
+        
+        if thirdTF == false {
+            createData()
+        } else if thirdTF == true {
+            updateData()
+        }
         
         performSegue(withIdentifier: "toViewController", sender: nil)
     }

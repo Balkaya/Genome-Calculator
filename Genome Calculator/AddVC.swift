@@ -11,6 +11,7 @@ import CoreData
 
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var chosenGene = ""
+    var secondTF = false
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -177,223 +178,15 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         createToolbar()
         
         if chosenGene != "" {
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context = appDelegate.persistentContainer.viewContext
-            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Genes")
-            
-            fetchRequest.predicate = NSPredicate(format: "name = %@", self.chosenGene)
-            fetchRequest.returnsObjectsAsFaults = false
-            
-            do {
-                
-                let results = try context.fetch(fetchRequest)
-                
-                if results.count > 0 {
-                    for result in results as! [NSManagedObject] {
-                        if let name = result.value(forKey: "name") as? String {
-                            nameTextField.text = name
-                        }
-                        
-                        // Mom
-                        if let momH = result.value(forKey: "momHairC") as? String {
-                            momThirdTextField.text = momH
-                        }
-                        
-                        if let momS = result.value(forKey: "momSkinC") as? String {
-                            momSecondTextField.text = momS
-                        }
-                        
-                        if let momE = result.value(forKey: "momEyesC") as? String {
-                            momFirstTextField.text = momE
-                        }
-                        
-                        // Dad
-                        if let dadH = result.value(forKey: "dadHairC") as? String {
-                            dadThirdTextField.text = dadH
-                        }
-                        
-                        if let dadS = result.value(forKey: "dadSkinC") as? String {
-                            dadSecondTextField.text = dadS
-                        }
-                        
-                        if let dadE = result.value(forKey: "dadEyesC") as? String {
-                            dadFirstTextField.text = dadE
-                        }
-                        
-                        // Mom's Mom
-                        if let momsMomH = result.value(forKey: "momsMomHairC") as? String {
-                            momsMomThirdTextField.text = momsMomH
-                        }
-                        
-                        if let momsMomS = result.value(forKey: "momsMomSkinC") as? String {
-                            momsMomSecondTextField.text = momsMomS
-                        }
-                        
-                        if let momsMomE = result.value(forKey: "momsMomEyesC") as? String {
-                            momFirstTextField.text = momsMomE
-                        }
-                        
-                        // Mom's Dad
-                        if let momsDadH = result.value(forKey: "momsDadHairC") as? String {
-                            momsDadThidTextField.text = momsDadH
-                        }
-                        
-                        if let momsDadS = result.value(forKey: "momsDadSkinC") as? String {
-                            momsDadSecondTextField.text = momsDadS
-                        }
-                        
-                        if let momsDadE = result.value(forKey: "momsDadEyesC") as? String {
-                            momsDadFirstTextField.text = momsDadE
-                        }
-                        
-                        // Dad's Mom
-                        if let dadsMomH = result.value(forKey: "dadsMomHairC") as? String {
-                            dadsMomThirdTextField.text = dadsMomH
-                        }
-                        
-                        if let dadsMomS = result.value(forKey: "dadsMomSkinC") as? String {
-                            dadsMomSecondTextField.text = dadsMomS
-                        }
-                        
-                        if let dadsMomE = result.value(forKey: "dadsMomEyesC") as? String {
-                            dadsMomFirstTextField.text = dadsMomE
-                        }
-                        
-                        // Mom's Dad
-                        if let momsDadH = result.value(forKey: "momsDadHairC") as? String {
-                            momsDadThidTextField.text = momsDadH
-                        }
-                        
-                        if let momsDadS = result.value(forKey: "momsDadSkinC") as? String {
-                            momsDadSecondTextField.text = momsDadS
-                        }
-                        
-                        if let momsDadE = result.value(forKey: "momsDadEyesC") as? String {
-                            momsMomFirstTextField.text = momsDadE
-                        }
-                        
-                        // Dad's Dad
-                        if let dadsDadH = result.value(forKey: "dadsDadHairC") as? String {
-                            dadsDadThirdTextField.text = dadsDadH
-                        }
-                        
-                        if let dadsDadS = result.value(forKey: "dadsDadSkinC") as? String {
-                            dadsDadSecondTextField.text = dadsDadS
-                        }
-                        
-                        if let dadsDadE = result.value(forKey: "dadsDadEyesC") as? String {
-                            dadsDadFirstTextField.text = dadsDadE
-                        }
-                        
-                        // Mom's Mom's Mom
-                        if let momsMomsMomH = result.value(forKey: "momsMomsMomHairC") as? String {
-                            momsMomsMomThirdTextField.text = momsMomsMomH
-                        }
-                        
-                        if let momsMomsMomS = result.value(forKey: "momsMomsMomSkinC") as? String {
-                            momsMomsMomSecondTextField.text = momsMomsMomS
-                        }
-                        
-                        if let momsMomsMomE = result.value(forKey: "momsMomsMomEyesC") as? String {
-                            momsMomsMomFirstTextField.text = momsMomsMomE
-                        }
-                        
-                        // Mom's Mom's Dad
-                        if let momsMomsDadH = result.value(forKey: "momsMomsDadHairC") as? String {
-                            momsMomsDadThirdTextField.text = momsMomsDadH
-                        }
-                        
-                        if let momsMomsDadS = result.value(forKey: "momsMomsDadSkinC") as? String {
-                            momsMomsDadSecondTextField.text = momsMomsDadS
-                        }
-                        
-                        if let momsMomsDadE = result.value(forKey: "momsMomsDadEyesC") as? String {
-                            momsMomsDadFirstTextField.text = momsMomsDadE
-                        }
-                        
-                        // Mom's Dad's Mom
-                        if let momsDadsMomH = result.value(forKey: "momsDadsMomHairC") as? String {
-                            momsDadsMomThirdTextField.text = momsDadsMomH
-                        }
-                        
-                        if let momsDadsMomS = result.value(forKey: "momsDadsMomSkinC") as? String {
-                            momsDadsMomSecondTextField.text = momsDadsMomS
-                        }
-                        
-                        if let momsDadsMomE = result.value(forKey: "momsDadsMomEyesC") as? String {
-                            momsDadsMomFirstTextField.text = momsDadsMomE
-                        }
-                        
-                        // Mom's Dad's Dad
-                        if let momsDadsDadH = result.value(forKey: "momsDadsDadHairC") as? String {
-                            momsDadsDadThirdTextField.text = momsDadsDadH
-                        }
-                        
-                        if let momsDadsDadS = result.value(forKey: "momsDadsDadSkinC") as? String {
-                            momsDadsDadSecondTextField.text = momsDadsDadS
-                        }
-                        
-                        if let momsDadsDadE = result.value(forKey: "momsDadsDadEyesC") as? String {
-                            momsDadsDadFirstTextField.text = momsDadsDadE
-                        }
-                        
-                        // Dads Moms Mom
-                        if let dadsMomsMomH = result.value(forKey: "dadsMomsMomHairC") as? String {
-                            dadsMomsMomThirdTextField.text = dadsMomsMomH
-                        }
-                        
-                        if let dadsMomsMomS = result.value(forKey: "dadsMomsMomSkinC") as? String {
-                            dadsMomsMomSecondTextField.text = dadsMomsMomS
-                        }
-                        
-                        if let dadsMomsMomE = result.value(forKey: "dadsMomsMomEyesC") as? String {
-                            dadsMomsMomFirstTextField.text = dadsMomsMomE
-                        }
-                        
-                        // Dads Moms Dad
-                        if let dadsMomsDadH = result.value(forKey: "dadsMomsDadHairC") as? String {
-                            dadsMomsDadThirdTextField.text = dadsMomsDadH
-                        }
-                        
-                        if let dadsMomsDadS = result.value(forKey: "dadsMomsDadSkinC") as? String {
-                            dadsMomsDadSecondTextField.text = dadsMomsDadS
-                        }
-                        
-                        if let dadsMomsDadE = result.value(forKey: "dadsMomsDadEyesC") as? String {
-                            dadsMomsDadFirstTextField.text = dadsMomsDadE
-                        }
-                        
-                        // Dads Dads Mom
-                        if let dadsDadsMomH = result.value(forKey: "dadsDadsMomHairC") as? String {
-                            dadsDadsMomThirdTextField.text = dadsDadsMomH
-                        }
-                        
-                        if let dadsDadsMomS = result.value(forKey: "dadsDadsMomSkinC") as? String {
-                            dadsDadsMomSecondTextField.text = dadsDadsMomS
-                        }
-                        
-                        if let dadsDadsMomE = result.value(forKey: "dadsDadsMomEyesC") as? String {
-                            dadsDadsMomFirstTextField.text = dadsDadsMomE
-                        }
-                        
-                        // Dads Dads Dad
-                        if let dadsDadsDadH = result.value(forKey: "dadsDadsDadHairC") as? String {
-                            dadsDadsDadThirdTextField.text = dadsDadsDadH
-                        }
-                        
-                        if let dadsDadsDadS = result.value(forKey: "dadsDadsDadSkinC") as? String {
-                            dadsDadsDadSecondTextField.text = dadsDadsDadS
-                        }
-                        
-                        if let dadsDadsDadE = result.value(forKey: "dadsDadsDadEyesC") as? String {
-                            dadsDadsDadFirstTextField.text = dadsDadsDadE
-                        }
-                    }
-                }
-            } catch {
-                print("error")
-            }
+            retrieveData()
         }
+        
+//        if chosenGene != "" {
+//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//            let context = appDelegate.persistentContainer.viewContext
+//            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Genes")
+//
+//            fetchRequest.predicate = NSPredicate(format: "name = %@", self.chosenGene)
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -843,6 +636,243 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         }
     }
     
+    func retrieveData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Genes")
+        
+        do {
+            let results = try? managedContext.fetch(fetchRequest)
+                
+            if results!.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let name = result.value(forKey: "name") as? String {
+                        nameTextField.text = name
+                    }
+                    
+                    // Mom
+                    if let momH = result.value(forKey: "momHairC") as? String {
+                        momThirdTextField.text = momH
+                    }
+                    
+                    if let momS = result.value(forKey: "momSkinC") as? String {
+                        momSecondTextField.text = momS
+                    }
+                    
+                    if let momE = result.value(forKey: "momEyesC") as? String {
+                        momFirstTextField.text = momE
+                    }
+                    
+                    // Dad
+                    if let dadH = result.value(forKey: "dadHairC") as? String {
+                        dadThirdTextField.text = dadH
+                    }
+                    
+                    if let dadS = result.value(forKey: "dadSkinC") as? String {
+                        dadSecondTextField.text = dadS
+                    }
+                
+                    if let dadE = result.value(forKey: "dadEyesC") as? String {
+                        dadFirstTextField.text = dadE
+                    }
+                
+                    // Mom's Mom
+                    if let momsMomH = result.value(forKey: "momsMomHairC") as? String {
+                        momsMomThirdTextField.text = momsMomH
+                    }
+            
+                    if let momsMomS = result.value(forKey: "momsMomSkinC") as? String {
+                        momsMomSecondTextField.text = momsMomS
+                    }
+                    
+                    if let momsMomE = result.value(forKey: "momsMomEyesC") as? String {
+                        momFirstTextField.text = momsMomE
+                    }
+                    
+                    // Mom's Dad
+                    if let momsDadH = result.value(forKey: "momsDadHairC") as? String {
+                        momsDadThidTextField.text = momsDadH
+                    }
+                    
+                    if let momsDadS = result.value(forKey: "momsDadSkinC") as? String {
+                        momsDadSecondTextField.text = momsDadS
+                    }
+                    
+                    if let momsDadE = result.value(forKey: "momsDadEyesC") as? String {
+                        momsDadFirstTextField.text = momsDadE
+                    }
+                
+                    // Dad's Mom
+                    if let dadsMomH = result.value(forKey: "dadsMomHairC") as? String {
+                        dadsMomThirdTextField.text = dadsMomH
+                    }
+                    
+                    if let dadsMomS = result.value(forKey: "dadsMomSkinC") as? String {
+                        dadsMomSecondTextField.text = dadsMomS
+                    }
+                    
+                    if let dadsMomE = result.value(forKey: "dadsMomEyesC") as? String {
+                        dadsMomFirstTextField.text = dadsMomE
+                    }
+                    
+                    // Mom's Dad
+                    if let momsDadH = result.value(forKey: "momsDadHairC") as? String {
+                        momsDadThidTextField.text = momsDadH
+                    }
+                    
+                    if let momsDadS = result.value(forKey: "momsDadSkinC") as? String {
+                        momsDadSecondTextField.text = momsDadS
+                    }
+                    
+                    if let momsDadE = result.value(forKey: "momsDadEyesC") as? String {
+                        momsMomFirstTextField.text = momsDadE
+                    }
+                    
+                    // Dad's Dad
+                    if let dadsDadH = result.value(forKey: "dadsDadHairC") as? String {
+                        dadsDadThirdTextField.text = dadsDadH
+                    }
+                
+                    if let dadsDadS = result.value(forKey: "dadsDadSkinC") as? String {
+                        dadsDadSecondTextField.text = dadsDadS
+                    }
+                    
+                    if let dadsDadE = result.value(forKey: "dadsDadEyesC") as? String {
+                        dadsDadFirstTextField.text = dadsDadE
+                    }
+                    
+                    // Mom's Mom's Mom
+                    if let momsMomsMomH = result.value(forKey: "momsMomsMomHairC") as? String {
+                        momsMomsMomThirdTextField.text = momsMomsMomH
+                    }
+                    
+                    if let momsMomsMomS = result.value(forKey: "momsMomsMomSkinC") as? String {
+                        momsMomsMomSecondTextField.text = momsMomsMomS
+                    }
+                    
+                    if let momsMomsMomE = result.value(forKey: "momsMomsMomEyesC") as? String {
+                        momsMomsMomFirstTextField.text = momsMomsMomE
+                    }
+                    
+                    // Mom's Mom's Dad
+                    if let momsMomsDadH = result.value(forKey: "momsMomsDadHairC") as? String {
+                        momsMomsDadThirdTextField.text = momsMomsDadH
+                    }
+                    
+                    if let momsMomsDadS = result.value(forKey: "momsMomsDadSkinC") as? String {
+                        momsMomsDadSecondTextField.text = momsMomsDadS
+                    }
+                    
+                    if let momsMomsDadE = result.value(forKey: "momsMomsDadEyesC") as? String {
+                        momsMomsDadFirstTextField.text = momsMomsDadE
+                    }
+                    
+                    // Mom's Dad's Mom
+                    if let momsDadsMomH = result.value(forKey: "momsDadsMomHairC") as? String {
+                        momsDadsMomThirdTextField.text = momsDadsMomH
+                    }
+                    
+                    if let momsDadsMomS = result.value(forKey: "momsDadsMomSkinC") as? String {
+                        momsDadsMomSecondTextField.text = momsDadsMomS
+                    }
+                    
+                    if let momsDadsMomE = result.value(forKey: "momsDadsMomEyesC") as? String {
+                        momsDadsMomFirstTextField.text = momsDadsMomE
+                    }
+                    
+                    // Mom's Dad's Dad
+                    if let momsDadsDadH = result.value(forKey: "momsDadsDadHairC") as? String {
+                        momsDadsDadThirdTextField.text = momsDadsDadH
+                    }
+                    
+                    if let momsDadsDadS = result.value(forKey: "momsDadsDadSkinC") as? String {
+                        momsDadsDadSecondTextField.text = momsDadsDadS
+                    }
+                    
+                    if let momsDadsDadE = result.value(forKey: "momsDadsDadEyesC") as? String {
+                        momsDadsDadFirstTextField.text = momsDadsDadE
+                    }
+                    
+                    // Dads Moms Mom
+                    if let dadsMomsMomH = result.value(forKey: "dadsMomsMomHairC") as? String {
+                        dadsMomsMomThirdTextField.text = dadsMomsMomH
+                    }
+                    
+                    if let dadsMomsMomS = result.value(forKey: "dadsMomsMomSkinC") as? String {
+                        dadsMomsMomSecondTextField.text = dadsMomsMomS
+                    }
+                    
+                    if let dadsMomsMomE = result.value(forKey: "dadsMomsMomEyesC") as? String {
+                        dadsMomsMomFirstTextField.text = dadsMomsMomE
+                    }
+                    
+                    // Dads Moms Dad
+                    if let dadsMomsDadH = result.value(forKey: "dadsMomsDadHairC") as? String {
+                        dadsMomsDadThirdTextField.text = dadsMomsDadH
+                    }
+                    
+                    if let dadsMomsDadS = result.value(forKey: "dadsMomsDadSkinC") as? String {
+                        dadsMomsDadSecondTextField.text = dadsMomsDadS
+                    }
+                    
+                    if let dadsMomsDadE = result.value(forKey: "dadsMomsDadEyesC") as? String {
+                        dadsMomsDadFirstTextField.text = dadsMomsDadE
+                    }
+                    
+                    // Dads Dads Mom
+                    if let dadsDadsMomH = result.value(forKey: "dadsDadsMomHairC") as? String {
+                        dadsDadsMomThirdTextField.text = dadsDadsMomH
+                    }
+                    
+                    if let dadsDadsMomS = result.value(forKey: "dadsDadsMomSkinC") as? String {
+                        dadsDadsMomSecondTextField.text = dadsDadsMomS
+                    }
+                    
+                    if let dadsDadsMomE = result.value(forKey: "dadsDadsMomEyesC") as? String {
+                        dadsDadsMomFirstTextField.text = dadsDadsMomE
+                    }
+                    
+                    // Dads Dads Dad
+                    if let dadsDadsDadH = result.value(forKey: "dadsDadsDadHairC") as? String {
+                        dadsDadsDadThirdTextField.text = dadsDadsDadH
+                    }
+                    
+                    if let dadsDadsDadS = result.value(forKey: "dadsDadsDadSkinC") as? String {
+                        dadsDadsDadSecondTextField.text = dadsDadsDadS
+                    }
+                    
+                    if let dadsDadsDadE = result.value(forKey: "dadsDadsDadEyesC") as? String {
+                        dadsDadsDadFirstTextField.text = dadsDadsDadE
+                    }
+                }
+            }
+        }
+    }
+    
+    func updateData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "Genes")
+        fetchRequest.predicate = NSPredicate(format: "username = %@", "Gene1")
+        
+        do {
+            let test = try managedContext.fetch(fetchRequest)
+            
+            let objectUpdate = test[0] as! NSManagedObject
+            objectUpdate.setValue("newName", forKey: "username")
+            do {
+                try managedContext.save()
+            } catch {
+                print(error)
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
     func createToolbar() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -1053,6 +1083,9 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             destnationVC.fortiethText = textFortieth
             destnationVC.fourtyFirstText = textFourtyFirst
             destnationVC.fourtySecondText = textFourtySecond
+        } else if segue.identifier == "toInputVC" {
+            let destinationVC = segue.destination as! InputVC
+            destinationVC.thirdTF = secondTF
         }
     }
     

@@ -11,6 +11,7 @@ import CoreData
 
 class EditVC: UIViewController {
     var secondChosenGene = ""
+    var firstTF = false
 
     @IBOutlet weak var nameLabelForEditVC: UILabel!
     @IBOutlet weak var textViewForEditVC: UITextView!
@@ -54,11 +55,13 @@ class EditVC: UIViewController {
         if segue.identifier == "toSecondAddVC" {
             let destinationVC = segue.destination as! AddVC
             destinationVC.chosenGene = secondChosenGene
+            destinationVC.secondTF = firstTF
         }
     }
     
     @IBAction func editButton(_ sender: UIButton) {
         secondChosenGene = "a"
+        firstTF = true
         performSegue(withIdentifier: "toSecondAddVC", sender: nil)
     }
 }
