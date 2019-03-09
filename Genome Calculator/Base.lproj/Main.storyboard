@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Pt-Mv-RmG">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="666"/>
                                 <color key="backgroundColor" red="0.15145875639341783" green="0.15692624895151566" blue="0.16275669008956672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.39810018264567926" green="0.39810018264567926" blue="0.39810018264567926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -49,7 +49,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" barStyle="blackTranslucent" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-sD-Orn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
                                 <color key="backgroundColor" red="0.16470691561698914" green="0.16486096382141113" blue="0.15650710463523865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
@@ -74,7 +74,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RTL-9e-Xse"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Genome Calculator" largeTitleDisplayMode="never" id="d9o-BX-No0">
+                    <navigationItem key="navigationItem" title="Genome Calculator" largeTitleDisplayMode="always" id="d9o-BX-No0">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cUv-eY-C6z"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RoN-G8-5gI">
                             <connections>
@@ -572,6 +572,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QR9-e1-dpe"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="abX-So-E5W"/>
                     <size key="freeformSize" width="375" height="1410"/>
                     <connections>
                         <outlet property="dadFirstLabel" destination="Og6-OQ-8ai" id="6TK-uf-M4G"/>
@@ -673,6 +674,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FPm-xn-5f8"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bca-lm-kAN"/>
                     <connections>
                         <outlet property="nameLabelForEditVC" destination="WEe-VB-bTz" id="moS-zA-AOU"/>
                         <outlet property="textViewForEditVC" destination="evf-vh-7P5" id="U9h-1f-f9F"/>
@@ -688,19 +690,19 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rM1-g6-aIq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ukd-O2-kYS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" largeTitles="YES" id="Ukd-O2-kYS">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" red="0.0" green="1" blue="0.52678300960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.11374652078097446" green="0.11444415592159018" blue="0.10225820771833967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <color key="textShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            <color key="textShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="textShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -720,13 +722,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-Ib-EZj">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-Ib-EZj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-Ej-MrA">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-Ej-MrA">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-gA-Acn">
                                                 <rect key="frame" x="48" y="83" width="90" height="30"/>
@@ -1178,27 +1178,47 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.27583253369999999" green="0.27583253369999999" blue="0.27583253369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1070" id="b3t-OW-1oG"/>
+                                        </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-FG-BB3">
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-FG-BB3">
                                         <rect key="frame" x="87" y="10" width="200" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE1-gN-egZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE1-gN-egZ">
                                         <rect key="frame" x="171" y="118" width="32" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ajX-Ej-MrA" firstAttribute="centerX" secondItem="QE1-gN-egZ" secondAttribute="centerX" id="1Wq-Jj-kUB"/>
+                                    <constraint firstItem="ajX-Ej-MrA" firstAttribute="leading" secondItem="bvM-Ib-EZj" secondAttribute="leading" id="3R1-wd-x5k"/>
+                                    <constraint firstItem="jkf-FG-BB3" firstAttribute="centerX" secondItem="bvM-Ib-EZj" secondAttribute="centerX" id="FPZ-SX-94Z"/>
+                                    <constraint firstItem="jkf-FG-BB3" firstAttribute="leading" secondItem="bvM-Ib-EZj" secondAttribute="leading" constant="87" id="Gqk-bM-bnb"/>
+                                    <constraint firstAttribute="bottom" secondItem="ajX-Ej-MrA" secondAttribute="bottom" constant="-8" id="P7B-v4-3Uv"/>
+                                    <constraint firstAttribute="trailing" secondItem="ajX-Ej-MrA" secondAttribute="trailing" id="VAw-sh-fZ3"/>
+                                    <constraint firstItem="jkf-FG-BB3" firstAttribute="centerX" secondItem="QE1-gN-egZ" secondAttribute="centerX" id="YI5-mu-1jc"/>
+                                    <constraint firstItem="QE1-gN-egZ" firstAttribute="top" secondItem="jkf-FG-BB3" secondAttribute="bottom" constant="78" id="aDQ-1B-IHJ"/>
+                                    <constraint firstItem="jkf-FG-BB3" firstAttribute="top" secondItem="bvM-Ib-EZj" secondAttribute="top" constant="98" id="fOt-CR-jPv"/>
+                                    <constraint firstItem="ajX-Ej-MrA" firstAttribute="top" secondItem="bvM-Ib-EZj" secondAttribute="top" constant="88" id="nQn-Cm-Ew7"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvM-Ib-EZj" firstAttribute="top" secondItem="XMb-wX-kRF" secondAttribute="top" id="ALm-p1-DLt"/>
+                            <constraint firstAttribute="trailing" secondItem="bvM-Ib-EZj" secondAttribute="trailing" id="BEr-2q-kW7"/>
+                            <constraint firstItem="bvM-Ib-EZj" firstAttribute="leading" secondItem="XMb-wX-kRF" secondAttribute="leading" id="QfA-2g-rlQ"/>
+                            <constraint firstAttribute="bottom" secondItem="bvM-Ib-EZj" secondAttribute="bottom" id="zii-q5-9Yw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1UH-fs-jjb"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="jSL-P9-ppL"/>
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="dadFirstTextField" destination="5fg-Mk-aXD" id="qmi-Mx-JWD"/>
@@ -1253,6 +1273,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BFq-Ig-hln"/>
+        <segue reference="O1J-gW-KMR"/>
     </inferredMetricsTieBreakers>
 </document>

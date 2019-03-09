@@ -31,6 +31,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchBar.keyboardAppearance = .dark
         searchBar.tintColor = #colorLiteral(red: 0, green: 0.9998713136, blue: 0.526712656, alpha: 1)
         searchBar.barStyle = .blackOpaque
+        
+        let search = UISearchController(searchResultsController: nil)
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Find a child"
+        search.searchBar.keyboardAppearance = .dark
+        search.searchBar.tintColor = #colorLiteral(red: 0, green: 0.9998713136, blue: 0.526712656, alpha: 1)
+        search.searchResultsUpdater = self as? UISearchResultsUpdating
+        navigationItem.searchController = search
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        // = searchController.searchBar.text
     }
     
     override func viewWillAppear(_ animated: Bool) {

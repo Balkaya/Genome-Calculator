@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A3AD2C12219C8CD00991A2E /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AD2C02219C8CD00991A2E /* Child.swift */; };
 		3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */; };
 		3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C40021CEBD430047C453 /* ViewController.swift */; };
 		3AA3C40421CEBD430047C453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40221CEBD430047C453 /* Main.storyboard */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A3AD2C02219C8CD00991A2E /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		3AA3C3FB21CEBD430047C453 /* Genome Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genome Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA3C40021CEBD430047C453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				3AA3C41521CEBDAD0047C453 /* InputVC.swift */,
 				3AE7BA8621DEA100009BCD31 /* EditVC.swift */,
 				3AA3C41721CEBDD60047C453 /* Sources.swift */,
-				3A3AD2C02219C8CD00991A2E /* Child.swift */,
 				3AA3C40221CEBD430047C453 /* Main.storyboard */,
 				3AA3C40A21CEBD450047C453 /* LaunchScreen.storyboard */,
 				3AA3C40821CEBD450047C453 /* Assets.xcassets */,
@@ -159,7 +156,6 @@
 			files = (
 				3AA3C41821CEBDD60047C453 /* Sources.swift in Sources */,
 				3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */,
-				3A3AD2C12219C8CD00991A2E /* Child.swift in Sources */,
 				3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */,
 				3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */,
 				3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */,
