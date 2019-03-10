@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var searchBar: UISearchBar!
     
     var nameArray = [String]()
+    var textViewArray = [String]()
     
     var selectedGene = ""
     
@@ -67,6 +68,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     if let name = result.value(forKey: "name") as? String {
                         self.nameArray.append(name)
                     }
+                    
+                    if let textView = result.value(forKey: "textView") as? String {
+                        self.textViewArray.append(textView)
+                    }
+                    
                     self.tableView.reloadData()
                 }
             }
@@ -105,6 +111,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         break
                     }
                 }
+                
+                if let textView = object.value(forKey: "textView") as? String {
+                    if textView == textViewArray[indexPath.row] {
+                        moc.delete(object)
+                        textViewArray.remove(at: indexPath.row)
+                        
+                        self.tableView.reloadData()
+                        
+                        do {
+                            try moc.save()
+                            print("saved!")
+                        } catch let error as NSError  {
+                            print("Could not save \(error), \(error.userInfo)")
+                        } catch {}
+                        break
+                    }
+                }
             }
         }
     }
@@ -124,7 +147,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell!.textLabel?.text = searchTexts[indexPath.row]
         } else {
             cell!.textLabel?.text = nameArray[indexPath.row]
+            cell!.detailTextLabel?.text = textViewArray[indexPath.row]
         }
+        
         return cell!
     }
     
