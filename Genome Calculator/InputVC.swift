@@ -185,13 +185,13 @@ class InputVC: UIViewController {
             brownEyes += 1.0
         } else if firstText == "L. Brown" {
             lBrownEyes += 1.0
-        } else if firstText == "Green" { // 1
+        } else if firstText == "Green" {
             greensPoints += 1
             greenEyes += 1.0
-        } else if firstText == "Hazel" {
+        } else if firstText == "Hazel" { // 1h
             hazelsPoints += 1
             hazelEyes += 1.0
-        } else if firstText == "Blue" {
+        } else if firstText == "Blue" { // 1b
             bluesPoints += 1
             blueEyes += 1.0
         }
@@ -216,13 +216,13 @@ class InputVC: UIViewController {
             brownEyes += 1.0
         } else if thirdText == "L. Brown" {
             lBrownEyes += 1.0
-        } else if thirdText == "Green" { // 2
+        } else if thirdText == "Green" {
             greensPoints += 1
             greenEyes += 1.0
-        } else if thirdText == "Hazel" {
+        } else if thirdText == "Hazel" { // 2h
             hazelsPoints += 1
             hazelEyes += 1.0
-        } else if thirdText == "Blue" {
+        } else if thirdText == "Blue" { // 2b
             bluesPoints += 1
             blueEyes += 1.0
         }
@@ -247,13 +247,13 @@ class InputVC: UIViewController {
             brownEyes += 0.5
         } else if fifthText == "L. Brown" {
             lBrownEyes += 0.5
-        } else if fifthText == "Green" { // 3
+        } else if fifthText == "Green" {
             greensPoints += 1
             greenEyes += 0.5
-        } else if fifthText == "Hazel" {
+        } else if fifthText == "Hazel" { // 3h
             hazelsPoints += 1
             hazelEyes += 0.5
-        } else if fifthText == "Blue" {
+        } else if fifthText == "Blue" { // 3b
             bluesPoints += 1
             blueEyes += 0.5
         }
@@ -278,13 +278,13 @@ class InputVC: UIViewController {
             brownEyes += 0.5
         } else if seventhText == "L. Brown" {
             lBrownEyes += 0.5
-        } else if seventhText == "Green" { // 4
+        } else if seventhText == "Green" {
             greensPoints += 1
             greenEyes += 0.5
-        } else if seventhText == "Hazel" {
+        } else if seventhText == "Hazel" { // 4h
             hazelsPoints += 1
             hazelEyes += 0.5
-        } else if seventhText == "Blue" {
+        } else if seventhText == "Blue" { // 4b
             bluesPoints += 1
             blueEyes += 0.5
         }
@@ -309,13 +309,13 @@ class InputVC: UIViewController {
             brownEyes += 0.5
         } else if ninthText == "L. Brown" {
             lBrownEyes += 0.5
-        } else if ninthText == "Green" { // 5
+        } else if ninthText == "Green" {
             greensPoints += 1
             greenEyes += 0.5
-        } else if ninthText == "Hazel" {
+        } else if ninthText == "Hazel" { // 5h
             hazelsPoints += 1
             hazelEyes += 0.5
-        } else if ninthText == "Blue" {
+        } else if ninthText == "Blue" { // 5b
             bluesPoints += 1
             blueEyes += 0.5
         }
@@ -340,13 +340,13 @@ class InputVC: UIViewController {
             brownEyes += 0.5
         } else if eleventhText == "L. Brown" {
             lBrownEyes += 0.5
-        } else if eleventhText == "Green" { // 6
+        } else if eleventhText == "Green" {
             greensPoints += 1
             greenEyes += 0.5
-        } else if eleventhText == "Hazel" {
+        } else if eleventhText == "Hazel" { // 6h
             hazelsPoints += 1
             hazelEyes += 0.5
-        } else if eleventhText == "Blue" {
+        } else if eleventhText == "Blue" { // 6b
             bluesPoints += 1
             blueEyes += 0.5
         }
@@ -371,13 +371,13 @@ class InputVC: UIViewController {
             brownEyes += 0.25
         } else if thirteenthText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if thirteenthText == "Green" { // 7
+        } else if thirteenthText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if thirteenthText == "Hazel" {
+        } else if thirteenthText == "Hazel" { // 7h
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if thirteenthText == "Blue" {
+        } else if thirteenthText == "Blue" { // 7b
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -390,13 +390,13 @@ class InputVC: UIViewController {
             brownEyes += 0.25
         } else if fifteenthText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if fifteenthText == "Green" { // 8
+        } else if fifteenthText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if fifteenthText == "Hazel" {
+        } else if fifteenthText == "Hazel" { // 8h
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if fifteenthText == "Blue" {
+        } else if fifteenthText == "Blue" { // 8b
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -409,13 +409,13 @@ class InputVC: UIViewController {
             brownEyes += 0.25
         } else if seventeenthText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if seventeenthText == "Green" { // 9
+        } else if seventeenthText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if seventeenthText == "Hazel" {
+        } else if seventeenthText == "Hazel" { // 9h
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if seventeenthText == "Blue" {
+        } else if seventeenthText == "Blue" { // 9b
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -428,13 +428,13 @@ class InputVC: UIViewController {
             brownEyes += 0.25
         } else if ninteenthText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if ninteenthText == "Green" { // 10
+        } else if ninteenthText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if ninteenthText == "Hazel" {
+        } else if ninteenthText == "Hazel" { // 10h
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if ninteenthText == "Blue" {
+        } else if ninteenthText == "Blue" { // 10b
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -447,13 +447,13 @@ class InputVC: UIViewController {
             brownEyes += 0.25
         } else if twentyFirstText == "L. Brown" {
             lBrownEyes += 0.25
-        } else if twentyFirstText == "Green" { // 11
+        } else if twentyFirstText == "Green" {
             greensPoints += 1
             greenEyes += 0.25
-        } else if twentyFirstText == "Hazel" {
+        } else if twentyFirstText == "Hazel" { // 11h
             hazelsPoints += 1
             hazelEyes += 0.25
-        } else if twentyFirstText == "Blue" {
+        } else if twentyFirstText == "Blue" { // 11b
             bluesPoints += 1
             blueEyes += 0.25
         }
@@ -845,35 +845,43 @@ class InputVC: UIViewController {
         
         let hairValue = Double(((blackHair * forBlackHair) + (dBrownHair * forDBrownHair) + (brownHair * forBrownHair) + (lBrownHair * forLBrownHair) + (auburnHair * forAuburnHair) + (yellowHair * forYellowHair) + (redHair * forRedHair)) / (blackHair + dBrownHair + brownHair + lBrownHair + auburnHair + yellowHair + redHair))
         
-        print(eyesValue)
-        print(hazelsPoints)
-        print(bluesPoints)
+        print("Eyes value: \(eyesValue)")
+        print("Skin value: \(skinValue)")
+        print("Hair value: \(hairValue)")
+        
+        print("Green points: \(greensPoints)")
+        print("Hazel points: \(hazelsPoints)")
+        print("Blue points: \(bluesPoints)")
+        
+        print("Auburn points: \(auburnsPoints)")
+        print("Yellow points: \(yellowsPoints)")
+        print("Red points: \(yellowsPoints)")
         
         if eyesValue == 1.0 {
             if greensPoints > hazelsPoints && greensPoints > bluesPoints {
-                biggestForEyes = (greensPoints * 100) / 14
+                biggestForEyes = 100 - (greensPoints * 100) / 14
                 firstEyesColorName = "Green"
                 firstCase = 1
             } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
-                biggestForEyes = (hazelsPoints * 100) / 14
+                biggestForEyes = 100 - (hazelsPoints * 100) / 14
                 firstEyesColorName = "Hazel"
                 firstCase = 1
             } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
-                biggestForEyes = (bluesPoints * 100) / 14
+                biggestForEyes = 100 - (bluesPoints * 100) / 14
                 firstEyesColorName = "Blue"
                 firstCase = 1
             } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
-                biggestForEyes = (greensPoints * 100) / 14
+                biggestForEyes = 100 - (greensPoints * 100) / 14
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Hazel"
                 firstCase = 2
             } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
-                biggestForEyes = (greensPoints * 100) / 14
+                biggestForEyes = 100 - (greensPoints * 100) / 14
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Blue"
                 firstCase = 2
             } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
-                biggestForEyes = (hazelsPoints * 100) / 14
+                biggestForEyes = 100 - (hazelsPoints * 100) / 14
                 firstEyesColorName = "Hazel"
                 secondEyesColorName = "Blue"
                 firstCase = 2
@@ -884,7 +892,7 @@ class InputVC: UIViewController {
             
             if resultForFirstEyesValue > resultForSecondEyesValue {
                 firstEyesColorName = "L. Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int((100 * eyesValue) / 1.25)
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 if greensPoints > hazelsPoints && greensPoints > bluesPoints {
@@ -926,34 +934,34 @@ class InputVC: UIViewController {
                     firstEyesColorName = "L. Brown"
                     secondEyesColorName = "Hazel"
                     biggestForEyes = 50
-                    secondBiggestForEyes = (hazelsPoints * 50) / 14
+                    secondBiggestForEyes = 100 - (hazelsPoints * 50) / 14
                     firstCase = 3
                 } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
                     firstEyesColorName = "L. Brown"
                     secondEyesColorName = "Blue"
                     biggestForEyes = 50
-                    secondBiggestForEyes = (bluesPoints * 50) / 14
+                    secondBiggestForEyes = 100 - (bluesPoints * 50) / 14
                     firstCase = 3
                 } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
                     firstEyesColorName = "L. Brown"
                     secondEyesColorName = "Green"
                     thirdEyesColorName = "Hazel"
                     biggestForEyes = 50
-                    secondBiggestForEyes = (greensPoints * 50) / 14
+                    secondBiggestForEyes = 100 - (greensPoints * 50) / 14
                     firstCase = 4
                 } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
                     firstEyesColorName = "L. Brown"
                     secondEyesColorName = "Green"
                     thirdEyesColorName = "Blue"
                     biggestForEyes = 50
-                    secondBiggestForEyes = (greensPoints * 50) / 14
+                    secondBiggestForEyes = 100 - (greensPoints * 50) / 14
                     firstCase = 4
                 } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
                     firstEyesColorName = "L. Brown"
                     secondEyesColorName = "Hazel"
                     thirdEyesColorName = "Blue"
                     biggestForEyes = 50
-                    secondBiggestForEyes = (hazelsPoints * 50) / 14
+                    secondBiggestForEyes = 100 - (hazelsPoints * 50) / 14
                     firstCase = 4
                 }
             }
@@ -967,11 +975,11 @@ class InputVC: UIViewController {
             
             if resultForFirstEyesValue > resultForSecondEyesValue {
                 firstEyesColorName = "Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "L. Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "Brown"
@@ -989,11 +997,11 @@ class InputVC: UIViewController {
             
             if resultForFirstEyesValue > resultForSecondEyesValue {
                 firstEyesColorName = "D. Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "D. Brown"
@@ -1011,11 +1019,11 @@ class InputVC: UIViewController {
             
             if resultForFirstEyesValue > resultForSecondEyesValue {
                 firstEyesColorName = "Black"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "D. Brown"
-                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "Black"
@@ -1039,11 +1047,11 @@ class InputVC: UIViewController {
             
             if resultForFirstSkinValue > resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int((100 * skinValue) / 1.25)
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "White"
-                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
@@ -1061,11 +1069,11 @@ class InputVC: UIViewController {
             
             if resultForFirstSkinValue > resultForSecondSkinValue {
                 firstSkinColorName = "Brown"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForSecondSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
-                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "Brown"
@@ -1083,11 +1091,11 @@ class InputVC: UIViewController {
             
             if resultForFirstSkinValue > resultForSecondSkinValue {
                 firstSkinColorName = "D. Brown"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForSecondSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "Brown"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForSecondSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "D. Brown"
@@ -1105,11 +1113,11 @@ class InputVC: UIViewController {
             
             if resultForFirstSkinValue > resultForSecondSkinValue {
                 firstSkinColorName = "Black"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForSecondSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "D. Brown"
-                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "Black"
@@ -1137,17 +1145,17 @@ class InputVC: UIViewController {
                 firstHairColorName = "Red"
                 thirdCase = 1
             } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
-                biggestForHair = (auburnsPoints * 100) / 14
+                biggestForHair = 100 - (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 secondHairColorName = "Yellow"
                 thirdCase = 2
             } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
-                biggestForHair = (auburnsPoints * 100) / 14
+                biggestForHair = 100 - (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 secondHairColorName = "Red"
                 thirdCase = 2
             } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
-                biggestForHair = (yellowsPoints * 100) / 14
+                biggestForHair = 100 - (yellowsPoints * 100) / 14
                 firstHairColorName = "Yellow"
                 secondHairColorName = "Red"
                 thirdCase = 2
@@ -1158,7 +1166,7 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
@@ -1194,40 +1202,40 @@ class InputVC: UIViewController {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Green"
                     biggestForHair = 50
-                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (auburnsPoints * 50) / 14
                     thirdCase = 3
                 } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Hazel"
                     biggestForHair = 50
-                    secondBiggestForHair = (yellowsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (yellowsPoints * 50) / 14
                     thirdCase = 3
                 } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Blue"
                     biggestForHair = 50
-                    secondBiggestForHair = (redsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (redsPoints * 50) / 14
                     thirdCase = 3
                 } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Green"
                     thirdHairColorName = "Hazel"
                     biggestForHair = 50
-                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (auburnsPoints * 50) / 14
                     thirdCase = 4
                 } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Green"
                     thirdHairColorName = "Blue"
                     biggestForHair = 50
-                    secondBiggestForHair = (auburnsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (auburnsPoints * 50) / 14
                     thirdCase = 4
                 } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Hazel"
                     thirdHairColorName = "Blue"
                     biggestForHair = 50
-                    secondBiggestForHair = (yellowsPoints * 50) / 14
+                    secondBiggestForHair = 100 - (yellowsPoints * 50) / 14
                     thirdCase = 4
                 }
             }
@@ -1241,11 +1249,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 1.5)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 1.25)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "Brown"
@@ -1263,11 +1271,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 1.5)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 1.75)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
@@ -1285,11 +1293,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "Black"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 1.75)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
-                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
+                biggestForHair = Int((100 * hairValue) / 2)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "Black"
@@ -1332,9 +1340,12 @@ class InputVC: UIViewController {
         inputTextView.isEditable = false
         
         inputTextView.text = """
-        The highest probability of child's eyes color: \(firstCaseResult).
-        The highest probability of child's skin color: \(secondCaseResult).
-        The highest probability of child's hair color: \(thirdCaseResult).
+        The highest probability of child's eyes color:
+        \(firstCaseResult).
+        The highest probability of child's skin color:
+        \(secondCaseResult).
+        The highest probability of child's hair color:
+        \(thirdCaseResult).
         """
     }
     

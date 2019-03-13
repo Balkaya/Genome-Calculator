@@ -11,7 +11,6 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     var nameArray = [String]()
     var textViewArray = [String]()
@@ -21,29 +20,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var searchTexts = [String]()
     var searching = false
     
+    let search = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getInfo()
         
         tableView.delegate = self
         tableView.dataSource = self
-        searchBar.delegate = self
         
-        searchBar.keyboardAppearance = .dark
-        searchBar.tintColor = #colorLiteral(red: 0, green: 0.9998713136, blue: 0.526712656, alpha: 1)
-        searchBar.barStyle = .blackOpaque
+        search.searchResultsUpdater = self as? UISearchResultsUpdating
         
-        let search = UISearchController(searchResultsController: nil)
+        search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Find a child"
         search.searchBar.keyboardAppearance = .dark
         search.searchBar.tintColor = #colorLiteral(red: 0, green: 0.9998713136, blue: 0.526712656, alpha: 1)
         search.searchResultsUpdater = self as? UISearchResultsUpdating
         navigationItem.searchController = search
-    }
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        // = searchController.searchBar.text
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,7 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let results = try context.fetch(fetchRequest)
             
             if results.count > 0 {
-                
                 for result in results as! [NSManagedObject] {
                     
                     if let name = result.value(forKey: "name") as? String {
@@ -145,6 +138,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         if searching {
             cell!.textLabel?.text = searchTexts[indexPath.row]
+//            cell!.detailTextLabel?.text = textViewArray[indexPath.row]
         } else {
             cell!.textLabel?.text = nameArray[indexPath.row]
             cell!.detailTextLabel?.text = textViewArray[indexPath.row]
@@ -154,7 +148,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 55
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -182,7 +176,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
-        searchBar.text = ""
+        search.searchBar.text = ""
         tableView.reloadData()
     }
+    
+//    func updateSearchResults(for searchController: UISearchController) {
+//        let term = search.searchBar.text
+//        searchTexts = Data.filter { $0.contains(term) }
+//        searching = true
+//        tableView.reloadData()
+//    }
 }
