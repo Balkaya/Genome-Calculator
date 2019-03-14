@@ -382,6 +382,18 @@ class InputVC: UIViewController {
             blueEyes += 0.25
         }
         
+        if fourteenthText == "Black" {
+            blackSkin += 0.25
+        } else if fourteenthText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if fourteenthText == "Brown" {
+            brownSkin += 0.25
+        } else if fourteenthText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if fourteenthText == "White" {
+            whiteSkin += 0.25
+        }
+        
         if fifteenthText == "Black" {
             blackEyes += 0.25
         } else if fifteenthText == "D. Brown" {
@@ -399,6 +411,18 @@ class InputVC: UIViewController {
         } else if fifteenthText == "Blue" { // 8b
             bluesPoints += 1
             blueEyes += 0.25
+        }
+        
+        if sixteenthText == "Black" {
+            blackSkin += 0.25
+        } else if sixteenthText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if sixteenthText == "Brown" {
+            brownSkin += 0.25
+        } else if sixteenthText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if sixteenthText == "White" {
+            whiteSkin += 0.25
         }
         
         if seventeenthText == "Black" {
@@ -420,6 +444,18 @@ class InputVC: UIViewController {
             blueEyes += 0.25
         }
         
+        if eighteenthText == "Black" {
+            blackSkin += 0.25
+        } else if eighteenthText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if eighteenthText == "Brown" {
+            brownSkin += 0.25
+        } else if eighteenthText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if eighteenthText == "White" {
+            whiteSkin += 0.25
+        }
+        
         if ninteenthText == "Black" {
             blackEyes += 0.25
         } else if ninteenthText == "D. Brown" {
@@ -437,6 +473,18 @@ class InputVC: UIViewController {
         } else if ninteenthText == "Blue" { // 10b
             bluesPoints += 1
             blueEyes += 0.25
+        }
+        
+        if twentiethText == "Black" {
+            blackSkin += 0.25
+        } else if twentiethText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if twentiethText == "Brown" {
+            brownSkin += 0.25
+        } else if twentiethText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if twentiethText == "White" {
+            whiteSkin += 0.25
         }
         
         if twentyFirstText == "Black" {
@@ -458,6 +506,18 @@ class InputVC: UIViewController {
             blueEyes += 0.25
         }
         
+        if twentySecondText == "Black" {
+            blackSkin += 0.25
+        } else if twentySecondText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if twentySecondText == "Brown" {
+            brownSkin += 0.25
+        } else if twentySecondText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if twentySecondText == "White" {
+            whiteSkin += 0.25
+        }
+        
         if twentyThirdText == "Black" {
             blackEyes += 0.25
         } else if twentyThirdText == "D. Brown" {
@@ -475,6 +535,18 @@ class InputVC: UIViewController {
         } else if twentyThirdText == "Blue" {
             bluesPoints += 1
             blueEyes += 0.25
+        }
+        
+        if twentyFourthText == "Black" {
+            blackSkin += 0.25
+        } else if twentyFourthText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if twentyFourthText == "Brown" {
+            brownSkin += 0.25
+        } else if twentyFourthText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if twentyFourthText == "White" {
+            whiteSkin += 0.25
         }
         
         if twentyFifthText == "Black" {
@@ -495,90 +567,6 @@ class InputVC: UIViewController {
             bluesPoints += 1
             blueEyes += 0.25
         }
-
-        if fourteenthText == "Black" || sixteenthText == "Black" || eighteenthText == "Black" || twentiethText == "Black" || twentySecondText == "Black" || twentyFourthText == "Black" || twentySixthText == "Black" || twentyEighthText == "Black" {
-            blackSkin += 0.25
-        } else if fourteenthText == "D. Brown" || sixteenthText == "D. Brown" || eighteenthText == "D. Brown" || twentiethText == "D. Brown" || twentySecondText == "D. Brown" || twentyFourthText == "D. Brown" || twentySixthText == "D. Brown" || twentyEighthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if fourteenthText == "Brown" || sixteenthText == "Brown" || eighteenthText == "Brown" || twentiethText == "Brown" || twentySecondText == "Brown" || twentyFourthText == "Brown" || twentySixthText == "Brown" || twentyEighthText == "Brown" {
-            brownSkin += 0.25
-        } else if fourteenthText == "L. Brown" || sixteenthText == "L. Brown" || eighteenthText == "L. Brown" || twentiethText == "L. Brown" || twentySecondText == "L. Brown" || twentyFourthText == "L. Brown" || twentySixthText == "L. Brown" || twentyEighthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if fourteenthText == "White" || sixteenthText == "White" || eighteenthText == "White" || twentiethText == "White" || twentySecondText == "White" || twentyFourthText == "White" || twentySixthText == "White" || twentyEighthText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if fourteenthText == "Black" {
-            blackSkin += 0.25
-        } else if fourteenthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if fourteenthText == "Brown" {
-            brownSkin += 0.25
-        } else if fourteenthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if fourteenthText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if sixteenthText == "Black" {
-            blackSkin += 0.25
-        } else if sixteenthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if sixteenthText == "Brown" {
-            brownSkin += 0.25
-        } else if sixteenthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if sixteenthText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if eighteenthText == "Black" {
-            blackSkin += 0.25
-        } else if eighteenthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if eighteenthText == "Brown" {
-            brownSkin += 0.25
-        } else if eighteenthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if eighteenthText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if twentiethText == "Black" {
-            blackSkin += 0.25
-        } else if twentiethText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentiethText == "Brown" {
-            brownSkin += 0.25
-        } else if twentiethText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentiethText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if twentySecondText == "Black" {
-            blackSkin += 0.25
-        } else if twentySecondText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentySecondText == "Brown" {
-            brownSkin += 0.25
-        } else if twentySecondText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentySecondText == "White" {
-            whiteSkin += 0.25
-        }
-        
-        if twentyFourthText == "Black" {
-            blackSkin += 0.25
-        } else if twentyFourthText == "D. Brown" {
-            dBrownSkin += 0.25
-        } else if twentyFourthText == "Brown" {
-            brownSkin += 0.25
-        } else if twentyFourthText == "L. Brown" {
-            lBrownSkin += 0.25
-        } else if twentyFourthText == "White" {
-            whiteSkin += 0.25
-        }
         
         if twentySixthText == "Black" {
             blackSkin += 0.25
@@ -589,6 +577,37 @@ class InputVC: UIViewController {
         } else if twentySixthText == "L. Brown" {
             lBrownSkin += 0.25
         } else if twentySixthText == "White" {
+            whiteSkin += 0.25
+        }
+        
+        if twentySeventhText == "Black" {
+            blackEyes += 0.25
+        } else if twentySeventhText == "D. Brown" {
+            dBrownEyes += 0.25
+        } else if twentySeventhText == "Brown" {
+            brownEyes += 0.25
+        } else if twentySeventhText == "L. Brown" {
+            lBrownEyes += 0.25
+        } else if twentySeventhText == "Green" { // 13
+            greensPoints += 1
+            greenEyes += 0.25
+        } else if twentySeventhText == "Hazel" {
+            hazelsPoints += 1
+            hazelEyes += 0.25
+        } else if twentySeventhText == "Blue" {
+            bluesPoints += 1
+            blueEyes += 0.25
+        }
+        
+        if twentyEighthText == "Black" {
+            blackSkin += 0.25
+        } else if twentyEighthText == "D. Brown" {
+            dBrownSkin += 0.25
+        } else if twentyEighthText == "Brown" {
+            brownSkin += 0.25
+        } else if twentyEighthText == "L. Brown" {
+            lBrownSkin += 0.25
+        } else if twentyEighthText == "White" {
             whiteSkin += 0.25
         }
         
@@ -683,6 +702,25 @@ class InputVC: UIViewController {
             yellowsPoints += 1
             yellowHair += 0.5
         } else if thirtyThirdText == "Red" {
+            redsPoints += 1
+            redHair += 0.5
+        }
+        
+        if thirtyFourthText == "Black" {
+            blackHair += 0.5
+        } else if thirtyFourthText == "D. Brown" {
+            dBrownHair += 0.5
+        } else if thirtyFourthText == "Brown" {
+            brownHair += 0.5
+        } else if thirtyFourthText == "L. Brown" {
+            lBrownHair += 0.5
+        } else if thirtyFourthText == "Auburn" {
+            auburnsPoints += 1
+            auburnHair += 0.5
+        } else if thirtyFourthText == "Yellow" {
+            yellowsPoints += 1
+            yellowHair += 0.5
+        } else if thirtyFourthText == "Red" {
             redsPoints += 1
             redHair += 0.5
         }
