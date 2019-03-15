@@ -897,29 +897,29 @@ class InputVC: UIViewController {
         
         if eyesValue == 1.0 {
             if greensPoints > hazelsPoints && greensPoints > bluesPoints {
-                biggestForEyes = 100 - (greensPoints * 100) / 14
+                biggestForEyes = (greensPoints * 100) / 14
                 firstEyesColorName = "Green"
                 firstCase = 1
             } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
-                biggestForEyes = 100 - (hazelsPoints * 100) / 14
+                biggestForEyes = (hazelsPoints * 100) / 14
                 firstEyesColorName = "Hazel"
                 firstCase = 1
             } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
-                biggestForEyes = 100 - (bluesPoints * 100) / 14
+                biggestForEyes = (bluesPoints * 100) / 14
                 firstEyesColorName = "Blue"
                 firstCase = 1
             } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
-                biggestForEyes = 100 - (greensPoints * 100) / 14
+                biggestForEyes = (100 - (bluesPoints * 100) / 14) / 2
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Hazel"
                 firstCase = 2
             } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
-                biggestForEyes = 100 - (greensPoints * 100) / 14
+                biggestForEyes = (100 - (hazelsPoints * 100) / 14) / 2
                 firstEyesColorName = "Green"
                 secondEyesColorName = "Blue"
                 firstCase = 2
             } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
-                biggestForEyes = 100 - (hazelsPoints * 100) / 14
+                biggestForEyes = (100 - (greensPoints * 100) / 14) /  2
                 firstEyesColorName = "Hazel"
                 secondEyesColorName = "Blue"
                 firstCase = 2
@@ -1017,7 +1017,7 @@ class InputVC: UIViewController {
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "L. Brown"
-                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "Brown"
@@ -1039,7 +1039,7 @@ class InputVC: UIViewController {
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "Brown"
-                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "D. Brown"
@@ -1061,7 +1061,7 @@ class InputVC: UIViewController {
                 firstCase = 1
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 firstEyesColorName = "D. Brown"
-                biggestForEyes = Int(100 - (100 * resultForSecondEyesValue) / 0.25)
+                biggestForEyes = Int((100 * resultForSecondEyesValue) / 0.25)
                 firstCase = 1
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
                 firstEyesColorName = "Black"
