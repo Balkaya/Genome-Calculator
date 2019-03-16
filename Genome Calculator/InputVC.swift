@@ -1085,11 +1085,11 @@ class InputVC: UIViewController {
             
             if resultForFirstSkinValue > resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
-                biggestForSkin = Int((100 * skinValue) / 1.25)
+                biggestForSkin = Int(100 - (100 * skinValue) / 1.25)
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "White"
-                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
+                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
@@ -1111,7 +1111,7 @@ class InputVC: UIViewController {
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "L. Brown"
-                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
+                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "Brown"
@@ -1133,7 +1133,7 @@ class InputVC: UIViewController {
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "Brown"
-                biggestForSkin = Int(100 - (100 * resultForSecondSkinValue) / 0.25)
+                biggestForSkin = Int((100 * resultForSecondSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "D. Brown"
@@ -1155,7 +1155,7 @@ class InputVC: UIViewController {
                 secondCase = 1
             } else if resultForFirstSkinValue < resultForSecondSkinValue {
                 firstSkinColorName = "D. Brown"
-                biggestForSkin = Int(100 - (100 * resultForFirstSkinValue) / 0.25)
+                biggestForSkin = Int((100 * resultForFirstSkinValue) / 0.25)
                 secondCase = 1
             } else if resultForFirstSkinValue == resultForSecondSkinValue {
                 firstSkinColorName = "Black"
@@ -1171,29 +1171,29 @@ class InputVC: UIViewController {
         
         if hairValue == 1 {
             if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
-                biggestForHair = 100 - (auburnsPoints * 100) / 14
+                biggestForHair = (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 thirdCase = 1
             } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
-                biggestForHair = 100 - (yellowsPoints * 100) / 14
+                biggestForHair = (yellowsPoints * 100) / 14
                 firstHairColorName = "Yellow"
                 thirdCase = 1
             } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
-                biggestForHair = 100 - (redsPoints * 100) / 14
+                biggestForHair = (redsPoints * 100) / 14
                 firstHairColorName = "Red"
                 thirdCase = 1
             } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
-                biggestForHair = 100 - (auburnsPoints * 100) / 14
+                biggestForHair = (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 secondHairColorName = "Yellow"
                 thirdCase = 2
             } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
-                biggestForHair = 100 - (auburnsPoints * 100) / 14
+                biggestForHair = (auburnsPoints * 100) / 14
                 firstHairColorName = "Auburn"
                 secondHairColorName = "Red"
                 thirdCase = 2
             } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
-                biggestForHair = 100 - (yellowsPoints * 100) / 14
+                biggestForHair = (yellowsPoints * 100) / 14
                 firstHairColorName = "Yellow"
                 secondHairColorName = "Red"
                 thirdCase = 2
@@ -1204,7 +1204,8 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
-                biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
+                biggestForEyes = Int((100 * hairValue) / 1.25)
+                //biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
@@ -1240,19 +1241,19 @@ class InputVC: UIViewController {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Green"
                     biggestForHair = 50
-                    secondBiggestForHair = 100 - (auburnsPoints * 50) / 14
+                    secondBiggestForHair = (auburnsPoints * 50) / 14
                     thirdCase = 3
                 } else if yellowsPoints > auburnsPoints && yellowsPoints > redsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Hazel"
                     biggestForHair = 50
-                    secondBiggestForHair = 100 - (yellowsPoints * 50) / 14
+                    secondBiggestForHair = (yellowsPoints * 50) / 14
                     thirdCase = 3
                 } else if redsPoints > auburnsPoints && redsPoints > yellowsPoints {
                     firstHairColorName = "L. Brown"
                     secondHairColorName = "Blue"
                     biggestForHair = 50
-                    secondBiggestForHair = 100 - (redsPoints * 50) / 14
+                    secondBiggestForHair = (redsPoints * 50) / 14
                     thirdCase = 3
                 } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
                     firstHairColorName = "L. Brown"
@@ -1287,11 +1288,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "Brown"
-                biggestForHair = Int((100 * hairValue) / 1.5)
+                biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
-                biggestForHair = Int((100 * hairValue) / 1.25)
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "Brown"
@@ -1309,11 +1310,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
-                biggestForHair = Int((100 * hairValue) / 1.5)
+                biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "Brown"
-                biggestForHair = Int((100 * hairValue) / 1.75)
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
@@ -1331,11 +1332,11 @@ class InputVC: UIViewController {
             
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "Black"
-                biggestForHair = Int((100 * hairValue) / 1.75)
+                biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 firstHairColorName = "D. Brown"
-                biggestForHair = Int((100 * hairValue) / 2)
+                biggestForHair = Int((100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue == resultForSecondHairValue {
                 firstHairColorName = "Black"
@@ -1498,12 +1499,8 @@ class InputVC: UIViewController {
             
             do {
                 try managedContext.save()
-            } catch {
-                print(error)
-            }
-        } catch {
-            print(error)
-        }
+            } catch {}
+        } catch {}
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
