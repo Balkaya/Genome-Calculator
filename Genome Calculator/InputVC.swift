@@ -935,30 +935,31 @@ class InputVC: UIViewController {
             } else if resultForFirstEyesValue < resultForSecondEyesValue {
                 if greensPoints > hazelsPoints && greensPoints > bluesPoints {
                     firstEyesColorName = "Green"
-                    biggestForEyes = (greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
                     firstCase = 1
                 } else if hazelsPoints > greensPoints && hazelsPoints > bluesPoints {
                     firstEyesColorName = "Hazel"
-                    biggestForEyes = (hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
                     firstCase = 1
                 } else if bluesPoints > greensPoints && bluesPoints > hazelsPoints {
                     firstEyesColorName = "Blue"
-                    biggestForEyes = (bluesPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
                     firstCase = 1
                 } else if greensPoints == hazelsPoints && greensPoints > bluesPoints {
                     firstSkinColorName = "Green"
                     secondEyesColorName = "Hazel"
-                    biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
+                    //biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
                     firstCase = 2
                 } else if greensPoints == bluesPoints && greensPoints > hazelsPoints {
-                    firstSkinColorName = "Green"
+                    firstEyesColorName = "Green"
                     secondEyesColorName = "Blue"
-                    biggestForEyes = ((greensPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
                     firstCase = 2
                 } else if hazelsPoints == bluesPoints && hazelsPoints > greensPoints {
-                    firstSkinColorName = "Hazel"
+                    firstEyesColorName = "Hazel"
                     secondEyesColorName = "Blue"
-                    biggestForEyes = ((hazelsPoints * Int((resultForSecondEyesValue * 100) / 0.25)) / 14) / 2
+                    biggestForEyes = Int(100 - (100 *  resultForFirstEyesValue / 0.25)) / 2
                     firstCase = 2
                 }
             } else if resultForFirstEyesValue == resultForSecondEyesValue {
@@ -1205,7 +1206,6 @@ class InputVC: UIViewController {
             if resultForFirstHairValue > resultForSecondHairValue {
                 firstHairColorName = "L. Brown"
                 biggestForEyes = Int((100 * hairValue) / 1.25)
-                //biggestForHair = Int(100 - (100 * resultForSecondHairValue) / 0.25)
                 thirdCase = 1
             } else if resultForFirstHairValue < resultForSecondHairValue {
                 if auburnsPoints > yellowsPoints && auburnsPoints > redsPoints {
@@ -1223,17 +1223,17 @@ class InputVC: UIViewController {
                 } else if auburnsPoints == yellowsPoints && auburnsPoints > redsPoints {
                     firstHairColorName = "Auburn"
                     secondHairColorName = "Yellow"
-                    biggestForHair = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    biggestForHair = Int(100 - (100 *  resultForFirstHairValue / 0.25)) / 2
                     thirdCase = 2
                 } else if auburnsPoints == redsPoints && auburnsPoints > yellowsPoints {
                     firstHairColorName = "Auburn"
                     secondHairColorName = "Red"
-                    biggestForHair = ((auburnsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    biggestForHair = Int(100 - (100 *  resultForFirstHairValue / 0.25)) / 2
                     thirdCase = 2
                 } else if yellowsPoints == redsPoints && yellowsPoints > auburnsPoints {
                     firstHairColorName = "Yellow"
                     secondHairColorName = "Red"
-                    biggestForHair = ((yellowsPoints * Int((resultForSecondHairValue * 100) / 0.25)) / 14) / 2
+                    biggestForHair = Int(100 - (100 *  resultForFirstHairValue / 0.25)) / 2
                     thirdCase = 2
                 }
             } else if resultForFirstHairValue == resultForSecondHairValue {
