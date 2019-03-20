@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A7B37AF22429D57008FEAB2 /* AddVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B37AE22429D57008FEAB2 /* AddVCCell.swift */; };
-		3A7B37B32242A3C3008FEAB2 /* TemporaryAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B37B22242A3C3008FEAB2 /* TemporaryAddVC.swift */; };
+		3A7B37B72242A4B4008FEAB2 /* TemporaryAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B37B62242A4B4008FEAB2 /* TemporaryAddVC.swift */; };
 		3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */; };
 		3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C40021CEBD430047C453 /* ViewController.swift */; };
 		3AA3C40421CEBD430047C453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40221CEBD430047C453 /* Main.storyboard */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3A7B37AE22429D57008FEAB2 /* AddVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVCCell.swift; sourceTree = "<group>"; };
-		3A7B37B22242A3C3008FEAB2 /* TemporaryAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryAddVC.swift; sourceTree = "<group>"; };
+		3A7B37B62242A4B4008FEAB2 /* TemporaryAddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemporaryAddVC.swift; sourceTree = "<group>"; };
 		3AA3C3FB21CEBD430047C453 /* Genome Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genome Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA3C40021CEBD430047C453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				3AA3C40021CEBD430047C453 /* ViewController.swift */,
 				3AA3C41321CEBD8B0047C453 /* AddVC.swift */,
 				3A7B37AE22429D57008FEAB2 /* AddVCCell.swift */,
-				3A7B37B22242A3C3008FEAB2 /* TemporaryAddVC.swift */,
+				3A7B37B62242A4B4008FEAB2 /* TemporaryAddVC.swift */,
 				3AA3C41521CEBDAD0047C453 /* InputVC.swift */,
 				3AE7BA8621DEA100009BCD31 /* EditVC.swift */,
 				3AA3C41721CEBDD60047C453 /* Sources.swift */,
@@ -164,10 +164,10 @@
 				3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */,
 				3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */,
 				3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */,
-				3A7B37B32242A3C3008FEAB2 /* TemporaryAddVC.swift in Sources */,
 				3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */,
 				3AA3C40721CEBD430047C453 /* Genome_Calculator.xcdatamodeld in Sources */,
 				3AE7BA8721DEA100009BCD31 /* EditVC.swift in Sources */,
+				3A7B37B72242A4B4008FEAB2 /* TemporaryAddVC.swift in Sources */,
 				3A7B37AF22429D57008FEAB2 /* AddVCCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
