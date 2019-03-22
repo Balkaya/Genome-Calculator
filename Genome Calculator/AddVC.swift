@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class AddVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var chosenGene = ""
     var secondTF = false
     
@@ -1086,6 +1086,62 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         } else if segue.identifier == "toInputVC" {
             let destinationVC = segue.destination as! InputVC
             destinationVC.thirdTF = secondTF
+        }
+    }
+    
+    @IBAction func calculateTapped(_ sender: UIBarButtonItem) {
+        nameText = nameTextField.text!
+        textOne = momFirstTextField.text!
+        textTwo = momSecondTextField.text!
+        textTwentyNinth = momThirdTextField.text!
+        textThree = dadFirstTextField.text!
+        textFour = dadSecondTextField.text!
+        textThirtieth = dadThirdTextField.text!
+        textFive = momsMomFirstTextField.text!
+        textSix = momsMomSecondTextField.text!
+        textThirtyFirst = momsMomThirdTextField.text!
+        textSeven = momsDadFirstTextField.text!
+        textEight = momsDadSecondTextField.text!
+        textThirtySecond = momsDadThidTextField.text!
+        textNine = dadsMomFirstTextField.text!
+        textTen = dadsMomSecondTextField.text!
+        textThirtyThird = dadsMomThirdTextField.text!
+        textEleven = dadsDadFirstTextField.text!
+        textTwelve = dadsDadSecondTextField.text!
+        textThirtyFourth = dadsDadThirdTextField.text!
+        textThirteen = momsMomsMomFirstTextField.text!
+        textFourteen = momsMomsMomSecondTextField.text!
+        textThirtyFifth = momsMomsMomThirdTextField.text!
+        textFifteen = momsMomsDadFirstTextField.text!
+        textSixteen = momsMomsDadSecondTextField.text!
+        textThirtySixth = momsMomsDadThirdTextField.text!
+        textSeventeen = momsDadsMomFirstTextField.text!
+        textEighteen = momsDadsMomSecondTextField.text!
+        textThirtySeventh = momsDadsMomThirdTextField.text!
+        textNinteen = momsDadsDadFirstTextField.text!
+        textTwenty = momsDadsDadSecondTextField.text!
+        textThirtyEight = momsDadsDadThirdTextField.text!
+        textTwentyOne = dadsMomsMomFirstTextField.text!
+        textTwentyTwo = dadsMomsMomSecondTextField.text!
+        textThirtyNinth = dadsMomsMomThirdTextField.text!
+        textTwentyThree = dadsMomsDadFirstTextField.text!
+        textTwentyFour = dadsMomsDadSecondTextField.text!
+        textFortieth = dadsMomsDadThirdTextField.text!
+        textTwentyFive = dadsDadsMomFirstTextField.text!
+        textTwentySix = dadsDadsMomSecondTextField.text!
+        textFourtyFirst = dadsDadsMomThirdTextField.text!
+        textTwentySeven = dadsDadsDadFirstTextField.text!
+        textTwentyEight = dadsDadsDadSecondTextField.text!
+        textFourtySecond = dadsDadsDadThirdTextField.text!
+        
+        if nameText == "" || textOne == "" || textTwo == "" || textThree == "" || textFour == "" || textFive == "" || textSix == "" || textSeven == "" || textEight == "" || textNine == "" || textTen == "" || textEleven == "" || textTwelve == "" || textThirteen == "" || textFourteen == "" || textFifteen == "" || textSixteen == "" || textSeventeen == "" || textEighteen == "" || textNinteen == "" || textTwenty == "" || textTwentyOne == "" || textTwentyTwo == "" || textTwentyThree == "" || textTwentyFour == "" || textTwentyFive == "" || textTwentySix == "" || textTwentySeven == "" || textTwentyEight == "" || textTwentyNinth == "" || textThirtieth == "" || textThirtyFirst == "" || textThirtySecond == "" || textThirtyThird == "" || textThirtyFourth == "" || textThirtyFifth == "" || textThirtySixth == "" || textThirtySeventh == "" || textThirtyEight == "" || textThirtyNinth == "" || textFortieth == "" || textFourtyFirst == "" || textFourtySecond == "" {
+            
+            let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
+            let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+            alert.addAction(okButoon)
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "toInputVC", sender: nil)
         }
     }
     
