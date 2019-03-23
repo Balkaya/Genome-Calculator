@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class InputVC: UIViewController {
+class InputVC: UITableViewController {
     var thirdTF = false
     
     var name = ""
@@ -56,126 +56,51 @@ class InputVC: UIViewController {
     var fourtyFirstText = ""
     var fourtySecondText = ""
     
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    // Mom
-    @IBOutlet weak var momFirstLabel: UILabel!
-    @IBOutlet weak var momSecondLabel: UILabel!
-    @IBOutlet weak var momThirdLabel: UILabel!
-    
-    // Dad
-    @IBOutlet weak var dadFirstLabel: UILabel!
-    @IBOutlet weak var dadSecondLabel: UILabel!
-    @IBOutlet weak var dadThirdLabel: UILabel!
-    
-    // Mom's Mom
-    @IBOutlet weak var momsMomFirstLabel: UILabel!
-    @IBOutlet weak var momsMomSecondLabel: UILabel!
-    @IBOutlet weak var momsMomThirdLabel: UILabel!
-    
-    // Mom's Dad
-    @IBOutlet weak var momsDadFirstLabel: UILabel!
-    @IBOutlet weak var momsDadSecondLabel: UILabel!
-    @IBOutlet weak var momsDadThirdLabel: UILabel!
-    
-    // Dad's Mom
-    @IBOutlet weak var dadsMomFirstLabel: UILabel!
-    @IBOutlet weak var dadsMomSecondLabel: UILabel!
-    @IBOutlet weak var dadsMomThirdLabel: UILabel!
-    
-    // Dad's Dad
-    @IBOutlet weak var dadsDadFirstLabel: UILabel!
-    @IBOutlet weak var dadsDadSecondLabel: UILabel!
-    @IBOutlet weak var dadsDadThirdLabel: UILabel!
-    
-    // Mom's Mom's Mom
-    @IBOutlet weak var momsMomsMomFirstLabel: UILabel!
-    @IBOutlet weak var momsMomsMomSecondLabel: UILabel!
-    @IBOutlet weak var momsMomsMomThirdLabel: UILabel!
-    
-    // Mom's Mom's Dad
-    @IBOutlet weak var momsMomsDadFirstLabel: UILabel!
-    @IBOutlet weak var momsMomsDadSecondLabel: UILabel!
-    @IBOutlet weak var momsMomsDadThirdLabel: UILabel!
-    
-    // Mom's Dad's Mom
-    @IBOutlet weak var momsDadsMomFirstLabel: UILabel!
-    @IBOutlet weak var momsDadsMomSecondLabel: UILabel!
-    @IBOutlet weak var momsDadsMomThirdLabel: UILabel!
-    
-    // Mom's Dad's Dad
-    @IBOutlet weak var momsDadsDadFirstLabel: UILabel!
-    @IBOutlet weak var momsDadsDadSecondLabel: UILabel!
-    @IBOutlet weak var momsDadsDadThirdLabel: UILabel!
-    
-    // Dad's Mom's Mom
-    @IBOutlet weak var dadsMomsMomFirstLabel: UILabel!
-    @IBOutlet weak var dadsMomsMomSecondLabel: UILabel!
-    @IBOutlet weak var dadsMomsMomThirdLabel: UILabel!
-    
-    // Dad's Mom's Dad
-    @IBOutlet weak var dadsMomsDadFirstLabel: UILabel!
-    @IBOutlet weak var dadsMomsDadSecondLabel: UILabel!
-    @IBOutlet weak var dadsMomsDadThirdLabel: UILabel!
-    
-    // Dad's Dad's Mom
-    @IBOutlet weak var dadsDadsMomFirstLabel: UILabel!
-    @IBOutlet weak var dadsDadsMomSecondLabel: UILabel!
-    @IBOutlet weak var dadsDadsMomThirdLabel: UILabel!
-    
-    // Dad's Dad's Dad
-    @IBOutlet weak var dadsDadsDadFirstLabel: UILabel!
-    @IBOutlet weak var dadsDadsDadSecondLabel: UILabel!
-    @IBOutlet weak var dadsDadsDadThirdLabel: UILabel!
-    
-    // input
-    @IBOutlet weak var inputTextView: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = name
-        momFirstLabel.text = firstText
-        momSecondLabel.text = secondText
-        momThirdLabel.text = twentyNinthText
-        dadFirstLabel.text = thirdText
-        dadSecondLabel.text = fourthText
-        dadThirdLabel.text = thirtiethText
-        momsMomFirstLabel.text = fifthText
-        momsMomSecondLabel.text = sixthText
-        momsMomThirdLabel.text = thirtyFirstText
-        momsDadFirstLabel.text = seventhText
-        momsDadSecondLabel.text = eighthText
-        momsDadThirdLabel.text = thirtySecondText
-        dadsMomFirstLabel.text = ninthText
-        dadsMomSecondLabel.text = tenthText
-        dadsMomThirdLabel.text = thirtyThirdText
-        dadsDadFirstLabel.text = eleventhText
-        dadsDadSecondLabel.text = twelfthText
-        dadsDadThirdLabel.text = thirtyFourthText
-        momsMomsMomFirstLabel.text = thirteenthText
-        momsMomsMomSecondLabel.text = fourteenthText
-        momsMomsMomThirdLabel.text = thirtyFifthText
-        momsMomsDadFirstLabel.text = fifteenthText
-        momsMomsDadSecondLabel.text = sixteenthText
-        momsMomsDadThirdLabel.text = thirtySixthText
-        momsDadsMomFirstLabel.text = seventeenthText
-        momsDadsMomSecondLabel.text = eighteenthText
-        momsDadsMomThirdLabel.text = thirtySeventhText
-        momsDadsDadFirstLabel.text = ninteenthText
-        momsDadsDadSecondLabel.text = twentiethText
-        momsDadsDadThirdLabel.text = thirtyEightText
-        dadsMomsMomFirstLabel.text = twentyFirstText
-        dadsMomsMomSecondLabel.text = twentySecondText
-        dadsMomsMomThirdLabel.text = thirtyNinthText
-        dadsMomsDadFirstLabel.text = twentyThirdText
-        dadsMomsDadSecondLabel.text = twentyFourthText
-        dadsMomsDadThirdLabel.text = fortiethText
-        dadsDadsMomFirstLabel.text = twentyFifthText
-        dadsDadsMomSecondLabel.text = twentySixthText
-        dadsDadsMomThirdLabel.text = fourtyFirstText
-        dadsDadsDadFirstLabel.text = twentySeventhText
-        dadsDadsDadSecondLabel.text = twentyEighthText
-        dadsDadsDadThirdLabel.text = fourtySecondText
+//        nameLabel.text = name
+//        momFirstLabel.text = firstText
+//        momSecondLabel.text = secondText
+//        momThirdLabel.text = twentyNinthText
+//        dadFirstLabel.text = thirdText
+//        dadSecondLabel.text = fourthText
+//        dadThirdLabel.text = thirtiethText
+//        momsMomFirstLabel.text = fifthText
+//        momsMomSecondLabel.text = sixthText
+//        momsMomThirdLabel.text = thirtyFirstText
+//        momsDadFirstLabel.text = seventhText
+//        momsDadSecondLabel.text = eighthText
+//        momsDadThirdLabel.text = thirtySecondText
+//        dadsMomFirstLabel.text = ninthText
+//        dadsMomSecondLabel.text = tenthText
+//        dadsMomThirdLabel.text = thirtyThirdText
+//        dadsDadFirstLabel.text = eleventhText
+//        dadsDadSecondLabel.text = twelfthText
+//        dadsDadThirdLabel.text = thirtyFourthText
+//        momsMomsMomFirstLabel.text = thirteenthText
+//        momsMomsMomSecondLabel.text = fourteenthText
+//        momsMomsMomThirdLabel.text = thirtyFifthText
+//        momsMomsDadFirstLabel.text = fifteenthText
+//        momsMomsDadSecondLabel.text = sixteenthText
+//        momsMomsDadThirdLabel.text = thirtySixthText
+//        momsDadsMomFirstLabel.text = seventeenthText
+//        momsDadsMomSecondLabel.text = eighteenthText
+//        momsDadsMomThirdLabel.text = thirtySeventhText
+//        momsDadsDadFirstLabel.text = ninteenthText
+//        momsDadsDadSecondLabel.text = twentiethText
+//        momsDadsDadThirdLabel.text = thirtyEightText
+//        dadsMomsMomFirstLabel.text = twentyFirstText
+//        dadsMomsMomSecondLabel.text = twentySecondText
+//        dadsMomsMomThirdLabel.text = thirtyNinthText
+//        dadsMomsDadFirstLabel.text = twentyThirdText
+//        dadsMomsDadSecondLabel.text = twentyFourthText
+//        dadsMomsDadThirdLabel.text = fortiethText
+//        dadsDadsMomFirstLabel.text = twentyFifthText
+//        dadsDadsMomSecondLabel.text = twentySixthText
+//        dadsDadsMomThirdLabel.text = fourtyFirstText
+//        dadsDadsDadFirstLabel.text = twentySeventhText
+//        dadsDadsDadSecondLabel.text = twentyEighthText
+//        dadsDadsDadThirdLabel.text = fourtySecondText
         
         if firstText == "Black" {
             blackEyes += 1.0
@@ -1376,16 +1301,16 @@ class InputVC: UIViewController {
             thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)%, \(secondHairColorName)-hair \(secondBiggestForHair)% and \(thirdHairColorName)-hair \(secondBiggestForHair)%"
         }
         
-        inputTextView.isEditable = false
+//        inputTextView.isEditable = false
         
-        inputTextView.text = """
-        The highest probability of child's eyes color:
-        \(firstCaseResult).
-        The highest probability of child's skin color:
-        \(secondCaseResult).
-        The highest probability of child's hair color:
-        \(thirdCaseResult).
-        """
+//        inputTextView.text = """
+//        The highest probability of child's eyes color:
+//        \(firstCaseResult).
+//        The highest probability of child's skin color:
+//        \(secondCaseResult).
+//        The highest probability of child's hair color:
+//        \(thirdCaseResult).
+//        """
     }
     
     func createData() {
@@ -1393,50 +1318,50 @@ class InputVC: UIViewController {
         let context = appDelegate.persistentContainer.viewContext
         let newGene = NSEntityDescription.insertNewObject(forEntityName: "Genes", into: context)
         
-        newGene.setValue(nameLabel.text, forKey: "name")
-        newGene.setValue(inputTextView.text, forKey: "textView")
-        newGene.setValue(momFirstLabel.text, forKey: "momEyesC")
-        newGene.setValue(momSecondLabel.text, forKey: "momSkinC")
-        newGene.setValue(momThirdLabel.text, forKey: "momHairC")
-        newGene.setValue(dadFirstLabel.text, forKey: "dadEyesC")
-        newGene.setValue(dadSecondLabel.text, forKey: "dadSkinC")
-        newGene.setValue(dadThirdLabel.text, forKey: "dadHairC")
-        newGene.setValue(momsMomFirstLabel.text, forKey: "momsMomEyesC")
-        newGene.setValue(momsMomSecondLabel.text, forKey: "momsMomSkinC")
-        newGene.setValue(momsMomThirdLabel.text, forKey: "momsMomHairC")
-        newGene.setValue(momsDadFirstLabel.text, forKey: "dadsMomEyesC")
-        newGene.setValue(momsDadSecondLabel.text, forKey: "dadsMomSkinC")
-        newGene.setValue(momsDadThirdLabel.text, forKey: "dadsMomHairC")
-        newGene.setValue(dadsMomFirstLabel.text, forKey: "momsDadEyesC")
-        newGene.setValue(dadsMomSecondLabel.text, forKey: "momsDadSkinC")
-        newGene.setValue(dadsMomThirdLabel.text, forKey: "momsDadHairC")
-        newGene.setValue(dadsDadFirstLabel.text, forKey: "dadsDadEyesC")
-        newGene.setValue(dadsDadSecondLabel.text, forKey: "dadsDadSkinC")
-        newGene.setValue(dadsDadThirdLabel.text, forKey: "dadsDadHairC")
-        newGene.setValue(momsMomsMomFirstLabel.text, forKey: "momsMomsMomEyesC")
-        newGene.setValue(momsMomsMomSecondLabel.text, forKey: "momsMomsMomSkinC")
-        newGene.setValue(momsMomsMomThirdLabel.text, forKey: "momsMomsMomHairC")
-        newGene.setValue(momsMomsDadFirstLabel.text, forKey: "momsMomsDadEyesC")
-        newGene.setValue(momsMomsDadSecondLabel.text, forKey: "momsMomsDadSkinC")
-        newGene.setValue(momsMomsDadThirdLabel.text, forKey: "momsMomsDadHairC")
-        newGene.setValue(momsDadsMomFirstLabel.text, forKey: "momsDadsMomEyesC")
-        newGene.setValue(momsDadsMomSecondLabel.text, forKey: "momsDadsMomSkinC")
-        newGene.setValue(momsDadsMomThirdLabel.text, forKey: "momsDadsMomHairC")
-        newGene.setValue(momsDadsDadFirstLabel.text, forKey: "momsDadsDadEyesC")
-        newGene.setValue(momsDadsDadSecondLabel.text, forKey: "momsDadsDadSkinC")
-        newGene.setValue(momsDadsDadThirdLabel.text, forKey: "momsDadsDadHairC")
-        newGene.setValue(dadsMomsMomFirstLabel.text, forKey: "dadsMomsMomEyesC")
-        newGene.setValue(dadsMomsMomSecondLabel.text, forKey: "dadsMomsMomSkinC")
-        newGene.setValue(dadsMomsMomThirdLabel.text, forKey: "dadsMomsMomHairC")
-        newGene.setValue(dadsMomsDadFirstLabel.text, forKey: "dadsMomsDadEyesC")
-        newGene.setValue(dadsMomsDadSecondLabel.text, forKey: "dadsMomsDadSkinC")
-        newGene.setValue(dadsMomsDadThirdLabel.text, forKey: "dadsMomsDadHairC")
-        newGene.setValue(dadsDadsMomFirstLabel.text, forKey: "dadsDadsMomEyesC")
-        newGene.setValue(dadsDadsMomSecondLabel.text, forKey: "dadsDadsMomSkinC")
-        newGene.setValue(dadsDadsMomThirdLabel.text, forKey: "dadsDadsMomHairC")
-        newGene.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
-        newGene.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
-        newGene.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
+//        newGene.setValue(nameLabel.text, forKey: "name")
+//        newGene.setValue(inputTextView.text, forKey: "textView")
+//        newGene.setValue(momFirstLabel.text, forKey: "momEyesC")
+//        newGene.setValue(momSecondLabel.text, forKey: "momSkinC")
+//        newGene.setValue(momThirdLabel.text, forKey: "momHairC")
+//        newGene.setValue(dadFirstLabel.text, forKey: "dadEyesC")
+//        newGene.setValue(dadSecondLabel.text, forKey: "dadSkinC")
+//        newGene.setValue(dadThirdLabel.text, forKey: "dadHairC")
+//        newGene.setValue(momsMomFirstLabel.text, forKey: "momsMomEyesC")
+//        newGene.setValue(momsMomSecondLabel.text, forKey: "momsMomSkinC")
+//        newGene.setValue(momsMomThirdLabel.text, forKey: "momsMomHairC")
+//        newGene.setValue(momsDadFirstLabel.text, forKey: "dadsMomEyesC")
+//        newGene.setValue(momsDadSecondLabel.text, forKey: "dadsMomSkinC")
+//        newGene.setValue(momsDadThirdLabel.text, forKey: "dadsMomHairC")
+//        newGene.setValue(dadsMomFirstLabel.text, forKey: "momsDadEyesC")
+//        newGene.setValue(dadsMomSecondLabel.text, forKey: "momsDadSkinC")
+//        newGene.setValue(dadsMomThirdLabel.text, forKey: "momsDadHairC")
+//        newGene.setValue(dadsDadFirstLabel.text, forKey: "dadsDadEyesC")
+//        newGene.setValue(dadsDadSecondLabel.text, forKey: "dadsDadSkinC")
+//        newGene.setValue(dadsDadThirdLabel.text, forKey: "dadsDadHairC")
+//        newGene.setValue(momsMomsMomFirstLabel.text, forKey: "momsMomsMomEyesC")
+//        newGene.setValue(momsMomsMomSecondLabel.text, forKey: "momsMomsMomSkinC")
+//        newGene.setValue(momsMomsMomThirdLabel.text, forKey: "momsMomsMomHairC")
+//        newGene.setValue(momsMomsDadFirstLabel.text, forKey: "momsMomsDadEyesC")
+//        newGene.setValue(momsMomsDadSecondLabel.text, forKey: "momsMomsDadSkinC")
+//        newGene.setValue(momsMomsDadThirdLabel.text, forKey: "momsMomsDadHairC")
+//        newGene.setValue(momsDadsMomFirstLabel.text, forKey: "momsDadsMomEyesC")
+//        newGene.setValue(momsDadsMomSecondLabel.text, forKey: "momsDadsMomSkinC")
+//        newGene.setValue(momsDadsMomThirdLabel.text, forKey: "momsDadsMomHairC")
+//        newGene.setValue(momsDadsDadFirstLabel.text, forKey: "momsDadsDadEyesC")
+//        newGene.setValue(momsDadsDadSecondLabel.text, forKey: "momsDadsDadSkinC")
+//        newGene.setValue(momsDadsDadThirdLabel.text, forKey: "momsDadsDadHairC")
+//        newGene.setValue(dadsMomsMomFirstLabel.text, forKey: "dadsMomsMomEyesC")
+//        newGene.setValue(dadsMomsMomSecondLabel.text, forKey: "dadsMomsMomSkinC")
+//        newGene.setValue(dadsMomsMomThirdLabel.text, forKey: "dadsMomsMomHairC")
+//        newGene.setValue(dadsMomsDadFirstLabel.text, forKey: "dadsMomsDadEyesC")
+//        newGene.setValue(dadsMomsDadSecondLabel.text, forKey: "dadsMomsDadSkinC")
+//        newGene.setValue(dadsMomsDadThirdLabel.text, forKey: "dadsMomsDadHairC")
+//        newGene.setValue(dadsDadsMomFirstLabel.text, forKey: "dadsDadsMomEyesC")
+//        newGene.setValue(dadsDadsMomSecondLabel.text, forKey: "dadsDadsMomSkinC")
+//        newGene.setValue(dadsDadsMomThirdLabel.text, forKey: "dadsDadsMomHairC")
+//        newGene.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
+//        newGene.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
+//        newGene.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newGenes"), object: nil)
     }
@@ -1452,50 +1377,50 @@ class InputVC: UIViewController {
             let test = try managedContext.fetch(fetchRequest)
             
             let objectUpdate = test[0] as! NSManagedObject
-            objectUpdate.setValue(nameLabel.text, forKey: "name")
-            objectUpdate.setValue(inputTextView.text, forKey: "textView")
-            objectUpdate.setValue(momFirstLabel.text, forKey: "momEyesC")
-            objectUpdate.setValue(momSecondLabel.text, forKey: "momSkinC")
-            objectUpdate.setValue(momThirdLabel.text, forKey: "momHairC")
-            objectUpdate.setValue(dadFirstLabel.text, forKey: "dadEyesC")
-            objectUpdate.setValue(dadSecondLabel.text, forKey: "dadSkinC")
-            objectUpdate.setValue(dadThirdLabel.text, forKey: "dadHairC")
-            objectUpdate.setValue(momsMomFirstLabel.text, forKey: "momsMomEyesC")
-            objectUpdate.setValue(momsMomSecondLabel.text, forKey: "momsMomSkinC")
-            objectUpdate.setValue(momsMomThirdLabel.text, forKey: "momsMomHairC")
-            objectUpdate.setValue(momsDadFirstLabel.text, forKey: "dadsMomEyesC")
-            objectUpdate.setValue(momsDadSecondLabel.text, forKey: "dadsMomSkinC")
-            objectUpdate.setValue(momsDadThirdLabel.text, forKey: "dadsMomHairC")
-            objectUpdate.setValue(dadsMomFirstLabel.text, forKey: "momsDadEyesC")
-            objectUpdate.setValue(dadsMomSecondLabel.text, forKey: "momsDadSkinC")
-            objectUpdate.setValue(dadsMomThirdLabel.text, forKey: "momsDadHairC")
-            objectUpdate.setValue(dadsDadFirstLabel.text, forKey: "dadsDadEyesC")
-            objectUpdate.setValue(dadsDadSecondLabel.text, forKey: "dadsDadSkinC")
-            objectUpdate.setValue(dadsDadThirdLabel.text, forKey: "dadsDadHairC")
-            objectUpdate.setValue(momsMomsMomFirstLabel.text, forKey: "momsMomsMomEyesC")
-            objectUpdate.setValue(momsMomsMomSecondLabel.text, forKey: "momsMomsMomSkinC")
-            objectUpdate.setValue(momsMomsMomThirdLabel.text, forKey: "momsMomsMomHairC")
-            objectUpdate.setValue(momsMomsDadFirstLabel.text, forKey: "momsMomsDadEyesC")
-            objectUpdate.setValue(momsMomsDadSecondLabel.text, forKey: "momsMomsDadSkinC")
-            objectUpdate.setValue(momsMomsDadThirdLabel.text, forKey: "momsMomsDadHairC")
-            objectUpdate.setValue(momsDadsMomFirstLabel.text, forKey: "momsDadsMomEyesC")
-            objectUpdate.setValue(momsDadsMomSecondLabel.text, forKey: "momsDadsMomSkinC")
-            objectUpdate.setValue(momsDadsMomThirdLabel.text, forKey: "momsDadsMomHairC")
-            objectUpdate.setValue(momsDadsDadFirstLabel.text, forKey: "momsDadsDadEyesC")
-            objectUpdate.setValue(momsDadsDadSecondLabel.text, forKey: "momsDadsDadSkinC")
-            objectUpdate.setValue(momsDadsDadThirdLabel.text, forKey: "momsDadsDadHairC")
-            objectUpdate.setValue(dadsMomsMomFirstLabel.text, forKey: "dadsMomsMomEyesC")
-            objectUpdate.setValue(dadsMomsMomSecondLabel.text, forKey: "dadsMomsMomSkinC")
-            objectUpdate.setValue(dadsMomsMomThirdLabel.text, forKey: "dadsMomsMomHairC")
-            objectUpdate.setValue(dadsMomsDadFirstLabel.text, forKey: "dadsMomsDadEyesC")
-            objectUpdate.setValue(dadsMomsDadSecondLabel.text, forKey: "dadsMomsDadSkinC")
-            objectUpdate.setValue(dadsMomsDadThirdLabel.text, forKey: "dadsMomsDadHairC")
-            objectUpdate.setValue(dadsDadsMomFirstLabel.text, forKey: "dadsDadsMomEyesC")
-            objectUpdate.setValue(dadsDadsMomSecondLabel.text, forKey: "dadsDadsMomSkinC")
-            objectUpdate.setValue(dadsDadsMomThirdLabel.text, forKey: "dadsDadsMomHairC")
-            objectUpdate.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
-            objectUpdate.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
-            objectUpdate.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
+//            objectUpdate.setValue(nameLabel.text, forKey: "name")
+//            objectUpdate.setValue(inputTextView.text, forKey: "textView")
+//            objectUpdate.setValue(momFirstLabel.text, forKey: "momEyesC")
+//            objectUpdate.setValue(momSecondLabel.text, forKey: "momSkinC")
+//            objectUpdate.setValue(momThirdLabel.text, forKey: "momHairC")
+//            objectUpdate.setValue(dadFirstLabel.text, forKey: "dadEyesC")
+//            objectUpdate.setValue(dadSecondLabel.text, forKey: "dadSkinC")
+//            objectUpdate.setValue(dadThirdLabel.text, forKey: "dadHairC")
+//            objectUpdate.setValue(momsMomFirstLabel.text, forKey: "momsMomEyesC")
+//            objectUpdate.setValue(momsMomSecondLabel.text, forKey: "momsMomSkinC")
+//            objectUpdate.setValue(momsMomThirdLabel.text, forKey: "momsMomHairC")
+//            objectUpdate.setValue(momsDadFirstLabel.text, forKey: "dadsMomEyesC")
+//            objectUpdate.setValue(momsDadSecondLabel.text, forKey: "dadsMomSkinC")
+//            objectUpdate.setValue(momsDadThirdLabel.text, forKey: "dadsMomHairC")
+//            objectUpdate.setValue(dadsMomFirstLabel.text, forKey: "momsDadEyesC")
+//            objectUpdate.setValue(dadsMomSecondLabel.text, forKey: "momsDadSkinC")
+//            objectUpdate.setValue(dadsMomThirdLabel.text, forKey: "momsDadHairC")
+//            objectUpdate.setValue(dadsDadFirstLabel.text, forKey: "dadsDadEyesC")
+//            objectUpdate.setValue(dadsDadSecondLabel.text, forKey: "dadsDadSkinC")
+//            objectUpdate.setValue(dadsDadThirdLabel.text, forKey: "dadsDadHairC")
+//            objectUpdate.setValue(momsMomsMomFirstLabel.text, forKey: "momsMomsMomEyesC")
+//            objectUpdate.setValue(momsMomsMomSecondLabel.text, forKey: "momsMomsMomSkinC")
+//            objectUpdate.setValue(momsMomsMomThirdLabel.text, forKey: "momsMomsMomHairC")
+//            objectUpdate.setValue(momsMomsDadFirstLabel.text, forKey: "momsMomsDadEyesC")
+//            objectUpdate.setValue(momsMomsDadSecondLabel.text, forKey: "momsMomsDadSkinC")
+//            objectUpdate.setValue(momsMomsDadThirdLabel.text, forKey: "momsMomsDadHairC")
+//            objectUpdate.setValue(momsDadsMomFirstLabel.text, forKey: "momsDadsMomEyesC")
+//            objectUpdate.setValue(momsDadsMomSecondLabel.text, forKey: "momsDadsMomSkinC")
+//            objectUpdate.setValue(momsDadsMomThirdLabel.text, forKey: "momsDadsMomHairC")
+//            objectUpdate.setValue(momsDadsDadFirstLabel.text, forKey: "momsDadsDadEyesC")
+//            objectUpdate.setValue(momsDadsDadSecondLabel.text, forKey: "momsDadsDadSkinC")
+//            objectUpdate.setValue(momsDadsDadThirdLabel.text, forKey: "momsDadsDadHairC")
+//            objectUpdate.setValue(dadsMomsMomFirstLabel.text, forKey: "dadsMomsMomEyesC")
+//            objectUpdate.setValue(dadsMomsMomSecondLabel.text, forKey: "dadsMomsMomSkinC")
+//            objectUpdate.setValue(dadsMomsMomThirdLabel.text, forKey: "dadsMomsMomHairC")
+//            objectUpdate.setValue(dadsMomsDadFirstLabel.text, forKey: "dadsMomsDadEyesC")
+//            objectUpdate.setValue(dadsMomsDadSecondLabel.text, forKey: "dadsMomsDadSkinC")
+//            objectUpdate.setValue(dadsMomsDadThirdLabel.text, forKey: "dadsMomsDadHairC")
+//            objectUpdate.setValue(dadsDadsMomFirstLabel.text, forKey: "dadsDadsMomEyesC")
+//            objectUpdate.setValue(dadsDadsMomSecondLabel.text, forKey: "dadsDadsMomSkinC")
+//            objectUpdate.setValue(dadsDadsMomThirdLabel.text, forKey: "dadsDadsMomHairC")
+//            objectUpdate.setValue(dadsDadsDadFirstLabel.text, forKey: "dadsDadsDadEyesC")
+//            objectUpdate.setValue(dadsDadsDadSecondLabel.text, forKey: "dadsDadsDadSkinC")
+//            objectUpdate.setValue(dadsDadsDadThirdLabel.text, forKey: "dadsDadsDadHairC")
             
             do {
                 try managedContext.save()
