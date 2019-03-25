@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class InputVC: UITableViewController {
+class InputVC: UIViewController {
     var thirdTF = false
     
     var name = ""
@@ -1428,7 +1428,7 @@ class InputVC: UITableViewController {
         } catch {}
     }
     
-    @IBAction func saveButton(_ sender: UIButton) {
+    @IBAction func saveButton(_ sender: UIBarButtonItem) {
         
         if thirdTF == false {
             createData()
