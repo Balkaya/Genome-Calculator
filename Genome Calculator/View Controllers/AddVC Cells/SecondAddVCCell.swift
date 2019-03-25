@@ -1,5 +1,5 @@
 //
-//  SecondAddVC.swift
+//  SecondAddVCCell.swift
 //  Genome Calculator
 //
 //  Created by Can Balkaya on 3/23/19.
@@ -9,7 +9,12 @@
 import UIKit
 
 class SecondAddVCCell: UITableViewCell {
-    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var familyPersonNameLabel: UILabel!
+    
+    @IBOutlet weak var eyesTextField: UITextField!
+    @IBOutlet weak var skinTextField: UITextField!
+    @IBOutlet weak var hairTextField: UITextField!
+    @IBOutlet weak var anemiaTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

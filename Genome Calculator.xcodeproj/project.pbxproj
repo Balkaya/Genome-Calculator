@@ -19,9 +19,9 @@
 		3AC51DF6222824B1008C943E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AC51DF5222824B1008C943E /* README.md */; };
 		3AE7BA8721DEA100009BCD31 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7BA8621DEA100009BCD31 /* EditVC.swift */; };
 		3AF3D972224638B600A067C3 /* InputVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D971224638B600A067C3 /* InputVCCell.swift */; };
-		3AF3D97622463A3900A067C3 /* AddVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D97522463A3900A067C3 /* AddVCCell.swift */; };
+		3AF3D97622463A3900A067C3 /* SecondAddVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D97522463A3900A067C3 /* SecondAddVCCell.swift */; };
 		3AF3D978224641E900A067C3 /* SecondInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D977224641E900A067C3 /* SecondInputCell.swift */; };
-		3AF3D97A2246424900A067C3 /* SecondAddVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D9792246424900A067C3 /* SecondAddVCCell.swift */; };
+		3AF3D97A2246424900A067C3 /* AddVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D9792246424900A067C3 /* AddVCCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,9 @@
 		3AC51DF5222824B1008C943E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3AE7BA8621DEA100009BCD31 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		3AF3D971224638B600A067C3 /* InputVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVCCell.swift; sourceTree = "<group>"; };
-		3AF3D97522463A3900A067C3 /* AddVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVCCell.swift; sourceTree = "<group>"; };
+		3AF3D97522463A3900A067C3 /* SecondAddVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAddVCCell.swift; sourceTree = "<group>"; };
 		3AF3D977224641E900A067C3 /* SecondInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInputCell.swift; sourceTree = "<group>"; };
-		3AF3D9792246424900A067C3 /* SecondAddVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAddVCCell.swift; sourceTree = "<group>"; };
+		3AF3D9792246424900A067C3 /* AddVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVCCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		3AF3D97C224642E300A067C3 /* AddVC Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3AF3D97522463A3900A067C3 /* AddVCCell.swift */,
-				3AF3D9792246424900A067C3 /* SecondAddVCCell.swift */,
+				3AF3D9792246424900A067C3 /* AddVCCell.swift */,
+				3AF3D97522463A3900A067C3 /* SecondAddVCCell.swift */,
 			);
 			path = "AddVC Cells";
 			sourceTree = "<group>";
@@ -192,12 +192,12 @@
 			files = (
 				3AA3C41821CEBDD60047C453 /* Sources.swift in Sources */,
 				3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */,
-				3AF3D97A2246424900A067C3 /* SecondAddVCCell.swift in Sources */,
+				3AF3D97A2246424900A067C3 /* AddVCCell.swift in Sources */,
 				3AF3D978224641E900A067C3 /* SecondInputCell.swift in Sources */,
 				3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */,
 				3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */,
 				3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */,
-				3AF3D97622463A3900A067C3 /* AddVCCell.swift in Sources */,
+				3AF3D97622463A3900A067C3 /* SecondAddVCCell.swift in Sources */,
 				3AF3D972224638B600A067C3 /* InputVCCell.swift in Sources */,
 				3AA3C40721CEBD430047C453 /* Genome_Calculator.xcdatamodeld in Sources */,
 				3AE7BA8721DEA100009BCD31 /* EditVC.swift in Sources */,
