@@ -10,6 +10,9 @@ import UIKit
 import CoreData
 
 class InputVC: UIViewController {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    
     var thirdTF = false
     
     var name = ""

@@ -9,9 +9,80 @@
 import UIKit
 import CoreData
 
+//struct CellDatas {
+//    let label: UILabel!
+//    let textField1: UITextField!
+//}
+
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet weak var nameTextField: UITextField!
+    
     var chosenGene = ""
     var secondTF = false
+    
+//    for textField in textFields {
+//
+//    }
+    
+    let textField1e = UITextField()
+    let textField2e = UITextField()
+    let textField3e = UITextField()
+    let textField4e = UITextField()
+    let textField5e = UITextField()
+    let textField6e = UITextField()
+    let textField7e = UITextField()
+    let textField8e = UITextField()
+    let textField9e = UITextField()
+    let textField10e = UITextField()
+    let textField11e = UITextField()
+    let textField12e = UITextField()
+    let textField13e = UITextField()
+    let textField14e = UITextField()
+    
+    let textField1s = UITextField()
+    let textField2s = UITextField()
+    let textField3s = UITextField()
+    let textField4s = UITextField()
+    let textField5s = UITextField()
+    let textField6s = UITextField()
+    let textField7s = UITextField()
+    let textField8s = UITextField()
+    let textField9s = UITextField()
+    let textField10s = UITextField()
+    let textField11s = UITextField()
+    let textField12s = UITextField()
+    let textField13s = UITextField()
+    let textField14s = UITextField()
+    
+    let textField1h = UITextField()
+    let textField2h = UITextField()
+    let textField3h = UITextField()
+    let textField4h = UITextField()
+    let textField5h = UITextField()
+    let textField6h = UITextField()
+    let textField7h = UITextField()
+    let textField8h = UITextField()
+    let textField9h = UITextField()
+    let textField10h = UITextField()
+    let textField11h = UITextField()
+    let textField12h = UITextField()
+    let textField13h = UITextField()
+    let textField14h = UITextField()
+    
+    let textField1a = UITextField()
+    let textField2a = UITextField()
+    let textField3a = UITextField()
+    let textField4a = UITextField()
+    let textField5a = UITextField()
+    let textField6a = UITextField()
+    let textField7a = UITextField()
+    let textField8a = UITextField()
+    let textField9a = UITextField()
+    let textField10a = UITextField()
+    let textField11a = UITextField()
+    let textField12a = UITextField()
+    let textField13a = UITextField()
+    let textField14a = UITextField()
     
     var nameText = ""
     var textOne = ""
@@ -100,6 +171,13 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     let fourtyFirstPicker = UIPickerView()
     let fourtySecondPicker = UIPickerView()
     
+    let familyPersonNames = ["Mom", "Dad", "Mom's Mom", "Mom's Dad", "Dad's Mom", "Dad's Dad", "Mom's Mom's Mom", "Mom's Mom's Dad", "Mom's Dad's Mom", "Mom's Dad's Dad", "Dad's Mom's Mom", "Dad's Mom's Dad", "Dad's Dad's Mom", "Dad's Dad's Dad"]
+    
+    let eyesTextFields = [textField1e, textField2e, textField3e, textField4e, textField5e, textField6e, textField7e, textField8e, textField9e, textField10e, textField11e, textField12e, textField13e, textField14e]
+    let skinTextFields = [textField1s, textField2s, textField3s, textField4s, textField5s, textField6s, textField7s, textField8s, textField9s, textField10s, textField11s, textField12s, textField13s, textField14s]
+    let hairTextFields = [textField1h, textField2h, textField3h, textField4h, textField5h, textField6h, textField7h, textField8h, textField9h, textField10h, textField11h, textField12h, textField13h, textField14h]
+    let anemiaTextFields = [textField1a, textField2a, textField3a, textField4a, textField5a, textField6a, textField7a, textField8a, textField9a, textField10a, textField11a, textField12a, textField13a, textField14a]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createGenomPicker()
@@ -108,13 +186,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if chosenGene != "" {
             retrieveData()
         }
-        
-//        if chosenGene != "" {
-//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//            let context = appDelegate.persistentContainer.viewContext
-//            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Genes")
-//
-//            fetchRequest.predicate = NSPredicate(format: "name = %@", self.chosenGene)
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -159,17 +230,17 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         fourtySecondPicker.delegate = self
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 14
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "firstCell", for: indexPath)
-        if cell.tag == 0 {
-            cell.familyPersonNameLabel
-        } else if cell.tag == 1 {
-            
-        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
+        cell.familyPersonNameLabel.text = familyPersonNames[indexPath.row]
+        cell.eyesTextField = eyesTextFields[indexPath.row]
+        cell.skinTextField = skinTextFields[indexPath.row]
+        cell.hairTextField = hairTextFields[indexPath.row]
+        cell.anemiaTextField = anemiaTextFields[indexPath.row]
         
         return cell
     }
