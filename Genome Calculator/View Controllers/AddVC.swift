@@ -9,80 +9,12 @@
 import UIKit
 import CoreData
 
-//struct CellDatas {
-//    let label: UILabel!
-//    let textField1: UITextField!
-//}
-
-class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet var textFields: [UITextField]!
     
     var chosenGene = ""
     var secondTF = false
-    
-//    for textField in textFields {
-//
-//    }
-    
-    let textField1e = UITextField()
-    let textField2e = UITextField()
-    let textField3e = UITextField()
-    let textField4e = UITextField()
-    let textField5e = UITextField()
-    let textField6e = UITextField()
-    let textField7e = UITextField()
-    let textField8e = UITextField()
-    let textField9e = UITextField()
-    let textField10e = UITextField()
-    let textField11e = UITextField()
-    let textField12e = UITextField()
-    let textField13e = UITextField()
-    let textField14e = UITextField()
-    
-    let textField1s = UITextField()
-    let textField2s = UITextField()
-    let textField3s = UITextField()
-    let textField4s = UITextField()
-    let textField5s = UITextField()
-    let textField6s = UITextField()
-    let textField7s = UITextField()
-    let textField8s = UITextField()
-    let textField9s = UITextField()
-    let textField10s = UITextField()
-    let textField11s = UITextField()
-    let textField12s = UITextField()
-    let textField13s = UITextField()
-    let textField14s = UITextField()
-    
-    let textField1h = UITextField()
-    let textField2h = UITextField()
-    let textField3h = UITextField()
-    let textField4h = UITextField()
-    let textField5h = UITextField()
-    let textField6h = UITextField()
-    let textField7h = UITextField()
-    let textField8h = UITextField()
-    let textField9h = UITextField()
-    let textField10h = UITextField()
-    let textField11h = UITextField()
-    let textField12h = UITextField()
-    let textField13h = UITextField()
-    let textField14h = UITextField()
-    
-    let textField1a = UITextField()
-    let textField2a = UITextField()
-    let textField3a = UITextField()
-    let textField4a = UITextField()
-    let textField5a = UITextField()
-    let textField6a = UITextField()
-    let textField7a = UITextField()
-    let textField8a = UITextField()
-    let textField9a = UITextField()
-    let textField10a = UITextField()
-    let textField11a = UITextField()
-    let textField12a = UITextField()
-    let textField13a = UITextField()
-    let textField14a = UITextField()
     
     var nameText = ""
     var textOne = ""
@@ -170,13 +102,20 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     let fortiethPicker = UIPickerView()
     let fourtyFirstPicker = UIPickerView()
     let fourtySecondPicker = UIPickerView()
-    
-    let familyPersonNames = ["Mom", "Dad", "Mom's Mom", "Mom's Dad", "Dad's Mom", "Dad's Dad", "Mom's Mom's Mom", "Mom's Mom's Dad", "Mom's Dad's Mom", "Mom's Dad's Dad", "Dad's Mom's Mom", "Dad's Mom's Dad", "Dad's Dad's Mom", "Dad's Dad's Dad"]
-    
-    let eyesTextFields = [textField1e, textField2e, textField3e, textField4e, textField5e, textField6e, textField7e, textField8e, textField9e, textField10e, textField11e, textField12e, textField13e, textField14e]
-    let skinTextFields = [textField1s, textField2s, textField3s, textField4s, textField5s, textField6s, textField7s, textField8s, textField9s, textField10s, textField11s, textField12s, textField13s, textField14s]
-    let hairTextFields = [textField1h, textField2h, textField3h, textField4h, textField5h, textField6h, textField7h, textField8h, textField9h, textField10h, textField11h, textField12h, textField13h, textField14h]
-    let anemiaTextFields = [textField1a, textField2a, textField3a, textField4a, textField5a, textField6a, textField7a, textField8a, textField9a, textField10a, textField11a, textField12a, textField13a, textField14a]
+    let fourtyThirdPicker = UIPickerView()
+    let fourtyFourthPicker = UIPickerView()
+    let fourtyFifthPicker = UIPickerView()
+    let fourtySixthPicker = UIPickerView()
+    let fourtySeventhPicker = UIPickerView()
+    let fourtyEighthPicker = UIPickerView()
+    let fourtyNinthPicker = UIPickerView()
+    let fiftiethPicker = UIPickerView()
+    let fiftyFirstPicker = UIPickerView()
+    let fiftySecondPicker = UIPickerView()
+    let fiftyThirdPicker = UIPickerView()
+    let fiftyFourthPicker = UIPickerView()
+    let fiftyFifthPicker = UIPickerView()
+    let fiftySixthPicker = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -228,66 +167,79 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         fortiethPicker.delegate = self
         fourtyFirstPicker.delegate = self
         fourtySecondPicker.delegate = self
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
-        cell.familyPersonNameLabel.text = familyPersonNames[indexPath.row]
-        cell.eyesTextField = eyesTextFields[indexPath.row]
-        cell.skinTextField = skinTextFields[indexPath.row]
-        cell.hairTextField = hairTextFields[indexPath.row]
-        cell.anemiaTextField = anemiaTextFields[indexPath.row]
-        
-        return cell
+        fourtyThirdPicker.delegate = self
+        fourtyFourthPicker.delegate = self
+        fourtyFifthPicker.delegate = self
+        fourtySixthPicker.delegate = self
+        fourtySeventhPicker.delegate = self
+        fourtyEighthPicker.delegate = self
+        fourtyNinthPicker.delegate = self
+        fiftiethPicker.delegate = self
+        fiftyFirstPicker.delegate = self
+        fiftySecondPicker.delegate = self
+        fiftyThirdPicker.delegate = self
+        fiftyFourthPicker.delegate = self
+        fiftyFifthPicker.delegate = self
+        fiftySixthPicker.delegate = self
     }
     
     func createGenomPicker() {
-//        momFirstTextField.inputView = firstPicker
-//        momSecondTextField.inputView = secondPicker
-//        momThirdTextField.inputView = twentyNinthPicker
-//        dadFirstTextField.inputView = thirdPicker
-//        dadSecondTextField.inputView = fourthPicker
-//        dadThirdTextField.inputView = thirtiethPicker
-//        momsMomFirstTextField.inputView = fifthPicker
-//        momsMomSecondTextField.inputView = sixthPicker
-//        momsMomThirdTextField.inputView = thirtyFirstPicker
-//        momsDadFirstTextField.inputView = seventhPicker
-//        momsDadSecondTextField.inputView = eighthPicker
-//        momsDadThidTextField.inputView = thirtySecondPicker
-//        dadsMomFirstTextField.inputView = ninthPicker
-//        dadsMomSecondTextField.inputView = tenthPicker
-//        dadsMomThirdTextField.inputView = thirtyThirdPicker
-//        dadsDadFirstTextField.inputView = eleventhPicker
-//        dadsDadSecondTextField.inputView = twelfthPicker
-//        dadsDadThirdTextField.inputView = thirtyFourthPicker
-//        momsMomsMomFirstTextField.inputView = thirteenthPicker
-//        momsMomsMomSecondTextField.inputView = fourteenthPicker
-//        momsMomsMomThirdTextField.inputView = thirtyFifthPicker
-//        momsMomsDadFirstTextField.inputView = fifteenthPicker
-//        momsMomsDadSecondTextField.inputView = sixteenthPicker
-//        momsMomsDadThirdTextField.inputView = thirtySixthPicker
-//        momsDadsMomFirstTextField.inputView = seventeenthPicker
-//        momsDadsMomSecondTextField.inputView = eighteenthPicker
-//        momsDadsMomThirdTextField.inputView = thirtySeventhPicker
-//        momsDadsDadFirstTextField.inputView = ninteenthPicker
-//        momsDadsDadSecondTextField.inputView = twelfthPicker
-//        momsDadsDadThirdTextField.inputView = thirtyEighthPicker
-//        dadsMomsMomFirstTextField.inputView = twentyFirstPicker
-//        dadsMomsMomSecondTextField.inputView = twentySecondPicker
-//        dadsMomsMomThirdTextField.inputView = thirtyNinthPicker
-//        dadsMomsDadFirstTextField.inputView = twentyThirthPicker
-//        dadsMomsDadSecondTextField.inputView = twentyFourthPicker
-//        dadsMomsDadThirdTextField.inputView = fortiethPicker
-//        dadsDadsMomFirstTextField.inputView = twentyFifthPicker
-//        dadsDadsMomSecondTextField.inputView = twentySixthPicker
-//        dadsDadsMomThirdTextField.inputView = fourtyFirstPicker
-//        dadsDadsDadFirstTextField.inputView = twentySeventhPicker
-//        dadsDadsDadSecondTextField.inputView = twentyEighthPicker
-//        dadsDadsDadThirdTextField.inputView = fourtySecondPicker
+        textFields[0].inputView = firstPicker
+        textFields[1].inputView = secondPicker
+        textFields[2].inputView = thirdPicker
+        textFields[3].inputView = fourthPicker
+        textFields[4].inputView = fifthPicker
+        textFields[5].inputView = sixthPicker
+        textFields[6].inputView = seventhPicker
+        textFields[7].inputView = eighthPicker
+        textFields[8].inputView = ninthPicker
+        textFields[9].inputView = tenthPicker
+        textFields[10].inputView = eleventhPicker
+        textFields[11].inputView = twelfthPicker
+        textFields[12].inputView = thirteenthPicker
+        textFields[13].inputView = fourteenthPicker
+        textFields[14].inputView = fifteenthPicker
+        textFields[15].inputView = sixteenthPicker
+        textFields[16].inputView = seventeenthPicker
+        textFields[17].inputView = eighteenthPicker
+        textFields[18].inputView = ninteenthPicker
+        textFields[19].inputView = twentiethPicker
+        textFields[20].inputView = twentyFirstPicker
+        textFields[21].inputView = twentySecondPicker
+        textFields[22].inputView = twentyThirthPicker
+        textFields[23].inputView = twentyFourthPicker
+        textFields[24].inputView = twentyFifthPicker
+        textFields[25].inputView = twentySixthPicker
+        textFields[26].inputView = twentySeventhPicker
+        textFields[27].inputView = twentyEighthPicker
+        textFields[28].inputView = twentyNinthPicker
+        textFields[29].inputView = thirtiethPicker
+        textFields[30].inputView = thirtyFirstPicker
+        textFields[31].inputView = thirtySecondPicker
+        textFields[32].inputView = thirtyThirdPicker
+        textFields[33].inputView = thirtyFourthPicker
+        textFields[34].inputView = thirtyFifthPicker
+        textFields[35].inputView = thirtySixthPicker
+        textFields[36].inputView = thirtySeventhPicker
+        textFields[37].inputView = thirtyEighthPicker
+        textFields[38].inputView = thirtyNinthPicker
+        textFields[39].inputView = fortiethPicker
+        textFields[40].inputView = fourtyFirstPicker
+        textFields[41].inputView = fourtySecondPicker
+        textFields[42].inputView = fourtyThirdPicker
+        textFields[43].inputView = fourtyFourthPicker
+        textFields[44].inputView = fourtyFifthPicker
+        textFields[45].inputView = fourtySixthPicker
+        textFields[46].inputView = fourtySeventhPicker
+        textFields[47].inputView = fourtyEighthPicker
+        textFields[48].inputView = fourtyNinthPicker
+        textFields[49].inputView = fiftiethPicker
+        textFields[50].inputView = fiftyFirstPicker
+        textFields[51].inputView = fiftySecondPicker
+        textFields[52].inputView = fiftyThirdPicker
+        textFields[53].inputView = fiftyFourthPicker
+        textFields[54].inputView = fiftyFifthPicker
+        textFields[55].inputView = fiftySixthPicker
         
         firstPicker.backgroundColor = .black
         secondPicker.backgroundColor = .black
@@ -331,11 +283,21 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         fortiethPicker.backgroundColor = .black
         fourtyFirstPicker.backgroundColor = .black
         fourtySecondPicker.backgroundColor = .black
+        fourtyThirdPicker.backgroundColor = .black
+        fourtyFourthPicker.backgroundColor = .black
+        fourtyFifthPicker.backgroundColor = .black
+        fourtySixthPicker.backgroundColor = .black
+        fourtySeventhPicker.backgroundColor = .black
+        fourtyEighthPicker.backgroundColor = .black
+        fourtyNinthPicker.backgroundColor = .black
+        fiftiethPicker.backgroundColor = .black
+        fiftyFirstPicker.backgroundColor = .black
+        fiftySecondPicker.backgroundColor = .black
+        fiftyThirdPicker.backgroundColor = .black
+        fiftyFourthPicker.backgroundColor = .black
+        fiftyFifthPicker.backgroundColor = .black
+        fiftySixthPicker.backgroundColor = .black
     }
-    
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 20
-//    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -866,6 +828,15 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                 }
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 14
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
+        return cell
     }
     
     func updateData() {

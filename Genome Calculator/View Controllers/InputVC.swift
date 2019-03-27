@@ -9,9 +9,69 @@
 import UIKit
 import CoreData
 
-class InputVC: UIViewController {
+class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    
+    let label1e = UILabel()
+    let label2e = UILabel()
+    let label3e = UILabel()
+    let label4e = UILabel()
+    let label5e = UILabel()
+    let label6e = UILabel()
+    let label7e = UILabel()
+    let label8e = UILabel()
+    let label9e = UILabel()
+    let label10e = UILabel()
+    let label11e = UILabel()
+    let label12e = UILabel()
+    let label13e = UILabel()
+    let label14e = UILabel()
+    
+    let label1s = UILabel()
+    let label2s = UILabel()
+    let label3s = UILabel()
+    let label4s = UILabel()
+    let label5s = UILabel()
+    let label6s = UILabel()
+    let label7s = UILabel()
+    let label8s = UILabel()
+    let label9s = UILabel()
+    let label10s = UILabel()
+    let label11s = UILabel()
+    let label12s = UILabel()
+    let label13s = UILabel()
+    let label14s = UILabel()
+    
+    let label1h = UILabel()
+    let label2h = UILabel()
+    let label3h = UILabel()
+    let label4h = UILabel()
+    let label5h = UILabel()
+    let label6h = UILabel()
+    let label7h = UILabel()
+    let label8h = UILabel()
+    let label9h = UILabel()
+    let label10h = UILabel()
+    let label11h = UILabel()
+    let label12h = UILabel()
+    let label13h = UILabel()
+    let label14h = UILabel()
+    
+    let label1a = UILabel()
+    let label2a = UILabel()
+    let label3a = UILabel()
+    let label4a = UILabel()
+    let label5a = UILabel()
+    let label6a = UILabel()
+    let label7a = UILabel()
+    let label8a = UILabel()
+    let label9a = UILabel()
+    let label10a = UILabel()
+    let label11a = UILabel()
+    let label12a = UILabel()
+    let label13a = UILabel()
+    let label14a = UILabel()
     
     var thirdTF = false
     
@@ -58,6 +118,11 @@ class InputVC: UIViewController {
     var fortiethText = ""
     var fourtyFirstText = ""
     var fourtySecondText = ""
+    
+    let eyesLabels = [label1e, label2e, label3e, label4e, label5e, label6e, label7e, label8e, label9e, label10e, label11e, label12e, label13e, label14e]
+    let skinLabels = [label1s, label2s, label3s, label4s, label5s, label6s, label7s, label8s, label9s, label10s, label11s, label12s, label13s, label14s]
+    let hairLabels = [label1h, label2h, label3h, label4h, label5h, label6h, label7h, label8h, label9h, label10h, label11h, label12h, label13h, label14h]
+    let anemiaLabels = [label1a, label2a, label3a, label4a, label5a, label6a, label7a, label8a, label9a, label10a, label11a, label12a, label13a, label14a]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -1314,6 +1379,21 @@ class InputVC: UIViewController {
 //        The highest probability of child's hair color:
 //        \(thirdCaseResult).
 //        """
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 14
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
+        cell.familyPersonLabel.text = familyPersonNames[indexPath.row]
+        cell.eyesLabel.text = eyesLabels[indexPath.row]
+        cell.skinLabel.text = skinLabels[indexPath.row]
+        cell.hairLabel.text = hairLabels[indexPath.row]
+        cell.anemiaLabel.text = anemiaLabels[indexPath.row]
+        
+        return cell
     }
     
     func createData() {
