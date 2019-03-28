@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Genes" representedClassName="Genes" syncable="YES" codeGenerationType="class">
+        <attribute name="dadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsDadsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsDadsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsDadsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsMomsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dadsMomsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dadsMomsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsDadsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsDadsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsDadsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsMomsDadAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsDadEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsDadHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsDadSkinC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="momsMomsMomAnemiaC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsMomEyesC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsMomHairC" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="momsMomsMomSkinC" optional="YES" attributeType="String" syncable="YES"/>
@@ -47,6 +61,6 @@
         <attribute name="textView" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Genes" positionX="-63" positionY="-18" width="128" height="703"/>
+        <element name="Genes" positionX="-63" positionY="-18" width="128" height="915"/>
     </elements>
 </model>
