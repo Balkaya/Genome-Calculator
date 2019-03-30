@@ -3187,7 +3187,10 @@
                         <viewLayoutGuide key="safeArea" id="Q6a-EZ-Xbg"/>
                     </view>
                     <connections>
-                        <segue destination="Vai-Sz-Cds" kind="show" id="xVy-ZO-Waw"/>
+                        <segue destination="sD6-60-7Ft" kind="show" id="kn0-NQ-WSc"/>
+                        <segue destination="3pp-XT-yh2" kind="show" id="E6P-LI-nND"/>
+                        <segue destination="aEy-sI-aBY" kind="show" id="MD4-lt-5t3"/>
+                        <segue destination="Enf-pc-gkb" kind="show" id="szH-Zj-jVM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddm-3C-gwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3312,32 +3315,32 @@
             <point key="canvasLocation" x="1941" y="1166"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hxj-6B-SUC">
+        <scene sceneID="X0s-WD-lGX">
             <objects>
-                <viewController id="Vai-Sz-Cds" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pgC-Tp-7Qw">
+                <viewController id="sD6-60-7Ft" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEW-CH-aGC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-h7-M9i">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BfY-v8-yE5">
                                 <rect key="frame" x="26" y="162" width="362" height="700"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hfT-Fb-Z4m">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yw0-By-kDv">
                                     <size key="itemSize" width="90" height="40"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jxw-fD-aUQ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ghU-K0-FWy">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibb-0o-yUE">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-cZ-9Sq">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3350,53 +3353,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ri3-T0-sLx">
-                                <rect key="frame" x="26" y="99" width="362" height="28"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="c9J-jm-G2r" kind="embed" id="L2x-1h-Byz"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhK-ri-kZA">
-                                <rect key="frame" x="26" y="99" width="362" height="28"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="Fm9-Zt-hjD" kind="embed" id="Vgb-7b-Vfv"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-hV-2lS">
-                                <rect key="frame" x="26" y="99" width="362" height="28"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="wGb-Aq-8Vv" kind="embed" id="9wJ-Mv-bK8"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yn0-9q-f1Q">
-                                <rect key="frame" x="26" y="99" width="362" height="28"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="qV8-sV-ORg" kind="embed" id="mOf-At-gdz"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="A2R-3X-Zrp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B6V-F8-CQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3755" y="-993"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9Wc-uE-bWF">
-            <objects>
-                <viewController id="c9J-jm-G2r" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WhN-jE-XNC">
-                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="na0-dV-Spo">
-                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-Jf-JWY">
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black"/>
@@ -3407,26 +3365,58 @@
                                     <segment title="Yellow"/>
                                     <segment title="Red"/>
                                 </segments>
-                                <color key="tintColor" red="0.84304517507553101" green="0.84319037199020386" blue="0.8430359959602356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.84304517509999999" green="0.84319037200000002" blue="0.84303599600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="EcL-WY-Aid"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AC9-4n-S6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2r-Mo-YgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4583" y="-1116"/>
+            <point key="canvasLocation" x="3730" y="-1310"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="E8k-7h-ggR">
+        <scene sceneID="Mfv-oo-8U6">
             <objects>
-                <viewController id="Fm9-Zt-hjD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g9Y-bU-mFU">
-                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                <viewController id="KNc-zn-zVo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mr1-Pf-lK8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mH6-xd-ROH">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vPx-DO-6dJ">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E6j-8M-0WH">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d34-u6-Qej">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVB-ag-dRg">
-                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black"/>
@@ -3440,23 +3430,117 @@
                                 <color key="tintColor" red="0.84323445429999999" green="0.84323445429999999" blue="0.84323445429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rkh-Bh-kKt"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r0V-OL-Ggj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7a-bA-aQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4583" y="-1029"/>
+            <point key="canvasLocation" x="4419" y="-1310"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="tzG-uH-d6Y">
+        <scene sceneID="c3u-1s-tXd">
             <objects>
-                <viewController id="wGb-Aq-8Vv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nIe-p8-8GR">
-                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                <viewController id="3pp-XT-yh2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oLG-dr-Z0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-hC-iJV">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HDO-vL-mKc">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MqU-2w-kYS">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOF-0x-2ks">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBm-5a-boc">
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="D. B."/>
+                                    <segment title="Brown"/>
+                                    <segment title="L. B."/>
+                                    <segment title="Green"/>
+                                    <segment title="Hazel"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <color key="tintColor" red="0.84323445429999999" green="0.84323445429999999" blue="0.84323445429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JNm-fw-483"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oE6-UJ-Qgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4419" y="-1310"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TvD-hl-hKM">
+            <objects>
+                <viewController id="aEy-sI-aBY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdE-vs-fHH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-eE-iBL">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dkJ-4f-run">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Rix-UX-jYL">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vte-8c-rIW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-FG-Lp7">
-                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black">
@@ -3470,23 +3554,117 @@
                                 <color key="tintColor" red="0.84304517509999999" green="0.84319037200000002" blue="0.84303599600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JrR-3F-QQu"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jK5-Jl-S1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndC-hC-VBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4583" y="-950"/>
+            <point key="canvasLocation" x="3730" y="-644"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="tii-bt-NA9">
+        <scene sceneID="eyc-EM-qCL">
             <objects>
-                <viewController id="qV8-sV-ORg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TwB-oD-QWA">
-                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                <viewController id="VMB-x0-SMK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YVT-22-wes">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1kI-no-IYv">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xgA-vf-xr9">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rwT-r2-42l">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmg-7N-QHD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVT-Db-Ldl">
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="D. B."/>
+                                    <segment title="Brown"/>
+                                    <segment title="L. B."/>
+                                    <segment title="Green"/>
+                                    <segment title="Hazel"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <color key="tintColor" red="0.84323445429999999" green="0.84323445429999999" blue="0.84323445429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mko-eY-TxR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0R-FA-hpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4417" y="-644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VJh-Xo-4OU">
+            <objects>
+                <viewController id="Enf-pc-gkb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Np6-X9-j34">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NHZ-P2-FHl">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c1e-Dh-vHv">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XRd-OS-O8W">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RV-mJ-HBW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqQ-XO-hgm">
-                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <rect key="frame" x="26" y="94" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Diseased"/>
@@ -3495,12 +3673,13 @@
                                 <color key="tintColor" red="0.81167572740000005" green="0.81181591750000004" blue="0.81166690590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ryS-4V-Guc"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Old-hS-AmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyn-Zg-Pj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4583" y="-870"/>
+            <point key="canvasLocation" x="4417" y="-644"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
