@@ -14,11 +14,19 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
     @IBOutlet var textFields: [UITextField]!
     
     var textFieldsForEyes: [UITextField]!
+    var textFieldsForSkin: [UITextField]!
+    var textFieldsForHair: [UITextField]!
+    var textFieldsForAnemia: [UITextField]!
     
     var chosenGene = ""
     var secondTF = false
     
     var nameText = ""
+    var eyeText = ""
+    var skinText = ""
+    var hairText = ""
+    var anemiaText = ""
+    
     var textOne = ""
     var textTwo = ""
     var textThree = ""
@@ -75,6 +83,11 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
     var textFiftyFour = ""
     var textFiftyFive = ""
     var textFiftySix = ""
+    
+    let eyePicker = UIPickerView()
+    let skinPicker = UIPickerView()
+    let hairPicker = UIPickerView()
+    let anemiaPicker = UIPickerView()
     
     let firstPicker = UIPickerView()
     let secondPicker = UIPickerView()
@@ -141,6 +154,8 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
         if chosenGene != "" {
             retrieveData()
         }
+        
+        textFieldsForEyes = [UITextField(), UITextField(), UITextField()]
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -993,10 +1008,10 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
-//        cell.eyesTextField = textFields[indexPath.row]
-//        cell.skinTextField = textFields[indexPath.row]
-//        cell.hairTextField = textFields[indexPath.row]
-//        cell.anemiaTextField = textFields[indexPath.row]
+        cell.eyesTextField = textFields[indexPath.row]
+        cell.skinTextField = textFields[indexPath.row]
+        cell.hairTextField = textFields[indexPath.row]
+        cell.anemiaTextField = textFields[indexPath.row]
         
         return cell
     }

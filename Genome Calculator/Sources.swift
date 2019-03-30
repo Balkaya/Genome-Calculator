@@ -37,8 +37,8 @@ let hairColors = [
 ]
 
 let anemiaCases = [
-    "Ill",
-    "Not ill"
+    "Diseased",
+    "Not Diseased"
 ]
 
 var firstEyesColorName = ""

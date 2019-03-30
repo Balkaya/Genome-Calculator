@@ -24,20 +24,3 @@ class AddVCCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 }
-
-class AddVCCell2: UITableViewCell {
-    @IBOutlet weak var familyPersonNameLabel: UILabel!
-    
-    @IBOutlet weak var eyesTextField: UITextField!
-    @IBOutlet weak var skinTextField: UITextField!
-    @IBOutlet weak var hairTextField: UITextField!
-    @IBOutlet weak var anemiaTextField: UITextField!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-}

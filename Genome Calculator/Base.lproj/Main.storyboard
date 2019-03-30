@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rM1-g6-aIq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -3130,6 +3130,70 @@
             </objects>
             <point key="canvasLocation" x="1941" y="-977"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rAV-VG-BuP">
+            <objects>
+                <viewController id="SVM-Iq-MoD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Esb-Os-ncK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Cg-lSs">
+                                <rect key="frame" x="89" y="76" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-82-45i">
+                                <rect key="frame" x="32" y="130" width="344" height="766"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="epV-K6-kOJ">
+                                    <size key="itemSize" width="167" height="108"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fDv-wc-8LO">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-vj-P6s">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
+                                                    <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="25"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.21957963705062866" green="0.21962407231330872" blue="0.21957683563232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="K3g-vj-P6s" firstAttribute="top" secondItem="fDv-wc-8LO" secondAttribute="top" id="DZt-ch-4iP"/>
+                                            <constraint firstItem="K3g-vj-P6s" firstAttribute="leading" secondItem="fDv-wc-8LO" secondAttribute="leading" id="YbZ-1O-269"/>
+                                            <constraint firstAttribute="bottom" secondItem="K3g-vj-P6s" secondAttribute="bottom" id="avu-bL-Jve"/>
+                                            <constraint firstAttribute="trailing" secondItem="K3g-vj-P6s" secondAttribute="trailing" id="iAc-Sw-m5B"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Q6a-EZ-Xbg"/>
+                    </view>
+                    <connections>
+                        <segue destination="Vai-Sz-Cds" kind="show" id="xVy-ZO-Waw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddm-3C-gwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2898.5507246376815" y="-993.08035714285711"/>
+        </scene>
         <!--Save-->
         <scene sceneID="Q7F-su-rGX">
             <objects>
@@ -3246,6 +3310,197 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ub-JJ-ow7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1941" y="1166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hxj-6B-SUC">
+            <objects>
+                <viewController id="Vai-Sz-Cds" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgC-Tp-7Qw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-h7-M9i">
+                                <rect key="frame" x="26" y="162" width="362" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hfT-Fb-Z4m">
+                                    <size key="itemSize" width="90" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jxw-fD-aUQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibb-0o-yUE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ri3-T0-sLx">
+                                <rect key="frame" x="26" y="99" width="362" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="c9J-jm-G2r" kind="embed" id="L2x-1h-Byz"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhK-ri-kZA">
+                                <rect key="frame" x="26" y="99" width="362" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Fm9-Zt-hjD" kind="embed" id="Vgb-7b-Vfv"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-hV-2lS">
+                                <rect key="frame" x="26" y="99" width="362" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wGb-Aq-8Vv" kind="embed" id="9wJ-Mv-bK8"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yn0-9q-f1Q">
+                                <rect key="frame" x="26" y="99" width="362" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="qV8-sV-ORg" kind="embed" id="mOf-At-gdz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="A2R-3X-Zrp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6V-F8-CQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3755" y="-993"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Wc-uE-bWF">
+            <objects>
+                <viewController id="c9J-jm-G2r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WhN-jE-XNC">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="na0-dV-Spo">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="D. B."/>
+                                    <segment title="Brown"/>
+                                    <segment title="L. B."/>
+                                    <segment title="Auburn"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Red"/>
+                                </segments>
+                                <color key="tintColor" red="0.84304517507553101" green="0.84319037199020386" blue="0.8430359959602356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AC9-4n-S6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="-1116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E8k-7h-ggR">
+            <objects>
+                <viewController id="Fm9-Zt-hjD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g9Y-bU-mFU">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVB-ag-dRg">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="D. B."/>
+                                    <segment title="Brown"/>
+                                    <segment title="L. B."/>
+                                    <segment title="Green"/>
+                                    <segment title="Hazel"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <color key="tintColor" red="0.84323445429999999" green="0.84323445429999999" blue="0.84323445429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0V-OL-Ggj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="-1029"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tzG-uH-d6Y">
+            <objects>
+                <viewController id="wGb-Aq-8Vv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIe-p8-8GR">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-FG-Lp7">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Black">
+                                        <size key="contentOffset" width="4" height="0.0"/>
+                                    </segment>
+                                    <segment title="D. Brown"/>
+                                    <segment title="Brown"/>
+                                    <segment title="L. Brown"/>
+                                    <segment title="White"/>
+                                </segments>
+                                <color key="tintColor" red="0.84304517509999999" green="0.84319037200000002" blue="0.84303599600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jK5-Jl-S1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="-950"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tii-bt-NA9">
+            <objects>
+                <viewController id="qV8-sV-ORg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwB-oD-QWA">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="28"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqQ-XO-hgm">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Diseased"/>
+                                    <segment title="Not Diseased"/>
+                                </segments>
+                                <color key="tintColor" red="0.81167572740000005" green="0.81181591750000004" blue="0.81166690590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Old-hS-AmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="-870"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
