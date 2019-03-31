@@ -79,6 +79,7 @@
                         <outlet property="tableView" destination="2Pt-Mv-RmG" id="AjZ-KT-TUn"/>
                         <segue destination="M8k-Vf-e0K" kind="show" identifier="toEditVC" id="LgJ-kI-z1R"/>
                         <segue destination="b7z-KX-ZjQ" kind="show" identifier="toAddVC" id="sR3-aO-dW3"/>
+                        <segue destination="SVM-Iq-MoD" kind="show" id="nDd-mw-C2R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5s6-gM-XyF" sceneMemberID="firstResponder"/>
@@ -1255,7 +1256,7 @@
         <!--Add-->
         <scene sceneID="Kqq-Tg-3ho">
             <objects>
-                <viewController id="b7z-KX-ZjQ" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b7z-KX-ZjQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFH-Ww-gp3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2155,7 +2156,7 @@
         <!--Save-->
         <scene sceneID="Uef-Ph-e8x">
             <objects>
-                <viewController id="7PA-9X-uJf" customClass="InputVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7PA-9X-uJf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fuA-M1-569">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3138,15 +3139,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Cg-lSs">
-                                <rect key="frame" x="89" y="76" width="236" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-82-45i">
-                                <rect key="frame" x="32" y="130" width="344" height="766"/>
+                                <rect key="frame" x="32" y="156" width="344" height="740"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="epV-K6-kOJ">
@@ -3182,20 +3176,29 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKw-Cg-lSs">
+                                <rect key="frame" x="86" y="103" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53327292203903198" green="0.53336817026138306" blue="0.53326696157455444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Q6a-EZ-Xbg"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="9Fy-NI-26v"/>
                     <connections>
                         <segue destination="sD6-60-7Ft" kind="show" id="kn0-NQ-WSc"/>
                         <segue destination="3pp-XT-yh2" kind="show" id="E6P-LI-nND"/>
                         <segue destination="aEy-sI-aBY" kind="show" id="MD4-lt-5t3"/>
-                        <segue destination="Enf-pc-gkb" kind="show" id="szH-Zj-jVM"/>
+                        <segue destination="VMB-x0-SMK" kind="show" id="xTN-Iq-pEF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddm-3C-gwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898.5507246376815" y="-993.08035714285711"/>
+            <point key="canvasLocation" x="2716" y="-993"/>
         </scene>
         <!--Save-->
         <scene sceneID="Q7F-su-rGX">
@@ -3354,7 +3357,7 @@
                                 </cells>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-Jf-JWY">
-                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <rect key="frame" x="26" y="109" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black"/>
@@ -3374,7 +3377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2r-Mo-YgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3730" y="-1310"/>
+            <point key="canvasLocation" x="3545" y="-1310"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mfv-oo-8U6">
@@ -3436,7 +3439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7a-bA-aQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4419" y="-1310"/>
+            <point key="canvasLocation" x="4235" y="-1310"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3u-1s-tXd">
@@ -3478,7 +3481,7 @@
                                 </cells>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBm-5a-boc">
-                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <rect key="frame" x="26" y="109" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black"/>
@@ -3498,7 +3501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oE6-UJ-Qgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4419" y="-1310"/>
+            <point key="canvasLocation" x="4235" y="-1310"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TvD-hl-hKM">
@@ -3540,7 +3543,7 @@
                                 </cells>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-FG-Lp7">
-                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <rect key="frame" x="26" y="109" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black">
@@ -3560,7 +3563,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndC-hC-VBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3730" y="-644"/>
+            <point key="canvasLocation" x="3545" y="-644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eyc-EM-qCL">
@@ -3602,7 +3605,7 @@
                                 </cells>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVT-Db-Ldl">
-                                <rect key="frame" x="26" y="94" width="362" height="29"/>
+                                <rect key="frame" x="26" y="109" width="362" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Black"/>
@@ -3622,7 +3625,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0R-FA-hpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4417" y="-644"/>
+            <point key="canvasLocation" x="4232" y="-644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VJh-Xo-4OU">
@@ -3679,10 +3682,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyn-Zg-Pj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4417" y="-644"/>
+            <point key="canvasLocation" x="4232" y="-644"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2iJ-V7-Qs6"/>
+        <segue reference="sR3-aO-dW3"/>
     </inferredMetricsTieBreakers>
 </document>

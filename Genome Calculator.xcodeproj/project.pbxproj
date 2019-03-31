@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0DD0CF22512ED3009CB423 /* AddCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0CE22512ED3009CB423 /* AddCVC.swift */; };
+		3A0DD0D322512F55009CB423 /* HairCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0D222512F55009CB423 /* HairCVC.swift */; };
+		3A0DD0D522512F64009CB423 /* EyesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0D422512F64009CB423 /* EyesCVC.swift */; };
+		3A0DD0D722512F6F009CB423 /* SkinCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0D622512F6F009CB423 /* SkinCVC.swift */; };
+		3A0DD0DA22512F88009CB423 /* AnemiaCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0D922512F88009CB423 /* AnemiaCVC.swift */; };
+		3A0DD0DC22512FDD009CB423 /* AddCVCCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0DB22512FDD009CB423 /* AddCVCCellCollectionViewCell.swift */; };
+		3A0DD0DE22512FEC009CB423 /* EyesCVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0DD22512FEC009CB423 /* EyesCVCCell.swift */; };
+		3A0DD0E022512FFC009CB423 /* SkinCVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0DF22512FFC009CB423 /* SkinCVCCell.swift */; };
+		3A0DD0E22251300A009CB423 /* HairCVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0E12251300A009CB423 /* HairCVCCell.swift */; };
+		3A0DD0E42251301C009CB423 /* AnemiaCVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD0E32251301C009CB423 /* AnemiaCVCCell.swift */; };
 		3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */; };
 		3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C40021CEBD430047C453 /* ViewController.swift */; };
 		3AA3C40421CEBD430047C453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40221CEBD430047C453 /* Main.storyboard */; };
@@ -23,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0DD0CE22512ED3009CB423 /* AddCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCVC.swift; sourceTree = "<group>"; };
+		3A0DD0D222512F55009CB423 /* HairCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCVC.swift; sourceTree = "<group>"; };
+		3A0DD0D422512F64009CB423 /* EyesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesCVC.swift; sourceTree = "<group>"; };
+		3A0DD0D622512F6F009CB423 /* SkinCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCVC.swift; sourceTree = "<group>"; };
+		3A0DD0D922512F88009CB423 /* AnemiaCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnemiaCVC.swift; sourceTree = "<group>"; };
+		3A0DD0DB22512FDD009CB423 /* AddCVCCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCVCCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A0DD0DD22512FEC009CB423 /* EyesCVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesCVCCell.swift; sourceTree = "<group>"; };
+		3A0DD0DF22512FFC009CB423 /* SkinCVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCVCCell.swift; sourceTree = "<group>"; };
+		3A0DD0E12251300A009CB423 /* HairCVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCVCCell.swift; sourceTree = "<group>"; };
+		3A0DD0E32251301C009CB423 /* AnemiaCVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnemiaCVCCell.swift; sourceTree = "<group>"; };
 		3AA3C3FB21CEBD430047C453 /* Genome Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genome Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA3C40021CEBD430047C453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0DD0D022512ED8009CB423 /* Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DD0CE22512ED3009CB423 /* AddCVC.swift */,
+				3A0DD0D422512F64009CB423 /* EyesCVC.swift */,
+				3A0DD0D622512F6F009CB423 /* SkinCVC.swift */,
+				3A0DD0D222512F55009CB423 /* HairCVC.swift */,
+				3A0DD0D922512F88009CB423 /* AnemiaCVC.swift */,
+				3A0DD0D122512F36009CB423 /* Cells */,
+			);
+			path = "Collection Views";
+			sourceTree = "<group>";
+		};
+		3A0DD0D122512F36009CB423 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DD0DB22512FDD009CB423 /* AddCVCCellCollectionViewCell.swift */,
+				3A0DD0DD22512FEC009CB423 /* EyesCVCCell.swift */,
+				3A0DD0DF22512FFC009CB423 /* SkinCVCCell.swift */,
+				3A0DD0E12251300A009CB423 /* HairCVCCell.swift */,
+				3A0DD0E32251301C009CB423 /* AnemiaCVCCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3AA3C3F221CEBD430047C453 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */,
+				3A0DD0D022512ED8009CB423 /* Collection Views */,
 				3AF3D97B224642BE00A067C3 /* View Controllers */,
 				3AA3C41721CEBDD60047C453 /* Sources.swift */,
 				3AA3C40221CEBD430047C453 /* Main.storyboard */,
@@ -95,10 +141,10 @@
 		3AF3D97B224642BE00A067C3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3ABF1C83224A8F6300881B17 /* Cells */,
 				3AA3C40021CEBD430047C453 /* ViewController.swift */,
 				3AA3C41321CEBD8B0047C453 /* AddVC.swift */,
 				3AA3C41521CEBDAD0047C453 /* InputVC.swift */,
+				3ABF1C83224A8F6300881B17 /* Cells */,
 				3AE7BA8621DEA100009BCD31 /* EditVC.swift */,
 			);
 			path = "View Controllers";
@@ -178,13 +224,23 @@
 			files = (
 				3AA3C41821CEBDD60047C453 /* Sources.swift in Sources */,
 				3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */,
+				3A0DD0D522512F64009CB423 /* EyesCVC.swift in Sources */,
+				3A0DD0E022512FFC009CB423 /* SkinCVCCell.swift in Sources */,
+				3A0DD0D322512F55009CB423 /* HairCVC.swift in Sources */,
 				3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */,
+				3A0DD0DA22512F88009CB423 /* AnemiaCVC.swift in Sources */,
 				3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */,
+				3A0DD0E22251300A009CB423 /* HairCVCCell.swift in Sources */,
+				3A0DD0E42251301C009CB423 /* AnemiaCVCCell.swift in Sources */,
+				3A0DD0DC22512FDD009CB423 /* AddCVCCellCollectionViewCell.swift in Sources */,
 				3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */,
 				3AF3D97622463A3900A067C3 /* AddVCCell.swift in Sources */,
+				3A0DD0CF22512ED3009CB423 /* AddCVC.swift in Sources */,
 				3AF3D972224638B600A067C3 /* InputVCCell.swift in Sources */,
 				3AA3C40721CEBD430047C453 /* Genome_Calculator.xcdatamodeld in Sources */,
 				3AE7BA8721DEA100009BCD31 /* EditVC.swift in Sources */,
+				3A0DD0DE22512FEC009CB423 /* EyesCVCCell.swift in Sources */,
+				3A0DD0D722512F6F009CB423 /* SkinCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

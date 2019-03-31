@@ -56,6 +56,8 @@ var firstCaseResult = ""
 var secondCaseResult = ""
 var thirdCaseResult = ""
 
+let familyPersonsNames = ["Mom", "Dad", "Mom's Mom", "Mom's Dad", "Dad's Mom", "Dad's Dad", "Mom's Mom's Mom", "Mom's Mom's Dad", "Mom's Dad's Mom", "Mom's Dad's Dad", "Dad's Mom's Mom", "Dad's Mom's Dad", "Dad's Dad's Mom", "Dad's Dad's Dad"]
+
 var inputForEyes = 0
 
 var forBlackEyes = 2.0

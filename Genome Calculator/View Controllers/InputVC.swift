@@ -1347,11 +1347,12 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14
+        return familyPersonsNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
+        cell.familyPersonLabel.text = familyPersonsNames[indexPath.row]
 //        cell.eyesLabel = labels[indexPath.row]
 //        cell.skinLabel = labels[indexPath.row]
 //        cell.hairLabel = labels[indexPath.row]
