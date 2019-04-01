@@ -11,8 +11,6 @@ import CoreData
 
 class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet var labels: [UILabel]!
-    
     @IBOutlet weak var inputTextView: UITextView!
     
     var thirdTF = false
@@ -74,6 +72,8 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var fiftyFourthText = ""
     var fiftyFifthText = ""
     var fiftySixthText = ""
+    
+    let texts = [firstText, secondText, thirdText, fourthText, fifthText, sixthText, seventhText, eighthText, ninthText, tenthText, eleventhText]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -1353,10 +1353,10 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
         cell.familyPersonLabel.text = familyPersonsNames[indexPath.row]
-//        cell.eyesLabel = labels[indexPath.row]
-//        cell.skinLabel = labels[indexPath.row]
-//        cell.hairLabel = labels[indexPath.row]
-//        cell.anemiaLabel = labels[indexPath.row]
+        cell.eyesLabel.text = texts[indexPath.item]
+        cell.skinLabel.text = texts[indexPath.item]
+        cell.hairLabel.text = texts[indexPath.item]
+        cell.anemiaLabel.text = texts[indexPath.item]
         
         return cell
     }
@@ -1368,8 +1368,8 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         newGene.setValue(nameLabel.text, forKey: "name")
         newGene.setValue(inputTextView.text, forKey: "textView")
-        newGene.setValue(labels[0].text, forKey: "momEyesC")
-        newGene.setValue(labels[1].text, forKey: "momSkinC")
+        newGene.setValue(firstText, forKey: "momEyesC")
+        newGene.setValue(secondText, forKey: "momSkinC")
         newGene.setValue(labels[2].text, forKey: "momHairC")
         newGene.setValue(labels[3].text, forKey: "momAnemiaC")
         newGene.setValue(labels[4].text, forKey: "dadEyesC")
@@ -1441,14 +1441,14 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let objectUpdate = test[0] as! NSManagedObject
             objectUpdate.setValue(nameLabel.text, forKey: "name")
             objectUpdate.setValue(inputTextView.text, forKey: "textView")
-            objectUpdate.setValue(labels[0].text, forKey: "momEyesC")
-            objectUpdate.setValue(labels[1].text, forKey: "momSkinC")
-            objectUpdate.setValue(labels[2].text, forKey: "momHairC")
-            objectUpdate.setValue(labels[3].text, forKey: "momAnemiaC")
-            objectUpdate.setValue(labels[4].text, forKey: "dadEyesC")
-            objectUpdate.setValue(labels[5].text, forKey: "dadSkinC")
-            objectUpdate.setValue(labels[6].text, forKey: "dadHairC")
-            objectUpdate.setValue(labels[7].text, forKey: "dadAnemiaC")
+            objectUpdate.setValue(firstText, forKey: "momEyesC")
+            objectUpdate.setValue(secondText, forKey: "momSkinC")
+            objectUpdate.setValue(thirdText, forKey: "momHairC")
+            objectUpdate.setValue(fourthText, forKey: "momAnemiaC")
+            objectUpdate.setValue(fifthText, forKey: "dadEyesC")
+            objectUpdate.setValue(sixthText, forKey: "dadSkinC")
+            objectUpdate.setValue(seventhText, forKey: "dadHairC")
+            objectUpdate.setValue(eighthText, forKey: "dadAnemiaC")
             objectUpdate.setValue(labels[8].text, forKey: "momsMomEyesC")
             objectUpdate.setValue(labels[9].text, forKey: "momsMomSkinC")
             objectUpdate.setValue(labels[10].text, forKey: "momsMomHairC")

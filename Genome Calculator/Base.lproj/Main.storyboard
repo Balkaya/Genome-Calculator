@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rM1-g6-aIq">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -78,8 +78,7 @@
                     <connections>
                         <outlet property="tableView" destination="2Pt-Mv-RmG" id="AjZ-KT-TUn"/>
                         <segue destination="M8k-Vf-e0K" kind="show" identifier="toEditVC" id="LgJ-kI-z1R"/>
-                        <segue destination="b7z-KX-ZjQ" kind="show" identifier="toAddVC" id="sR3-aO-dW3"/>
-                        <segue destination="SVM-Iq-MoD" kind="show" id="nDd-mw-C2R"/>
+                        <segue destination="nWW-dd-G6t" kind="show" identifier="toAddVC" id="Aaa-XM-LUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5s6-gM-XyF" sceneMemberID="firstResponder"/>
@@ -670,7 +669,7 @@
                     <connections>
                         <outlet property="nameLabelForEditVC" destination="WEe-VB-bTz" id="moS-zA-AOU"/>
                         <outlet property="textViewForEditVC" destination="evf-vh-7P5" id="U9h-1f-f9F"/>
-                        <segue destination="b7z-KX-ZjQ" kind="show" id="2iJ-V7-Qs6"/>
+                        <segue destination="nWW-dd-G6t" kind="show" id="Ajj-F8-yhi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcu-EC-LMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1157,7 +1156,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-gA-Acn">
-                                                <rect key="frame" x="8" y="83" width="90" height="30"/>
+                                                <rect key="frame" x="8" y="83" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
@@ -1251,7 +1250,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRw-df-fro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="-828"/>
+            <point key="canvasLocation" x="68.840579710144937" y="-828.34821428571422"/>
+        </scene>
+        <!--AddVC-->
+        <scene sceneID="qpb-yS-Vh1">
+            <objects>
+                <viewController id="nWW-dd-G6t" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQL-Mw-ade">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-nC-PyA">
+                                <rect key="frame" x="0.0" y="131" width="414" height="687"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="3i0-iq-iie" kind="embed" id="3f9-Bi-awu"/>
+                                </connections>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-G7-gca">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.18431285019999999" green="0.1844702959" blue="0.17611345649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Calculate" style="done" id="hQg-D9-4Vf">
+                                        <color key="tintColor" red="0.0" green="0.99987131360000003" blue="0.52671265599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="calculateButton:" destination="nWW-dd-G6t" id="ZbO-8F-EIg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4gv-mz-eUG"/>
+                                    <barButtonItem title="Item" id="Ayx-s3-G2X">
+                                        <connections>
+                                            <action selector="tryButton:" destination="nWW-dd-G6t" id="Goz-80-nfo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mib-EQ-y6e">
+                                <rect key="frame" x="107" y="95" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ZbB-Ls-SIW"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bat-BQ-X43"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="mib-EQ-y6e" id="BNd-aX-PvC"/>
+                        <segue destination="Gta-pM-rIy" kind="show" id="6Wq-zl-FoL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3b-SR-KuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940.5797101449277" y="-356.25"/>
         </scene>
         <!--Add-->
         <scene sceneID="Kqq-Tg-3ho">
@@ -2146,12 +2201,11 @@
                         <outletCollection property="textFields" destination="EqF-Aj-tkA" collectionClass="NSMutableArray" id="mQg-LC-Sfg"/>
                         <outletCollection property="textFields" destination="eaQ-0w-qTi" collectionClass="NSMutableArray" id="eHi-rT-pZT"/>
                         <outletCollection property="textFields" destination="7pl-6q-eai" collectionClass="NSMutableArray" id="Nbm-Kc-cdj"/>
-                        <segue destination="7PA-9X-uJf" kind="show" identifier="toInputVC" id="uiC-HP-Cx7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3m-kY-18C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="-243"/>
+            <point key="canvasLocation" x="2845" y="-2650"/>
         </scene>
         <!--Save-->
         <scene sceneID="Uef-Ph-e8x">
@@ -3005,12 +3059,11 @@
                         <outletCollection property="labels" destination="G7p-Nq-Oeu" collectionClass="NSMutableArray" id="4ez-rR-DfL"/>
                         <outletCollection property="labels" destination="qfC-eL-nf6" collectionClass="NSMutableArray" id="hX7-PA-uds"/>
                         <outletCollection property="labels" destination="B02-NH-QJ8" collectionClass="NSMutableArray" id="DQW-2g-ztG"/>
-                        <segue destination="rM1-g6-aIq" kind="show" identifier="toViewController" id="WHN-A1-PYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqX-aL-idt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="475"/>
+            <point key="canvasLocation" x="1941" y="1269"/>
         </scene>
         <!--Add-->
         <scene sceneID="kEi-Yr-dpn">
@@ -3129,12 +3182,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyH-g3-0yB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="-977"/>
+            <point key="canvasLocation" x="2845" y="-1970"/>
         </scene>
-        <!--View Controller-->
+        <!--AddCVC-->
         <scene sceneID="rAV-VG-BuP">
             <objects>
-                <viewController id="SVM-Iq-MoD" sceneMemberID="viewController">
+                <viewController id="SVM-Iq-MoD" customClass="AddCVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Esb-Os-ncK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3150,29 +3203,26 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fDv-wc-8LO">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell1" id="fDv-wc-8LO" customClass="AddCVCCellCollectionViewCell" customModule="Genome_Calculator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-vj-P6s">
-                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
-                                                    <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="25"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhS-py-Csh">
+                                                    <rect key="frame" x="0.0" y="24" width="167" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.21957963705062866" green="0.21962407231330872" blue="0.21957683563232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="K3g-vj-P6s" firstAttribute="top" secondItem="fDv-wc-8LO" secondAttribute="top" id="DZt-ch-4iP"/>
-                                            <constraint firstItem="K3g-vj-P6s" firstAttribute="leading" secondItem="fDv-wc-8LO" secondAttribute="leading" id="YbZ-1O-269"/>
-                                            <constraint firstAttribute="bottom" secondItem="K3g-vj-P6s" secondAttribute="bottom" id="avu-bL-Jve"/>
-                                            <constraint firstAttribute="trailing" secondItem="K3g-vj-P6s" secondAttribute="trailing" id="iAc-Sw-m5B"/>
-                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="qhS-py-Csh" id="cZQ-4s-vUY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -3190,6 +3240,8 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="9Fy-NI-26v"/>
                     <connections>
+                        <outlet property="addCollectionView" destination="cuJ-82-45i" id="csT-cE-YM0"/>
+                        <outlet property="personNameTextField" destination="NKw-Cg-lSs" id="eDM-BM-rWk"/>
                         <segue destination="sD6-60-7Ft" kind="show" id="kn0-NQ-WSc"/>
                         <segue destination="3pp-XT-yh2" kind="show" id="E6P-LI-nND"/>
                         <segue destination="aEy-sI-aBY" kind="show" id="MD4-lt-5t3"/>
@@ -3198,12 +3250,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddm-3C-gwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2716" y="-993"/>
+            <point key="canvasLocation" x="3620" y="-1986"/>
         </scene>
         <!--Save-->
         <scene sceneID="Q7F-su-rGX">
             <objects>
-                <viewController id="Gta-pM-rIy" sceneMemberID="viewController">
+                <viewController id="Gta-pM-rIy" customClass="InputVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="of0-Ns-7e9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3311,11 +3363,12 @@
                         <outletCollection property="labels" destination="gQW-eq-nCL" collectionClass="NSMutableArray" id="LLM-eO-k6Y"/>
                         <outletCollection property="labels" destination="b0h-bQ-J8J" collectionClass="NSMutableArray" id="46R-Ht-TwD"/>
                         <outletCollection property="labels" destination="1Yg-hn-UeB" collectionClass="NSMutableArray" id="KUG-qd-c3h"/>
+                        <segue destination="rM1-g6-aIq" kind="show" id="baz-Sg-q2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ub-JJ-ow7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="1166"/>
+            <point key="canvasLocation" x="1941" y="557"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X0s-WD-lGX">
@@ -3377,7 +3430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2r-Mo-YgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3545" y="-1310"/>
+            <point key="canvasLocation" x="4449" y="-2304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mfv-oo-8U6">
@@ -3439,7 +3492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7a-bA-aQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4235" y="-1310"/>
+            <point key="canvasLocation" x="5139" y="-2304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3u-1s-tXd">
@@ -3501,7 +3554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oE6-UJ-Qgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4235" y="-1310"/>
+            <point key="canvasLocation" x="5139" y="-2304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TvD-hl-hKM">
@@ -3563,7 +3616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndC-hC-VBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3545" y="-644"/>
+            <point key="canvasLocation" x="4449" y="-1637"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eyc-EM-qCL">
@@ -3625,7 +3678,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0R-FA-hpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4232" y="-644"/>
+            <point key="canvasLocation" x="5136" y="-1637"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VJh-Xo-4OU">
@@ -3682,10 +3735,644 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyn-Zg-Pj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4232" y="-644"/>
+            <point key="canvasLocation" x="5136" y="-1637"/>
+        </scene>
+        <!--AddVC-->
+        <scene sceneID="UfH-4o-cUs">
+            <objects>
+                <viewController id="3i0-iq-iie" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vyk-jO-xv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-3V-Xml">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-Wx-G1O">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wet-y5-tmf">
+                                                <rect key="frame" x="188" y="148" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nu0-hZ-epZ">
+                                                <rect key="frame" x="209" y="579" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amK-O9-qxO">
+                                                <rect key="frame" x="115" y="110" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klN-wf-2mB">
+                                                <rect key="frame" x="303" y="177" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46R-X3-zph">
+                                                <rect key="frame" x="303" y="847" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-6X-fM1">
+                                                <rect key="frame" x="209" y="43" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uXR-XG-Wwb">
+                                                <rect key="frame" x="303" y="378" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-z7-PYK">
+                                                <rect key="frame" x="209" y="311" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ci0-bd-X2a">
+                                                <rect key="frame" x="209" y="713" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b33-ml-4de">
+                                                <rect key="frame" x="188" y="684" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojw-4X-OmR">
+                                                <rect key="frame" x="115" y="177" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jR7-fk-24d">
+                                                <rect key="frame" x="115" y="244" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fre-nb-Fz9">
+                                                <rect key="frame" x="303" y="579" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7x-s1-4eD">
+                                                <rect key="frame" x="303" y="713" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UUp-5w-VOC">
+                                                <rect key="frame" x="209" y="378" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrB-3B-cbK">
+                                                <rect key="frame" x="188" y="617" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-KE-GIw">
+                                                <rect key="frame" x="209" y="177" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZiM-za-KD5">
+                                                <rect key="frame" x="20" y="646" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYV-15-ocB">
+                                                <rect key="frame" x="20" y="914" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBm-nT-3Yu">
+                                                <rect key="frame" x="209" y="646" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J35-8K-980">
+                                                <rect key="frame" x="115" y="512" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PfZ-rt-iu0">
+                                                <rect key="frame" x="303" y="311" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-4o-5ug">
+                                                <rect key="frame" x="303" y="512" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-qU-0hR">
+                                                <rect key="frame" x="188" y="81" width="32" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r1-qP-EJE">
+                                                <rect key="frame" x="209" y="914" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POY-On-YqX">
+                                                <rect key="frame" x="303" y="445" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXB-Fu-Zep">
+                                                <rect key="frame" x="303" y="244" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gtg-uR-Yeg">
+                                                <rect key="frame" x="115" y="579" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDM-5S-g31">
+                                                <rect key="frame" x="303" y="110" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-oh-4Tt">
+                                                <rect key="frame" x="115" y="445" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5g-dK-Xaq">
+                                                <rect key="frame" x="188" y="349" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vmc-NU-E6f">
+                                                <rect key="frame" x="20" y="43" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sx-qt-1EO">
+                                                <rect key="frame" x="20" y="445" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-6e-wsp">
+                                                <rect key="frame" x="188" y="282" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-td-2lT">
+                                                <rect key="frame" x="303" y="914" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-4z-are">
+                                                <rect key="frame" x="115" y="914" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76w-vE-naU">
+                                                <rect key="frame" x="188" y="215" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZx-KK-Gh8">
+                                                <rect key="frame" x="20" y="512" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-Lg-Cvg">
+                                                <rect key="frame" x="20" y="177" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-hj-tkQ">
+                                                <rect key="frame" x="20" y="780" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tek-um-3HI">
+                                                <rect key="frame" x="115" y="378" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-Pn-cjH">
+                                                <rect key="frame" x="115" y="713" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NkW-73-nwr">
+                                                <rect key="frame" x="115" y="780" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvh-vF-c7k">
+                                                <rect key="frame" x="20" y="311" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huu-ck-dOE">
+                                                <rect key="frame" x="303" y="780" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoW-Dg-4ZX">
+                                                <rect key="frame" x="188" y="818" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnD-fx-Btp">
+                                                <rect key="frame" x="20" y="110" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-Zs-cv6">
+                                                <rect key="frame" x="209" y="512" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLw-H3-laj">
+                                                <rect key="frame" x="115" y="646" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-sx-5fi">
+                                                <rect key="frame" x="209" y="110" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mC5-sn-QZ1">
+                                                <rect key="frame" x="303" y="43" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-mU-Qux">
+                                                <rect key="frame" x="188" y="14" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gl0-dW-yWi">
+                                                <rect key="frame" x="20" y="378" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FX9-HH-ArS">
+                                                <rect key="frame" x="115" y="311" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-Bj-ntS">
+                                                <rect key="frame" x="188" y="416" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Anemia S." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="liW-3j-n1h">
+                                                <rect key="frame" x="303" y="646" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh5-Dx-u1O">
+                                                <rect key="frame" x="20" y="713" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Sf-Jb-29M">
+                                                <rect key="frame" x="115" y="847" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLq-gI-VR8">
+                                                <rect key="frame" x="20" y="244" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ffi-EM-bmd">
+                                                <rect key="frame" x="209" y="244" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-wE-zpA">
+                                                <rect key="frame" x="188" y="885" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skin Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-AS-pkL">
+                                                <rect key="frame" x="115" y="43" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01O-Iw-X7G">
+                                                <rect key="frame" x="209" y="445" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDy-ai-ZWR">
+                                                <rect key="frame" x="209" y="780" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-ZI-BqP">
+                                                <rect key="frame" x="188" y="483" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-fy-Dwv">
+                                                <rect key="frame" x="20" y="579" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYw-Nm-dkt">
+                                                <rect key="frame" x="188" y="550" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-KX-oCe">
+                                                <rect key="frame" x="188" y="751" width="39" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.66267138719999996" green="0.66278749699999995" blue="0.66266411540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eyes Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spf-eq-apK">
+                                                <rect key="frame" x="20" y="847" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hair Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-8O-9Ud">
+                                                <rect key="frame" x="209" y="847" width="91" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="958" id="ONg-gp-cms"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iWr-Wx-G1O" secondAttribute="trailing" id="MM0-zv-gdT"/>
+                                    <constraint firstAttribute="bottom" secondItem="iWr-Wx-G1O" secondAttribute="bottom" id="Qkp-Id-4HX"/>
+                                    <constraint firstItem="iWr-Wx-G1O" firstAttribute="leading" secondItem="OZj-3V-Xml" secondAttribute="leading" id="Uq8-CW-k6O"/>
+                                    <constraint firstItem="iWr-Wx-G1O" firstAttribute="top" secondItem="OZj-3V-Xml" secondAttribute="top" id="vBn-dT-ciI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OZj-3V-Xml" secondAttribute="bottom" id="Nad-ee-ekL"/>
+                            <constraint firstItem="OZj-3V-Xml" firstAttribute="leading" secondItem="Vyk-jO-xv8" secondAttribute="leading" id="Zfc-aL-LgH"/>
+                            <constraint firstItem="OZj-3V-Xml" firstAttribute="top" secondItem="Vyk-jO-xv8" secondAttribute="top" id="Zqg-zX-Yer"/>
+                            <constraint firstAttribute="trailing" secondItem="OZj-3V-Xml" secondAttribute="trailing" id="qoS-I8-CFd"/>
+                            <constraint firstItem="iWr-Wx-G1O" firstAttribute="width" secondItem="Vyk-jO-xv8" secondAttribute="width" id="rva-t4-Nhc"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="958"/>
+                    <connections>
+                        <outletCollection property="textFields" destination="Vmc-NU-E6f" collectionClass="NSMutableArray" id="ysh-Ib-Ec7"/>
+                        <outletCollection property="textFields" destination="6rG-AS-pkL" collectionClass="NSMutableArray" id="1JG-Cy-Trc"/>
+                        <outletCollection property="textFields" destination="HZK-6X-fM1" collectionClass="NSMutableArray" id="kFk-o8-jXx"/>
+                        <outletCollection property="textFields" destination="mC5-sn-QZ1" collectionClass="NSMutableArray" id="BTN-Kh-sEU"/>
+                        <outletCollection property="textFields" destination="nnD-fx-Btp" collectionClass="NSMutableArray" id="UFI-bk-scf"/>
+                        <outletCollection property="textFields" destination="amK-O9-qxO" collectionClass="NSMutableArray" id="UoK-UV-u0P"/>
+                        <outletCollection property="textFields" destination="3Yp-sx-5fi" collectionClass="NSMutableArray" id="T7G-3g-eYF"/>
+                        <outletCollection property="textFields" destination="iDM-5S-g31" collectionClass="NSMutableArray" id="xpY-wF-za9"/>
+                        <outletCollection property="textFields" destination="eq2-Lg-Cvg" collectionClass="NSMutableArray" id="NZ6-fb-GyC"/>
+                        <outletCollection property="textFields" destination="ojw-4X-OmR" collectionClass="NSMutableArray" id="oOc-He-RgV"/>
+                        <outletCollection property="textFields" destination="Mqf-KE-GIw" collectionClass="NSMutableArray" id="aJv-xo-XAX"/>
+                        <outletCollection property="textFields" destination="klN-wf-2mB" collectionClass="NSMutableArray" id="NIu-q6-0wK"/>
+                        <outletCollection property="textFields" destination="lLq-gI-VR8" collectionClass="NSMutableArray" id="EtQ-NS-xLk"/>
+                        <outletCollection property="textFields" destination="jR7-fk-24d" collectionClass="NSMutableArray" id="t9L-WU-99S"/>
+                        <outletCollection property="textFields" destination="Ffi-EM-bmd" collectionClass="NSMutableArray" id="SqN-3m-HaF"/>
+                        <outletCollection property="textFields" destination="aXB-Fu-Zep" collectionClass="NSMutableArray" id="nFd-ts-6v4"/>
+                        <outletCollection property="textFields" destination="tvh-vF-c7k" collectionClass="NSMutableArray" id="tAx-Ea-VzR"/>
+                        <outletCollection property="textFields" destination="FX9-HH-ArS" collectionClass="NSMutableArray" id="k9Q-mD-OCo"/>
+                        <outletCollection property="textFields" destination="LUe-z7-PYK" collectionClass="NSMutableArray" id="wwm-qj-YvQ"/>
+                        <outletCollection property="textFields" destination="PfZ-rt-iu0" collectionClass="NSMutableArray" id="buV-Pd-ybU"/>
+                        <outletCollection property="textFields" destination="gl0-dW-yWi" collectionClass="NSMutableArray" id="3D7-4h-WKC"/>
+                        <outletCollection property="textFields" destination="tek-um-3HI" collectionClass="NSMutableArray" id="VYG-gK-84u"/>
+                        <outletCollection property="textFields" destination="UUp-5w-VOC" collectionClass="NSMutableArray" id="kBf-fK-7bh"/>
+                        <outletCollection property="textFields" destination="uXR-XG-Wwb" collectionClass="NSMutableArray" id="Mxc-Tc-yQX"/>
+                        <outletCollection property="textFields" destination="2sx-qt-1EO" collectionClass="NSMutableArray" id="Sb9-3b-GnN"/>
+                        <outletCollection property="textFields" destination="sUV-oh-4Tt" collectionClass="NSMutableArray" id="UhC-9I-6IO"/>
+                        <outletCollection property="textFields" destination="01O-Iw-X7G" collectionClass="NSMutableArray" id="ngw-8U-ExS"/>
+                        <outletCollection property="textFields" destination="POY-On-YqX" collectionClass="NSMutableArray" id="D1j-5U-iHV"/>
+                        <outletCollection property="textFields" destination="rZx-KK-Gh8" collectionClass="NSMutableArray" id="8Nn-V4-uIc"/>
+                        <outletCollection property="textFields" destination="J35-8K-980" collectionClass="NSMutableArray" id="N7x-ib-G6S"/>
+                        <outletCollection property="textFields" destination="eRd-Zs-cv6" collectionClass="NSMutableArray" id="fdY-wS-aB4"/>
+                        <outletCollection property="textFields" destination="Lho-4o-5ug" collectionClass="NSMutableArray" id="LgB-OM-GMl"/>
+                        <outletCollection property="textFields" destination="xhO-fy-Dwv" collectionClass="NSMutableArray" id="gAP-Ki-wBO"/>
+                        <outletCollection property="textFields" destination="Gtg-uR-Yeg" collectionClass="NSMutableArray" id="2p3-u6-oev"/>
+                        <outletCollection property="textFields" destination="Nu0-hZ-epZ" collectionClass="NSMutableArray" id="bja-xu-fPI"/>
+                        <outletCollection property="textFields" destination="Fre-nb-Fz9" collectionClass="NSMutableArray" id="nkS-cl-Iga"/>
+                        <outletCollection property="textFields" destination="ZiM-za-KD5" collectionClass="NSMutableArray" id="8h5-GH-hqu"/>
+                        <outletCollection property="textFields" destination="cLw-H3-laj" collectionClass="NSMutableArray" id="Laj-VR-Qbh"/>
+                        <outletCollection property="textFields" destination="JBm-nT-3Yu" collectionClass="NSMutableArray" id="28e-8w-g4P"/>
+                        <outletCollection property="textFields" destination="liW-3j-n1h" collectionClass="NSMutableArray" id="GVD-nx-4bB"/>
+                        <outletCollection property="textFields" destination="hh5-Dx-u1O" collectionClass="NSMutableArray" id="jch-re-kSd"/>
+                        <outletCollection property="textFields" destination="mlc-Pn-cjH" collectionClass="NSMutableArray" id="RO8-FX-jaE"/>
+                        <outletCollection property="textFields" destination="ci0-bd-X2a" collectionClass="NSMutableArray" id="WFs-OL-cT1"/>
+                        <outletCollection property="textFields" destination="E7x-s1-4eD" collectionClass="NSMutableArray" id="7Bi-EG-e15"/>
+                        <outletCollection property="textFields" destination="gh3-hj-tkQ" collectionClass="NSMutableArray" id="F1N-FD-NDf"/>
+                        <outletCollection property="textFields" destination="NkW-73-nwr" collectionClass="NSMutableArray" id="EAn-nD-USy"/>
+                        <outletCollection property="textFields" destination="XDy-ai-ZWR" collectionClass="NSMutableArray" id="JlO-wc-beY"/>
+                        <outletCollection property="textFields" destination="huu-ck-dOE" collectionClass="NSMutableArray" id="WFZ-xA-fMM"/>
+                        <outletCollection property="textFields" destination="spf-eq-apK" collectionClass="NSMutableArray" id="ucj-vW-tBd"/>
+                        <outletCollection property="textFields" destination="6Sf-Jb-29M" collectionClass="NSMutableArray" id="7CD-C1-c1u"/>
+                        <outletCollection property="textFields" destination="F8h-8O-9Ud" collectionClass="NSMutableArray" id="9t4-QP-yM5"/>
+                        <outletCollection property="textFields" destination="46R-X3-zph" collectionClass="NSMutableArray" id="YqQ-jN-ehe"/>
+                        <outletCollection property="textFields" destination="xYV-15-ocB" collectionClass="NSMutableArray" id="XYT-yv-n9U"/>
+                        <outletCollection property="textFields" destination="QBv-4z-are" collectionClass="NSMutableArray" id="OY2-ed-t9t"/>
+                        <outletCollection property="textFields" destination="5r1-qP-EJE" collectionClass="NSMutableArray" id="EdC-dc-v9N"/>
+                        <outletCollection property="textFields" destination="4pe-td-2lT" collectionClass="NSMutableArray" id="bbA-Pm-zDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pm-l3-d0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="-1053"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sR3-aO-dW3"/>
+        <segue reference="Ajj-F8-yhi"/>
     </inferredMetricsTieBreakers>
 </document>

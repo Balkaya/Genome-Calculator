@@ -9,5 +9,5 @@
 import UIKit
 
 class AddCVCCellCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var label: UILabel!
 }

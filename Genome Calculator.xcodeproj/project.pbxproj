@@ -144,8 +144,8 @@
 				3AA3C40021CEBD430047C453 /* ViewController.swift */,
 				3AA3C41321CEBD8B0047C453 /* AddVC.swift */,
 				3AA3C41521CEBDAD0047C453 /* InputVC.swift */,
-				3ABF1C83224A8F6300881B17 /* Cells */,
 				3AE7BA8621DEA100009BCD31 /* EditVC.swift */,
+				3ABF1C83224A8F6300881B17 /* Cells */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

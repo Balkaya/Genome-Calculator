@@ -9,14 +9,14 @@
 import UIKit
 import CoreData
 
-class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]!
     
-    var textFieldsForEyes: [UITextField]!
-    var textFieldsForSkin: [UITextField]!
-    var textFieldsForHair: [UITextField]!
-    var textFieldsForAnemia: [UITextField]!
+//    var textFieldsForEyes: [UITextField]!
+//    var textFieldsForSkin: [UITextField]!
+//    var textFieldsForHair: [UITextField]!
+//    var textFieldsForAnemia: [UITextField]!
     
     var chosenGene = ""
     var secondTF = false
@@ -154,8 +154,6 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
         if chosenGene != "" {
             retrieveData()
         }
-        
-        textFieldsForEyes = [UITextField(), UITextField(), UITextField()]
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -1002,19 +1000,19 @@ class AddVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPic
         }
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 14
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
-        cell.eyesTextField = textFields[indexPath.row]
-        cell.skinTextField = textFields[indexPath.row]
-        cell.hairTextField = textFields[indexPath.row]
-        cell.anemiaTextField = textFields[indexPath.row]
-        
-        return cell
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 14
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
+//        cell.eyesTextField = textFields[indexPath.row]
+//        cell.skinTextField = textFields[indexPath.row]
+//        cell.hairTextField = textFields[indexPath.row]
+//        cell.anemiaTextField = textFields[indexPath.row]
+//
+//        return cell
+//    }
     
     func updateData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
