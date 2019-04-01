@@ -155,6 +155,11 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             retrieveData()
         }
         
+        let textFieldsForEyes: [UITextField] = [textFields[0], textFields[4], textFields[8], textFields[12], textFields[16], textFields[20], textFields[24], textFields[28], textFields[32], textFields[36], textFields[40], textFields[44], textFields[48], textFields[52]]
+        let textFieldsForSkin: [UITextField] = [textFields[1], textFields[5], textFields[9], textFields[13], textFields[17], textFields[21], textFields[25], textFields[29], textFields[33], textFields[37], textFields[41], textFields[45], textFields[49], textFields[53]]
+        let textFieldsForHair: [UITextField] = [textFields[2], textFields[6], textFields[10], textFields[14], textFields[18], textFields[22], textFields[26], textFields[30], textFields[34], textFields[38], textFields[42], textFields[46], textFields[50], textFields[54]]
+        let textFieldsForAnemia: [UITextField] = [textFields[3], textFields[7], textFields[11], textFields[15], textFields[19], textFields[23], textFields[27], textFields[31], textFields[35], textFields[39], textFields[43], textFields[47], textFields[51], textFields[55]]
+        
         firstPicker.delegate = self
         secondPicker.delegate = self
         thirdPicker.delegate = self

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Can Balkaya. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 let eyesColors = [
     "Black",

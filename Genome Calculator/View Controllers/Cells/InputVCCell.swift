@@ -10,10 +10,6 @@ import UIKit
 
 class InputVCCell: UITableViewCell {
     @IBOutlet weak var familyPersonLabel: UILabel!
-    @IBOutlet weak var eyesLabel: UILabel!
-    @IBOutlet weak var skinLabel: UILabel!
-    @IBOutlet weak var hairLabel: UILabel!
-    @IBOutlet weak var anemiaLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
