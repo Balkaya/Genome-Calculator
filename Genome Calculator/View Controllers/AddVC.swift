@@ -13,11 +13,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]!
     
-//    var textFieldsForEyes: [UITextField]!
-//    var textFieldsForSkin: [UITextField]!
-//    var textFieldsForHair: [UITextField]!
-//    var textFieldsForAnemia: [UITextField]!
-    
     var chosenGene = ""
     var secondTF = false
     
@@ -154,11 +149,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if chosenGene != "" {
             retrieveData()
         }
-        
-        let textFieldsForEyes: [UITextField] = [textFields[0], textFields[4], textFields[8], textFields[12], textFields[16], textFields[20], textFields[24], textFields[28], textFields[32], textFields[36], textFields[40], textFields[44], textFields[48], textFields[52]]
-        let textFieldsForSkin: [UITextField] = [textFields[1], textFields[5], textFields[9], textFields[13], textFields[17], textFields[21], textFields[25], textFields[29], textFields[33], textFields[37], textFields[41], textFields[45], textFields[49], textFields[53]]
-        let textFieldsForHair: [UITextField] = [textFields[2], textFields[6], textFields[10], textFields[14], textFields[18], textFields[22], textFields[26], textFields[30], textFields[34], textFields[38], textFields[42], textFields[46], textFields[50], textFields[54]]
-        let textFieldsForAnemia: [UITextField] = [textFields[3], textFields[7], textFields[11], textFields[15], textFields[19], textFields[23], textFields[27], textFields[31], textFields[35], textFields[39], textFields[43], textFields[47], textFields[51], textFields[55]]
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -1055,7 +1045,7 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
-        nameTextField.inputAccessoryView = toolBar
+        //nameTextField.inputAccessoryView = toolBar
         textFields[0].inputAccessoryView = toolBar
         textFields[1].inputAccessoryView = toolBar
         textFields[2].inputAccessoryView = toolBar
@@ -1222,70 +1212,79 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier ==  "toInputVC" {
+            let textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text]
+            let textFieldsForSkin = [textFields[1].text, textFields[5].text, textFields[9].text, textFields[13].text, textFields[17].text, textFields[21].text, textFields[25].text, textFields[29].text, textFields[33].text, textFields[37].text, textFields[41].text, textFields[45].text, textFields[49].text, textFields[53].text]
+            let textFieldsForHair = [textFields[2].text, textFields[6].text, textFields[10].text, textFields[14].text, textFields[18].text, textFields[22].text, textFields[26].text, textFields[30].text, textFields[34].text, textFields[38].text, textFields[42].text, textFields[46].text, textFields[50].text, textFields[54].text]
+            let textFieldsForAnemia = [textFields[3].text, textFields[7].text, textFields[11].text, textFields[15].text, textFields[19].text, textFields[23].text, textFields[27].text, textFields[31].text, textFields[35].text, textFields[39].text, textFields[43].text, textFields[47].text, textFields[51].text, textFields[55].text]
+    
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.firstText = textOne
-            destnationVC.secondText = textTwo
-            destnationVC.thirdText = textThree
-            destnationVC.fourthText = textFour
-            destnationVC.fifthText = textFive
-            destnationVC.sixthText = textSix
-            destnationVC.seventhText = textSeven
-            destnationVC.eighthText = textEight
-            destnationVC.ninthText = textNine
-            destnationVC.tenthText = textTen
-            destnationVC.eleventhText = textEleven
-            destnationVC.twelfthText = textTwelve
-            destnationVC.thirteenthText = textThirteen
-            destnationVC.fourteenthText = textFourteen
-            destnationVC.fifteenthText = textFifteen
-            destnationVC.sixteenthText = textSixteen
-            destnationVC.seventeenthText = textSeventeen
-            destnationVC.eighteenthText = textEighteen
-            destnationVC.ninteenthText = textNinteen
-            destnationVC.twentiethText = textTwenty
-            destnationVC.twentyFirstText = textTwentyOne
-            destnationVC.twentySecondText = textTwentyTwo
-            destnationVC.twentyThirdText = textTwentyThree
-            destnationVC.twentyFourthText = textTwentyFour
-            destnationVC.twentyFifthText = textTwentyFive
-            destnationVC.twentySixthText = textTwentySix
-            destnationVC.twentySeventhText = textTwentySeven
-            destnationVC.twentyEighthText = textTwentyEight
-            destnationVC.twentyNinthText = textTwentyNine
-            destnationVC.thirtiethText = textThirty
-            destnationVC.thirtyFirstText = textThirtyOne
-            destnationVC.thirtySecondText = textThirtyTwo
-            destnationVC.thirtyThirdText = textThirtyThree
-            destnationVC.thirtyFourthText = textThirtyFour
-            destnationVC.thirtyFifthText = textThirtyFive
-            destnationVC.thirtySixthText = textThirtySix
-            destnationVC.thirtySeventhText = textThirtySeven
-            destnationVC.thirtyEightText = textThirtyEight
-            destnationVC.thirtyNinthText = textThirtyNine
-            destnationVC.fortiethText = textFourty
-            destnationVC.fourtyFirstText = textFourtyOne
-            destnationVC.fourtySecondText = textFourtyTwo
-            destnationVC.fourtyThirdText = textTwentyThree
-            destnationVC.twentyFourthText = textTwentyFour
-            destnationVC.twentyFifthText = textTwentyFive
-            destnationVC.twentySixthText = textTwentySix
-            destnationVC.twentySeventhText = textTwentySeven
-            destnationVC.twentyEighthText = textTwentyEight
-            destnationVC.twentyNinthText = textTwentyNine
-            destnationVC.thirtiethText = textThirty
-            destnationVC.thirtyFirstText = textThirtyOne
-            destnationVC.thirtySecondText = textThirtyTwo
-            destnationVC.thirtyThirdText = textThirtyThree
-            destnationVC.thirtyFourthText = textThirtyFour
-            destnationVC.thirtyFifthText = textThirtyFive
-            destnationVC.thirtySixthText = textThirtySix
-            destnationVC.thirtySeventhText = textThirtySeven
-            destnationVC.thirtyEightText = textThirtyEight
-            destnationVC.thirtyNinthText = textThirtyNine
-            destnationVC.fortiethText = textFourty
-            destnationVC.fourtyFirstText = textFourtyOne
-            destnationVC.fourtySecondText = textFourtyTwo
+            destnationVC.eyesTexts = textFieldsForEyes as! [String]
+            destnationVC.skinTexts = textFieldsForSkin as! [String]
+            destnationVC.hairTexts = textFieldsForHair as! [String]
+            destnationVC.anemiaTexts = textFieldsForAnemia as! [String]
+//            destnationVC.firstText = textOne
+//            destnationVC.secondText = textTwo
+//            destnationVC.thirdText = textThree
+//            destnationVC.fourthText = textFour
+//            destnationVC.fifthText = textFive
+//            destnationVC.sixthText = textSix
+//            destnationVC.seventhText = textSeven
+//            destnationVC.eighthText = textEight
+//            destnationVC.ninthText = textNine
+//            destnationVC.tenthText = textTen
+//            destnationVC.eleventhText = textEleven
+//            destnationVC.twelfthText = textTwelve
+//            destnationVC.thirteenthText = textThirteen
+//            destnationVC.fourteenthText = textFourteen
+//            destnationVC.fifteenthText = textFifteen
+//            destnationVC.sixteenthText = textSixteen
+//            destnationVC.seventeenthText = textSeventeen
+//            destnationVC.eighteenthText = textEighteen
+//            destnationVC.ninteenthText = textNinteen
+//            destnationVC.twentiethText = textTwenty
+//            destnationVC.twentyFirstText = textTwentyOne
+//            destnationVC.twentySecondText = textTwentyTwo
+//            destnationVC.twentyThirdText = textTwentyThree
+//            destnationVC.twentyFourthText = textTwentyFour
+//            destnationVC.twentyFifthText = textTwentyFive
+//            destnationVC.twentySixthText = textTwentySix
+//            destnationVC.twentySeventhText = textTwentySeven
+//            destnationVC.twentyEighthText = textTwentyEight
+//            destnationVC.twentyNinthText = textTwentyNine
+//            destnationVC.thirtiethText = textThirty
+//            destnationVC.thirtyFirstText = textThirtyOne
+//            destnationVC.thirtySecondText = textThirtyTwo
+//            destnationVC.thirtyThirdText = textThirtyThree
+//            destnationVC.thirtyFourthText = textThirtyFour
+//            destnationVC.thirtyFifthText = textThirtyFive
+//            destnationVC.thirtySixthText = textThirtySix
+//            destnationVC.thirtySeventhText = textThirtySeven
+//            destnationVC.thirtyEightText = textThirtyEight
+//            destnationVC.thirtyNinthText = textThirtyNine
+//            destnationVC.fortiethText = textFourty
+//            destnationVC.fourtyFirstText = textFourtyOne
+//            destnationVC.fourtySecondText = textFourtyTwo
+//            destnationVC.fourtyThirdText = textTwentyThree
+//            destnationVC.twentyFourthText = textTwentyFour
+//            destnationVC.twentyFifthText = textTwentyFive
+//            destnationVC.twentySixthText = textTwentySix
+//            destnationVC.twentySeventhText = textTwentySeven
+//            destnationVC.twentyEighthText = textTwentyEight
+//            destnationVC.twentyNinthText = textTwentyNine
+//            destnationVC.thirtiethText = textThirty
+//            destnationVC.thirtyFirstText = textThirtyOne
+//            destnationVC.thirtySecondText = textThirtyTwo
+//            destnationVC.thirtyThirdText = textThirtyThree
+//            destnationVC.thirtyFourthText = textThirtyFour
+//            destnationVC.thirtyFifthText = textThirtyFive
+//            destnationVC.thirtySixthText = textThirtySix
+//            destnationVC.thirtySeventhText = textThirtySeven
+//            destnationVC.thirtyEightText = textThirtyEight
+//            destnationVC.thirtyNinthText = textThirtyNine
+//            destnationVC.fortiethText = textFourty
+//            destnationVC.fourtyFirstText = textFourtyOne
+//            destnationVC.fourtySecondText = textFourtyTwo
         } else if segue.identifier == "toInputVC" {
             let destinationVC = segue.destination as! InputVC
             destinationVC.thirdTF = secondTF

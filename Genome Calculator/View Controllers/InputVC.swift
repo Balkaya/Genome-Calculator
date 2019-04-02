@@ -15,6 +15,11 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var thirdTF = false
     
+    var eyesTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var skinTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var hairTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var anemiaTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    
     var name = ""
     var firstText = ""
     var secondText = ""
@@ -72,8 +77,6 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var fiftyFourthText = ""
     var fiftyFifthText = ""
     var fiftySixthText = ""
-    
-//    let texts = [firstText, secondText, thirdText, fourthText, fifthText, sixthText, seventhText, eighthText, ninthText, tenthText, eleventhText]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -1353,11 +1356,10 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
         cell.familyPersonLabel.text = familyPersonsNames[indexPath.row]
-//        cell.eyesLabel.text = texts[indexPath.row]
-//        cell.skinLabel.text = texts[indexPath.row]
-//        cell.hairLabel.text = texts[indexPath.row]
-//        cell.anemiaLabel.text = texts[indexPath.row]
-        
+        cell.eyesLabel.text = eyesTexts[indexPath.row]
+        cell.skinLabel.text = skinTexts[indexPath.row]
+        cell.hairLabel.text = hairTexts[indexPath.row]
+        cell.anemiaLabel.text = anemiaTexts[indexPath.row]
         return cell
     }
     
