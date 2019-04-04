@@ -13,6 +13,11 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]?
     
+    var textFieldsForEyes = [String]()
+    var textFieldsForSkin = [String]()
+    var textFieldsForHair = [String]()
+    var textFieldsForAnemia = [String]()
+    
     var chosenGene = ""
     var secondTF = false
     
@@ -21,6 +26,8 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var skinText = ""
     var hairText = ""
     var anemiaText = ""
+    
+    var texts = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     
     var textOne = ""
     var textTwo = ""
@@ -149,6 +156,11 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if chosenGene != "" {
             retrieveData()
         }
+        
+//        textFieldsForEyes = [textFields?[0].text, textFields?[4].text, textFields?[8].text, textFields?[12].text, textFields?[16].text, textFields?[20].text, textFields?[24].text, textFields?[28].text, textFields?[32].text, textFields?[36].text, textFields?[40].text, textFields?[44].text, textFields?[48].text, textFields?[52].text] as! [String]
+//        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
+//        textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text] as! [String]
+//        textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text] as! [String]
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -995,20 +1007,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         }
     }
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 14
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "AddVCCell", for: indexPath) as! AddVCCell
-//        cell.eyesTextField = textFields[indexPath.row]
-//        cell.skinTextField = textFields[indexPath.row]
-//        cell.hairTextField = textFields[indexPath.row]
-//        cell.anemiaTextField = textFields[indexPath.row]
-//
-//        return cell
-//    }
-    
     func updateData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
 
@@ -1127,102 +1125,125 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         } else if pickerView == secondPicker {
             label.text = skinColors[row]
         } else if pickerView == thirdPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == fourthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == fifthPicker {
             label.text = eyesColors[row]
         } else if pickerView == sixthPicker {
             label.text = skinColors[row]
         } else if pickerView == seventhPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == eighthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == ninthPicker {
             label.text = eyesColors[row]
         } else if pickerView == tenthPicker {
             label.text = skinColors[row]
         } else if pickerView == eleventhPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == twelfthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == thirteenthPicker {
             label.text = eyesColors[row]
         } else if pickerView == fourteenthPicker {
             label.text = skinColors[row]
         } else if pickerView == fifteenthPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == sixteenthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == seventeenthPicker {
             label.text = eyesColors[row]
         } else if pickerView == eighteenthPicker {
             label.text = skinColors[row]
         } else if pickerView == ninteenthPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == twentiethPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == twentyFirstPicker {
             label.text = eyesColors[row]
         } else if pickerView == twentySecondPicker {
             label.text = skinColors[row]
         } else if pickerView == twentyThirthPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == twentyFourthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == twentyFifthPicker {
             label.text = eyesColors[row]
         } else if pickerView == twentySixthPicker {
             label.text = skinColors[row]
         } else if pickerView == twentySeventhPicker {
-            label.text = eyesColors[row]
+            label.text = hairColors[row]
         } else if pickerView == twentyEighthPicker {
-            label.text = skinColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == twentyNinthPicker {
-            label.text = hairColors[row]
+            label.text = eyesColors[row]
         } else if pickerView == thirtiethPicker {
-            label.text = hairColors[row]
+            label.text = skinColors[row]
         } else if pickerView == thirtyFirstPicker {
             label.text = hairColors[row]
         } else if pickerView == thirtySecondPicker {
-            label.text = hairColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == thirtyThirdPicker {
-            label.text = hairColors[row]
+            label.text = eyesColors[row]
         } else if pickerView == thirtyFourthPicker {
-            label.text = hairColors[row]
+            label.text = skinColors[row]
         } else if pickerView == thirtyFifthPicker {
             label.text = hairColors[row]
         } else if pickerView == thirtySixthPicker {
-            label.text = hairColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == thirtySeventhPicker {
-            label.text = hairColors[row]
+            label.text = eyesColors[row]
         } else if pickerView == thirtyEighthPicker {
-            label.text = hairColors[row]
+            label.text = skinColors[row]
         } else if pickerView == thirtyNinthPicker {
             label.text = hairColors[row]
         } else if pickerView == fortiethPicker {
-            label.text = hairColors[row]
+            label.text = anemiaCases[row]
         } else if pickerView == fourtyFirstPicker {
-            label.text = hairColors[row]
+            label.text = eyesColors[row]
         } else if pickerView == fourtySecondPicker {
+            label.text = skinColors[row]
+        } else if pickerView == fourtyThirdPicker {
             label.text = hairColors[row]
+        } else if pickerView == fourtyFourthPicker {
+            label.text = anemiaCases[row]
+        } else if pickerView == fourtyFifthPicker {
+            label.text = eyesColors[row]
+        } else if pickerView == fourtySixthPicker {
+            label.text = skinColors[row]
+        } else if pickerView == fourtySeventhPicker {
+            label.text = hairColors[row]
+        } else if pickerView == fourtyEighthPicker {
+            label.text = anemiaCases[row]
+        } else if pickerView == fourtyNinthPicker {
+            label.text = eyesColors[row]
+        } else if pickerView == fiftiethPicker {
+            label.text = skinColors[row]
+        } else if pickerView == fiftyFirstPicker {
+            label.text = hairColors[row]
+        } else if pickerView == fiftySecondPicker {
+            label.text = anemiaCases[row]
+        } else if pickerView == fiftyThirdPicker {
+            label.text = eyesColors[row]
+        } else if pickerView == fiftyFourthPicker {
+            label.text = skinColors[row]
+        } else if pickerView == fiftyFifthPicker {
+            label.text = hairColors[row]
+        } else if pickerView == fiftySixthPicker {
+            label.text = anemiaCases[row]
         }
         return label
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier ==  "toInputVC" {
-            let textFieldsForEyes = [textFields?[0].text, textFields?[4].text, textFields?[8].text, textFields?[12].text, textFields?[16].text, textFields?[20].text, textFields?[24].text, textFields?[28].text, textFields?[32].text, textFields?[36].text, textFields?[40].text, textFields?[44].text, textFields?[48].text, textFields?[52].text]
-            let textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text]
-            let textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text]
-            let textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text]
-    
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.eyesTexts = textFieldsForEyes as! [String]
-            destnationVC.skinTexts = textFieldsForSkin as! [String]
-            destnationVC.hairTexts = textFieldsForHair as! [String]
-            destnationVC.anemiaTexts = textFieldsForAnemia as! [String]
+            destnationVC.eyesTexts = textFieldsForEyes
+            destnationVC.skinTexts = textFieldsForSkin
+            destnationVC.hairTexts = textFieldsForHair
+            destnationVC.anemiaTexts = textFieldsForAnemia
 //            destnationVC.firstText = textOne
 //            destnationVC.secondText = textTwo
 //            destnationVC.thirdText = textThree
@@ -1293,6 +1314,7 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
         nameText = nameTextField.text!
+//        textFieldsForEyes[0] = (textFields![0].text)!
 //        textOne = (textFields?[0].text!)! //(textFields?[0].text)!
 //        textTwo = (textFields?[1].text)!
 //        textThree = (textFields?[2].text)!
@@ -1351,7 +1373,7 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 //        textFiftySix = (textFields?[55].text)!
         
         if nameText == "" || textOne == "" || textTwo == "" || textThree == "" || textFour == "" || textFive == "" || textSix == "" || textSeven == "" || textEight == "" || textNine == "" || textTen == "" || textEleven == "" || textTwelve == "" || textThirteen == "" || textFourteen == "" || textFifteen == "" || textSixteen == "" || textSeventeen == "" || textEighteen == "" || textNinteen == "" || textTwenty == "" || textTwentyOne == "" || textTwentyTwo == "" || textTwentyThree == "" || textTwentyFour == "" || textTwentyFive == "" || textTwentySix == "" || textTwentySeven == "" || textTwentyEight == "" || textTwentyNine == "" || textThirty == "" || textThirtyOne == "" || textThirtyTwo == "" || textThirtyThree == "" || textThirtyFour == "" || textThirtyFive == "" || textThirtySix == "" || textThirtySeven == "" || textThirtyEight == "" || textThirtyNine == "" || textFourty == "" || textFourtyOne == "" || textFourtyTwo == "" {
-            
+        
             let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
             let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
             alert.addAction(okButoon)
@@ -1362,49 +1384,61 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func tryButton(_ sender: Any) {
-        ////        momFirstTextField.text = "Hazel"
-        ////        dadFirstTextField.text = "Hazel"
-        ////        momsMomFirstTextField.text = "Hazel"
-        ////        momsDadFirstTextField.text = "Hazel"
-        ////        dadsMomFirstTextField.text = "Hazel"
-        ////        dadsDadFirstTextField.text = "Blue"
-        ////        momsMomsMomFirstTextField.text = "Blue"
-        ////        momsMomsDadFirstTextField.text = "Blue"
-        ////        momsDadsMomFirstTextField.text = "Blue"
-        ////        momsDadsDadFirstTextField.text = "Blue"
-        ////        dadsMomsMomFirstTextField.text = "Brown"
-        ////        dadsMomsDadFirstTextField.text = "Brown"
-        ////        dadsDadsMomFirstTextField.text = "Brown"
-        ////        dadsDadsDadFirstTextField.text = "L. Brown"
-        ////
-        ////        momSecondTextField.text = "Black"
-        ////        dadSecondTextField.text = "Black"
-        ////        momsMomSecondTextField.text = "D. Brown"
-        ////        momsDadSecondTextField.text = "D. Brown"
-        ////        dadsMomSecondTextField.text = "Brown"
-        ////        dadsDadSecondTextField.text = "White"
-        ////        momsMomsMomSecondTextField.text = "White"
-        ////        momsMomsDadSecondTextField.text = "White"
-        ////        momsDadsMomSecondTextField.text = "White"
-        ////        momsDadsDadSecondTextField.text = "White"
-        ////        dadsMomsMomSecondTextField.text = "Brown"
-        ////        dadsMomsDadSecondTextField.text = "Brown"
-        ////        dadsDadsMomSecondTextField.text = "Brown"
-        ////        dadsDadsDadSecondTextField.text = "L. Brown"
-        ////
-        ////        momThirdTextField.text = "Auburn"
-        ////        dadThirdTextField.text = "Red"
-        ////        momsMomThirdTextField.text = "Auburn"
-        ////        momsDadThidTextField.text = "Red"
-        ////        dadsMomThirdTextField.text = "Auburn"
-        ////        dadsDadThirdTextField.text = "Red"
-        ////        momsMomsMomThirdTextField.text = "Auburn"
-        ////        momsMomsDadThirdTextField.text = "Red"
-        ////        momsDadsMomThirdTextField.text = "Auburn"
-        ////        momsDadsDadThirdTextField.text = "Red"
-        ////        dadsMomsMomThirdTextField.text = "Brown"
-        ////        dadsMomsDadThirdTextField.text = "Brown"
-        ////        dadsDadsMomThirdTextField.text = "L. Brown"
-        ////        dadsDadsDadThirdTextField.text = "Brown"
+//        textFields?[0].text = "Black"
+//        textFields?[1].text = "Black"
+//        textFields?[2].text = "Black"
+//        textFields?[3].text = "Diseased"
+//        textFields?[4].text = "Black"
+//        textFields?[5].text = "Black"
+//        textFields?[6].text = "Black"
+//        textFields?[7].text = "Diseased"
+//        textFields?[8].text = "Black"
+//        textFields?[9].text = "Black"
+//        textFields?[10].text = "Black"
+//        textFields?[11].text = "Diseased"
+//        textFields?[12].text = "Black"
+//        textFields?[13].text = "Black"
+//        textFields?[14].text = "Black"
+//        textFields?[15].text = "Diseased"
+//        textFields?[16].text = "Black"
+//        textFields?[17].text = "Black"
+//        textFields?[18].text = "Black"
+//        textFields?[19].text = "Diseased"
+//        textFields?[20].text = "Black"
+//        textFields?[21].text = "Black"
+//        textFields?[22].text = "Black"
+//        textFields?[23].text = "Diseased"
+//        textFields?[24].text = "Black"
+//        textFields?[25].text = "Black"
+//        textFields?[26].text = "Black"
+//        textFields?[27].text = "Diseased"
+//        textFields?[28].text = "Black"
+//        textFields?[29].text = "Black"
+//        textFields?[30].text = "Black"
+//        textFields?[31].text = "Diseased"
+//        textFields?[32].text = "Black"
+//        textFields?[33].text = "Black"
+//        textFields?[34].text = "Black"
+//        textFields?[35].text = "Diseased"
+//        textFields?[36].text = "Black"
+//        textFields?[37].text = "Black"
+//        textFields?[38].text = "Black"
+//        textFields?[39].text = "Diseased"
+//        textFields?[40].text = "Black"
+//        textFields?[41].text = "Black"
+//        textFields?[42].text = "Black"
+//        textFields?[43].text = "Diseased"
+//        textFields?[44].text = "Black"
+//        textFields?[45].text = "Black"
+//        textFields?[46].text = "Black"
+//        textFields?[47].text = "Diseased"
+//        textFields?[48].text = "Black"
+//        textFields?[49].text = "Black"
+//        textFields?[50].text = "Black"
+//        textFields?[51].text = "Diseased"
+//        textFields?[52].text = "Black"
+//        textFields?[53].text = "Black"
+//        textFields?[54].text = "Black"
+//        textFields?[55].text = "Diseased"
     }
 }
