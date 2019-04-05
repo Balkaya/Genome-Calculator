@@ -121,6 +121,6 @@ var auburnsPoints = 0
 var yellowsPoints = 0
 var redsPoints = 0
 
-var firstCase = 0 // 1, 2, 3 or 4
-var secondCase = 0 // 1 or 2
-var thirdCase = 0 // 1, 2, 3 or 4
+var firstCase = 0
+var secondCase = 0
+var thirdCase = 0

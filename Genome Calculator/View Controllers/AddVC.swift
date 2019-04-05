@@ -11,7 +11,7 @@ import CoreData
 
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet var textFields: [UITextField]?
+    @IBOutlet var textFields: [UITextField]!
     
     var textFieldsForEyes = [String]()
     var textFieldsForSkin = [String]()
@@ -157,10 +157,15 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             retrieveData()
         }
         
-//        textFieldsForEyes = [textFields?[0].text, textFields?[4].text, textFields?[8].text, textFields?[12].text, textFields?[16].text, textFields?[20].text, textFields?[24].text, textFields?[28].text, textFields?[32].text, textFields?[36].text, textFields?[40].text, textFields?[44].text, textFields?[48].text, textFields?[52].text] as! [String]
-//        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
-//        textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text] as! [String]
-//        textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text] as! [String]
+        textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
+        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
+        textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text] as! [String]
+        textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text] as! [String]
+        
+//        textFieldsForEyes.append(textFields![0].text!)
+//        textFieldsForSkin.append(textFields![1].text!)
+//        textFieldsForHair.append(textFields![2].text!)
+//        textFieldsForAnemia.append(textFields![3].text!)
         
         firstPicker.delegate = self
         secondPicker.delegate = self
@@ -1240,72 +1245,10 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if segue.identifier ==  "toInputVC" {
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.eyesTexts = textFieldsForEyes
-            destnationVC.skinTexts = textFieldsForSkin
-            destnationVC.hairTexts = textFieldsForHair
-            destnationVC.anemiaTexts = textFieldsForAnemia
-//            destnationVC.firstText = textOne
-//            destnationVC.secondText = textTwo
-//            destnationVC.thirdText = textThree
-//            destnationVC.fourthText = textFour
-//            destnationVC.fifthText = textFive
-//            destnationVC.sixthText = textSix
-//            destnationVC.seventhText = textSeven
-//            destnationVC.eighthText = textEight
-//            destnationVC.ninthText = textNine
-//            destnationVC.tenthText = textTen
-//            destnationVC.eleventhText = textEleven
-//            destnationVC.twelfthText = textTwelve
-//            destnationVC.thirteenthText = textThirteen
-//            destnationVC.fourteenthText = textFourteen
-//            destnationVC.fifteenthText = textFifteen
-//            destnationVC.sixteenthText = textSixteen
-//            destnationVC.seventeenthText = textSeventeen
-//            destnationVC.eighteenthText = textEighteen
-//            destnationVC.ninteenthText = textNinteen
-//            destnationVC.twentiethText = textTwenty
-//            destnationVC.twentyFirstText = textTwentyOne
-//            destnationVC.twentySecondText = textTwentyTwo
-//            destnationVC.twentyThirdText = textTwentyThree
-//            destnationVC.twentyFourthText = textTwentyFour
-//            destnationVC.twentyFifthText = textTwentyFive
-//            destnationVC.twentySixthText = textTwentySix
-//            destnationVC.twentySeventhText = textTwentySeven
-//            destnationVC.twentyEighthText = textTwentyEight
-//            destnationVC.twentyNinthText = textTwentyNine
-//            destnationVC.thirtiethText = textThirty
-//            destnationVC.thirtyFirstText = textThirtyOne
-//            destnationVC.thirtySecondText = textThirtyTwo
-//            destnationVC.thirtyThirdText = textThirtyThree
-//            destnationVC.thirtyFourthText = textThirtyFour
-//            destnationVC.thirtyFifthText = textThirtyFive
-//            destnationVC.thirtySixthText = textThirtySix
-//            destnationVC.thirtySeventhText = textThirtySeven
-//            destnationVC.thirtyEightText = textThirtyEight
-//            destnationVC.thirtyNinthText = textThirtyNine
-//            destnationVC.fortiethText = textFourty
-//            destnationVC.fourtyFirstText = textFourtyOne
-//            destnationVC.fourtySecondText = textFourtyTwo
-//            destnationVC.fourtyThirdText = textTwentyThree
-//            destnationVC.twentyFourthText = textTwentyFour
-//            destnationVC.twentyFifthText = textTwentyFive
-//            destnationVC.twentySixthText = textTwentySix
-//            destnationVC.twentySeventhText = textTwentySeven
-//            destnationVC.twentyEighthText = textTwentyEight
-//            destnationVC.twentyNinthText = textTwentyNine
-//            destnationVC.thirtiethText = textThirty
-//            destnationVC.thirtyFirstText = textThirtyOne
-//            destnationVC.thirtySecondText = textThirtyTwo
-//            destnationVC.thirtyThirdText = textThirtyThree
-//            destnationVC.thirtyFourthText = textThirtyFour
-//            destnationVC.thirtyFifthText = textThirtyFive
-//            destnationVC.thirtySixthText = textThirtySix
-//            destnationVC.thirtySeventhText = textThirtySeven
-//            destnationVC.thirtyEightText = textThirtyEight
-//            destnationVC.thirtyNinthText = textThirtyNine
-//            destnationVC.fortiethText = textFourty
-//            destnationVC.fourtyFirstText = textFourtyOne
-//            destnationVC.fourtySecondText = textFourtyTwo
+            destnationVC.eyesLabel = textFieldsForEyes
+            destnationVC.skinLabel = textFieldsForSkin
+            destnationVC.hairLabel = textFieldsForHair
+            destnationVC.anemiaLabel = textFieldsForAnemia
         } else if segue.identifier == "toInputVC" {
             let destinationVC = segue.destination as! InputVC
             destinationVC.thirdTF = secondTF
@@ -1384,61 +1327,61 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func tryButton(_ sender: Any) {
-//        textFields?[0].text = "Black"
-//        textFields?[1].text = "Black"
-//        textFields?[2].text = "Black"
-//        textFields?[3].text = "Diseased"
-//        textFields?[4].text = "Black"
-//        textFields?[5].text = "Black"
-//        textFields?[6].text = "Black"
-//        textFields?[7].text = "Diseased"
-//        textFields?[8].text = "Black"
-//        textFields?[9].text = "Black"
-//        textFields?[10].text = "Black"
-//        textFields?[11].text = "Diseased"
-//        textFields?[12].text = "Black"
-//        textFields?[13].text = "Black"
-//        textFields?[14].text = "Black"
-//        textFields?[15].text = "Diseased"
-//        textFields?[16].text = "Black"
-//        textFields?[17].text = "Black"
-//        textFields?[18].text = "Black"
-//        textFields?[19].text = "Diseased"
-//        textFields?[20].text = "Black"
-//        textFields?[21].text = "Black"
-//        textFields?[22].text = "Black"
-//        textFields?[23].text = "Diseased"
-//        textFields?[24].text = "Black"
-//        textFields?[25].text = "Black"
-//        textFields?[26].text = "Black"
-//        textFields?[27].text = "Diseased"
-//        textFields?[28].text = "Black"
-//        textFields?[29].text = "Black"
-//        textFields?[30].text = "Black"
-//        textFields?[31].text = "Diseased"
-//        textFields?[32].text = "Black"
-//        textFields?[33].text = "Black"
-//        textFields?[34].text = "Black"
-//        textFields?[35].text = "Diseased"
-//        textFields?[36].text = "Black"
-//        textFields?[37].text = "Black"
-//        textFields?[38].text = "Black"
-//        textFields?[39].text = "Diseased"
-//        textFields?[40].text = "Black"
-//        textFields?[41].text = "Black"
-//        textFields?[42].text = "Black"
-//        textFields?[43].text = "Diseased"
-//        textFields?[44].text = "Black"
-//        textFields?[45].text = "Black"
-//        textFields?[46].text = "Black"
-//        textFields?[47].text = "Diseased"
-//        textFields?[48].text = "Black"
-//        textFields?[49].text = "Black"
-//        textFields?[50].text = "Black"
-//        textFields?[51].text = "Diseased"
-//        textFields?[52].text = "Black"
-//        textFields?[53].text = "Black"
-//        textFields?[54].text = "Black"
-//        textFields?[55].text = "Diseased"
+        textFields?[0].text = "Black"
+        textFields?[1].text = "Black"
+        textFields?[2].text = "Black"
+        textFields?[3].text = "Diseased"
+        textFields?[4].text = "Black"
+        textFields?[5].text = "Black"
+        textFields?[6].text = "Black"
+        textFields?[7].text = "Diseased"
+        textFields?[8].text = "Black"
+        textFields?[9].text = "Black"
+        textFields?[10].text = "Black"
+        textFields?[11].text = "Diseased"
+        textFields?[12].text = "Black"
+        textFields?[13].text = "Black"
+        textFields?[14].text = "Black"
+        textFields?[15].text = "Diseased"
+        textFields?[16].text = "Black"
+        textFields?[17].text = "Black"
+        textFields?[18].text = "Black"
+        textFields?[19].text = "Diseased"
+        textFields?[20].text = "Black"
+        textFields?[21].text = "Black"
+        textFields?[22].text = "Black"
+        textFields?[23].text = "Diseased"
+        textFields?[24].text = "Black"
+        textFields?[25].text = "Black"
+        textFields?[26].text = "Black"
+        textFields?[27].text = "Diseased"
+        textFields?[28].text = "Black"
+        textFields?[29].text = "Black"
+        textFields?[30].text = "Black"
+        textFields?[31].text = "Diseased"
+        textFields?[32].text = "Black"
+        textFields?[33].text = "Black"
+        textFields?[34].text = "Black"
+        textFields?[35].text = "Diseased"
+        textFields?[36].text = "Black"
+        textFields?[37].text = "Black"
+        textFields?[38].text = "Black"
+        textFields?[39].text = "Diseased"
+        textFields?[40].text = "Black"
+        textFields?[41].text = "Black"
+        textFields?[42].text = "Black"
+        textFields?[43].text = "Diseased"
+        textFields?[44].text = "Black"
+        textFields?[45].text = "Black"
+        textFields?[46].text = "Black"
+        textFields?[47].text = "Diseased"
+        textFields?[48].text = "Black"
+        textFields?[49].text = "Black"
+        textFields?[50].text = "Black"
+        textFields?[51].text = "Diseased"
+        textFields?[52].text = "Black"
+        textFields?[53].text = "Black"
+        textFields?[54].text = "Black"
+        textFields?[55].text = "Diseased"
     }
 }
