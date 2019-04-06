@@ -13,83 +13,19 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]!
     
-    var textFieldsForEyes = [String]()
-    var textFieldsForSkin = [String]()
-    var textFieldsForHair = [String]()
-    var textFieldsForAnemia = [String]()
+//    var textFieldsForEyes = [String]()
+//    var textFieldsForSkin = [String]()
+//    var textFieldsForHair = [String]()
+//    var textFieldsForAnemia = [String]()
     
     var chosenGene = ""
     var secondTF = false
     
     var nameText = ""
-    var eyeText = ""
-    var skinText = ""
-    var hairText = ""
-    var anemiaText = ""
-    
-    var texts = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
-    
-    var textOne = ""
-    var textTwo = ""
-    var textThree = ""
-    var textFour = ""
-    var textFive = ""
-    var textSix = ""
-    var textSeven = ""
-    var textEight = ""
-    var textNine = ""
-    var textTen = ""
-    var textEleven = ""
-    var textTwelve = ""
-    var textThirteen = ""
-    var textFourteen = ""
-    var textFifteen = ""
-    var textSixteen = ""
-    var textSeventeen = ""
-    var textEighteen = ""
-    var textNinteen = ""
-    var textTwenty = ""
-    var textTwentyOne = ""
-    var textTwentyTwo = ""
-    var textTwentyThree = ""
-    var textTwentyFour = ""
-    var textTwentyFive = ""
-    var textTwentySix = ""
-    var textTwentySeven = ""
-    var textTwentyEight = ""
-    var textTwentyNine = ""
-    var textThirty = ""
-    var textThirtyOne = ""
-    var textThirtyTwo = ""
-    var textThirtyThree = ""
-    var textThirtyFour = ""
-    var textThirtyFive = ""
-    var textThirtySix = ""
-    var textThirtySeven = ""
-    var textThirtyEight = ""
-    var textThirtyNine = ""
-    var textFourty = ""
-    var textFourtyOne = ""
-    var textFourtyTwo = ""
-    var textFourtyThree = ""
-    var textFourtyFour = ""
-    var textFourtyFive = ""
-    var textFourtySix = ""
-    var textFourtySeven = ""
-    var textFourtyEight = ""
-    var textFourtyNine = ""
-    var textFifty = ""
-    var textFiftyOne = ""
-    var textFiftyTwo = ""
-    var textFiftyThree = ""
-    var textFiftyFour = ""
-    var textFiftyFive = ""
-    var textFiftySix = ""
-    
-    let eyePicker = UIPickerView()
-    let skinPicker = UIPickerView()
-    let hairPicker = UIPickerView()
-    let anemiaPicker = UIPickerView()
+    var eyesTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var skinTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var hairTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var anemiaTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     
     let firstPicker = UIPickerView()
     let secondPicker = UIPickerView()
@@ -157,10 +93,66 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             retrieveData()
         }
         
-        textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
-        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
-        textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text] as! [String]
-        textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text] as! [String]
+        textFields?[0].text = ""
+        textFields?[1].text = ""
+        textFields?[2].text = ""
+        textFields?[3].text = ""
+        textFields?[4].text = ""
+        textFields?[5].text = ""
+        textFields?[6].text = ""
+        textFields?[7].text = ""
+        textFields?[8].text = ""
+        textFields?[9].text = ""
+        textFields?[10].text = ""
+        textFields?[11].text = ""
+        textFields?[12].text = ""
+        textFields?[13].text = ""
+        textFields?[14].text = ""
+        textFields?[15].text = ""
+        textFields?[16].text = ""
+        textFields?[17].text = ""
+        textFields?[18].text = ""
+        textFields?[20].text = ""
+        textFields?[21].text = ""
+        textFields?[22].text = ""
+        textFields?[23].text = ""
+        textFields?[24].text = ""
+        textFields?[25].text = ""
+        textFields?[26].text = ""
+        textFields?[27].text = ""
+        textFields?[28].text = ""
+        textFields?[29].text = ""
+        textFields?[30].text = ""
+        textFields?[31].text = ""
+        textFields?[32].text = ""
+        textFields?[33].text = ""
+        textFields?[34].text = ""
+        textFields?[35].text = ""
+        textFields?[36].text = ""
+        textFields?[37].text = ""
+        textFields?[38].text = ""
+        textFields?[39].text = ""
+        textFields?[40].text = ""
+        textFields?[41].text = ""
+        textFields?[42].text = ""
+        textFields?[43].text = ""
+        textFields?[44].text = ""
+        textFields?[45].text = ""
+        textFields?[46].text = ""
+        textFields?[47].text = ""
+        textFields?[48].text = ""
+        textFields?[49].text = ""
+        textFields?[50].text = ""
+        textFields?[51].text = ""
+        textFields?[52].text = ""
+        textFields?[53].text = ""
+        textFields?[54].text = ""
+        textFields?[55].text = ""
+        
+//        textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
+//        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
+//        textFieldsForHair = [textFields?[2].text, textFields?[6].text, textFields?[10].text, textFields?[14].text, textFields?[18].text, textFields?[22].text, textFields?[26].text, textFields?[30].text, textFields?[34].text, textFields?[38].text, textFields?[42].text, textFields?[46].text, textFields?[50].text, textFields?[54].text] as! [String]
+//        textFieldsForAnemia = [textFields?[3].text, textFields?[7].text, textFields?[11].text, textFields?[15].text, textFields?[19].text, textFields?[23].text, textFields?[27].text, textFields?[31].text, textFields?[35].text, textFields?[39].text, textFields?[43].text, textFields?[47].text, textFields?[51].text, textFields?[55].text] as! [String]
         
 //        textFieldsForEyes.append(textFields![0].text!)
 //        textFieldsForSkin.append(textFields![1].text!)
@@ -1245,10 +1237,10 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if segue.identifier ==  "toInputVC" {
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.eyesLabel = textFieldsForEyes
-            destnationVC.skinLabel = textFieldsForSkin
-            destnationVC.hairLabel = textFieldsForHair
-            destnationVC.anemiaLabel = textFieldsForAnemia
+            destnationVC.eyesLabel = eyesTexts
+            destnationVC.skinLabel = skinTexts
+            destnationVC.hairLabel = hairTexts
+            destnationVC.anemiaLabel = anemiaTexts
         } else if segue.identifier == "toInputVC" {
             let destinationVC = segue.destination as! InputVC
             destinationVC.thirdTF = secondTF
@@ -1257,65 +1249,29 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
         nameText = nameTextField.text!
-//        textFieldsForEyes[0] = (textFields![0].text)!
-//        textOne = (textFields?[0].text!)! //(textFields?[0].text)!
-//        textTwo = (textFields?[1].text)!
-//        textThree = (textFields?[2].text)!
-//        textFour = (textFields?[3].text)!
-//        textFive = (textFields?[4].text)!
-//        textSix = (textFields?[5].text)!
-//        textSeven = (textFields?[6].text)!
-//        textEight = (textFields?[7].text)!
-//        textNine = (textFields?[8].text)!
-//        textTen = (textFields?[9].text)!
-//        textEleven = (textFields?[10].text)!
-//        textTwelve = (textFields?[11].text)!
-//        textThirteen = (textFields?[12].text)!
-//        textFourteen = (textFields?[13].text)!
-//        textFifteen = (textFields?[14].text)!
-//        textSixteen = (textFields?[15].text)!
-//        textSeventeen = (textFields?[16].text)!
-//        textEighteen = (textFields?[17].text)!
-//        textNinteen = (textFields?[18].text)!
-//        textTwenty = (textFields?[19].text)!
-//        textTwentyOne = (textFields?[20].text)!
-//        textTwentyTwo = (textFields?[21].text)!
-//        textTwentyThree = (textFields?[22].text)!
-//        textTwentyFour = (textFields?[23].text)!
-//        textTwentyFive = (textFields?[24].text)!
-//        textTwentySix = (textFields?[25].text)!
-//        textTwentySeven = (textFields?[26].text)!
-//        textTwentyEight = (textFields?[27].text)!
-//        textTwentyNine = (textFields?[28].text)!
-//        textThirty = (textFields?[29].text)!
-//        textThirtyOne = (textFields?[30].text)!
-//        textThirtyTwo = (textFields?[31].text)!
-//        textThirtyThree = (textFields?[32].text)!
-//        textThirtyFour = (textFields?[33].text)!
-//        textThirtyFive = (textFields?[34].text)!
-//        textThirtySix = (textFields?[35].text)!
-//        textThirtySeven = (textFields?[36].text)!
-//        textThirtyEight = (textFields?[37].text)!
-//        textThirtyNine = (textFields?[38].text)!
-//        textFourty = (textFields?[39].text)!
-//        textFourtyOne = (textFields?[40].text)!
-//        textFourtyTwo = (textFields?[41].text)!
-//        textFourtyThree = (textFields?[42].text)!
-//        textFourtyFour = (textFields?[43].text)!
-//        textFourtyFive = (textFields?[44].text)!
-//        textFourtySix = (textFields?[45].text)!
-//        textFourtySeven = (textFields?[46].text)!
-//        textFourtyEight = (textFields?[47].text)!
-//        textFourtyNine = (textFields?[48].text)!
-//        textFifty = (textFields?[49].text)!
-//        textFiftyOne = (textFields?[50].text)!
-//        textFiftyTwo = (textFields?[51].text)!
-//        textFiftyThree = (textFields?[52].text)!
-//        textFiftyFour = (textFields?[53].text)!
-//        textFiftyFive = (textFields?[54].text)!
-//        textFiftySix = (textFields?[55].text)!
+        eyesTexts[0] = (textFields?[0].text!)!
+        skinTexts[0] = (textFields?[1].text!)!
+        hairTexts[0] = (textFields?[2].text!)!
+        anemiaTexts[0] = (textFields?[3].text!)!
+        eyesTexts[1] = (textFields?[4].text!)!
+        skinTexts[1] = (textFields?[5].text!)!
+        hairTexts[1] = (textFields?[6].text!)!
+        anemiaTexts[1] = textFields[7].text!
+        eyesTexts[2] = textFields[8].text!
+        skinTexts[2] = textFields[9].text!
+        hairTexts[2] = textFields[10].text!
+        anemiaTexts[2] = textFields[11].text!
+        eyesTexts[3] = textFields[12].text!
+        skinTexts[3] = textFields[13].text!
+        hairTexts[3] = textFields[14].text!
+        anemiaTexts[3] = textFields[15].text!
+        eyesTexts[4] = textFields[16].text!
+        skinTexts[4] = textFields[17].text!
+        hairTexts[4] = textFields[18].text!
+        anemiaTexts[4] = textFields[19].text!
         
-        if nameText == "" || textOne == "" || textTwo == "" || textThree == "" || textFour == "" || textFive == "" || textSix == "" || textSeven == "" || textEight == "" || textNine == "" || textTen == "" || textEleven == "" || textTwelve == "" || textThirteen == "" || textFourteen == "" || textFifteen == "" || textSixteen == "" || textSeventeen == "" || textEighteen == "" || textNinteen == "" || textTwenty == "" || textTwentyOne == "" || textTwentyTwo == "" || textTwentyThree == "" || textTwentyFour == "" || textTwentyFive == "" || textTwentySix == "" || textTwentySeven == "" || textTwentyEight == "" || textTwentyNine == "" || textThirty == "" || textThirtyOne == "" || textThirtyTwo == "" || textThirtyThree == "" || textThirtyFour == "" || textThirtyFive == "" || textThirtySix == "" || textThirtySeven == "" || textThirtyEight == "" || textThirtyNine == "" || textFourty == "" || textFourtyOne == "" || textFourtyTwo == "" {
+        
+        if nameText == "" || eyesTexts[0] == "" || eyesTexts[1] == "" || eyesTexts[2] == "" || eyesTexts[3] == "" || eyesTexts[4] == "" || eyesTexts[5] == "" || eyesTexts[6] == "" || eyesTexts[7] == "" || eyesTexts[8] == "" || eyesTexts[9] == "" || eyesTexts[10] == "" || eyesTexts[11] == "" || eyesTexts[12] == "" || eyesTexts[13] == "" || skinTexts[0] == "" || skinTexts[1] == "" || skinTexts[2] == "" || skinTexts[3] == "" || skinTexts[4] == "" || skinTexts[5] == "" || skinTexts[6] == "" || skinTexts[7] == "" || skinTexts[8] == "" || skinTexts[9] == "" || skinTexts[10] == "" || skinTexts[11] == "" || skinTexts[12] == "" || skinTexts[13] == "" || hairTexts[0] == "" || hairTexts[1] == "" || hairTexts[2] == "" || hairTexts[3] == "" || hairTexts[4] == "" || hairTexts[5] == "" || hairTexts[6] == "" || hairTexts[7] == "" || hairTexts[8] == "" || hairTexts[9] == "" || hairTexts[10] == "" || hairTexts[11] == "" || hairTexts[12] == "" || hairTexts[13] == "" || anemiaTexts[0] == "" || anemiaTexts[1] == "" || anemiaTexts[2] == "" || anemiaTexts[3] == "" || anemiaTexts[4] == "" || anemiaTexts[5] == "" || anemiaTexts[6] == "" || anemiaTexts[7] == "" || anemiaTexts[8] == "" || anemiaTexts[9] == "" || anemiaTexts[10] == "" || anemiaTexts[11] == "" || anemiaTexts[12] == "" || anemiaTexts[13] == "" {
         
             let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
             let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)

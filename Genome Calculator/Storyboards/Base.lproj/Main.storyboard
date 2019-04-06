@@ -181,17 +181,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-nC-PyA">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-nC-PyA">
                                 <rect key="frame" x="0.0" y="131" width="414" height="687"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="3i0-iq-iie" kind="embed" id="3f9-Bi-awu"/>
                                 </connections>
                             </containerView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-G7-gca">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-G7-gca">
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.18431285019999999" green="0.1844702959" blue="0.17611345649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="S9Y-24-ZhL"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Calculate" style="done" id="hQg-D9-4Vf">
                                         <color key="tintColor" red="0.0" green="0.99987131360000003" blue="0.52671265599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,15 +209,28 @@
                                 </items>
                                 <color key="barTintColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mib-EQ-y6e">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mib-EQ-y6e">
                                 <rect key="frame" x="107" y="99" width="200" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mib-EQ-y6e" firstAttribute="leading" secondItem="ZbB-Ls-SIW" secondAttribute="leading" constant="107" id="8bB-lB-Tyb"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="leading" secondItem="sEC-nC-PyA" secondAttribute="leading" id="Akw-IF-00K"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="centerX" secondItem="mib-EQ-y6e" secondAttribute="centerX" id="I5Z-bv-lWq"/>
+                            <constraint firstItem="sEC-nC-PyA" firstAttribute="trailing" secondItem="ZbB-Ls-SIW" secondAttribute="trailing" id="LXJ-M9-ZKq"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="top" secondItem="sEC-nC-PyA" secondAttribute="bottom" id="LuW-0T-b3f"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="trailing" secondItem="sEC-nC-PyA" secondAttribute="trailing" id="NHE-hj-Hv1"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="bottom" secondItem="ZbB-Ls-SIW" secondAttribute="bottom" id="Qpx-5X-FjE"/>
+                            <constraint firstItem="sEC-nC-PyA" firstAttribute="leading" secondItem="ZbB-Ls-SIW" secondAttribute="leading" id="R4X-2G-ILk"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="top" secondItem="sEC-nC-PyA" secondAttribute="bottom" id="eS7-Ol-1XD"/>
+                            <constraint firstItem="sEC-nC-PyA" firstAttribute="top" secondItem="mib-EQ-y6e" secondAttribute="bottom" constant="2" id="gWx-l9-ey3"/>
+                            <constraint firstItem="sYr-G7-gca" firstAttribute="top" secondItem="sEC-nC-PyA" secondAttribute="bottom" id="wyx-bq-IgB"/>
+                            <constraint firstItem="mib-EQ-y6e" firstAttribute="top" secondItem="ZbB-Ls-SIW" secondAttribute="top" constant="11" id="zI0-le-0SA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZbB-Ls-SIW"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bat-BQ-X43"/>
