@@ -59,7 +59,7 @@ class EditVC: UIViewController {
         }
     }
     
-    @IBAction func editButton(_ sender: UIButton) {
+    @IBAction func editButton(_ sender: UIBarButtonItem) {
         secondChosenGene = "a"
         firstTF = true
         performSegue(withIdentifier: "toSecondAddVC", sender: nil)

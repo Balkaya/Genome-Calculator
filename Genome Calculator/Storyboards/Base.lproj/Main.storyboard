@@ -22,6 +22,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" red="0.18823403120040894" green="0.18839216232299805" blue="0.18003472685813904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.39810018264567926" green="0.39810018264567926" blue="0.39810018264567926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.18431285019999999" green="0.1844702959" blue="0.17611345649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="R30-97-uqM" detailTextLabel="s6d-3C-zX4" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="kbX-BZ-lYk" customClass="TableViewCell" customModule="Genome_Calculator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55"/>
@@ -85,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="1060.8695652173915" y="133.92857142857142"/>
         </scene>
-        <!--Edit-->
+        <!--EditVC-->
         <scene sceneID="Ssv-Hz-5am">
             <objects>
                 <viewController id="M8k-Vf-e0K" customClass="EditVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="evf-vh-7P5">
-                                <rect key="frame" x="36" y="157" width="343" height="164"/>
+                                <rect key="frame" x="36" y="157" width="343" height="650"/>
                                 <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -106,34 +107,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmJ-Uo-XfC">
-                                <rect key="frame" x="157" y="531" width="100" height="36"/>
-                                <color key="backgroundColor" red="0.95071526141981999" green="0.51543014319370006" blue="0.47298156301318245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="editButton:" destination="M8k-Vf-e0K" eventType="touchUpInside" id="KLt-WQ-mgW"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="zSB-nr-rqJ">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18431285019999999" green="0.1844702959" blue="0.17611345649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Edit" style="done" id="Ob4-ic-Jhi">
+                                        <color key="tintColor" red="0.0" green="0.99987131360000003" blue="0.52671265599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="editButton:" destination="M8k-Vf-e0K" id="XJK-Ko-ubA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OMd-6s-xN8"/>
+                                </items>
+                                <color key="barTintColor" red="0.1843128502368927" green="0.18447029590606689" blue="0.17611345648765564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FPm-xn-5f8" firstAttribute="trailing" secondItem="xmJ-Uo-XfC" secondAttribute="trailing" constant="157" id="20F-4j-E3e"/>
-                            <constraint firstItem="WEe-VB-bTz" firstAttribute="top" secondItem="FPm-xn-5f8" secondAttribute="top" constant="10" id="BkM-o5-Yi2"/>
-                            <constraint firstItem="evf-vh-7P5" firstAttribute="top" secondItem="WEe-VB-bTz" secondAttribute="bottom" constant="29" id="Goz-lO-iqb"/>
-                            <constraint firstItem="FPm-xn-5f8" firstAttribute="trailing" secondItem="WEe-VB-bTz" secondAttribute="trailing" constant="107" id="NAq-ia-Xn3"/>
-                            <constraint firstItem="xmJ-Uo-XfC" firstAttribute="leading" secondItem="FPm-xn-5f8" secondAttribute="leading" constant="157" id="Ugi-02-1vg"/>
-                            <constraint firstItem="evf-vh-7P5" firstAttribute="leading" secondItem="FPm-xn-5f8" secondAttribute="leading" constant="36" id="ZOm-KL-7GI"/>
-                            <constraint firstItem="xmJ-Uo-XfC" firstAttribute="top" secondItem="evf-vh-7P5" secondAttribute="bottom" constant="210" id="hYL-4C-eii"/>
-                            <constraint firstItem="FPm-xn-5f8" firstAttribute="trailing" secondItem="evf-vh-7P5" secondAttribute="trailing" constant="35" id="lcq-HA-tIb"/>
-                            <constraint firstItem="WEe-VB-bTz" firstAttribute="leading" secondItem="FPm-xn-5f8" secondAttribute="leading" constant="107" id="p1E-kK-c8V"/>
-                            <constraint firstItem="FPm-xn-5f8" firstAttribute="bottom" secondItem="xmJ-Uo-XfC" secondAttribute="bottom" constant="295" id="ukc-fy-2bt"/>
+                            <constraint firstItem="WEe-VB-bTz" firstAttribute="leading" secondItem="FPm-xn-5f8" secondAttribute="leading" constant="107" id="6Mv-fz-SuA"/>
+                            <constraint firstItem="FPm-xn-5f8" firstAttribute="trailing" secondItem="WEe-VB-bTz" secondAttribute="trailing" constant="107" id="Pda-YO-GPD"/>
+                            <constraint firstItem="evf-vh-7P5" firstAttribute="top" secondItem="WEe-VB-bTz" secondAttribute="bottom" constant="29" id="SCX-xU-oog"/>
+                            <constraint firstItem="WEe-VB-bTz" firstAttribute="top" secondItem="FPm-xn-5f8" secondAttribute="top" constant="10" id="XXI-cN-rkw"/>
+                            <constraint firstItem="FPm-xn-5f8" firstAttribute="bottom" secondItem="evf-vh-7P5" secondAttribute="bottom" constant="55" id="YU2-Le-lfa"/>
+                            <constraint firstItem="evf-vh-7P5" firstAttribute="leading" secondItem="FPm-xn-5f8" secondAttribute="leading" constant="36" id="bSt-BY-Kxt"/>
+                            <constraint firstItem="FPm-xn-5f8" firstAttribute="trailing" secondItem="evf-vh-7P5" secondAttribute="trailing" constant="35" id="h6k-Re-FVx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FPm-xn-5f8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit" largeTitleDisplayMode="never" id="bca-lm-kAN"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bca-lm-kAN"/>
                     <connections>
                         <outlet property="nameLabelForEditVC" destination="WEe-VB-bTz" id="moS-zA-AOU"/>
                         <outlet property="textViewForEditVC" destination="evf-vh-7P5" id="U9h-1f-f9F"/>
@@ -142,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcu-EC-LMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2716" y="136"/>
+            <point key="canvasLocation" x="2715.9420289855075" y="135.9375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="idl-7G-9UF">
@@ -207,7 +209,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.1843128502368927" green="0.18447029590606689" blue="0.17611345648765564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mib-EQ-y6e">
                                 <rect key="frame" x="107" y="99" width="200" height="30"/>
@@ -243,19 +245,18 @@
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="-356.25"/>
         </scene>
-        <!--View Controller-->
+        <!--InputVC-->
         <scene sceneID="aIj-uB-Kmo">
             <objects>
-                <viewController id="gjn-KN-BTh" sceneMemberID="viewController">
+                <viewController id="gjn-KN-BTh" customClass="InputVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9R-fS-Afs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gOm-7R-sdu">
-                                <rect key="frame" x="0.0" y="262" width="414" height="556"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.21957963705062866" green="0.21962407231330872" blue="0.21957683563232422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gOm-7R-sdu">
+                                <rect key="frame" x="0.0" y="262" width="414" height="551"/>
+                                <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InputVCCell" rowHeight="60" id="9SP-YD-JOS" customClass="InputVCCell" customModule="Genome_Calculator" customModuleProvider="target">
@@ -302,31 +303,31 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-xI-cSV">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-xI-cSV">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem title="Save" style="done" id="iFs-gM-Tsz">
                                         <color key="tintColor" red="0.0" green="0.99987131360000003" blue="0.52671265599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="gjn-KN-BTh" id="ZAI-Ze-hG5"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.1843128502368927" green="0.18447029590606689" blue="0.17611345648765564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-c9-LdU">
-                                <rect key="frame" x="107" y="88" width="200" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-c9-LdU">
+                                <rect key="frame" x="107" y="88" width="200" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aNp-cB-pbh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aNp-cB-pbh">
                                 <rect key="frame" x="36" y="136" width="343" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -334,15 +335,33 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tcD-xI-cSV" firstAttribute="leading" secondItem="TAG-EX-RSs" secondAttribute="leading" id="5fL-Lr-b7t"/>
+                            <constraint firstItem="TAG-EX-RSs" firstAttribute="trailing" secondItem="aNp-cB-pbh" secondAttribute="trailing" constant="35" id="5hx-8M-Voo"/>
+                            <constraint firstItem="tcD-xI-cSV" firstAttribute="bottom" secondItem="TAG-EX-RSs" secondAttribute="bottom" id="6nQ-a3-b6a"/>
+                            <constraint firstItem="gOm-7R-sdu" firstAttribute="trailing" secondItem="TAG-EX-RSs" secondAttribute="trailing" id="8hn-8Y-uds"/>
+                            <constraint firstItem="TAG-EX-RSs" firstAttribute="trailing" secondItem="5WW-c9-LdU" secondAttribute="trailing" constant="107" id="Brd-vN-E9J"/>
+                            <constraint firstItem="aNp-cB-pbh" firstAttribute="top" secondItem="5WW-c9-LdU" secondAttribute="bottom" constant="18" id="IDd-nS-dXx"/>
+                            <constraint firstItem="gOm-7R-sdu" firstAttribute="leading" secondItem="TAG-EX-RSs" secondAttribute="leading" id="KnG-Xi-P9n"/>
+                            <constraint firstItem="aNp-cB-pbh" firstAttribute="leading" secondItem="TAG-EX-RSs" secondAttribute="leading" constant="36" id="NVh-Jh-Wov"/>
+                            <constraint firstItem="tcD-xI-cSV" firstAttribute="trailing" secondItem="TAG-EX-RSs" secondAttribute="trailing" id="Pjx-qV-G8f"/>
+                            <constraint firstItem="tcD-xI-cSV" firstAttribute="top" secondItem="gOm-7R-sdu" secondAttribute="bottom" id="Uuu-AG-dkG"/>
+                            <constraint firstItem="5WW-c9-LdU" firstAttribute="leading" secondItem="TAG-EX-RSs" secondAttribute="leading" constant="107" id="Ydh-tu-YI0"/>
+                            <constraint firstItem="5WW-c9-LdU" firstAttribute="top" secondItem="TAG-EX-RSs" secondAttribute="top" id="aBi-C5-Zw7"/>
+                            <constraint firstItem="gOm-7R-sdu" firstAttribute="top" secondItem="aNp-cB-pbh" secondAttribute="bottom" constant="8" id="rtN-4W-3BX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TAG-EX-RSs"/>
                     </view>
                     <connections>
-                        <segue destination="rM1-g6-aIq" kind="show" id="l6A-iG-wXh"/>
+                        <outlet property="inputTextView" destination="aNp-cB-pbh" id="Zjf-al-p7d"/>
+                        <outlet property="nameLabel" destination="5WW-c9-LdU" id="ex7-2N-BRh"/>
+                        <outlet property="tableView" destination="gOm-7R-sdu" id="240-Cs-bUE"/>
+                        <segue destination="rM1-g6-aIq" kind="show" identifier="toViewController" id="l6A-iG-wXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45H-tp-PGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941" y="531"/>
+            <point key="canvasLocation" x="1940.5797101449277" y="530.35714285714289"/>
         </scene>
         <!--AddVC-->
         <scene sceneID="UfH-4o-cUs">

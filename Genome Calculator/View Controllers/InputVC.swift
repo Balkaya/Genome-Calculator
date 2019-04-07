@@ -12,13 +12,14 @@ import CoreData
 class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var tableView: UITableView!
     
     var thirdTF = false
     
-    var eyesLabel: [String] = []
-    var skinLabel: [String] = []
-    var hairLabel: [String] = []
-    var anemiaLabel: [String] = []
+    var eyesLabel: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var skinLabel: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var hairLabel: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var anemiaLabel: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     
     var name = ""
     var firstText = ""

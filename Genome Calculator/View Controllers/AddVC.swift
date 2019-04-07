@@ -1233,53 +1233,53 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         return label
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier ==  "toInputVC" {
-            let destnationVC = segue.destination as! InputVC
-            destnationVC.name = nameText
-            destnationVC.eyesLabel = eyesTexts
-            destnationVC.skinLabel = skinTexts
-            destnationVC.hairLabel = hairTexts
-            destnationVC.anemiaLabel = anemiaTexts
-        } else if segue.identifier == "toInputVC" {
-            let destinationVC = segue.destination as! InputVC
-            destinationVC.thirdTF = secondTF
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier ==  "toInputVC" {
+//            let destnationVC = segue.destination as! InputVC
+//            destnationVC.name = nameText
+//            destnationVC.eyesLabel = eyesTexts
+//            destnationVC.skinLabel = skinTexts
+//            destnationVC.hairLabel = hairTexts
+//            destnationVC.anemiaLabel = anemiaTexts
+//        } else if segue.identifier == "toInputVC" {
+//            let destinationVC = segue.destination as! InputVC
+//            destinationVC.thirdTF = secondTF
+//        }
+//    }
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
         nameText = nameTextField.text!
-        eyesTexts[0] = (textFields?[0].text!)!
-        skinTexts[0] = (textFields?[1].text!)!
-        hairTexts[0] = (textFields?[2].text!)!
-        anemiaTexts[0] = (textFields?[3].text!)!
-        eyesTexts[1] = (textFields?[4].text!)!
-        skinTexts[1] = (textFields?[5].text!)!
-        hairTexts[1] = (textFields?[6].text!)!
-        anemiaTexts[1] = textFields[7].text!
-        eyesTexts[2] = textFields[8].text!
-        skinTexts[2] = textFields[9].text!
-        hairTexts[2] = textFields[10].text!
-        anemiaTexts[2] = textFields[11].text!
-        eyesTexts[3] = textFields[12].text!
-        skinTexts[3] = textFields[13].text!
-        hairTexts[3] = textFields[14].text!
-        anemiaTexts[3] = textFields[15].text!
-        eyesTexts[4] = textFields[16].text!
-        skinTexts[4] = textFields[17].text!
-        hairTexts[4] = textFields[18].text!
-        anemiaTexts[4] = textFields[19].text!
+//        eyesTexts[0] = (textFields?[0].text!)!
+//        skinTexts[0] = (textFields?[1].text!)!
+//        hairTexts[0] = (textFields?[2].text!)!
+//        anemiaTexts[0] = (textFields?[3].text!)!
+//        eyesTexts[1] = (textFields?[4].text!)!
+//        skinTexts[1] = (textFields?[5].text!)!
+//        hairTexts[1] = (textFields?[6].text!)!
+//        anemiaTexts[1] = textFields[7].text!
+//        eyesTexts[2] = textFields[8].text!
+//        skinTexts[2] = textFields[9].text!
+//        hairTexts[2] = textFields[10].text!
+//        anemiaTexts[2] = textFields[11].text!
+//        eyesTexts[3] = textFields[12].text!
+//        skinTexts[3] = textFields[13].text!
+//        hairTexts[3] = textFields[14].text!
+//        anemiaTexts[3] = textFields[15].text!
+//        eyesTexts[4] = textFields[16].text!
+//        skinTexts[4] = textFields[17].text!
+//        hairTexts[4] = textFields[18].text!
+//        anemiaTexts[4] = textFields[19].text!
         
         
-        if nameText == "" || eyesTexts[0] == "" || eyesTexts[1] == "" || eyesTexts[2] == "" || eyesTexts[3] == "" || eyesTexts[4] == "" || eyesTexts[5] == "" || eyesTexts[6] == "" || eyesTexts[7] == "" || eyesTexts[8] == "" || eyesTexts[9] == "" || eyesTexts[10] == "" || eyesTexts[11] == "" || eyesTexts[12] == "" || eyesTexts[13] == "" || skinTexts[0] == "" || skinTexts[1] == "" || skinTexts[2] == "" || skinTexts[3] == "" || skinTexts[4] == "" || skinTexts[5] == "" || skinTexts[6] == "" || skinTexts[7] == "" || skinTexts[8] == "" || skinTexts[9] == "" || skinTexts[10] == "" || skinTexts[11] == "" || skinTexts[12] == "" || skinTexts[13] == "" || hairTexts[0] == "" || hairTexts[1] == "" || hairTexts[2] == "" || hairTexts[3] == "" || hairTexts[4] == "" || hairTexts[5] == "" || hairTexts[6] == "" || hairTexts[7] == "" || hairTexts[8] == "" || hairTexts[9] == "" || hairTexts[10] == "" || hairTexts[11] == "" || hairTexts[12] == "" || hairTexts[13] == "" || anemiaTexts[0] == "" || anemiaTexts[1] == "" || anemiaTexts[2] == "" || anemiaTexts[3] == "" || anemiaTexts[4] == "" || anemiaTexts[5] == "" || anemiaTexts[6] == "" || anemiaTexts[7] == "" || anemiaTexts[8] == "" || anemiaTexts[9] == "" || anemiaTexts[10] == "" || anemiaTexts[11] == "" || anemiaTexts[12] == "" || anemiaTexts[13] == "" {
-        
-            let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
-            let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
-            alert.addAction(okButoon)
-            self.present(alert, animated: true, completion: nil)
-        } else {
+//        if nameText == "" || eyesTexts[0] == "" || eyesTexts[1] == "" || eyesTexts[2] == "" || eyesTexts[3] == "" || eyesTexts[4] == "" || eyesTexts[5] == "" || eyesTexts[6] == "" || eyesTexts[7] == "" || eyesTexts[8] == "" || eyesTexts[9] == "" || eyesTexts[10] == "" || eyesTexts[11] == "" || eyesTexts[12] == "" || eyesTexts[13] == "" || skinTexts[0] == "" || skinTexts[1] == "" || skinTexts[2] == "" || skinTexts[3] == "" || skinTexts[4] == "" || skinTexts[5] == "" || skinTexts[6] == "" || skinTexts[7] == "" || skinTexts[8] == "" || skinTexts[9] == "" || skinTexts[10] == "" || skinTexts[11] == "" || skinTexts[12] == "" || skinTexts[13] == "" || hairTexts[0] == "" || hairTexts[1] == "" || hairTexts[2] == "" || hairTexts[3] == "" || hairTexts[4] == "" || hairTexts[5] == "" || hairTexts[6] == "" || hairTexts[7] == "" || hairTexts[8] == "" || hairTexts[9] == "" || hairTexts[10] == "" || hairTexts[11] == "" || hairTexts[12] == "" || hairTexts[13] == "" || anemiaTexts[0] == "" || anemiaTexts[1] == "" || anemiaTexts[2] == "" || anemiaTexts[3] == "" || anemiaTexts[4] == "" || anemiaTexts[5] == "" || anemiaTexts[6] == "" || anemiaTexts[7] == "" || anemiaTexts[8] == "" || anemiaTexts[9] == "" || anemiaTexts[10] == "" || anemiaTexts[11] == "" || anemiaTexts[12] == "" || anemiaTexts[13] == "" {
+//
+//            let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
+//            let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+//            alert.addAction(okButoon)
+//            self.present(alert, animated: true, completion: nil)
+//        } else {
             performSegue(withIdentifier: "toInputVC", sender: nil)
-        }
+//        }
     }
     
     @IBAction func tryButton(_ sender: Any) {
