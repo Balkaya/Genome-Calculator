@@ -1233,19 +1233,17 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         return label
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier ==  "toInputVC" {
-//            let destnationVC = segue.destination as! InputVC
-//            destnationVC.name = nameText
-//            destnationVC.eyesLabel = eyesTexts
-//            destnationVC.skinLabel = skinTexts
-//            destnationVC.hairLabel = hairTexts
-//            destnationVC.anemiaLabel = anemiaTexts
-//        } else if segue.identifier == "toInputVC" {
-//            let destinationVC = segue.destination as! InputVC
-//            destinationVC.thirdTF = secondTF
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier ==  "toInputVC" {
+            let destnationVC = segue.destination as! InputVC
+            destnationVC.name = nameText
+            destnationVC.eyesLabel = eyesTexts
+            destnationVC.skinLabel = skinTexts
+            destnationVC.hairLabel = hairTexts
+            destnationVC.anemiaLabel = anemiaTexts
+            destnationVC.thirdTF = secondTF
+        }
+    }
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
         nameText = nameTextField.text!
