@@ -1338,7 +1338,11 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             thirdCaseResult = "\(firstHairColorName)-hair \(biggestForHair)%, \(secondHairColorName)-hair \(secondBiggestForHair)% and \(thirdHairColorName)-hair \(secondBiggestForHair)%"
         }
         
-        inputTextView.isEditable = false
+        if fourthCase == 1 {
+            fourthCaseResult = ""
+        } else if fourthCase == 2 {
+            fourthCaseResult = ""
+        }
         
         inputTextView.text = """
         The highest probability of child's eyes color:
@@ -1347,6 +1351,8 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         \(secondCaseResult).
         The highest probability of child's hair color:
         \(thirdCaseResult).
+        The highest probability of child's anemia case:
+        \(fourthCaseResult).
         """
     }
     
@@ -1356,7 +1362,7 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
-        cell.familyPersonLabel.text = familyPersonsNames[indexPath.row]
+        cell.familyPersonLabel.text = familyPersonsNames[indexPath.item]
         cell.eyesLabel.text = eyesLabel[indexPath.row]
         cell.skinLabel.text = skinLabel[indexPath.row]
         cell.hairLabel.text = hairLabel[indexPath.row]

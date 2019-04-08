@@ -55,6 +55,7 @@ var thirdHairColorName = ""
 var firstCaseResult = ""
 var secondCaseResult = ""
 var thirdCaseResult = ""
+var fourthCaseResult = ""
 
 let familyPersonsNames = ["Mom", "Dad", "Mom's Mom", "Mom's Dad", "Dad's Mom", "Dad's Dad", "Mom's Mom's Mom", "Mom's Mom's Dad", "Mom's Dad's Mom", "Mom's Dad's Dad", "Dad's Mom's Mom", "Dad's Mom's Dad", "Dad's Dad's Mom", "Dad's Dad's Dad"]
 
@@ -124,3 +125,4 @@ var redsPoints = 0
 var firstCase = 0
 var secondCase = 0
 var thirdCase = 0
+var fourthCase = 0
