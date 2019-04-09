@@ -19,7 +19,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 //    var textFieldsForAnemia = [String]()
     
     var chosenGene = ""
-    var secondTF = false
     
     var nameText = ""
     var eyesTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
@@ -1237,11 +1236,10 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if segue.identifier ==  "toInputVC" {
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.eyesLabel = eyesTexts
-            destnationVC.skinLabel = skinTexts
-            destnationVC.hairLabel = hairTexts
-            destnationVC.anemiaLabel = anemiaTexts
-            destnationVC.thirdTF = secondTF
+            destnationVC.eyesTexts = eyesTexts
+            destnationVC.skinTexts = skinTexts
+            destnationVC.hairTexts = hairTexts
+            destnationVC.anemiaTexts = anemiaTexts
         }
     }
     

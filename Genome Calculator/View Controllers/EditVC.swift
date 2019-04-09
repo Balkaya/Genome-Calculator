@@ -55,7 +55,7 @@ class EditVC: UIViewController {
         if segue.identifier == "toSecondAddVC" {
             let destinationVC = segue.destination as! AddVC
             destinationVC.chosenGene = secondChosenGene
-            destinationVC.secondTF = firstTF
+//            destinationVC.secondTF = firstTF
         }
     }
     

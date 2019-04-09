@@ -331,6 +331,11 @@
                                             <outlet property="familyPersonLabel" destination="mnq-K1-pPf" id="JiX-nZ-7Xs"/>
                                             <outlet property="hairLabel" destination="67T-Tq-wEn" id="M8b-1H-Rwp"/>
                                             <outlet property="skinLabel" destination="i8v-G2-JdC" id="R4v-hj-f6M"/>
+                                            <outletCollection property="s" destination="Lzs-GC-gPi" id="ZPp-DV-KcK"/>
+                                            <outletCollection property="eyesLabel" destination="Lzs-GC-gPi" collectionClass="NSMutableArray" id="jdc-QA-yJW"/>
+                                            <outletCollection property="skinLabel" destination="i8v-G2-JdC" collectionClass="NSMutableArray" id="XJN-m3-4Zp"/>
+                                            <outletCollection property="hairLabel" destination="67T-Tq-wEn" collectionClass="NSMutableArray" id="ZWP-PI-IYG"/>
+                                            <outletCollection property="anemiaLabel" destination="7Bn-IW-5ob" collectionClass="NSMutableArray" id="Gjg-Nl-WbD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -393,13 +398,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-3V-Xml">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-3V-Xml">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-Wx-G1O">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-Wx-G1O">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mom's Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wet-y5-tmf">
                                                 <rect key="frame" x="160" y="148" width="94" height="21"/>
@@ -935,11 +938,27 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="958" id="8gF-7n-AWm"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="iWr-Wx-G1O" firstAttribute="leading" secondItem="OZj-3V-Xml" secondAttribute="leading" id="iSU-zC-ES2"/>
+                                    <constraint firstItem="iWr-Wx-G1O" firstAttribute="top" secondItem="OZj-3V-Xml" secondAttribute="top" id="pGf-W8-lMQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="iWr-Wx-G1O" secondAttribute="bottom" id="xwi-Hv-9wM"/>
+                                    <constraint firstAttribute="trailing" secondItem="iWr-Wx-G1O" secondAttribute="trailing" id="y9Y-mX-uLb"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OZj-3V-Xml" secondAttribute="bottom" id="79I-OU-Xec"/>
+                            <constraint firstItem="OZj-3V-Xml" firstAttribute="top" secondItem="Vyk-jO-xv8" secondAttribute="top" id="CLF-9g-qfg"/>
+                            <constraint firstItem="OZj-3V-Xml" firstAttribute="trailing" secondItem="1IH-ks-sBk" secondAttribute="trailing" id="IfP-me-BHK"/>
+                            <constraint firstItem="iWr-Wx-G1O" firstAttribute="width" secondItem="Vyk-jO-xv8" secondAttribute="width" id="kWR-N1-ZUn"/>
+                            <constraint firstItem="OZj-3V-Xml" firstAttribute="leading" secondItem="1IH-ks-sBk" secondAttribute="leading" id="pYN-OV-ij8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1IH-ks-sBk"/>
                     </view>
                     <size key="freeformSize" width="414" height="958"/>
