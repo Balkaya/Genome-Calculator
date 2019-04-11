@@ -13,11 +13,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]!
     
-//    var textFieldsForEyes = [String]()
-//    var textFieldsForSkin = [String]()
-//    var textFieldsForHair = [String]()
-//    var textFieldsForAnemia = [String]()
-    
     var chosenGene = ""
     
     var nameText = ""
@@ -91,62 +86,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if chosenGene != "" {
             retrieveData()
         }
-        
-        textFields?[0].text = ""
-        textFields?[1].text = ""
-        textFields?[2].text = ""
-        textFields?[3].text = ""
-        textFields?[4].text = ""
-        textFields?[5].text = ""
-        textFields?[6].text = ""
-        textFields?[7].text = ""
-        textFields?[8].text = ""
-        textFields?[9].text = ""
-        textFields?[10].text = ""
-        textFields?[11].text = ""
-        textFields?[12].text = ""
-        textFields?[13].text = ""
-        textFields?[14].text = ""
-        textFields?[15].text = ""
-        textFields?[16].text = ""
-        textFields?[17].text = ""
-        textFields?[18].text = ""
-        textFields?[20].text = ""
-        textFields?[21].text = ""
-        textFields?[22].text = ""
-        textFields?[23].text = ""
-        textFields?[24].text = ""
-        textFields?[25].text = ""
-        textFields?[26].text = ""
-        textFields?[27].text = ""
-        textFields?[28].text = ""
-        textFields?[29].text = ""
-        textFields?[30].text = ""
-        textFields?[31].text = ""
-        textFields?[32].text = ""
-        textFields?[33].text = ""
-        textFields?[34].text = ""
-        textFields?[35].text = ""
-        textFields?[36].text = ""
-        textFields?[37].text = ""
-        textFields?[38].text = ""
-        textFields?[39].text = ""
-        textFields?[40].text = ""
-        textFields?[41].text = ""
-        textFields?[42].text = ""
-        textFields?[43].text = ""
-        textFields?[44].text = ""
-        textFields?[45].text = ""
-        textFields?[46].text = ""
-        textFields?[47].text = ""
-        textFields?[48].text = ""
-        textFields?[49].text = ""
-        textFields?[50].text = ""
-        textFields?[51].text = ""
-        textFields?[52].text = ""
-        textFields?[53].text = ""
-        textFields?[54].text = ""
-        textFields?[55].text = ""
         
 //        textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
 //        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
@@ -1236,10 +1175,10 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         if segue.identifier ==  "toInputVC" {
             let destnationVC = segue.destination as! InputVC
             destnationVC.name = nameText
-            destnationVC.eyesTexts = eyesTexts
-            destnationVC.skinTexts = skinTexts
-            destnationVC.hairTexts = hairTexts
-            destnationVC.anemiaTexts = anemiaTexts
+            destnationVC.secondEyesTexts = eyesTexts
+            destnationVC.secondSkinTexts = skinTexts
+            destnationVC.secondHairTexts = hairTexts
+            destnationVC.secondAnemiaTexts = anemiaTexts
         }
     }
     
