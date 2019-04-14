@@ -1705,15 +1705,72 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
         nameText = nameTextField.text!
-        eyesTexts = [textField1.text, textField1.text, textField2.text, textField3.text, textField4.text, textField5.text, textField6.text, textField7.text, textField8.text, textField9.text, textField10.text, textField1.text, textField1.text, textField1.text] as! [String]
-        skinTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
-        hairTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
-        anemiaTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
+//        eyesTexts = [textField1.text, textField1.text, textField2.text, textField3.text, textField4.text, textField5.text, textField6.text, textField7.text, textField8.text, textField9.text, textField10.text, textField1.text, textField1.text, textField1.text] as! [String]
+//        skinTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
+//        hairTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
+//        anemiaTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
         
         //        eyesTexts = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
         //        skinTexts = [textFields[1].text, textFields[5].text, textFields[9].text, textFields[13].text, textFields[17].text, textFields[21].text, textFields[25].text, textFields[29].text, textFields[33].text, textFields[37].text, textFields[41].text, textFields[45].text, textFields[49].text, textFields[53].text] as! [String]
         //        hairTexts = [textFields[2].text, textFields[6].text, textFields[10].text, textFields[14].text, textFields[18].text, textFields[22].text, textFields[26].text, textFields[30].text, textFields[34].text, textFields[38].text, textFields[42].text, textFields[46].text, textFields[50].text, textFields[54].text] as! [String]
         //        anemiaTexts = [textFields[3].text, textFields[7].text, textFields[11].text, textFields[15].text, textFields[19].text, textFields[23].text, textFields[27].text, textFields[31].text, textFields[35].text, textFields[39].text, textFields[43].text, textFields[47].text, textFields[51].text, textFields[55].text] as! [String]
+        
+//        eyesTexts[0] = textField1.text ?? "d"
+//        skinTexts[0] = textField2.text ?? "d"
+//        hairTexts[0] = textField3.text ?? "d"
+//        anemiaTexts[0] = textField4.text ?? "d"
+//        eyesTexts[1] = textField5.text ?? "d"
+//        skinTexts[1] = textField6.text ?? "d"
+//        hairTexts[1] = textField7.text ?? "d"
+//        anemiaTexts[1] = textField8.text ?? "d"
+//        eyesTexts[2] = textField9.text ?? "d"
+//        skinTexts[2] = textField10.text ?? "d"
+//        hairTexts[2] = textField11.text ?? "d"
+//        anemiaTexts[2] = textField12.text ?? "d"
+//        eyesTexts[3] = textField13.text ?? "d"
+//        skinTexts[3] = textField14.text ?? "d"
+//        hairTexts[3] = textField15.text ?? "d"
+//        anemiaTexts[3] = textField16.text ?? "d"
+//        eyesTexts[4] = textField17.text ?? "d"
+//        skinTexts[4] = textField18.text ?? "d"
+//        hairTexts[4] = textField19.text ?? "d"
+//        anemiaTexts[4] = textField20.text ?? "d"
+//        eyesTexts[5] = textField21.text ?? "d"
+//        skinTexts[5] = textField22.text ?? "d"
+//        hairTexts[5] = textField23.text ?? "d"
+//        anemiaTexts[5] = textField24.text ?? "d"
+//        eyesTexts[6] = textField25.text ?? "d"
+//        skinTexts[6] = textField26.text ?? "d"
+//        hairTexts[6] = textField27.text ?? "d"
+//        anemiaTexts[6] = textField28.text ?? "d"
+//        eyesTexts[7] = textField29.text ?? "d"
+//        skinTexts[7] = textField30.text ?? "d"
+//        hairTexts[7] = textField31.text ?? "d"
+//        anemiaTexts[7] = textField32.text ?? "d"
+//        eyesTexts[8] = textField33.text ?? "d"
+//        skinTexts[8] = textField34.text ?? "d"
+//        hairTexts[8] = textField35.text ?? "d"
+//        anemiaTexts[8] = textField36.text ?? "d"
+//        eyesTexts[9] = textField37.text ?? "d"
+//        skinTexts[9] = textField38.text ?? "d"
+//        hairTexts[9] = textField39.text ?? "d"
+//        anemiaTexts[9] = textField40.text ?? "d"
+//        eyesTexts[10] = textField41.text ?? "d"
+//        skinTexts[10] = textField42.text ?? "d"
+//        hairTexts[10] = textField43.text ?? "d"
+//        anemiaTexts[10] = textField44.text ?? "d"
+//        eyesTexts[11] = textField45.text ?? "d"
+//        skinTexts[11] = textField46.text ?? "d"
+//        hairTexts[11] = textField47.text ?? "d"
+//        anemiaTexts[11] = textField48.text ?? "d"
+//        eyesTexts[12] = textField49.text ?? "d"
+//        skinTexts[12] = textField50.text ?? "d"
+//        hairTexts[12] = textField51.text ?? "d"
+//        anemiaTexts[12] = textField52.text ?? "d"
+//        eyesTexts[13] = textField53.text ?? "d"
+//        skinTexts[13] = textField54.text ?? "d"
+//        hairTexts[13] = textField55.text ?? "d"
+//        anemiaTexts[13] = textField56.text ?? "d"
         
         //        eyesTexts[0] = textFields?[0].text ?? ""
         //        skinTexts[0] = textFields?[1].text ?? ""
@@ -1784,7 +1841,7 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func tryButton(_ sender: UIBarButtonItem) {
-        textField1!.text = "Black"
+        textField1?.text = "Black"
         textField2?.text = "Black"
         textField3?.text = "Black"
         textField4?.text = "Diseased"
