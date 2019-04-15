@@ -52,7 +52,7 @@ class EditVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toSecondAddVC" {
+        if segue.identifier == "secondToAddVC" {
             let destinationVC = segue.destination as! AddVC
             destinationVC.chosenGene = secondChosenGene
 //            destinationVC.secondTF = firstTF
@@ -62,6 +62,6 @@ class EditVC: UIViewController {
     @IBAction func editButton(_ sender: UIBarButtonItem) {
         secondChosenGene = "a"
         firstTF = true
-        performSegue(withIdentifier: "toSecondAddVC", sender: nil)
+        performSegue(withIdentifier: "secondToAddVC", sender: nil)
     }
 }

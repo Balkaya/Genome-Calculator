@@ -138,7 +138,7 @@
                     <connections>
                         <outlet property="nameLabelForEditVC" destination="WEe-VB-bTz" id="moS-zA-AOU"/>
                         <outlet property="textViewForEditVC" destination="evf-vh-7P5" id="U9h-1f-f9F"/>
-                        <segue destination="nWW-dd-G6t" kind="show" identifier="toSecondAddVC" id="Ajj-F8-yhi"/>
+                        <segue destination="nWW-dd-G6t" kind="show" identifier="secondToAddVC" id="Ajj-F8-yhi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcu-EC-LMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,7 +185,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-nC-PyA">
                                 <rect key="frame" x="0.0" y="131" width="414" height="687"/>
                                 <connections>
-                                    <segue destination="3i0-iq-iie" kind="embed" id="3f9-Bi-awu"/>
+                                    <segue destination="3i0-iq-iie" kind="embed" identifier="scToContainerVC" id="3f9-Bi-awu"/>
                                 </connections>
                             </containerView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-G7-gca">
@@ -401,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="530.35714285714289"/>
         </scene>
-        <!--AddVC-->
+        <!--ContainerVC-->
         <scene sceneID="UfH-4o-cUs">
             <objects>
-                <viewController id="3i0-iq-iie" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3i0-iq-iie" customClass="ContainerVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vyk-jO-xv8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="958"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -974,62 +974,62 @@
                     </view>
                     <size key="freeformSize" width="414" height="958"/>
                     <connections>
-                        <outlet property="textField1" destination="Vmc-NU-E6f" id="Xuv-Qe-LSB"/>
-                        <outlet property="textField10" destination="ojw-4X-OmR" id="0Ox-sv-ucT"/>
-                        <outlet property="textField11" destination="Mqf-KE-GIw" id="Z2m-5C-KfP"/>
-                        <outlet property="textField12" destination="klN-wf-2mB" id="dXT-Ts-YE6"/>
-                        <outlet property="textField13" destination="lLq-gI-VR8" id="owj-td-ZGA"/>
-                        <outlet property="textField14" destination="jR7-fk-24d" id="Cpb-Io-o3y"/>
-                        <outlet property="textField15" destination="Ffi-EM-bmd" id="7W1-SE-Hjr"/>
-                        <outlet property="textField16" destination="aXB-Fu-Zep" id="F1N-YF-qGq"/>
-                        <outlet property="textField17" destination="tvh-vF-c7k" id="gz2-kY-aTh"/>
-                        <outlet property="textField18" destination="FX9-HH-ArS" id="Xef-bL-El5"/>
-                        <outlet property="textField19" destination="LUe-z7-PYK" id="A35-RF-4EN"/>
-                        <outlet property="textField2" destination="6rG-AS-pkL" id="Bth-gP-bYY"/>
-                        <outlet property="textField20" destination="PfZ-rt-iu0" id="fAA-C5-hE0"/>
-                        <outlet property="textField21" destination="gl0-dW-yWi" id="qfh-Ap-Q1R"/>
-                        <outlet property="textField22" destination="tek-um-3HI" id="zbh-AL-79i"/>
-                        <outlet property="textField23" destination="UUp-5w-VOC" id="jCT-fa-sIH"/>
-                        <outlet property="textField24" destination="uXR-XG-Wwb" id="yIq-fb-Kf0"/>
-                        <outlet property="textField25" destination="2sx-qt-1EO" id="Xc2-yh-8x3"/>
-                        <outlet property="textField26" destination="sUV-oh-4Tt" id="a46-eM-dJj"/>
-                        <outlet property="textField27" destination="01O-Iw-X7G" id="f6u-ab-CQG"/>
-                        <outlet property="textField28" destination="POY-On-YqX" id="vHN-mx-gdT"/>
-                        <outlet property="textField29" destination="rZx-KK-Gh8" id="n3V-Pl-L5O"/>
-                        <outlet property="textField3" destination="HZK-6X-fM1" id="oCU-JB-ip1"/>
-                        <outlet property="textField30" destination="J35-8K-980" id="SYh-BK-D5e"/>
-                        <outlet property="textField31" destination="eRd-Zs-cv6" id="KWq-Yp-1Ak"/>
-                        <outlet property="textField32" destination="Lho-4o-5ug" id="7Uj-lK-8nU"/>
-                        <outlet property="textField33" destination="xhO-fy-Dwv" id="SYa-VV-HRv"/>
-                        <outlet property="textField34" destination="Gtg-uR-Yeg" id="o1t-Lb-jIb"/>
-                        <outlet property="textField35" destination="Nu0-hZ-epZ" id="2k5-OO-93d"/>
-                        <outlet property="textField36" destination="Fre-nb-Fz9" id="8yx-DM-ZLQ"/>
-                        <outlet property="textField37" destination="ZiM-za-KD5" id="m4V-bd-LRl"/>
-                        <outlet property="textField38" destination="cLw-H3-laj" id="qQg-Qc-Gg8"/>
-                        <outlet property="textField39" destination="JBm-nT-3Yu" id="31h-dU-Hhe"/>
-                        <outlet property="textField4" destination="mC5-sn-QZ1" id="a4y-1A-KVE"/>
-                        <outlet property="textField40" destination="liW-3j-n1h" id="eWt-Ky-2WS"/>
-                        <outlet property="textField41" destination="hh5-Dx-u1O" id="e2e-ci-hYm"/>
-                        <outlet property="textField42" destination="mlc-Pn-cjH" id="r6s-Ss-jGp"/>
-                        <outlet property="textField43" destination="ci0-bd-X2a" id="ZH4-Xh-WKf"/>
-                        <outlet property="textField44" destination="E7x-s1-4eD" id="XGR-Us-EeI"/>
-                        <outlet property="textField45" destination="gh3-hj-tkQ" id="Qzf-tf-rv7"/>
-                        <outlet property="textField46" destination="NkW-73-nwr" id="qug-m1-Ifl"/>
-                        <outlet property="textField47" destination="XDy-ai-ZWR" id="Qhd-MX-OmP"/>
-                        <outlet property="textField48" destination="huu-ck-dOE" id="m7t-kc-UDc"/>
-                        <outlet property="textField49" destination="spf-eq-apK" id="5cg-Fd-ceA"/>
-                        <outlet property="textField5" destination="nnD-fx-Btp" id="Lh7-xH-4p4"/>
-                        <outlet property="textField50" destination="6Sf-Jb-29M" id="xE1-i9-4qq"/>
-                        <outlet property="textField51" destination="F8h-8O-9Ud" id="V31-fc-WHt"/>
-                        <outlet property="textField52" destination="46R-X3-zph" id="Rce-E0-eZI"/>
-                        <outlet property="textField53" destination="xYV-15-ocB" id="58r-Cq-QHB"/>
-                        <outlet property="textField54" destination="QBv-4z-are" id="sYF-E0-NVQ"/>
-                        <outlet property="textField55" destination="5r1-qP-EJE" id="syM-eq-qOo"/>
-                        <outlet property="textField56" destination="4pe-td-2lT" id="Bqc-tI-sSb"/>
-                        <outlet property="textField6" destination="amK-O9-qxO" id="XXH-ge-Gaq"/>
-                        <outlet property="textField7" destination="3Yp-sx-5fi" id="Byy-3W-uij"/>
-                        <outlet property="textField8" destination="iDM-5S-g31" id="OJF-ds-GAn"/>
-                        <outlet property="textField9" destination="eq2-Lg-Cvg" id="onW-ND-wpb"/>
+                        <outlet property="textField1" destination="Vmc-NU-E6f" id="sAJ-Tt-ngy"/>
+                        <outlet property="textField10" destination="ojw-4X-OmR" id="ehy-Cd-dD8"/>
+                        <outlet property="textField11" destination="Mqf-KE-GIw" id="rrQ-27-JDJ"/>
+                        <outlet property="textField12" destination="klN-wf-2mB" id="JLc-x1-Efn"/>
+                        <outlet property="textField13" destination="lLq-gI-VR8" id="mHo-cM-r25"/>
+                        <outlet property="textField14" destination="jR7-fk-24d" id="ldl-uu-6Q1"/>
+                        <outlet property="textField15" destination="Ffi-EM-bmd" id="P81-CJ-SAO"/>
+                        <outlet property="textField16" destination="aXB-Fu-Zep" id="WIt-fz-oFK"/>
+                        <outlet property="textField17" destination="tvh-vF-c7k" id="YSE-z0-6Uv"/>
+                        <outlet property="textField18" destination="FX9-HH-ArS" id="6WK-Vj-V4D"/>
+                        <outlet property="textField19" destination="LUe-z7-PYK" id="vxI-Eg-HRq"/>
+                        <outlet property="textField2" destination="6rG-AS-pkL" id="mTM-E2-KP4"/>
+                        <outlet property="textField20" destination="PfZ-rt-iu0" id="w96-M0-9Tt"/>
+                        <outlet property="textField21" destination="gl0-dW-yWi" id="903-jh-MtQ"/>
+                        <outlet property="textField22" destination="tek-um-3HI" id="cFK-sH-SfT"/>
+                        <outlet property="textField23" destination="UUp-5w-VOC" id="beU-s0-sKn"/>
+                        <outlet property="textField24" destination="uXR-XG-Wwb" id="JSI-vp-NSa"/>
+                        <outlet property="textField25" destination="2sx-qt-1EO" id="FcM-Vg-3mC"/>
+                        <outlet property="textField26" destination="sUV-oh-4Tt" id="eRh-Ki-wx5"/>
+                        <outlet property="textField27" destination="01O-Iw-X7G" id="X6j-l0-TBj"/>
+                        <outlet property="textField28" destination="POY-On-YqX" id="pAh-YA-uik"/>
+                        <outlet property="textField29" destination="rZx-KK-Gh8" id="A4M-7K-xLA"/>
+                        <outlet property="textField3" destination="HZK-6X-fM1" id="QYg-cU-waN"/>
+                        <outlet property="textField30" destination="J35-8K-980" id="jwj-iI-L9G"/>
+                        <outlet property="textField31" destination="eRd-Zs-cv6" id="9Qa-xD-3dG"/>
+                        <outlet property="textField32" destination="Lho-4o-5ug" id="bwD-km-oPk"/>
+                        <outlet property="textField33" destination="xhO-fy-Dwv" id="sdb-zG-xZu"/>
+                        <outlet property="textField34" destination="Gtg-uR-Yeg" id="vW4-1D-ERX"/>
+                        <outlet property="textField35" destination="Nu0-hZ-epZ" id="rds-xl-m28"/>
+                        <outlet property="textField36" destination="Fre-nb-Fz9" id="a8R-lo-bk9"/>
+                        <outlet property="textField37" destination="ZiM-za-KD5" id="Mcz-KR-f4S"/>
+                        <outlet property="textField38" destination="cLw-H3-laj" id="SBP-br-9GX"/>
+                        <outlet property="textField39" destination="JBm-nT-3Yu" id="UnP-Hw-Fm3"/>
+                        <outlet property="textField4" destination="mC5-sn-QZ1" id="rcv-m5-Cut"/>
+                        <outlet property="textField40" destination="liW-3j-n1h" id="cDR-0E-fjM"/>
+                        <outlet property="textField41" destination="hh5-Dx-u1O" id="bQG-Gc-5xN"/>
+                        <outlet property="textField42" destination="mlc-Pn-cjH" id="RbV-QK-xnv"/>
+                        <outlet property="textField43" destination="ci0-bd-X2a" id="14F-yV-7zL"/>
+                        <outlet property="textField44" destination="E7x-s1-4eD" id="Vep-mo-tGd"/>
+                        <outlet property="textField45" destination="gh3-hj-tkQ" id="r5q-RK-zuI"/>
+                        <outlet property="textField46" destination="NkW-73-nwr" id="eLX-0u-vNe"/>
+                        <outlet property="textField47" destination="XDy-ai-ZWR" id="Ox4-6O-h0n"/>
+                        <outlet property="textField48" destination="huu-ck-dOE" id="DaQ-SK-Py3"/>
+                        <outlet property="textField49" destination="spf-eq-apK" id="eCB-R1-arG"/>
+                        <outlet property="textField5" destination="nnD-fx-Btp" id="AQK-YU-YQa"/>
+                        <outlet property="textField50" destination="6Sf-Jb-29M" id="y4D-le-Fvo"/>
+                        <outlet property="textField51" destination="F8h-8O-9Ud" id="cc5-k7-QRy"/>
+                        <outlet property="textField52" destination="46R-X3-zph" id="fKf-wI-kTw"/>
+                        <outlet property="textField53" destination="xYV-15-ocB" id="R6v-pK-rpT"/>
+                        <outlet property="textField54" destination="QBv-4z-are" id="eJC-dp-hBe"/>
+                        <outlet property="textField55" destination="5r1-qP-EJE" id="WbL-Qy-tK3"/>
+                        <outlet property="textField56" destination="4pe-td-2lT" id="Ssv-3d-XTH"/>
+                        <outlet property="textField6" destination="amK-O9-qxO" id="ubf-EV-oGF"/>
+                        <outlet property="textField7" destination="3Yp-sx-5fi" id="S7c-kU-G9R"/>
+                        <outlet property="textField8" destination="iDM-5S-g31" id="V3D-DO-uME"/>
+                        <outlet property="textField9" destination="eq2-Lg-Cvg" id="kDT-TB-g0j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pm-l3-d0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1038,6 +1038,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Aaa-XM-LUt"/>
+        <segue reference="Ajj-F8-yhi"/>
     </inferredMetricsTieBreakers>
 </document>
