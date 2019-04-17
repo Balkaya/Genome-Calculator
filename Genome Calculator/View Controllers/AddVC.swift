@@ -12,6 +12,63 @@ import CoreData
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var nameTextField: UITextField!
     
+    let textFields1 = UITextField()
+    let textFields2 = UITextField()
+    let textFields3 = UITextField()
+    let textFields4 = UITextField()
+    let textFields5 = UITextField()
+    let textFields6 = UITextField()
+    let textFields7 = UITextField()
+    let textFields8 = UITextField()
+    let textFields9 = UITextField()
+    let textFields10 = UITextField()
+    let textFields11 = UITextField()
+    let textFields12 = UITextField()
+    let textFields13 = UITextField()
+    let textFields14 = UITextField()
+    let textFields15 = UITextField()
+    let textFields16 = UITextField()
+    let textFields17 = UITextField()
+    let textFields18 = UITextField()
+    let textFields19 = UITextField()
+    let textFields20 = UITextField()
+    let textFields21 = UITextField()
+    let textFields22 = UITextField()
+    let textFields23 = UITextField()
+    let textFields24 = UITextField()
+    let textFields25 = UITextField()
+    let textFields26 = UITextField()
+    let textFields27 = UITextField()
+    let textFields28 = UITextField()
+    let textFields29 = UITextField()
+    let textFields30 = UITextField()
+    let textFields31 = UITextField()
+    let textFields32 = UITextField()
+    let textFields33 = UITextField()
+    let textFields34 = UITextField()
+    let textFields35 = UITextField()
+    let textFields36 = UITextField()
+    let textFields37 = UITextField()
+    let textFields38 = UITextField()
+    let textFields39 = UITextField()
+    let textFields40 = UITextField()
+    let textFields41 = UITextField()
+    let textFields42 = UITextField()
+    let textFields43 = UITextField()
+    let textFields44 = UITextField()
+    let textFields45 = UITextField()
+    let textFields46 = UITextField()
+    let textFields47 = UITextField()
+    let textFields48 = UITextField()
+    let textFields49 = UITextField()
+    let textFields50 = UITextField()
+    let textFields51 = UITextField()
+    let textFields52 = UITextField()
+    let textFields53 = UITextField()
+    let textFields54 = UITextField()
+    let textFields55 = UITextField()
+    let textFields56 = UITextField()
+    
     var chosenGene = ""
     
     var nameText = ""
@@ -154,62 +211,62 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func createGenomPicker() {
-        textField1?.inputView = firstPicker
-        textField2?.inputView = secondPicker
-        textField3?.inputView = thirdPicker
-        textField4?.inputView = fourthPicker
-        textField5?.inputView = fifthPicker
-        textField6?.inputView = sixthPicker
-        textField7?.inputView = seventhPicker
-        textField8?.inputView = eighthPicker
-        textField9?.inputView = ninthPicker
-        textField10?.inputView = tenthPicker
-        textField11?.inputView = eleventhPicker
-        textField12?.inputView = twelfthPicker
-        textField13?.inputView = thirteenthPicker
-        textField14?.inputView = fourteenthPicker
-        textField15?.inputView = fifteenthPicker
-        textField16?.inputView = sixteenthPicker
-        textField17?.inputView = seventeenthPicker
-        textField18?.inputView = eighteenthPicker
-        textField19?.inputView = ninteenthPicker
-        textField20?.inputView = twentiethPicker
-        textField21?.inputView = twentyFirstPicker
-        textField22?.inputView = twentySecondPicker
-        textField23?.inputView = twentyThirthPicker
-        textField24?.inputView = twentyFourthPicker
-        textField25?.inputView = twentyFifthPicker
-        textField26?.inputView = twentySixthPicker
-        textField27?.inputView = twentySeventhPicker
-        textField28?.inputView = twentyEighthPicker
-        textField29?.inputView = twentyNinthPicker
-        textField30?.inputView = thirtiethPicker
-        textField31?.inputView = thirtyFirstPicker
-        textField32?.inputView = thirtySecondPicker
-        textField33?.inputView = thirtyThirdPicker
-        textField34?.inputView = thirtyFourthPicker
-        textField35?.inputView = thirtyFifthPicker
-        textField36?.inputView = thirtySixthPicker
-        textField37?.inputView = thirtySeventhPicker
-        textField38?.inputView = thirtyEighthPicker
-        textField39?.inputView = thirtyNinthPicker
-        textField40?.inputView = fortiethPicker
-        textField41?.inputView = fourtyFirstPicker
-        textField42?.inputView = fourtySecondPicker
-        textField43?.inputView = fourtyThirdPicker
-        textField44?.inputView = fourtyFourthPicker
-        textField45?.inputView = fourtyFifthPicker
-        textField46?.inputView = fourtySixthPicker
-        textField47?.inputView = fourtySeventhPicker
-        textField48?.inputView = fourtyEighthPicker
-        textField49?.inputView = fourtyNinthPicker
-        textField50?.inputView = fiftiethPicker
-        textField51?.inputView = fiftyFirstPicker
-        textField52?.inputView = fiftySecondPicker
-        textField53?.inputView = fiftyThirdPicker
-        textField54?.inputView = fiftyFourthPicker
-        textField55?.inputView = fiftyFifthPicker
-        textField56?.inputView = fiftySixthPicker
+        textFields1.inputView = firstPicker
+        textFields2.inputView = secondPicker
+        textFields3.inputView = thirdPicker
+        textFields4.inputView = fourthPicker
+        textFields5.inputView = fifthPicker
+        textFields6.inputView = sixthPicker
+        textFields7.inputView = seventhPicker
+        textFields8.inputView = eighthPicker
+        textFields9.inputView = ninthPicker
+        textFields10.inputView = tenthPicker
+        textFields11.inputView = eleventhPicker
+        textFields12.inputView = twelfthPicker
+        textFields13.inputView = thirteenthPicker
+        textFields14.inputView = fourteenthPicker
+        textFields15.inputView = fifteenthPicker
+        textFields16.inputView = sixteenthPicker
+        textFields17.inputView = seventeenthPicker
+        textFields18.inputView = eighteenthPicker
+        textFields19.inputView = ninteenthPicker
+        textFields20.inputView = twentiethPicker
+        textFields21.inputView = twentyFirstPicker
+        textFields22.inputView = twentySecondPicker
+        textFields23.inputView = twentyThirthPicker
+        textFields24.inputView = twentyFourthPicker
+        textFields25.inputView = twentyFifthPicker
+        textFields26.inputView = twentySixthPicker
+        textFields27.inputView = twentySeventhPicker
+        textFields28.inputView = twentyEighthPicker
+        textFields29.inputView = twentyNinthPicker
+        textFields30.inputView = thirtiethPicker
+        textFields31.inputView = thirtyFirstPicker
+        textFields32.inputView = thirtySecondPicker
+        textFields33.inputView = thirtyThirdPicker
+        textFields34.inputView = thirtyFourthPicker
+        textFields35.inputView = thirtyFifthPicker
+        textFields36.inputView = thirtySixthPicker
+        textFields37.inputView = thirtySeventhPicker
+        textFields38.inputView = thirtyEighthPicker
+        textFields39.inputView = thirtyNinthPicker
+        textFields40.inputView = fortiethPicker
+        textFields41.inputView = fourtyFirstPicker
+        textFields42.inputView = fourtySecondPicker
+        textFields43.inputView = fourtyThirdPicker
+        textFields44.inputView = fourtyFourthPicker
+        textFields45.inputView = fourtyFifthPicker
+        textFields46.inputView = fourtySixthPicker
+        textFields47.inputView = fourtySeventhPicker
+        textFields48.inputView = fourtyEighthPicker
+        textFields49.inputView = fourtyNinthPicker
+        textFields50.inputView = fiftiethPicker
+        textFields51.inputView = fiftyFirstPicker
+        textFields52.inputView = fiftySecondPicker
+        textFields53.inputView = fiftyThirdPicker
+        textFields54.inputView = fiftyFourthPicker
+        textFields55.inputView = fiftyFifthPicker
+        textFields56.inputView = fiftySixthPicker
         
         //        textFields?[0].inputView = firstPicker
         //        textFields?[1].inputView = secondPicker
@@ -627,117 +684,117 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == firstPicker {
-            textField1.text = eyesColors[row]
+            textFields1.text = eyesColors[row]
         } else if pickerView == secondPicker {
-            textField2.text = skinColors[row]
+            textFields2.text = skinColors[row]
         } else if pickerView == thirdPicker {
-            textField3.text = hairColors[row]
+            textFields3.text = hairColors[row]
         } else if pickerView == fourthPicker {
-            textField4.text = anemiaCases[row]
+            textFields4.text = anemiaCases[row]
         } else if pickerView == fifthPicker {
-            textField5.text = eyesColors[row]
+            textFields5.text = eyesColors[row]
         } else if pickerView == sixthPicker {
-            textField6.text = skinColors[row]
+            textFields6.text = skinColors[row]
         } else if pickerView == seventhPicker {
-            textField7.text = hairColors[row]
+            textFields7.text = hairColors[row]
         } else if pickerView == eighthPicker {
-            textField8.text = anemiaCases[row]
+            textFields8.text = anemiaCases[row]
         } else if pickerView == ninthPicker {
-            textField9.text = eyesColors[row]
+            textFields9.text = eyesColors[row]
         } else if pickerView == tenthPicker {
-            textField10.text = skinColors[row]
+            textFields10.text = skinColors[row]
         } else if pickerView == eleventhPicker {
-            textField11.text = hairColors[row]
+            textFields11.text = hairColors[row]
         } else if pickerView == twentiethPicker {
-            textField12.text = anemiaCases[row]
+            textFields12.text = anemiaCases[row]
         } else if pickerView == thirteenthPicker {
-            textField13.text = eyesColors[row]
+            textFields13.text = eyesColors[row]
         } else if pickerView == fourteenthPicker {
-            textField14.text = skinColors[row]
+            textFields14.text = skinColors[row]
         } else if pickerView == fifteenthPicker {
-            textField15.text = hairColors[row]
+            textFields15.text = hairColors[row]
         } else if pickerView == sixteenthPicker {
-            textField16.text = anemiaCases[row]
+            textFields16.text = anemiaCases[row]
         } else if pickerView == seventhPicker {
-            textField17.text = eyesColors[row]
+            textFields17.text = eyesColors[row]
         } else if pickerView == eighteenthPicker {
-            textField18.text = skinColors[row]
+            textFields18.text = skinColors[row]
         } else if pickerView == ninteenthPicker {
-            textField19.text = hairColors[row]
+            textFields19.text = hairColors[row]
         } else if pickerView == twentiethPicker {
-            textField20.text = anemiaCases[row]
+            textFields20.text = anemiaCases[row]
         } else if pickerView == twentyFirstPicker {
-            textField21.text = eyesColors[row]
+            textFields21.text = eyesColors[row]
         } else if pickerView == twentySecondPicker {
-            textField22.text = skinColors[row]
+            textFields22.text = skinColors[row]
         } else if pickerView == twentyThirthPicker {
-            textField23.text = hairColors[row]
+            textFields23.text = hairColors[row]
         } else if pickerView == twentyFourthPicker {
-            textField24.text = anemiaCases[row]
+            textFields24.text = anemiaCases[row]
         } else if pickerView == twentyFifthPicker {
-            textField25.text = eyesColors[row]
+            textFields25.text = eyesColors[row]
         } else if pickerView == twentySixthPicker {
-            textField26.text = skinColors[row]
+            textFields26.text = skinColors[row]
         } else if pickerView == twentySeventhPicker {
-            textField27.text = hairColors[row]
+            textFields27.text = hairColors[row]
         } else if pickerView == twentyEighthPicker {
-            textField28.text = anemiaCases[row]
+            textFields28.text = anemiaCases[row]
         } else if pickerView == twentyNinthPicker {
-            textField29.text = eyesColors[row]
+            textFields29.text = eyesColors[row]
         } else if pickerView == thirtiethPicker {
-            textField30.text = skinColors[row]
+            textFields30.text = skinColors[row]
         } else if pickerView == thirtyFirstPicker {
-            textField31.text = hairColors[row]
+            textFields31.text = hairColors[row]
         } else if pickerView == thirtySecondPicker {
-            textField32.text = anemiaCases[row]
+            textFields32.text = anemiaCases[row]
         } else if pickerView == thirtyThirdPicker {
-            textField33.text = eyesColors[row]
+            textFields33.text = eyesColors[row]
         } else if pickerView == thirtyFourthPicker {
-            textField34.text = skinColors[row]
+            textFields34.text = skinColors[row]
         } else if pickerView == thirtyFifthPicker {
-            textField35.text = hairColors[row]
+            textFields35.text = hairColors[row]
         } else if pickerView == thirtySixthPicker {
-            textField36.text = anemiaCases[row]
+            textFields36.text = anemiaCases[row]
         } else if pickerView == thirtySeventhPicker {
-            textField37.text = eyesColors[row]
+            textFields37.text = eyesColors[row]
         } else if pickerView == thirtyEighthPicker {
-            textField38.text = skinColors[row]
+            textFields38.text = skinColors[row]
         } else if pickerView == thirtyNinthPicker {
-            textField39.text = hairColors[row]
+            textFields39.text = hairColors[row]
         } else if pickerView == fortiethPicker {
-            textField40.text = anemiaCases[row]
+            textFields40.text = anemiaCases[row]
         } else if pickerView == fourtyFirstPicker {
-            textField41.text = eyesColors[row]
+            textFields41.text = eyesColors[row]
         } else if pickerView == fourtySecondPicker {
-            textField42.text = skinColors[row]
+            textFields42.text = skinColors[row]
         } else if pickerView == fourtyThirdPicker {
-            textField43.text = hairColors[row]
+            textFields43.text = hairColors[row]
         } else if pickerView == fourtyFourthPicker {
-            textField44.text = anemiaCases[row]
+            textFields44.text = anemiaCases[row]
         } else if pickerView == fourtyFifthPicker {
-            textField45.text = eyesColors[row]
+            textFields45.text = eyesColors[row]
         } else if pickerView == fourtySixthPicker {
-            textField46.text = skinColors[row]
+            textFields46.text = skinColors[row]
         } else if pickerView == fourtySeventhPicker {
-            textField47.text = hairColors[row]
+            textFields47.text = hairColors[row]
         } else if pickerView == fourtyEighthPicker {
-            textField48.text = anemiaCases[row]
+            textFields48.text = anemiaCases[row]
         } else if pickerView == fourtyNinthPicker {
-            textField49.text = eyesColors[row]
+            textFields49.text = eyesColors[row]
         } else if pickerView == fiftiethPicker {
-            textField50.text = skinColors[row]
+            textFields50.text = skinColors[row]
         } else if pickerView == fiftyFirstPicker {
-            textField51.text = hairColors[row]
+            textFields51.text = hairColors[row]
         } else if pickerView == fiftySecondPicker {
-            textField52.text = anemiaCases[row]
+            textFields52.text = anemiaCases[row]
         } else if pickerView == fiftyThirdPicker {
-            textField53.text = eyesColors[row]
+            textFields53.text = eyesColors[row]
         } else if pickerView == fiftyFourthPicker {
-            textField54.text = skinColors[row]
+            textFields54.text = skinColors[row]
         } else if pickerView == fiftyFifthPicker {
-            textField55.text = hairColors[row]
+            textFields55.text = hairColors[row]
         } else if pickerView == fiftySixthPicker {
-            textField56.text = anemiaCases[row]
+            textFields56.text = anemiaCases[row]
         }
         
         //        if pickerView == firstPicker {
@@ -872,240 +929,240 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                     
                     // Mom
                     if let momE = result.value(forKey: "momEyesC") as? String {
-                        textField1.text = momE
+                        textFields1.text = momE
                     }
                     
                     if let momS = result.value(forKey: "momSkinC") as? String {
-                        textField2.text = momS
+                        textFields2.text = momS
                     }
                     
                     if let momH = result.value(forKey: "momHairC") as? String {
-                        textField3.text = momH
+                        textFields3.text = momH
                     }
                     
                     if let momA = result.value(forKey: "momAnemiaC") as? String {
-                        textField4.text = momA
+                        textFields4.text = momA
                     }
                     
                     // Dad
                     if let dadE = result.value(forKey: "dadEyesC") as? String {
-                        textField5.text = dadE
+                        textFields5.text = dadE
                     }
                     
                     if let dadS = result.value(forKey: "dadSkinC") as? String {
-                        textField6.text = dadS
+                        textFields6.text = dadS
                     }
                     
                     if let dadH = result.value(forKey: "dadHairC") as? String {
-                        textField7.text = dadH
+                        textFields7.text = dadH
                     }
                     
                     if let dadA = result.value(forKey: "dadAnemiaC") as? String {
-                        textField8.text = dadA
+                        textFields8.text = dadA
                     }
                     
                     // Mom's Mom
                     if let momsMomE = result.value(forKey: "momsMomEyesC") as? String {
-                        textField9.text = momsMomE
+                        textFields9.text = momsMomE
                     }
                     
                     if let momsMomS = result.value(forKey: "momsMomSkinC") as? String {
-                        textField10.text = momsMomS
+                        textFields10.text = momsMomS
                     }
                     
                     if let momsMomH = result.value(forKey: "momsMomHairC") as? String {
-                        textField11.text = momsMomH
+                        textFields11.text = momsMomH
                     }
                     
                     if let momsMomA = result.value(forKey: "momsMomAnemiaC") as? String {
-                        textField12.text = momsMomA
+                        textFields12.text = momsMomA
                     }
                     
                     // Mom's Dad
                     if let momsDadE = result.value(forKey: "momsDadEyesC") as? String {
-                        textField13.text = momsDadE
+                        textFields13.text = momsDadE
                     }
                     
                     if let momsDadS = result.value(forKey: "momsDadSkinC") as? String {
-                        textField14.text = momsDadS
+                        textFields14.text = momsDadS
                     }
                     
                     if let momsDadH = result.value(forKey: "momsDadHairC") as? String {
-                        textField15.text = momsDadH
+                        textFields15.text = momsDadH
                     }
                     
                     if let momsDadA = result.value(forKey: "momsDadAnemiaC") as? String {
-                        textField16.text = momsDadA
+                        textFields16.text = momsDadA
                     }
                     
                     // Dad's Mom
                     if let dadsMomE = result.value(forKey: "dadsMomEyesC") as? String {
-                        textField17.text = dadsMomE
+                        textFields17.text = dadsMomE
                     }
                     
                     if let dadsMomS = result.value(forKey: "dadsMomSkinC") as? String {
-                        textField18.text = dadsMomS
+                        textFields18.text = dadsMomS
                     }
                     
                     if let dadsMomH = result.value(forKey: "dadsMomHairC") as? String {
-                        textField19.text = dadsMomH
+                        textFields19.text = dadsMomH
                     }
                     
                     if let dadsMomA = result.value(forKey: "dadsMomAnemiaC") as? String {
-                        textField20.text = dadsMomA
+                        textFields20.text = dadsMomA
                     }
                     
                     // Dad's Dad
                     if let dadsDadE = result.value(forKey: "dadsDadEyesC") as? String {
-                        textField21.text = dadsDadE
+                        textFields21.text = dadsDadE
                     }
                     
                     if let dadsDadS = result.value(forKey: "dadsDadSkinC") as? String {
-                        textField22.text = dadsDadS
+                        textFields22.text = dadsDadS
                     }
                     
                     if let dadsDadH = result.value(forKey: "dadsDadHairC") as? String {
-                        textField23.text = dadsDadH
+                        textFields23.text = dadsDadH
                     }
                     
                     if let dadsDadA = result.value(forKey: "dadsDadAnemiaC") as? String {
-                        textField24.text = dadsDadA
+                        textFields24.text = dadsDadA
                     }
                     
                     // Mom's Mom's Mom
                     if let momsMomsMomE = result.value(forKey: "momsMomsMomEyesC") as? String {
-                        textField25.text = momsMomsMomE
+                        textFields25.text = momsMomsMomE
                     }
                     
                     if let momsMomsMomS = result.value(forKey: "momsMomsMomSkinC") as? String {
-                        textField26.text = momsMomsMomS
+                        textFields26.text = momsMomsMomS
                     }
                     
                     if let momsMomsMomH = result.value(forKey: "momsMomsMomHairC") as? String {
-                        textField27.text = momsMomsMomH
+                        textFields27.text = momsMomsMomH
                     }
                     
                     if let momsMomsMomA = result.value(forKey: "momsMomsMomAnemiaC") as? String {
-                        textField28.text = momsMomsMomA
+                        textFields28.text = momsMomsMomA
                     }
                     
                     // Mom's Mom's Dad
                     if let momsMomsDadE = result.value(forKey: "momsMomsDadEyesC") as? String {
-                        textField29.text = momsMomsDadE
+                        textFields29.text = momsMomsDadE
                     }
                     
                     if let momsMomsDadS = result.value(forKey: "momsMomsDadSkinC") as? String {
-                        textField30.text = momsMomsDadS
+                        textFields30.text = momsMomsDadS
                     }
                     
                     if let momsMomsDadH = result.value(forKey: "momsMomsDadHairC") as? String {
-                        textField31.text = momsMomsDadH
+                        textFields31.text = momsMomsDadH
                     }
                     
                     if let momsMomsDadA = result.value(forKey: "momsMomsDadAnemiaC") as? String {
-                        textField32.text = momsMomsDadA
+                        textFields32.text = momsMomsDadA
                     }
                     
                     // Mom's Dad's Mom
                     if let momsDadsMomE = result.value(forKey: "momsDadsMomEyesC") as? String {
-                        textField33.text = momsDadsMomE
+                        textFields33.text = momsDadsMomE
                     }
                     
                     if let momsDadsMomS = result.value(forKey: "momsDadsMomSkinC") as? String {
-                        textField34.text = momsDadsMomS
+                        textFields34.text = momsDadsMomS
                     }
                     
                     if let momsDadsMomH = result.value(forKey: "momsDadsMomHairC") as? String {
-                        textField35.text = momsDadsMomH
+                        textFields35.text = momsDadsMomH
                     }
                     
                     if let momsDadsMomA = result.value(forKey: "momsDadsMomAnemiaC") as? String {
-                        textField36.text = momsDadsMomA
+                        textFields36.text = momsDadsMomA
                     }
                     
                     // Mom's Dad's Dad
                     if let momsDadsDadE = result.value(forKey: "momsDadsDadEyesC") as? String {
-                        textField37.text = momsDadsDadE
+                        textFields37.text = momsDadsDadE
                     }
                     
                     if let momsDadsDadS = result.value(forKey: "momsDadsDadSkinC") as? String {
-                        textField38.text = momsDadsDadS
+                        textFields38.text = momsDadsDadS
                     }
                     
                     if let momsDadsDadH = result.value(forKey: "momsDadsDadHairC") as? String {
-                        textField39.text = momsDadsDadH
+                        textFields39.text = momsDadsDadH
                     }
                     
                     if let momsDadsDadA = result.value(forKey: "momsDadsDadAnemiaC") as? String {
-                        textField40.text = momsDadsDadA
+                        textFields40.text = momsDadsDadA
                     }
                     
                     // Dads Moms Mom
                     if let dadsMomsMomE = result.value(forKey: "dadsMomsMomEyesC") as? String {
-                        textField41.text = dadsMomsMomE
+                        textFields41.text = dadsMomsMomE
                     }
                     
                     if let dadsMomsMomS = result.value(forKey: "dadsMomsMomSkinC") as? String {
-                        textField42.text = dadsMomsMomS
+                        textFields42.text = dadsMomsMomS
                     }
                     
                     if let dadsMomsMomH = result.value(forKey: "dadsMomsMomHairC") as? String {
-                        textField43.text = dadsMomsMomH
+                        textFields43.text = dadsMomsMomH
                     }
                     
                     if let dadsMomsMomA = result.value(forKey: "dadsMomsMomAnemiaC") as? String {
-                        textField44.text = dadsMomsMomA
+                        textFields44.text = dadsMomsMomA
                     }
                     
                     // Dads Moms Dad
                     if let dadsMomsDadE = result.value(forKey: "dadsMomsDadEyesC") as? String {
-                        textField45.text = dadsMomsDadE
+                        textFields45.text = dadsMomsDadE
                     }
                     
                     if let dadsMomsDadS = result.value(forKey: "dadsMomsDadSkinC") as? String {
-                        textField46.text = dadsMomsDadS
+                        textFields46.text = dadsMomsDadS
                     }
                     
                     if let dadsMomsDadH = result.value(forKey: "dadsMomsDadHairC") as? String {
-                        textField47.text = dadsMomsDadH
+                        textFields47.text = dadsMomsDadH
                     }
                     
                     if let dadsMomsDadA = result.value(forKey: "dadsMomsDadAnemiaC") as? String {
-                        textField48.text = dadsMomsDadA
+                        textFields48.text = dadsMomsDadA
                     }
                     
                     // Dads Dads Mom
                     if let dadsDadsMomE = result.value(forKey: "dadsDadsMomEyesC") as? String {
-                        textField49.text = dadsDadsMomE
+                        textFields49.text = dadsDadsMomE
                     }
                     
                     if let dadsDadsMomS = result.value(forKey: "dadsDadsMomSkinC") as? String {
-                        textField50.text = dadsDadsMomS
+                        textFields50.text = dadsDadsMomS
                     }
                     
                     if let dadsDadsMomH = result.value(forKey: "dadsDadsMomHairC") as? String {
-                        textField51.text = dadsDadsMomH
+                        textFields51.text = dadsDadsMomH
                     }
                     
                     if let dadsDadsMomA = result.value(forKey: "dadsDadsMomAnemiaC") as? String {
-                        textField52.text = dadsDadsMomA
+                        textFields52.text = dadsDadsMomA
                     }
                     
                     // Dads Dads Dad
                     if let dadsDadsDadE = result.value(forKey: "dadsDadsDadEyesC") as? String {
-                        textField53.text = dadsDadsDadE
+                        textFields53.text = dadsDadsDadE
                     }
                     
                     if let dadsDadsDadS = result.value(forKey: "dadsDadsDadSkinC") as? String {
-                        textField54.text = dadsDadsDadS
+                        textFields54.text = dadsDadsDadS
                     }
                     
                     if let dadsDadsDadH = result.value(forKey: "dadsDadsDadHairC") as? String {
-                        textField55.text = dadsDadsDadH
+                        textFields55.text = dadsDadsDadH
                     }
                     
                     if let dadsDadsDadA = result.value(forKey: "dadsDadsDadAnemiaC") as? String {
-                        textField56.text = dadsDadsDadA
+                        textFields56.text = dadsDadsDadA
                     }
                     
                     //                    // Mom
@@ -1387,62 +1444,62 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         toolBar.isUserInteractionEnabled = true
         
         nameTextField?.inputAccessoryView = toolBar
-        textField1?.inputAccessoryView = toolBar
-        textField2?.inputAccessoryView = toolBar
-        textField3?.inputAccessoryView = toolBar
-        textField4?.inputAccessoryView = toolBar
-        textField5?.inputAccessoryView = toolBar
-        textField6?.inputAccessoryView = toolBar
-        textField7?.inputAccessoryView = toolBar
-        textField8?.inputAccessoryView = toolBar
-        textField9?.inputAccessoryView = toolBar
-        textField10?.inputAccessoryView = toolBar
-        textField11?.inputAccessoryView = toolBar
-        textField12?.inputAccessoryView = toolBar
-        textField13?.inputAccessoryView = toolBar
-        textField14?.inputAccessoryView = toolBar
-        textField15?.inputAccessoryView = toolBar
-        textField16?.inputAccessoryView = toolBar
-        textField17?.inputAccessoryView = toolBar
-        textField18?.inputAccessoryView = toolBar
-        textField19?.inputAccessoryView = toolBar
-        textField20?.inputAccessoryView = toolBar
-        textField21?.inputAccessoryView = toolBar
-        textField22?.inputAccessoryView = toolBar
-        textField23?.inputAccessoryView = toolBar
-        textField24?.inputAccessoryView = toolBar
-        textField25?.inputAccessoryView = toolBar
-        textField26?.inputAccessoryView = toolBar
-        textField27?.inputAccessoryView = toolBar
-        textField28?.inputAccessoryView = toolBar
-        textField29?.inputAccessoryView = toolBar
-        textField30?.inputAccessoryView = toolBar
-        textField31?.inputAccessoryView = toolBar
-        textField32?.inputAccessoryView = toolBar
-        textField33?.inputAccessoryView = toolBar
-        textField34?.inputAccessoryView = toolBar
-        textField35?.inputAccessoryView = toolBar
-        textField36?.inputAccessoryView = toolBar
-        textField37?.inputAccessoryView = toolBar
-        textField38?.inputAccessoryView = toolBar
-        textField39?.inputAccessoryView = toolBar
-        textField40?.inputAccessoryView = toolBar
-        textField41?.inputAccessoryView = toolBar
-        textField42?.inputAccessoryView = toolBar
-        textField43?.inputAccessoryView = toolBar
-        textField44?.inputAccessoryView = toolBar
-        textField45?.inputAccessoryView = toolBar
-        textField46?.inputAccessoryView = toolBar
-        textField47?.inputAccessoryView = toolBar
-        textField48?.inputAccessoryView = toolBar
-        textField49?.inputAccessoryView = toolBar
-        textField50?.inputAccessoryView = toolBar
-        textField51?.inputAccessoryView = toolBar
-        textField52?.inputAccessoryView = toolBar
-        textField53?.inputAccessoryView = toolBar
-        textField54?.inputAccessoryView = toolBar
-        textField55?.inputAccessoryView = toolBar
-        textField56?.inputAccessoryView = toolBar
+        textFields1.inputAccessoryView = toolBar
+        textFields2.inputAccessoryView = toolBar
+        textFields3.inputAccessoryView = toolBar
+        textFields4.inputAccessoryView = toolBar
+        textFields5.inputAccessoryView = toolBar
+        textFields6.inputAccessoryView = toolBar
+        textFields7.inputAccessoryView = toolBar
+        textFields8.inputAccessoryView = toolBar
+        textFields9.inputAccessoryView = toolBar
+        textFields10.inputAccessoryView = toolBar
+        textFields11.inputAccessoryView = toolBar
+        textFields12.inputAccessoryView = toolBar
+        textFields13.inputAccessoryView = toolBar
+        textFields14.inputAccessoryView = toolBar
+        textFields15.inputAccessoryView = toolBar
+        textFields16.inputAccessoryView = toolBar
+        textFields17.inputAccessoryView = toolBar
+        textFields18.inputAccessoryView = toolBar
+        textFields19.inputAccessoryView = toolBar
+        textFields20.inputAccessoryView = toolBar
+        textFields21.inputAccessoryView = toolBar
+        textFields22.inputAccessoryView = toolBar
+        textFields23.inputAccessoryView = toolBar
+        textFields24.inputAccessoryView = toolBar
+        textFields25.inputAccessoryView = toolBar
+        textFields26.inputAccessoryView = toolBar
+        textFields27.inputAccessoryView = toolBar
+        textFields28.inputAccessoryView = toolBar
+        textFields29.inputAccessoryView = toolBar
+        textFields30.inputAccessoryView = toolBar
+        textFields31.inputAccessoryView = toolBar
+        textFields32.inputAccessoryView = toolBar
+        textFields33.inputAccessoryView = toolBar
+        textFields34.inputAccessoryView = toolBar
+        textFields35.inputAccessoryView = toolBar
+        textFields36.inputAccessoryView = toolBar
+        textFields37.inputAccessoryView = toolBar
+        textFields38.inputAccessoryView = toolBar
+        textFields39.inputAccessoryView = toolBar
+        textFields40.inputAccessoryView = toolBar
+        textFields41.inputAccessoryView = toolBar
+        textFields42.inputAccessoryView = toolBar
+        textFields43.inputAccessoryView = toolBar
+        textFields44.inputAccessoryView = toolBar
+        textFields45.inputAccessoryView = toolBar
+        textFields46.inputAccessoryView = toolBar
+        textFields47.inputAccessoryView = toolBar
+        textFields48.inputAccessoryView = toolBar
+        textFields49.inputAccessoryView = toolBar
+        textFields50.inputAccessoryView = toolBar
+        textFields51.inputAccessoryView = toolBar
+        textFields52.inputAccessoryView = toolBar
+        textFields53.inputAccessoryView = toolBar
+        textFields54.inputAccessoryView = toolBar
+        textFields55.inputAccessoryView = toolBar
+        textFields56.inputAccessoryView = toolBar
         
         //        textFields?[0].inputAccessoryView = toolBar
         //        textFields?[1].inputAccessoryView = toolBar
@@ -1645,6 +1702,35 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             destnationVC.secondHairTexts = hairTexts
             destnationVC.secondAnemiaTexts = anemiaTexts
         }
+        
+        if segue.identifier == "scToContainerVC" {
+            let destinationVC = segue.destination as? ContainerVC
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+            destinationVC?.textField1 = textFields1
+        }
     }
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
@@ -1773,74 +1859,74 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         //        hairTexts[13] = textFields?[54].text ?? ""
         //        anemiaTexts[13] = textFields?[55].text ?? ""
         
-        if nameText == "" || eyesTexts[0] == "" || eyesTexts[1] == "" || eyesTexts[2] == "" || eyesTexts[3] == "" || eyesTexts[4] == "" || eyesTexts[5] == "" || eyesTexts[6] == "" || eyesTexts[7] == "" || eyesTexts[8] == "" || eyesTexts[9] == "" || eyesTexts[10] == "" || eyesTexts[11] == "" || eyesTexts[12] == "" || eyesTexts[13] == "" || skinTexts[0] == "" || skinTexts[1] == "" || skinTexts[2] == "" || skinTexts[3] == "" || skinTexts[4] == "" || skinTexts[5] == "" || skinTexts[6] == "" || skinTexts[7] == "" || skinTexts[8] == "" || skinTexts[9] == "" || skinTexts[10] == "" || skinTexts[11] == "" || skinTexts[12] == "" || skinTexts[13] == "" || hairTexts[0] == "" || hairTexts[1] == "" || hairTexts[2] == "" || hairTexts[3] == "" || hairTexts[4] == "" || hairTexts[5] == "" || hairTexts[6] == "" || hairTexts[7] == "" || hairTexts[8] == "" || hairTexts[9] == "" || hairTexts[10] == "" || hairTexts[11] == "" || hairTexts[12] == "" || hairTexts[13] == "" || anemiaTexts[0] == "" || anemiaTexts[1] == "" || anemiaTexts[2] == "" || anemiaTexts[3] == "" || anemiaTexts[4] == "" || anemiaTexts[5] == "" || anemiaTexts[6] == "" || anemiaTexts[7] == "" || anemiaTexts[8] == "" || anemiaTexts[9] == "" || anemiaTexts[10] == "" || anemiaTexts[11] == "" || anemiaTexts[12] == "" || anemiaTexts[13] == "" {
-            
-            let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
-            let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
-            alert.addAction(okButoon)
-            self.present(alert, animated: true, completion: nil)
-        } else {
+//        if nameText == "" || eyesTexts[0] == "" || eyesTexts[1] == "" || eyesTexts[2] == "" || eyesTexts[3] == "" || eyesTexts[4] == "" || eyesTexts[5] == "" || eyesTexts[6] == "" || eyesTexts[7] == "" || eyesTexts[8] == "" || eyesTexts[9] == "" || eyesTexts[10] == "" || eyesTexts[11] == "" || eyesTexts[12] == "" || eyesTexts[13] == "" || skinTexts[0] == "" || skinTexts[1] == "" || skinTexts[2] == "" || skinTexts[3] == "" || skinTexts[4] == "" || skinTexts[5] == "" || skinTexts[6] == "" || skinTexts[7] == "" || skinTexts[8] == "" || skinTexts[9] == "" || skinTexts[10] == "" || skinTexts[11] == "" || skinTexts[12] == "" || skinTexts[13] == "" || hairTexts[0] == "" || hairTexts[1] == "" || hairTexts[2] == "" || hairTexts[3] == "" || hairTexts[4] == "" || hairTexts[5] == "" || hairTexts[6] == "" || hairTexts[7] == "" || hairTexts[8] == "" || hairTexts[9] == "" || hairTexts[10] == "" || hairTexts[11] == "" || hairTexts[12] == "" || hairTexts[13] == "" || anemiaTexts[0] == "" || anemiaTexts[1] == "" || anemiaTexts[2] == "" || anemiaTexts[3] == "" || anemiaTexts[4] == "" || anemiaTexts[5] == "" || anemiaTexts[6] == "" || anemiaTexts[7] == "" || anemiaTexts[8] == "" || anemiaTexts[9] == "" || anemiaTexts[10] == "" || anemiaTexts[11] == "" || anemiaTexts[12] == "" || anemiaTexts[13] == "" {
+//            
+//            let alert = UIAlertController(title: "Alert", message: "You have to complete all options", preferredStyle: UIAlertController.Style.alert)
+//            let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+//            alert.addAction(okButoon)
+//            self.present(alert, animated: true, completion: nil)
+//        } else {
             performSegue(withIdentifier: "toInputVC", sender: nil)
-        }
+//        }
     }
     
     @IBAction func tryButton(_ sender: UIBarButtonItem) {
-        textField1?.text = "Black"
-        textField2?.text = "Black"
-        textField3?.text = "Black"
-        textField4?.text = "Diseased"
-        textField5?.text = "Black"
-        textField6?.text = "Black"
-        textField7?.text = "Black"
-        textField8?.text = "Diseased"
-        textField9?.text = "Black"
-        textField10?.text = "Black"
-        textField11?.text = "Black"
-        textField12?.text = "Diseased"
-        textField13?.text = "Black"
-        textField14?.text = "Black"
-        textField15?.text = "Black"
-        textField16?.text = "Diseased"
-        textField17?.text = "Black"
-        textField18?.text = "Black"
-        textField19?.text = "Black"
-        textField20?.text = "Diseased"
-        textField21?.text = "Black"
-        textField22?.text = "Black"
-        textField23?.text = "Black"
-        textField24?.text = "Diseased"
-        textField25?.text = "Black"
-        textField26?.text = "Black"
-        textField27?.text = "Black"
-        textField28?.text = "Diseased"
-        textField29?.text = "Black"
-        textField30?.text = "Black"
-        textField31?.text = "Black"
-        textField32?.text = "Diseased"
-        textField33?.text = "Black"
-        textField34?.text = "Black"
-        textField35?.text = "Black"
-        textField36?.text = "Diseased"
-        textField37?.text = "Black"
-        textField38?.text = "Black"
-        textField39?.text = "Black"
-        textField40?.text = "Diseased"
-        textField41?.text = "Black"
-        textField42?.text = "Black"
-        textField43?.text = "Black"
-        textField44?.text = "Diseased"
-        textField45?.text = "Black"
-        textField46?.text = "Black"
-        textField47?.text = "Black"
-        textField48?.text = "Diseased"
-        textField49?.text = "Black"
-        textField50?.text = "Black"
-        textField51?.text = "Black"
-        textField52?.text = "Diseased"
-        textField53?.text = "Black"
-        textField54?.text = "Black"
-        textField55?.text = "Black"
-        textField56?.text = "Diseased"
+        textFields1.text = "Black"
+        textFields2.text = "Black"
+        textFields3.text = "Black"
+        textFields4.text = "Diseased"
+        textFields5.text = "Black"
+        textFields6.text = "Black"
+        textFields7.text = "Black"
+        textFields8.text = "Diseased"
+        textFields9.text = "Black"
+        textFields10.text = "Black"
+        textFields11.text = "Black"
+        textFields12.text = "Diseased"
+        textFields13.text = "Black"
+        textFields14.text = "Black"
+        textFields15.text = "Black"
+        textFields16.text = "Diseased"
+        textFields17.text = "Black"
+        textFields18.text = "Black"
+        textFields19.text = "Black"
+        textFields20.text = "Diseased"
+        textFields21.text = "Black"
+        textFields22.text = "Black"
+        textFields23.text = "Black"
+        textFields24.text = "Diseased"
+        textFields25.text = "Black"
+        textFields26.text = "Black"
+        textFields27.text = "Black"
+        textFields28.text = "Diseased"
+        textFields29.text = "Black"
+        textFields30.text = "Black"
+        textFields31.text = "Black"
+        textFields32.text = "Diseased"
+        textFields33.text = "Black"
+        textFields34.text = "Black"
+        textFields35.text = "Black"
+        textFields36.text = "Diseased"
+        textFields37.text = "Black"
+        textFields38.text = "Black"
+        textFields39.text = "Black"
+        textFields40.text = "Diseased"
+        textFields41.text = "Black"
+        textFields42.text = "Black"
+        textFields43.text = "Black"
+        textFields44.text = "Diseased"
+        textFields45.text = "Black"
+        textFields46.text = "Black"
+        textFields47.text = "Black"
+        textFields48.text = "Diseased"
+        textFields49.text = "Black"
+        textFields50.text = "Black"
+        textFields51.text = "Black"
+        textFields52.text = "Diseased"
+        textFields53.text = "Black"
+        textFields54.text = "Black"
+        textFields55.text = "Black"
+        textFields56.text = "Diseased"
         
         //        textFields![0].text = "Black"
         //        textFields![1].text = "Black"

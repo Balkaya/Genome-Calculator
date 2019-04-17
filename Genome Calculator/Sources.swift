@@ -114,6 +114,8 @@ var secondBiggestForSkin = 0
 var biggestForHair = 0
 var secondBiggestForHair = 0
 
+var biggestForAnemia = 0
+
 var greensPoints = 0
 var hazelsPoints = 0
 var bluesPoints = 0

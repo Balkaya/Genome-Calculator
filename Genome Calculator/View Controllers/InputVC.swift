@@ -18,6 +18,8 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var secondSkinTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     var secondHairTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     var secondAnemiaTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    
+    var personsCases: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false]
 
     var firstText = ""
     var secondText = ""
@@ -250,9 +252,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[0] == anemiaCases[0] {
-            
+            personsCases[0] = true
         } else if secondAnemiaTexts[0] == anemiaCases[1] {
-            
+            personsCases[0] = false
         }
         
         if secondEyesTexts[1] == eyesColors[0] {
@@ -306,9 +308,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[1] == anemiaCases[0] {
-            
+            personsCases[1] = true
         } else if secondAnemiaTexts[1] == anemiaCases[1] {
-            
+            personsCases[1] = false
         }
         
         if secondEyesTexts[2] == eyesColors[0] {
@@ -362,9 +364,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[2] == anemiaCases[0] {
-            
+            personsCases[2] = true
         } else if secondAnemiaTexts[2] == anemiaCases[1] {
-            
+            personsCases[2] = false
         }
         
         if secondEyesTexts[3] == eyesColors[0] {
@@ -418,9 +420,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[3] == anemiaCases[0] {
-            
+            personsCases[3] = true
         } else if secondAnemiaTexts[3] == anemiaCases[1] {
-            
+            personsCases[3] = false
         }
         
         if secondEyesTexts[4] == eyesColors[0] {
@@ -474,9 +476,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[4] == anemiaCases[0] {
-            
+            personsCases[4] = true
         } else if secondAnemiaTexts[4] == anemiaCases[1] {
-            
+            personsCases[4] = false
         }
         
         if secondEyesTexts[5] == eyesColors[0] {
@@ -530,9 +532,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[5] == anemiaCases[0] {
-            
+            personsCases[5] = true
         } else if secondAnemiaTexts[5] == anemiaCases[1] {
-            
+            personsCases[5] = false
         }
         
         if secondEyesTexts[6] == eyesColors[0] {
@@ -586,9 +588,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[6] == anemiaCases[0] {
-            
+            personsCases[6] = true
         } else if secondAnemiaTexts[6] == anemiaCases[1] {
-            
+            personsCases[6] = false
         }
         
         if secondEyesTexts[7] == eyesColors[0] {
@@ -642,9 +644,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[7] == anemiaCases[0] {
-            
+            personsCases[7] = true
         } else if secondAnemiaTexts[7] == anemiaCases[1] {
-            
+            personsCases[7] = false
         }
         
         if secondEyesTexts[8] == eyesColors[0] {
@@ -698,9 +700,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[8] == anemiaCases[0] {
-            
+            personsCases[8] = true
         } else if secondAnemiaTexts[8] == anemiaCases[1] {
-            
+            personsCases[8] = false
         }
         
         if secondEyesTexts[9] == eyesColors[0] {
@@ -754,9 +756,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[9] == anemiaCases[0] {
-            
+            personsCases[9] = true
         } else if secondAnemiaTexts[9] == anemiaCases[1] {
-            
+            personsCases[9] = false
         }
         
         if secondEyesTexts[10] == eyesColors[0] {
@@ -810,9 +812,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[10] == anemiaCases[0] {
-            
+            personsCases[10] = true
         } else if secondAnemiaTexts[10] == anemiaCases[1] {
-            
+            personsCases[10] = false
         }
         
         if secondEyesTexts[11] == eyesColors[0] {
@@ -866,9 +868,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[11] == anemiaCases[0] {
-            
+            personsCases[11] = true
         } else if secondAnemiaTexts[11] == anemiaCases[1] {
-            
+            personsCases[11] = false
         }
         
         if secondEyesTexts[12] == eyesColors[0] {
@@ -922,9 +924,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[12] == anemiaCases[0] {
-            
+            personsCases[12] = true
         } else if secondAnemiaTexts[12] == anemiaCases[1] {
-            
+            personsCases[12] = false
         }
         
         if secondEyesTexts[13] == eyesColors[0] {
@@ -978,9 +980,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if secondAnemiaTexts[13] == anemiaCases[0] {
-            
+            personsCases[13] = true
         } else if secondAnemiaTexts[13] == anemiaCases[1] {
-            
+            personsCases[13] = false
         }
         
         let eyesValue = Double(((blackEyes * forBlackEyes) + (dBrownEyes * forDBrownEyes) + (brownEyes * forBrownEyes) + (lBrownEyes * forLBrownEyes) + (greenEyes * forGreenEyes) + (hazelEyes * forHazelEyes) + (blueEyes * forBlueEyes)) / (blackEyes + dBrownEyes + brownEyes + lBrownEyes + greenEyes + hazelEyes + blueEyes))
@@ -1454,6 +1456,10 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             firstHairColorName = "Black"
             biggestForHair = 100
             thirdCase = 1
+        }
+        
+        if personsCases[0] == true && personsCases[1] == true {
+            biggestForAnemia = 100
         }
         
         if firstCase == 1 {
