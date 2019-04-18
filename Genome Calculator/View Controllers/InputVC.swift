@@ -1459,8 +1459,70 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if personsCases[0] == true && personsCases[1] == true {
-            biggestForAnemia = 100
-        }
+            if personsCases[2] == true && personsCases[3] == true && personsCases[4] == true && personsCases[5] == true {
+                biggestForAnemia = 100
+                fourthCase = 1
+            } else {
+                fourthCase = 3
+            }
+            
+            if personsCases[4] == true && personsCases[5] == true {
+                fourthCase = 3
+            } else if personsCases[4] == true && personsCases[5] == false {
+                
+            } else if personsCases[4] == false && personsCases[5] == true {
+                
+            } else if personsCases[4] == false && personsCases[5] == false {
+                
+            }
+        } else if personsCases[0] == true && personsCases[1] == false {
+            if personsCases[2] == true && personsCases[3] == true {
+                fourthCase = 3
+            } else if personsCases[2] == true && personsCases[3] == false {
+                
+            } else if personsCases[2] == false && personsCases[3] == true {
+                
+            } else if personsCases[2] == false && personsCases[3] == false {
+                
+            }
+            
+            if personsCases[4] == true && personsCases[5] == true {
+                fourthCase = 3
+            } else if personsCases[4] == true && personsCases[5] == false {
+                
+            } else if personsCases[4] == false && personsCases[5] == true {
+                
+            } else if personsCases[4] == false && personsCases[5] == false {
+                
+            }
+        } else if personsCases[0] == false && personsCases[1] == true {
+            if personsCases[2] == true && personsCases[3] == true {
+                fourthCase = 3
+            } else if personsCases[2] == true && personsCases[3] == false {
+                
+            } else if personsCases[2] == false && personsCases[3] == true {
+                
+            } else if personsCases[2] == false && personsCases[3] == false {
+                
+            }
+            
+            if personsCases[4] == true && personsCases[5] == true {
+                fourthCase = 3
+            } else if personsCases[4] == true && personsCases[5] == false {
+                
+            } else if personsCases[4] == false && personsCases[5] == true {
+                
+            } else if personsCases[4] == false && personsCases[5] == false {
+                
+            }
+        } else if personsCases[0] == false && personsCases[1] == false {
+            if personsCases[2] == false && personsCases[3] == false && personsCases[4] == false && personsCases[5] == false {
+                biggestForAnemia = 0
+                fourthCase = 1
+            } else {
+                fourthCase = 3
+            }
+         }
         
         if firstCase == 1 {
             firstCaseResult = "\(firstEyesColorName)-eyes \(biggestForEyes)%"
@@ -1489,9 +1551,11 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if fourthCase == 1 {
-            fourthCaseResult = ""
+            fourthCaseResult = "If the child is a boy: \(biggestForAnemia). If the child is a girl: \(biggestForAnemia)."
         } else if fourthCase == 2 {
-            fourthCaseResult = ""
+            fourthCaseResult = "If the child is a boy: \(biggestForAnemia). If the child is a girl: \(secondBiggestForAnemia)."
+        } else if fourthCase == 3 {
+            fourthCaseResult = "Wrong entry: please, again refill the anemia section"
         }
         
         inputTextView.text = """
