@@ -1459,25 +1459,60 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         if personsCases[0] == true && personsCases[1] == true {
-            if personsCases[2] == true && personsCases[3] == true && personsCases[4] == true && personsCases[5] == true {
-                biggestForAnemia = 100
+            if personsCases[2] == true && personsCases[3] == true {
                 fourthCase = 1
-            } else {
+            } else if personsCases[2] == false && personsCases[3] == true {
+                if personsCases[6] == true && personsCases[7] == true {
+                    
+                } else if personsCases[6] == false && personsCases[7] == true {
+                    
+                } else if personsCases[6] == true && personsCases[7] == false {
+                    
+                } else if personsCases[6] == false && personsCases[7] == false {
+                    
+                }
+            } else if personsCases[2] == true && personsCases[3] == false {
+                if personsCases[6] == true && personsCases[7] == true {
+                    
+                } else if personsCases[6] == false && personsCases[7] == true {
+                    
+                } else if personsCases[6] == true && personsCases[7] == false {
+                    
+                } else if personsCases[6] == false && personsCases[7] == false {
+                    
+                }
+            } else if personsCases[2] == false && personsCases[3] == false {
                 fourthCase = 3
             }
             
             if personsCases[4] == true && personsCases[5] == true {
-                fourthCase = 3
-            } else if personsCases[4] == true && personsCases[5] == false {
-                
+                fourthCase = 1
             } else if personsCases[4] == false && personsCases[5] == true {
-                
+                if personsCases[10] == true && personsCases[11] == true {
+                    
+                } else if personsCases[10] == false && personsCases[11] == true {
+                    
+                } else if personsCases[10] == true && personsCases[11] == false {
+                    
+                } else if personsCases[10] == false && personsCases[11] == false {
+                    
+                }
+            } else if personsCases[4] == true && personsCases[5] == false {
+                if personsCases[10] == true && personsCases[11] == true {
+                    
+                } else if personsCases[10] == false && personsCases[11] == true {
+                    
+                } else if personsCases[10] == true && personsCases[11] == false {
+                    
+                } else if personsCases[10] == false && personsCases[11] == false {
+                    
+                }
             } else if personsCases[4] == false && personsCases[5] == false {
-                
+                fourthCase = 3
             }
         } else if personsCases[0] == true && personsCases[1] == false {
             if personsCases[2] == true && personsCases[3] == true {
-                fourthCase = 3
+                
             } else if personsCases[2] == true && personsCases[3] == false {
                 
             } else if personsCases[2] == false && personsCases[3] == true {
@@ -1487,7 +1522,7 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
             if personsCases[4] == true && personsCases[5] == true {
-                fourthCase = 3
+                
             } else if personsCases[4] == true && personsCases[5] == false {
                 
             } else if personsCases[4] == false && personsCases[5] == true {
@@ -1497,7 +1532,7 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         } else if personsCases[0] == false && personsCases[1] == true {
             if personsCases[2] == true && personsCases[3] == true {
-                fourthCase = 3
+                
             } else if personsCases[2] == true && personsCases[3] == false {
                 
             } else if personsCases[2] == false && personsCases[3] == true {
@@ -1519,8 +1554,9 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             if personsCases[2] == false && personsCases[3] == false && personsCases[4] == false && personsCases[5] == false {
                 biggestForAnemia = 0
                 fourthCase = 1
-            } else {
-                fourthCase = 3
+            } else if personsCases[2] == false && personsCases[3] == true {
+                
+                fourthCase = 2
             }
          }
         
