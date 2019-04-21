@@ -1463,16 +1463,16 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 fourthCase = 1
             } else if personsCases[2] == false && personsCases[3] == true {
                 if personsCases[6] == true && personsCases[7] == true {
-                    
+                    fourthCase = 3
                 } else if personsCases[6] == false && personsCases[7] == true {
-                    
+                    fourthCase = 1
                 } else if personsCases[6] == true && personsCases[7] == false {
-                    
+                    fourthCase = 1
                 } else if personsCases[6] == false && personsCases[7] == false {
-                    
+                    fourthCase = 1
                 }
             } else if personsCases[2] == true && personsCases[3] == false {
-                
+                fourthCase = 3
             } else if personsCases[2] == false && personsCases[3] == false {
                 fourthCase = 3
             }
@@ -1481,38 +1481,46 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 fourthCase = 1
             } else if personsCases[4] == false && personsCases[5] == true {
                 if personsCases[10] == true && personsCases[11] == true {
-                    
+                    fourthCase = 3
                 } else if personsCases[10] == false && personsCases[11] == true {
-                    
+                    fourthCase = 1
                 } else if personsCases[10] == true && personsCases[11] == false {
-                    
+                    fourthCase = 1
                 } else if personsCases[10] == false && personsCases[11] == false {
-                    
+                    fourthCase = 1
                 }
             } else if personsCases[4] == true && personsCases[5] == false {
-                
+                fourthCase = 1
             } else if personsCases[4] == false && personsCases[5] == false {
                 fourthCase = 3
             }
         } else if personsCases[0] == true && personsCases[1] == false {
             if personsCases[2] == true && personsCases[3] == true {
-                
+                fourthCase = 1
             } else if personsCases[2] == true && personsCases[3] == false {
-                
+                fourthCase = 3
             } else if personsCases[2] == false && personsCases[3] == true {
-                
+                if personsCases[6] == true && personsCases[7] == true {
+                    
+                } else if personsCases[6] == true && personsCases[7] == false {
+                    
+                } else if personsCases[6] == false && personsCases[7] == true {
+                    
+                } else if personsCases[6] == false && personsCases[7] == false {
+                    
+                }
             } else if personsCases[2] == false && personsCases[3] == false {
-                
+                fourthCase = 3
             }
         } else if personsCases[0] == false && personsCases[1] == true {
             if personsCases[2] == true && personsCases[3] == true {
-                
+                fourthCase = 3
             } else if personsCases[2] == true && personsCases[3] == false {
                 
             } else if personsCases[2] == false && personsCases[3] == true {
-                
+                fourthCase = 2
             } else if personsCases[2] == false && personsCases[3] == false {
-                
+                fourthCase = 1
             }
         } else if personsCases[0] == false && personsCases[1] == false {
             if personsCases[2] == false && personsCases[3] == false && personsCases[4] == false && personsCases[5] == false {
