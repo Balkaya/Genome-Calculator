@@ -1705,31 +1705,31 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
         if segue.identifier == "scToContainerVC" {
             let destinationVC = segue.destination as? ContainerVC
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
-            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
+//            destinationVC?.textField1 = textFields1
         }
     }
     
