@@ -10,8 +10,6 @@ import UIKit
 import CoreData
 
 class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    @IBOutlet weak var nameTextField: UITextField!
-    
     let textFields1 = UITextField()
     let textFields2 = UITextField()
     let textFields3 = UITextField()
@@ -923,10 +921,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             
             if results!.count > 0 {
                 for result in results as! [NSManagedObject] {
-                    if let name = result.value(forKey: "name") as? String {
-                        nameTextField.text = name
-                    }
-                    
                     // Mom
                     if let momE = result.value(forKey: "momEyesC") as? String {
                         textFields1.text = momE
@@ -1443,7 +1437,6 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
-        nameTextField?.inputAccessoryView = toolBar
         textFields1.inputAccessoryView = toolBar
         textFields2.inputAccessoryView = toolBar
         textFields3.inputAccessoryView = toolBar
@@ -1734,7 +1727,7 @@ class AddVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func calculateButton(_ sender: UIBarButtonItem) {
-        nameText = nameTextField.text!
+//        nameText = nameTextField.text!
 //        eyesTexts = [textField1.text, textField1.text, textField2.text, textField3.text, textField4.text, textField5.text, textField6.text, textField7.text, textField8.text, textField9.text, textField10.text, textField1.text, textField1.text, textField1.text] as! [String]
 //        skinTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
 //        hairTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]

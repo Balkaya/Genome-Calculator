@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class ContainerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textField: [UITextField]!
     
     var chosenGene = ""
@@ -78,6 +79,9 @@ class ContainerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        createGenomPicker()
+        createToolbar()
+        
         firstPicker.delegate = self
         secondPicker.delegate = self
         thirdPicker.delegate = self
@@ -677,9 +681,9 @@ class ContainerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
             
             if results!.count > 0 {
                 for result in results as! [NSManagedObject] {
-//                    if let name = result.value(forKey: "name") as? String {
-//                        nameTextField.text = name
-//                    }
+                    if let name = result.value(forKey: "name") as? String {
+                        nameTextField.text = name
+                    }
                     
                     // Mom
                     if let momE = result.value(forKey: "momEyesC") as? String {
@@ -959,6 +963,7 @@ class ContainerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegat
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
+        nameTextField?.inputAccessoryView = toolBar
         textField?[0].inputAccessoryView = toolBar
         textField?[1].inputAccessoryView = toolBar
         textField?[2].inputAccessoryView = toolBar
