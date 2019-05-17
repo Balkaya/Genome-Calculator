@@ -11,7 +11,6 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
-    
     var nameArray = [String]()
     var textViewArray = [String]()
     
@@ -52,7 +51,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
-            
             let results = try context.fetch(fetchRequest)
             
             if results.count > 0 {
@@ -180,10 +178,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
-//    func updateSearchResults(for searchController: UISearchController) {
-//        let term = search.searchBar.text
+    func updateSearchResults(for searchController: UISearchController) {
+        let term = search.searchBar.text
 //        searchTexts = Data.filter { $0.contains(term) }
-//        searching = true
-//        tableView.reloadData()
-//    }
+        searching = true
+        tableView.reloadData()
+    }
 }
