@@ -397,9 +397,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qUr-uX-Y2M">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qUr-uX-Y2M">
                                 <rect key="frame" x="10" y="141" width="394" height="755"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="scrollIndicatorInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <collectionViewLayout key="collectionViewLayout" id="ZHV-Rl-12D"/>
@@ -475,15 +474,23 @@
                                 </items>
                                 <color key="barTintColor" red="0.18431285019999999" green="0.1844702959" blue="0.17611345649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqJ-hN-LCR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqJ-hN-LCR">
                                 <rect key="frame" x="107" y="103" width="200" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qUr-uX-Y2M" firstAttribute="leading" secondItem="aP7-4Z-USF" secondAttribute="leading" constant="10" id="I0g-G2-iWc"/>
+                            <constraint firstItem="dqJ-hN-LCR" firstAttribute="leading" secondItem="aP7-4Z-USF" secondAttribute="leading" constant="107" id="LSu-LM-UaY"/>
+                            <constraint firstItem="aP7-4Z-USF" firstAttribute="trailing" secondItem="qUr-uX-Y2M" secondAttribute="trailing" constant="10" id="UXN-Mm-hMb"/>
+                            <constraint firstItem="aP7-4Z-USF" firstAttribute="trailing" secondItem="dqJ-hN-LCR" secondAttribute="trailing" constant="107" id="dnm-hG-kAs"/>
+                            <constraint firstItem="dqJ-hN-LCR" firstAttribute="top" secondItem="aP7-4Z-USF" secondAttribute="top" constant="15" id="mHe-mL-1ml"/>
+                            <constraint firstItem="qUr-uX-Y2M" firstAttribute="top" secondItem="dqJ-hN-LCR" secondAttribute="bottom" constant="8" id="r5V-7Y-gsG"/>
+                            <constraint firstAttribute="bottom" secondItem="qUr-uX-Y2M" secondAttribute="bottom" id="vBd-cN-dit"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aP7-4Z-USF"/>
                     </view>
                     <navigationItem key="navigationItem" id="jgL-Y4-7vT"/>
