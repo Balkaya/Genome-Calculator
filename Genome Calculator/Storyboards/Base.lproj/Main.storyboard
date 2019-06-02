@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="229" y="136"/>
         </scene>
-        <!--AddVC-->
+        <!--View Controller-->
         <scene sceneID="qpb-yS-Vh1">
             <objects>
-                <viewController id="nWW-dd-G6t" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nWW-dd-G6t" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQL-Mw-ade">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -967,72 +967,16 @@
                     <size key="freeformSize" width="414" height="983"/>
                     <connections>
                         <outlet property="nameTextField" destination="I63-UR-QjN" id="5pj-cl-34k"/>
-                        <outletCollection property="textField" destination="l5f-q6-XEn" collectionClass="NSMutableArray" id="Lw2-k5-Rpk"/>
-                        <outletCollection property="textField" destination="tzK-dN-g7S" collectionClass="NSMutableArray" id="QH8-ws-Rfw"/>
-                        <outletCollection property="textField" destination="mhv-UJ-QTp" collectionClass="NSMutableArray" id="N5g-a1-ENf"/>
-                        <outletCollection property="textField" destination="ZrO-o1-mD1" collectionClass="NSMutableArray" id="Nr0-d4-eCQ"/>
-                        <outletCollection property="textField" destination="9nJ-pW-aYf" collectionClass="NSMutableArray" id="8fm-sB-qMt"/>
-                        <outletCollection property="textField" destination="k5m-XK-lrn" collectionClass="NSMutableArray" id="lcB-Eb-gja"/>
-                        <outletCollection property="textField" destination="QIQ-v3-8SA" collectionClass="NSMutableArray" id="pIh-Mg-bj8"/>
-                        <outletCollection property="textField" destination="isJ-gD-Obg" collectionClass="NSMutableArray" id="csh-Qx-plE"/>
-                        <outletCollection property="textField" destination="WZe-sD-5dE" collectionClass="NSMutableArray" id="s4X-UN-oXT"/>
-                        <outletCollection property="textField" destination="nY1-Dq-L8a" collectionClass="NSMutableArray" id="NvC-lz-j9v"/>
-                        <outletCollection property="textField" destination="9I8-bN-fYb" collectionClass="NSMutableArray" id="D6H-6F-zTl"/>
-                        <outletCollection property="textField" destination="DAB-e9-QZL" collectionClass="NSMutableArray" id="8S6-fD-mmB"/>
-                        <outletCollection property="textField" destination="jcN-8m-glS" collectionClass="NSMutableArray" id="qd0-AT-qa4"/>
-                        <outletCollection property="textField" destination="smP-03-Ln5" collectionClass="NSMutableArray" id="T9o-cY-tzw"/>
-                        <outletCollection property="textField" destination="2As-2d-did" collectionClass="NSMutableArray" id="oZ8-Wi-yp6"/>
-                        <outletCollection property="textField" destination="P4w-xM-KCx" collectionClass="NSMutableArray" id="Yq5-UU-rgX"/>
-                        <outletCollection property="textField" destination="q1T-qe-ayn" collectionClass="NSMutableArray" id="nmw-kg-YWa"/>
-                        <outletCollection property="textField" destination="f8d-q7-fHV" collectionClass="NSMutableArray" id="jL8-iU-AwA"/>
-                        <outletCollection property="textField" destination="avq-aN-i6G" collectionClass="NSMutableArray" id="fgg-R3-T9o"/>
-                        <outletCollection property="textField" destination="bja-ev-Vp7" collectionClass="NSMutableArray" id="xwe-Yy-kBf"/>
-                        <outletCollection property="textField" destination="i8e-BA-r7Y" collectionClass="NSMutableArray" id="uPn-kL-W7J"/>
-                        <outletCollection property="textField" destination="eeX-uy-oh9" collectionClass="NSMutableArray" id="ipc-em-LXO"/>
-                        <outletCollection property="textField" destination="hl6-vN-RhK" collectionClass="NSMutableArray" id="uc1-mT-e8P"/>
-                        <outletCollection property="textField" destination="vsY-Ah-5PW" collectionClass="NSMutableArray" id="83f-1W-yND"/>
-                        <outletCollection property="textField" destination="rMS-Qd-qiJ" collectionClass="NSMutableArray" id="Q2j-KA-e7W"/>
-                        <outletCollection property="textField" destination="5mK-RX-ebC" collectionClass="NSMutableArray" id="3Yu-pk-tj5"/>
-                        <outletCollection property="textField" destination="EhL-yZ-gID" collectionClass="NSMutableArray" id="X92-C8-nq8"/>
-                        <outletCollection property="textField" destination="Loz-cP-eGh" collectionClass="NSMutableArray" id="xWj-NN-5mS"/>
-                        <outletCollection property="textField" destination="SRe-jc-tEc" collectionClass="NSMutableArray" id="c8V-7Z-8ym"/>
-                        <outletCollection property="textField" destination="Nu8-uK-aao" collectionClass="NSMutableArray" id="DcV-8E-bJR"/>
-                        <outletCollection property="textField" destination="NeT-64-0Uc" collectionClass="NSMutableArray" id="meE-MP-n6Y"/>
-                        <outletCollection property="textField" destination="D29-ZB-2SE" collectionClass="NSMutableArray" id="4oS-kK-XCV"/>
-                        <outletCollection property="textField" destination="7VE-c4-qs9" collectionClass="NSMutableArray" id="V3H-1W-ycy"/>
-                        <outletCollection property="textField" destination="yFW-qO-EYR" collectionClass="NSMutableArray" id="RfC-jV-Ntz"/>
-                        <outletCollection property="textField" destination="RKC-22-4Io" collectionClass="NSMutableArray" id="cED-PT-wfB"/>
-                        <outletCollection property="textField" destination="IIP-c1-ilB" collectionClass="NSMutableArray" id="PU0-Og-f0n"/>
-                        <outletCollection property="textField" destination="y9m-IC-qCg" collectionClass="NSMutableArray" id="iEa-Lc-VlT"/>
-                        <outletCollection property="textField" destination="HyW-a6-rKy" collectionClass="NSMutableArray" id="er3-0L-uMU"/>
-                        <outletCollection property="textField" destination="SO3-fl-SzT" collectionClass="NSMutableArray" id="KOt-WX-eIX"/>
-                        <outletCollection property="textField" destination="NyA-bL-uA7" collectionClass="NSMutableArray" id="dTi-XJ-wE7"/>
-                        <outletCollection property="textField" destination="s6K-NB-ivy" collectionClass="NSMutableArray" id="E0M-kV-leS"/>
-                        <outletCollection property="textField" destination="r9v-pI-5s9" collectionClass="NSMutableArray" id="HOl-Tw-TFM"/>
-                        <outletCollection property="textField" destination="Lal-7i-n30" collectionClass="NSMutableArray" id="aeN-VK-IYO"/>
-                        <outletCollection property="textField" destination="esB-r1-22L" collectionClass="NSMutableArray" id="GEn-Y2-6LP"/>
-                        <outletCollection property="textField" destination="Gl2-6U-MOh" collectionClass="NSMutableArray" id="jVP-Iv-K1s"/>
-                        <outletCollection property="textField" destination="ezA-OF-1uq" collectionClass="NSMutableArray" id="IrG-CJ-KBF"/>
-                        <outletCollection property="textField" destination="I7Q-3R-1fK" collectionClass="NSMutableArray" id="XcQ-sf-dR0"/>
-                        <outletCollection property="textField" destination="o2h-iR-mgh" collectionClass="NSMutableArray" id="Ptf-5D-HHn"/>
-                        <outletCollection property="textField" destination="lLd-1C-lh0" collectionClass="NSMutableArray" id="sgJ-p9-jI0"/>
-                        <outletCollection property="textField" destination="giu-0l-0nP" collectionClass="NSMutableArray" id="QWx-Wa-d66"/>
-                        <outletCollection property="textField" destination="MKB-Xl-6A2" collectionClass="NSMutableArray" id="wsb-1q-jVN"/>
-                        <outletCollection property="textField" destination="jOq-MI-eiy" collectionClass="NSMutableArray" id="kCB-9f-cIX"/>
-                        <outletCollection property="textField" destination="j2p-I0-jQC" collectionClass="NSMutableArray" id="a16-O8-aiq"/>
-                        <outletCollection property="textField" destination="aqY-Dp-8Q2" collectionClass="NSMutableArray" id="ba4-rP-bv3"/>
-                        <outletCollection property="textField" destination="Ocm-bC-mWM" collectionClass="NSMutableArray" id="Ag6-lf-hd8"/>
-                        <outletCollection property="textField" destination="TAe-fq-MdY" collectionClass="NSMutableArray" id="kst-b1-08T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pm-l3-d0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1196" y="-1639"/>
         </scene>
-        <!--View Controller-->
+        <!--AddVC-->
         <scene sceneID="fJ7-bR-L7R">
             <objects>
-                <viewController id="DBe-Kj-7W8" sceneMemberID="viewController">
+                <viewController id="DBe-Kj-7W8" customClass="AddVC" customModule="Genome_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nRi-JV-zHn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1130"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1589,11 +1533,17 @@
                                                 <state key="normal" title="Calculate">
                                                     <color key="titleColor" red="0.0" green="0.99987131357192993" blue="0.52671265602111816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="calculateButton:" destination="DBe-Kj-7W8" eventType="touchUpInside" id="pX5-Eu-FCH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKw-H1-D7a">
                                                 <rect key="frame" x="348" y="994" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="tryButton:" destination="DBe-Kj-7W8" eventType="touchUpInside" id="73L-nP-9UG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2901606559753418" green="0.29021644592285156" blue="0.29015710949897766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1623,6 +1573,63 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="blr-Cd-MPB"/>
                     <size key="freeformSize" width="414" height="1130"/>
                     <connections>
+                        <outlet property="anemiaText1" destination="VSk-TV-CyT" id="lFq-rJ-b1S"/>
+                        <outlet property="anemiaTextField10" destination="Vmp-qf-nb6" id="6Aa-22-ZFB"/>
+                        <outlet property="anemiaTextField11" destination="T5B-ht-bce" id="E7a-ia-QxG"/>
+                        <outlet property="anemiaTextField12" destination="S8J-OL-Ya5" id="2Nz-5x-BIV"/>
+                        <outlet property="anemiaTextField13" destination="Q3L-eo-w9W" id="8aO-Y8-WZc"/>
+                        <outlet property="anemiaTextField14" destination="4uy-qV-xK7" id="9AQ-6D-KVq"/>
+                        <outlet property="anemiaTextField2" destination="MFe-Ls-3dy" id="Tbi-4R-TUa"/>
+                        <outlet property="anemiaTextField3" destination="diN-f0-RlC" id="Y7d-Fj-6YF"/>
+                        <outlet property="anemiaTextField4" destination="kcy-al-R1V" id="St8-p5-E8F"/>
+                        <outlet property="anemiaTextField5" destination="W12-Fm-al2" id="4nv-lx-i1l"/>
+                        <outlet property="anemiaTextField6" destination="OdO-5h-ca8" id="2O3-8R-qkE"/>
+                        <outlet property="anemiaTextField7" destination="whQ-CL-4Em" id="THV-tl-byr"/>
+                        <outlet property="anemiaTextField8" destination="vdI-bc-gZq" id="GpE-6I-edx"/>
+                        <outlet property="anemiaTextField9" destination="Nd7-g3-J3S" id="h56-Vz-Xsn"/>
+                        <outlet property="eyesTextField1" destination="8nv-sD-rU5" id="YTE-k8-0Pq"/>
+                        <outlet property="eyesTextField10" destination="KW6-as-tia" id="Yrt-w2-gje"/>
+                        <outlet property="eyesTextField11" destination="bxI-9O-s1o" id="35r-I7-xUF"/>
+                        <outlet property="eyesTextField12" destination="E36-2k-VAC" id="cTy-Go-Ui4"/>
+                        <outlet property="eyesTextField13" destination="E36-2k-VAC" id="3Fp-GV-zck"/>
+                        <outlet property="eyesTextField14" destination="U4X-CR-10H" id="56I-Te-BU1"/>
+                        <outlet property="eyesTextField2" destination="juy-Qc-KCP" id="w3l-uQ-pkD"/>
+                        <outlet property="eyesTextField3" destination="dgJ-pM-YBb" id="dto-za-y2T"/>
+                        <outlet property="eyesTextField4" destination="gwr-zg-P0K" id="8mA-mr-MkF"/>
+                        <outlet property="eyesTextField5" destination="8iF-Ys-Ghp" id="Mzm-nd-oFh"/>
+                        <outlet property="eyesTextField6" destination="22h-c8-CIn" id="rU3-Fh-CDb"/>
+                        <outlet property="eyesTextField7" destination="fPT-0E-Wbj" id="WiG-1C-hII"/>
+                        <outlet property="eyesTextField8" destination="pdL-Tm-gJ5" id="VrK-CH-Dg5"/>
+                        <outlet property="eyesTextField9" destination="yDu-bA-VV9" id="XjN-oK-YhN"/>
+                        <outlet property="hairTextField1" destination="gTJ-Qs-aj1" id="9Rc-1s-kao"/>
+                        <outlet property="hairTextField10" destination="ix1-Ze-bHO" id="w9E-eT-rYP"/>
+                        <outlet property="hairTextField11" destination="spi-h5-9pJ" id="4ol-Ax-2bV"/>
+                        <outlet property="hairTextField12" destination="aAL-wH-xjA" id="zOf-OU-iWB"/>
+                        <outlet property="hairTextField13" destination="qsS-At-FIr" id="85u-AS-mUX"/>
+                        <outlet property="hairTextField14" destination="ZdR-RR-ggw" id="vD9-na-FI4"/>
+                        <outlet property="hairTextField2" destination="PJd-el-AhW" id="rYI-3Q-4gj"/>
+                        <outlet property="hairTextField3" destination="UX8-OU-1Gc" id="IY1-6I-w66"/>
+                        <outlet property="hairTextField4" destination="FDT-bL-JKc" id="ed1-PN-4cQ"/>
+                        <outlet property="hairTextField5" destination="Wko-hb-SpZ" id="3iF-Xl-Bqo"/>
+                        <outlet property="hairTextField6" destination="rzH-VB-GCD" id="trL-a5-hMG"/>
+                        <outlet property="hairTextField7" destination="s6t-aw-JnN" id="Xfr-Yr-Vcu"/>
+                        <outlet property="hairTextField8" destination="vnm-aS-aRB" id="3fW-Ud-UEK"/>
+                        <outlet property="hairTextField9" destination="atu-Z6-UyY" id="6Sj-c6-6OB"/>
+                        <outlet property="nameTextField" destination="wbS-cy-h5C" id="oQ0-9y-iQk"/>
+                        <outlet property="skinTextField1" destination="02E-wv-5yc" id="Bzn-jf-20L"/>
+                        <outlet property="skinTextField10" destination="efE-bC-074" id="hsY-os-57X"/>
+                        <outlet property="skinTextField11" destination="Ems-O9-brM" id="Drh-cr-1gB"/>
+                        <outlet property="skinTextField12" destination="PJH-Sg-QUC" id="MfN-mE-qDb"/>
+                        <outlet property="skinTextField13" destination="bV9-pr-YdK" id="1RN-yb-j8d"/>
+                        <outlet property="skinTextField14" destination="blN-12-aT1" id="xgA-1p-OML"/>
+                        <outlet property="skinTextField2" destination="Aso-HP-fab" id="qH8-AN-RbN"/>
+                        <outlet property="skinTextField3" destination="7b3-x6-dRX" id="2cp-L5-yyz"/>
+                        <outlet property="skinTextField4" destination="chc-aD-LUR" id="0rc-Mf-20p"/>
+                        <outlet property="skinTextField5" destination="4X6-ZF-d8c" id="jbo-DH-Fmx"/>
+                        <outlet property="skinTextField6" destination="WRc-TC-zIh" id="IlZ-qv-mOC"/>
+                        <outlet property="skinTextField7" destination="4xZ-4c-PyW" id="Boe-8Z-9Fw"/>
+                        <outlet property="skinTextField8" destination="shV-Pk-oRp" id="Gns-cD-Q3F"/>
+                        <outlet property="skinTextField9" destination="Axo-De-8sb" id="4m1-yY-02y"/>
                         <segue destination="gjn-KN-BTh" kind="show" identifier="toInputVC" id="09E-OZ-HSo"/>
                     </connections>
                 </viewController>

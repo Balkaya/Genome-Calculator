@@ -11,6 +11,77 @@ import CoreData
 
 class AddVC: UIViewController {
     var chosenGene = ""
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var eyesTextField1: UITextField!
+    @IBOutlet weak var skinTextField1: UITextField!
+    @IBOutlet weak var hairTextField1: UITextField!
+    @IBOutlet weak var anemiaText1: UITextField!
+    
+    @IBOutlet weak var eyesTextField2: UITextField!
+    @IBOutlet weak var skinTextField2: UITextField!
+    @IBOutlet weak var hairTextField2: UITextField!
+    @IBOutlet weak var anemiaTextField2: UITextField!
+    
+    @IBOutlet weak var eyesTextField3: UITextField!
+    @IBOutlet weak var skinTextField3: UITextField!
+    @IBOutlet weak var hairTextField3: UITextField!
+    @IBOutlet weak var anemiaTextField3: UITextField!
+    
+    @IBOutlet weak var eyesTextField4: UITextField!
+    @IBOutlet weak var skinTextField4: UITextField!
+    @IBOutlet weak var hairTextField4: UITextField!
+    @IBOutlet weak var anemiaTextField4: UITextField!
+    
+    @IBOutlet weak var eyesTextField5: UITextField!
+    @IBOutlet weak var skinTextField5: UITextField!
+    @IBOutlet weak var hairTextField5: UITextField!
+    @IBOutlet weak var anemiaTextField5: UITextField!
+    
+    @IBOutlet weak var eyesTextField6: UITextField!
+    @IBOutlet weak var skinTextField6: UITextField!
+    @IBOutlet weak var hairTextField6: UITextField!
+    @IBOutlet weak var anemiaTextField6: UITextField!
+    
+    @IBOutlet weak var eyesTextField7: UITextField!
+    @IBOutlet weak var skinTextField7: UITextField!
+    @IBOutlet weak var hairTextField7: UITextField!
+    @IBOutlet weak var anemiaTextField7: UITextField!
+    
+    @IBOutlet weak var eyesTextField8: UITextField!
+    @IBOutlet weak var skinTextField8: UITextField!
+    @IBOutlet weak var hairTextField8: UITextField!
+    @IBOutlet weak var anemiaTextField8: UITextField!
+    
+    @IBOutlet weak var eyesTextField9: UITextField!
+    @IBOutlet weak var skinTextField9: UITextField!
+    @IBOutlet weak var hairTextField9: UITextField!
+    @IBOutlet weak var anemiaTextField9: UITextField!
+    
+    @IBOutlet weak var eyesTextField10: UITextField!
+    @IBOutlet weak var skinTextField10: UITextField!
+    @IBOutlet weak var hairTextField10: UITextField!
+    @IBOutlet weak var anemiaTextField10: UITextField!
+    
+    @IBOutlet weak var eyesTextField11: UITextField!
+    @IBOutlet weak var skinTextField11: UITextField!
+    @IBOutlet weak var hairTextField11: UITextField!
+    @IBOutlet weak var anemiaTextField11: UITextField!
+    
+    @IBOutlet weak var eyesTextField12: UITextField!
+    @IBOutlet weak var skinTextField12: UITextField!
+    @IBOutlet weak var hairTextField12: UITextField!
+    @IBOutlet weak var anemiaTextField12: UITextField!
+    
+    @IBOutlet weak var eyesTextField13: UITextField!
+    @IBOutlet weak var skinTextField13: UITextField!
+    @IBOutlet weak var hairTextField13: UITextField!
+    @IBOutlet weak var anemiaTextField13: UITextField!
+    
+    @IBOutlet weak var eyesTextField14: UITextField!
+    @IBOutlet weak var skinTextField14: UITextField!
+    @IBOutlet weak var hairTextField14: UITextField!
+    @IBOutlet weak var anemiaTextField14: UITextField!
     
     var nameText = ""
     var eyesTexts = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
@@ -23,6 +94,53 @@ class AddVC: UIViewController {
         if chosenGene != "" {
             retrieveData()
         }
+        
+        nameTextField.text = nameText
+        
+        eyesTextField1.text = eyesTexts[0]
+        eyesTextField2.text = eyesTexts[1]
+        eyesTextField3.text = eyesTexts[2]
+        eyesTextField4.text = eyesTexts[3]
+        eyesTextField5.text = eyesTexts[4]
+        eyesTextField6.text = eyesTexts[5]
+        eyesTextField7.text = eyesTexts[6]
+        eyesTextField8.text = eyesTexts[7]
+        eyesTextField9.text = eyesTexts[8]
+        eyesTextField10.text = eyesTexts[9]
+        eyesTextField11.text = eyesTexts[10]
+        eyesTextField12.text = eyesTexts[11]
+        eyesTextField13.text = eyesTexts[12]
+        eyesTextField14.text = eyesTexts[13]
+        
+        skinTextField1.text = skinTexts[0]
+        skinTextField2.text = skinTexts[1]
+        skinTextField3.text = skinTexts[2]
+        skinTextField4.text = skinTexts[3]
+        skinTextField5.text = skinTexts[4]
+        skinTextField6.text = skinTexts[5]
+        skinTextField7.text = skinTexts[6]
+        skinTextField8.text = skinTexts[7]
+        skinTextField9.text = skinTexts[8]
+        skinTextField10.text = skinTexts[9]
+        skinTextField11.text = skinTexts[10]
+        skinTextField12.text = skinTexts[11]
+        skinTextField13.text = skinTexts[12]
+        skinTextField14.text = skinTexts[13]
+        
+        hairTextField1.text = hairTexts[0]
+        hairTextField2.text = hairTexts[1]
+        hairTextField3.text = hairTexts[2]
+        hairTextField4.text = hairTexts[3]
+        hairTextField5.text = hairTexts[4]
+        hairTextField6.text = hairTexts[5]
+        hairTextField7.text = hairTexts[6]
+        hairTextField8.text = hairTexts[7]
+        hairTextField9.text = hairTexts[8]
+        hairTextField10.text = hairTexts[9]
+        hairTextField11.text = hairTexts[10]
+        hairTextField12.text = hairTexts[11]
+        hairTextField13.text = hairTexts[12]
+        hairTextField14.text = hairTexts[13]
         
         //        textFieldsForEyes = [textFields[0].text, textFields[4].text, textFields[8].text, textFields[12].text, textFields[16].text, textFields[20].text, textFields[24].text, textFields[28].text, textFields[32].text, textFields[36].text, textFields[40].text, textFields[44].text, textFields[48].text, textFields[52].text] as! [String]
         //        textFieldsForSkin = [textFields?[1].text, textFields?[5].text, textFields?[9].text, textFields?[13].text, textFields?[17].text, textFields?[21].text, textFields?[25].text, textFields?[29].text, textFields?[33].text, textFields?[37].text, textFields?[41].text, textFields?[45].text, textFields?[49].text, textFields?[53].text] as! [String]
@@ -433,7 +551,7 @@ class AddVC: UIViewController {
 //        }
 //    }
     
-    @IBAction func calculateButton(_ sender: UIBarButtonItem) {
+    @IBAction func calculateButton(_ sender: UIButton) {
 //        nameText = nameTextField.text!
 //        eyesTexts = [textField1.text, textField1.text, textField2.text, textField3.text, textField4.text, textField5.text, textField6.text, textField7.text, textField8.text, textField9.text, textField10.text, textField1.text, textField1.text, textField1.text] as! [String]
 //        skinTexts = [textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text, textField1.text] as! [String]
@@ -570,7 +688,7 @@ class AddVC: UIViewController {
 //        }
     }
     
-    @IBAction func tryButton(_ sender: UIBarButtonItem) {
+    @IBAction func tryButton(_ sender: UIButton) {
         //        textFields![0].text = "Black"
         //        textFields![1].text = "Black"
         //        textFields![2].text = "Black"
