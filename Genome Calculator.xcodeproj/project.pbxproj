@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2669F52264DAD1007C2958 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2669F42264DAD1007C2958 /* ContainerVC.swift */; };
+		3A2669F52264DAD1007C2958 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2669F42264DAD1007C2958 /* AddVC.swift */; };
 		3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */; };
 		3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C40021CEBD430047C453 /* ViewController.swift */; };
 		3AA3C40421CEBD430047C453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40221CEBD430047C453 /* Main.storyboard */; };
 		3AA3C40721CEBD430047C453 /* Genome_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C40521CEBD430047C453 /* Genome_Calculator.xcdatamodeld */; };
 		3AA3C40921CEBD450047C453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40821CEBD450047C453 /* Assets.xcassets */; };
 		3AA3C40C21CEBD450047C453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C40A21CEBD450047C453 /* LaunchScreen.storyboard */; };
-		3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C41321CEBD8B0047C453 /* AddVC.swift */; };
+		3AA3C41421CEBD8B0047C453 /* Trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C41321CEBD8B0047C453 /* Trash.swift */; };
 		3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C41521CEBDAD0047C453 /* InputVC.swift */; };
 		3AA3C41821CEBDD60047C453 /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C41721CEBDD60047C453 /* Sources.swift */; };
 		3AC51DF6222824B1008C943E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AC51DF5222824B1008C943E /* README.md */; };
 		3AE7BA8721DEA100009BCD31 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7BA8621DEA100009BCD31 /* EditVC.swift */; };
 		3AF3D972224638B600A067C3 /* InputVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3D971224638B600A067C3 /* InputVCCell.swift */; };
-		3AF70DA1228F02400012080D /* NewAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF70DA0228F02400012080D /* NewAddVC.swift */; };
-		3AF70DA3228F02700012080D /* CollectionViewCellOfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF70DA2228F02700012080D /* CollectionViewCellOfCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A2669F42264DAD1007C2958 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		3A2669F42264DAD1007C2958 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		3AA3C3FB21CEBD430047C453 /* Genome Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genome Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3C3FE21CEBD430047C453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA3C40021CEBD430047C453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,14 +32,12 @@
 		3AA3C40821CEBD450047C453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA3C40B21CEBD450047C453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AA3C40D21CEBD450047C453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AA3C41321CEBD8B0047C453 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		3AA3C41321CEBD8B0047C453 /* Trash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trash.swift; sourceTree = "<group>"; };
 		3AA3C41521CEBDAD0047C453 /* InputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVC.swift; sourceTree = "<group>"; };
 		3AA3C41721CEBDD60047C453 /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
 		3AC51DF5222824B1008C943E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3AE7BA8621DEA100009BCD31 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		3AF3D971224638B600A067C3 /* InputVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVCCell.swift; sourceTree = "<group>"; };
-		3AF70DA0228F02400012080D /* NewAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddVC.swift; sourceTree = "<group>"; };
-		3AF70DA2228F02700012080D /* CollectionViewCellOfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellOfCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				3AF3D971224638B600A067C3 /* InputVCCell.swift */,
-				3AF70DA2228F02700012080D /* CollectionViewCellOfCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -108,9 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				3AA3C40021CEBD430047C453 /* ViewController.swift */,
-				3AA3C41321CEBD8B0047C453 /* AddVC.swift */,
-				3AF70DA0228F02400012080D /* NewAddVC.swift */,
-				3A2669F42264DAD1007C2958 /* ContainerVC.swift */,
+				3AA3C41321CEBD8B0047C453 /* Trash.swift */,
+				3A2669F42264DAD1007C2958 /* AddVC.swift */,
 				3AA3C41521CEBDAD0047C453 /* InputVC.swift */,
 				3AE7BA8621DEA100009BCD31 /* EditVC.swift */,
 				3ABF1C83224A8F6300881B17 /* Cells */,
@@ -191,11 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA3C41821CEBDD60047C453 /* Sources.swift in Sources */,
-				3AF70DA1228F02400012080D /* NewAddVC.swift in Sources */,
 				3AA3C41621CEBDAD0047C453 /* InputVC.swift in Sources */,
-				3AA3C41421CEBD8B0047C453 /* AddVC.swift in Sources */,
-				3AF70DA3228F02700012080D /* CollectionViewCellOfCell.swift in Sources */,
-				3A2669F52264DAD1007C2958 /* ContainerVC.swift in Sources */,
+				3AA3C41421CEBD8B0047C453 /* Trash.swift in Sources */,
+				3A2669F52264DAD1007C2958 /* AddVC.swift in Sources */,
 				3AA3C40121CEBD430047C453 /* ViewController.swift in Sources */,
 				3AA3C3FF21CEBD430047C453 /* AppDelegate.swift in Sources */,
 				3AF3D972224638B600A067C3 /* InputVCCell.swift in Sources */,

@@ -20,186 +20,75 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var secondAnemiaTexts: [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
     
     var personsCases: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false]
-
-    var firstText = ""
-    var secondText = ""
-    var thirdText = ""
-    var fourthText = ""
-    var fifthText = ""
-    var sixthText = ""
-    var seventhText = ""
-    var eighthText = ""
-    var ninthText = ""
-    var tenthText = ""
-    var eleventhText = ""
-    var twelfthText = ""
-    var thirteenthText = ""
-    var fourteenthText = ""
-    var fifteenthText = ""
-    var sixteenthText = ""
-    var seventeenthText = ""
-    var eighteenthText = ""
-    var ninteenthText = ""
-    var twentiethText = ""
-    var twentyFirstText = ""
-    var twentySecondText = ""
-    var twentyThirdText = ""
-    var twentyFourthText = ""
-    var twentyFifthText = ""
-    var twentySixthText = ""
-    var twentySeventhText = ""
-    var twentyEighthText = ""
-    var twentyNinthText = ""
-    var thirtiethText = ""
-    var thirtyFirstText = ""
-    var thirtySecondText = ""
-    var thirtyThirdText = ""
-    var thirtyFourthText = ""
-    var thirtyFifthText = ""
-    var thirtySixthText = ""
-    var thirtySeventhText = ""
-    var thirtyEightText = ""
-    var thirtyNinthText = ""
-    var fortiethText = ""
-    var fourtyFirstText = ""
-    var fourtySecondText = ""
-    var fourtyThirdText = ""
-    var fourtyFourthText = ""
-    var fourtyFifthText = ""
-    var fourtySixthText = ""
-    var fourtySeventhText = ""
-    var fourtyEighthText = ""
-    var fourtyNinthText = ""
-    var fiftiethText = ""
-    var fiftyFirstText = ""
-    var fiftySecondText = ""
-    var fiftyThirdText = ""
-    var fiftyFourthText = ""
-    var fiftyFifthText = ""
-    var fiftySixthText = ""
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destinationVC = segue.destination as! InputVCCell
-//        destinationVC.eyesLabel[0].text = eyesTexts[0]
-//        destinationVC.eyesLabel[1].text = eyesTexts[1]
-//        destinationVC.eyesLabel[2].text = eyesTexts[2]
-//        destinationVC.eyesLabel[3].text = eyesTexts[3]
-//        destinationVC.eyesLabel[4].text = eyesTexts[4]
-//        destinationVC.eyesLabel[5].text = eyesTexts[5]
-//        destinationVC.eyesLabel[6].text = eyesTexts[6]
-//        destinationVC.eyesLabel[7].text = eyesTexts[7]
-//        destinationVC.eyesLabel[8].text = eyesTexts[8]
-//        destinationVC.eyesLabel[9].text = eyesTexts[9]
-//        destinationVC.eyesLabel[10].text = eyesTexts[10]
-//        destinationVC.eyesLabel[11].text = eyesTexts[11]
-//        destinationVC.eyesLabel[12].text = eyesTexts[12]
-//        destinationVC.eyesLabel[13].text = eyesTexts[13]
-//
-//        destinationVC.skinLabel[0].text = skinTexts[0]
-//        destinationVC.skinLabel[1].text = skinTexts[1]
-//        destinationVC.skinLabel[2].text = skinTexts[2]
-//        destinationVC.skinLabel[3].text = skinTexts[3]
-//        destinationVC.skinLabel[4].text = skinTexts[4]
-//        destinationVC.skinLabel[5].text = skinTexts[5]
-//        destinationVC.skinLabel[6].text = skinTexts[6]
-//        destinationVC.skinLabel[7].text = skinTexts[7]
-//        destinationVC.skinLabel[8].text = skinTexts[8]
-//        destinationVC.skinLabel[9].text = skinTexts[9]
-//        destinationVC.skinLabel[10].text = skinTexts[10]
-//        destinationVC.skinLabel[11].text = skinTexts[11]
-//        destinationVC.skinLabel[12].text = skinTexts[12]
-//        destinationVC.skinLabel[13].text = skinTexts[13]
-//
-//        destinationVC.hairLabel[0].text = hairTexts[0]
-//        destinationVC.hairLabel[1].text = hairTexts[1]
-//        destinationVC.hairLabel[2].text = hairTexts[2]
-//        destinationVC.hairLabel[3].text = hairTexts[3]
-//        destinationVC.hairLabel[4].text = hairTexts[4]
-//        destinationVC.hairLabel[5].text = hairTexts[5]
-//        destinationVC.hairLabel[6].text = hairTexts[6]
-//        destinationVC.hairLabel[7].text = hairTexts[7]
-//        destinationVC.hairLabel[8].text = hairTexts[8]
-//        destinationVC.hairLabel[9].text = hairTexts[9]
-//        destinationVC.hairLabel[10].text = hairTexts[10]
-//        destinationVC.hairLabel[11].text = hairTexts[11]
-//        destinationVC.hairLabel[12].text = hairTexts[12]
-//        destinationVC.hairLabel[13].text = hairTexts[13]
-//
-//        destinationVC.anemiaLabel[0].text = anemiaTexts[0]
-//        destinationVC.anemiaLabel[1].text = anemiaTexts[1]
-//        destinationVC.anemiaLabel[2].text = anemiaTexts[2]
-//        destinationVC.anemiaLabel[3].text = anemiaTexts[3]
-//        destinationVC.anemiaLabel[4].text = anemiaTexts[4]
-//        destinationVC.anemiaLabel[5].text = anemiaTexts[5]
-//        destinationVC.anemiaLabel[6].text = anemiaTexts[6]
-//        destinationVC.anemiaLabel[7].text = anemiaTexts[7]
-//        destinationVC.anemiaLabel[8].text = anemiaTexts[8]
-//        destinationVC.anemiaLabel[9].text = anemiaTexts[9]
-//        destinationVC.anemiaLabel[10].text = anemiaTexts[10]
-//        destinationVC.anemiaLabel[11].text = anemiaTexts[11]
-//        destinationVC.anemiaLabel[12].text = anemiaTexts[12]
-//        destinationVC.anemiaLabel[13].text = anemiaTexts[13]
+//        let destinationVC = segue.destination as! ContainerVC
+//        destinationVC.nameText = name
+//        destinationVC.eyesTexts = secondEyesTexts
+//        destinationVC.skinTexts = secondSkinTexts
+//        destinationVC.hairTexts = secondHairTexts
+//        destinationVC.anemiaTexts = secondAnemiaTexts
 //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = name
-        secondEyesTexts[0] = firstText
-        secondSkinTexts[0] = secondText
-        secondHairTexts[0] = thirdText
-        secondAnemiaTexts[0] = fourthText
-        secondEyesTexts[1] = fifthText
-        secondSkinTexts[1] = sixthText
-        secondHairTexts[1] = seventhText
-        secondAnemiaTexts[1] = eighthText
-        secondEyesTexts[2] = ninthText
-        secondSkinTexts[2] = tenthText
-        secondHairTexts[2] = eleventhText
-        secondAnemiaTexts[2] = twelfthText
-        secondEyesTexts[3] = thirteenthText
-        secondSkinTexts[3] = fourteenthText
-        secondHairTexts[3] = fifteenthText
-        secondAnemiaTexts[3] = sixteenthText
-        secondEyesTexts[4] = seventeenthText
-        secondSkinTexts[4] = eighteenthText
-        secondHairTexts[4] = ninteenthText
-        secondAnemiaTexts[4]  = twentiethText
-        secondEyesTexts[5] = twentyFirstText
-        secondSkinTexts[5] = twentySecondText
-        secondHairTexts[5] = twentyThirdText
-        secondAnemiaTexts[5] = twentyFourthText
-        secondEyesTexts[6] = twentyFifthText
-        secondSkinTexts[6] = twentySixthText
-        secondHairTexts[6] = twentySeventhText
-        secondAnemiaTexts[6] = twentyEighthText
-        secondEyesTexts[7] = twentyNinthText
-        secondSkinTexts[7] = thirtiethText
-        secondHairTexts[7] = thirtyFirstText
-        secondAnemiaTexts[7] = thirtySecondText
-        secondEyesTexts[8] = thirtyThirdText
-        secondSkinTexts[8] = thirtyFourthText
-        secondHairTexts[8] = thirtyFifthText
-        secondAnemiaTexts[8] = thirtySixthText
-        secondEyesTexts[9] = thirtySeventhText
-        secondSkinTexts[9] = thirtyEightText
-        secondHairTexts[9] = thirtyNinthText
-        secondAnemiaTexts[9] = fortiethText
-        secondEyesTexts[10] = fourtyFirstText
-        secondSkinTexts[10] = fourtySecondText
-        secondHairTexts[10] = fourtyThirdText
-        secondAnemiaTexts[10] = fourtyFourthText
-        secondEyesTexts[11] = fourtyFifthText
-        secondSkinTexts[11] = fourtySixthText
-        secondHairTexts[11] = fourtySeventhText
-        secondAnemiaTexts[11] = fourtyEighthText
-        secondEyesTexts[12] = fourtyNinthText
-        secondSkinTexts[12] = fiftiethText
-        secondHairTexts[12] = fiftyFirstText
-        secondAnemiaTexts[12] = fiftySecondText
-        secondEyesTexts[13] = fiftyThirdText
-        secondSkinTexts[13] = fiftyFourthText
-        secondHairTexts[13] = fiftyFifthText
-        secondAnemiaTexts[13] = fiftySixthText
+//        secondEyesTexts[0] = firstText
+//        secondSkinTexts[0] = secondText
+//        secondHairTexts[0] = thirdText
+//        secondAnemiaTexts[0] = fourthText
+//        secondEyesTexts[1] = fifthText
+//        secondSkinTexts[1] = sixthText
+//        secondHairTexts[1] = seventhText
+//        secondAnemiaTexts[1] = eighthText
+//        secondEyesTexts[2] = ninthText
+//        secondSkinTexts[2] = tenthText
+//        secondHairTexts[2] = eleventhText
+//        secondAnemiaTexts[2] = twelfthText
+//        secondEyesTexts[3] = thirteenthText
+//        secondSkinTexts[3] = fourteenthText
+//        secondHairTexts[3] = fifteenthText
+//        secondAnemiaTexts[3] = sixteenthText
+//        secondEyesTexts[4] = seventeenthText
+//        secondSkinTexts[4] = eighteenthText
+//        secondHairTexts[4] = ninteenthText
+//        secondAnemiaTexts[4]  = twentiethText
+//        secondEyesTexts[5] = twentyFirstText
+//        secondSkinTexts[5] = twentySecondText
+//        secondHairTexts[5] = twentyThirdText
+//        secondAnemiaTexts[5] = twentyFourthText
+//        secondEyesTexts[6] = twentyFifthText
+//        secondSkinTexts[6] = twentySixthText
+//        secondHairTexts[6] = twentySeventhText
+//        secondAnemiaTexts[6] = twentyEighthText
+//        secondEyesTexts[7] = twentyNinthText
+//        secondSkinTexts[7] = thirtiethText
+//        secondHairTexts[7] = thirtyFirstText
+//        secondAnemiaTexts[7] = thirtySecondText
+//        secondEyesTexts[8] = thirtyThirdText
+//        secondSkinTexts[8] = thirtyFourthText
+//        secondHairTexts[8] = thirtyFifthText
+//        secondAnemiaTexts[8] = thirtySixthText
+//        secondEyesTexts[9] = thirtySeventhText
+//        secondSkinTexts[9] = thirtyEightText
+//        secondHairTexts[9] = thirtyNinthText
+//        secondAnemiaTexts[9] = fortiethText
+//        secondEyesTexts[10] = fourtyFirstText
+//        secondSkinTexts[10] = fourtySecondText
+//        secondHairTexts[10] = fourtyThirdText
+//        secondAnemiaTexts[10] = fourtyFourthText
+//        secondEyesTexts[11] = fourtyFifthText
+//        secondSkinTexts[11] = fourtySixthText
+//        secondHairTexts[11] = fourtySeventhText
+//        secondAnemiaTexts[11] = fourtyEighthText
+//        secondEyesTexts[12] = fourtyNinthText
+//        secondSkinTexts[12] = fiftiethText
+//        secondHairTexts[12] = fiftyFirstText
+//        secondAnemiaTexts[12] = fiftySecondText
+//        secondEyesTexts[13] = fiftyThirdText
+//        secondSkinTexts[13] = fiftyFourthText
+//        secondHairTexts[13] = fiftyFifthText
+//        secondAnemiaTexts[13] = fiftySixthText
         
         if secondEyesTexts[0] == eyesColors[0] {
             blackEyes += 1.0
@@ -1585,24 +1474,16 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InputVCCell", for: indexPath) as! InputVCCell
         
         cell.familyPersonLabel.text = familyPersonsNames[indexPath.row]
-
-        cell.eyesLabel.forEach {
-            $0.text = secondEyesTexts[indexPath.row]
-        }
-
-        cell.skinLabel.forEach {
-            $0.text = secondSkinTexts[indexPath.row]
-        }
-
-        cell.hairLabel.forEach {
-            $0.text = secondHairTexts[indexPath.row]
-        }
-
-        cell.anemiaLabel.forEach {
-            $0.text = secondAnemiaTexts[indexPath.row]
-        }
+        cell.eyesLabel.text = secondEyesTexts[indexPath.row]
+        cell.skinLabel.text = secondSkinTexts[indexPath.row]
+        cell.hairLabel.text = secondHairTexts[indexPath.row]
+        cell.anemiaLabel.text = secondAnemiaTexts[indexPath.row]
     
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     func createData() {
