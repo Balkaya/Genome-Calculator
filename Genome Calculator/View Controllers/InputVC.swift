@@ -1640,8 +1640,6 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         createData()
         
-        has = true
-        
         performSegue(withIdentifier: "toViewController", sender: nil)
     }
 }

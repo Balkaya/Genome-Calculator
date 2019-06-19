@@ -83,9 +83,7 @@ class AddVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         createGenomPicker()
         createToolbar()
         
-        if has == false {
-            
-        } else if has == true {
+        if has == true {
             retrieveData()
         }
         

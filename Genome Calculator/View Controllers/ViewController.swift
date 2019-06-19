@@ -164,6 +164,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func addButton(_ sender: Any) {
         selectedGene = ""
         performSegue(withIdentifier: "toAddVC", sender: nil)
+        has = false
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

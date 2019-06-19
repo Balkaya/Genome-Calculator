@@ -63,6 +63,6 @@ class EditVC: UIViewController {
         secondChosenGene = "a"
         firstTF = true
         performSegue(withIdentifier: "secondToAddVC", sender: nil)
-        has = false
+        has = true
     }
 }
