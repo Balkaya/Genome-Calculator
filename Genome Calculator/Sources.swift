@@ -129,3 +129,5 @@ var firstCase = 0
 var secondCase = 0
 var thirdCase = 0
 var fourthCase = 0
+
+var has = false

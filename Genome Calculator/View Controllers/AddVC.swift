@@ -12,7 +12,7 @@ import CoreData
 class AddVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet var textFields: [UITextField]!
-    
+
     var chosenGene = ""
     
     var nameText = ""
@@ -82,6 +82,12 @@ class AddVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         super.viewDidLoad()
         createGenomPicker()
         createToolbar()
+        
+        if has == false {
+            
+        } else if has == true {
+            retrieveData()
+        }
         
         firstPicker.delegate = self
         secondPicker.delegate = self
