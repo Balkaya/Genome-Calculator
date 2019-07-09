@@ -1632,14 +1632,15 @@ class InputVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
-//        if thirdTF == false {
+//        if update == false {
 //            createData()
-//        } else if thirdTF == true {
+//        } else if update == true {
 //            updateData()
 //        }
         
         createData()
         
         performSegue(withIdentifier: "toViewController", sender: nil)
+        update = false
     }
 }

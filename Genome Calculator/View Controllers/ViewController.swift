@@ -159,6 +159,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedGene = nameArray[indexPath.row]
         performSegue(withIdentifier: "toEditVC", sender: nil)
+        update = true
     }
     
     @IBAction func addButton(_ sender: Any) {
